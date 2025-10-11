@@ -1,0 +1,72 @@
+[
+  {
+    "id":"8",
+    "title_id": "milaap-nonprofit-cloud",
+    "title": "MILAAP",
+    "description": "Milaap - Optimizing processes for better impact.",
+    "imageUrl": "/images/caseStudyImages/MilaapCSImg.png",
+    "industry": ["Not-for-profit"],
+    "cloud":["Nonprofit Cloud"],
+    "location":["India", "Singapore"]
+  },
+    {
+        "id":"5",
+        "title_id": "coverdesk-sales-cloud",
+        "title": "COVER DESK",
+        "description": "Supercharge virtual assistant management.",
+        "imageUrl": "/images/caseStudyImages/CoverDeskCSImg.png",
+        "industry": ["Insurance", "BPO"],
+        "cloud":["Experience Cloud","Sales Cloud","Service Cloud"],
+        "location":["USA"] 
+      },
+      {
+        "id":"4",
+        "title_id": "greenway-sales-cloud",
+        "title": "GREENWAY",
+        "description": "From data chaos to client focus.",
+        "imageUrl": "/images/caseStudyImages/GreenwayCSImg.png",
+        "industry": ["Insurance"],
+        "cloud":["Sales Cloud"],
+        "location":["USA"]
+      },
+    {
+      "id":"1",
+      "title_id": "redwood-health-cloud",
+      "title": "REDWOOD",
+      "description": "Streamlines operations, enhances patient care.",
+      "imageUrl": "/images/caseStudyImages/RedwoodCSImg.png",
+      "industry": ["Health Care & Lifesciences"],
+      "cloud":["Health Cloud","Experience Cloud"],
+      "location":["USA"]
+    },
+    {
+      "id":"2",
+        "title": "DIABETES MANAGEMENT CO.",
+      "title_id": "diabetes-management-health-cloud",
+        "description": "Blood sugar control meets inventory efficiency.",
+        "imageUrl": "/images/caseStudyImages/DiathriveCSImg.png",
+        "industry": ["Health Care & Lifesciences"],
+        "cloud":["Health Cloud"],
+        "location":["USA"]
+      },
+      {
+        "id":"7",
+        "title_id": "universal-relocation-service-cloud",
+        "title": "UNIVERSAL RELOCATION",
+        "description": "Universal Relocations packs a punch.",
+        "imageUrl": "/images/caseStudyImages/URCSImg.png",
+        "industry": ["Logistics","Relocations"],
+        "cloud":["Service Cloud"],
+        "location":["USA", "UAE", "India"]
+      },
+    {
+      "id":"6",
+      "title_id": "redibs-saleforce",
+      "title": "REDIBS",
+      "description": "Close more deals, faster and efficiently.",
+      "imageUrl": "/images/caseStudyImages/RedibsCSImg.png",
+      "industry": ["Real Estate"],
+      "cloud":["Sales Cloud","Snowflake"],
+      "location":["USA"]
+    }
+  ]

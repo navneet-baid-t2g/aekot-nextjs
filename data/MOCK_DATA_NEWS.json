@@ -1,0 +1,39 @@
+[
+    {
+        "title": "CRM Evolves with Tech, Customer Demands, and Business Shifts",
+        "icon": "/images/news/svgs/bct.svg",
+        "reporter": "British Columbia Times",
+        "read": "4 Minutes Read",
+        "img": "/images/news/BCT.jpg",
+        "link": "https://www.britishcolumbiatimes.com/news/crm-evolves-with-tech-customer-demands-and-business-shifts20231006163612/"
+      },
+     
+      {
+        "title": "Transforming businesses in the age of digital disruption",
+        "icon": "/images/news/svgs/dcr.svg",
+        "reporter": "Dubai City Reporter",
+        "read": "3 Minutes Read",
+        "img": "/images/news/DCR.jpg",
+        "link": "https://www.dubaicityreporter.com/news/aekot-salesforce-consultancy-transforming-businesses-in-the-age-of-digital-disruption20211112184223/"
+      },
+      {
+        "title": "Aekot Exhibits at the Most Prestigious Gitex Global 2023",
+        "icon": "/images/news/svgs/the_print.svg",
+        "reporter": "The Print",
+        "read": "3 Minutes Read",
+        "img": "/images/news/TP.webp",
+        "link": "https://theprint.in/ani-press-releases/aekot-exhibits-at-the-most-prestigious-gitex-global-2023/1804100/"
+      },
+      {
+        "title": " Navigating Challenges and Embracing the Future of CRM Solutions",
+        "icon": "/images/news/svgs/cxo.svg",
+        "reporter": "CXO Today",
+        "read": "4 Minutes Read",
+        "img": "/images/news/anup.jpg",
+        "link": "https://cxotoday.com/interviews/aekots-salesforce-journey-navigating-challenges-and-embracing-the-future-of-crm-solutions/"
+      }    
+]
+
+
+
+

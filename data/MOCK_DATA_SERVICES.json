@@ -1,0 +1,160 @@
+[
+  {
+    "imageSrc": "/images/servicesAgentforce2.jpg",
+    "title": "Agentforce Implementation",
+    "additionalInfo": {
+      "headline": "Strategize, Plan, and Succeed with Expert Salesforce Consulting",
+      "subheading": "Our Salesforce consulting services are designed to understand your business goals and implement the most effective CRM strategy that maximizes ROI.",
+      "details": {
+        "whatWeOffer": [
+          "Comprehensive business analysis to understand your CRM needs.",
+          "Salesforce implementation strategy tailored to your industry.",
+          "Roadmap creation for efficient and scalable digital transformation."
+        ],
+        "benefits": [
+          "Align Salesforce to your business processes.",
+          "Improve customer relationships and business insights.",
+          "Get personalized, hands-on guidance from certified Salesforce consultants."
+        ]
+      },
+      "cta": "Learn How We Can Transform Your Business. ",
+      "linktext": "Get a free consultation today",
+      "link": "/contact"
+    }
+  },
+  {
+    "imageSrc": "/images/serviceImages/strategyImg.jpg",
+    "title": "Salesforce Consulting & Strategy",
+    "additionalInfo": {
+      "headline": "Strategize, Plan, and Succeed with Expert Salesforce Consulting",
+      "subheading": "Our Salesforce consulting services are designed to understand your business goals and implement the most effective CRM strategy that maximizes ROI.",
+      "details": {
+        "whatWeOffer": [
+          "Comprehensive business analysis to understand your CRM needs.",
+          "Salesforce implementation strategy tailored to your industry.",
+          "Roadmap creation for efficient and scalable digital transformation."
+        ],
+        "benefits": [
+          "Align Salesforce to your business processes.",
+          "Improve customer relationships and business insights.",
+          "Get personalized, hands-on guidance from certified Salesforce consultants."
+        ]
+      },
+      "cta": "Learn How We Can Transform Your Business. ",
+      "linktext": "Get a free consultation today",
+      "link": "/contact"
+    },
+    "metaData": {
+      "metaTitle": "Salesforce Consulting Services & Marketing Cloud Experts",
+      "metaDescription": "Get expert Salesforce consulting services to streamline your CRM, automate marketing, and improve customer engagement with tailored strategies."
+    }
+  },
+  {
+   "imageSrc": "/images/serviceImages/implementImg.jpg",
+    "title": "Salesforce Implementation & Integration",
+    "additionalInfo": {
+      "headline": "Seamless Salesforce Implementation to Drive Your Business Forward",
+      "subheading": "Streamline your operations with expertly executed Salesforce integration and implementation services.",
+      "details": {
+        "whatWeOffer": [
+          "Full Salesforce implementation, from setup to go-live.",
+          "Integration with your existing systems (ERP, marketing tools, etc.).",
+          "Industry-specific solutions for real estate, finance, and more."
+        ],
+        "benefits": [
+          "Reduced downtime and operational inefficiencies.",
+          "Smooth data migration and system integration.",
+          "Faster deployment, ensuring your team is up and running quickly."
+        ]
+      },
+      "cta": "Start Your Seamless Integration Journey. ",
+      "linktext": "Book a free demo",
+      "link":  "/contact"
+    },
+    "metaData": {
+      "metaTitle": "Salesforce CRM Implementation & Integration Experts",
+      "metaDescription": "AEKOT delivers end-to-end Salesforce implementation service and integration solutions to simplify processes and maximize your CRM investment."
+    }
+  },
+   {
+    "imageSrc": "/images/serviceImages/support.jpg",
+     "title": "Salesforce Support & Managed Services",
+     "additionalInfo": {
+       "headline": "Comprehensive Salesforce Support to Keep You Running Smoothly",
+       "subheading": "From troubleshooting to continuous improvements, our Salesforce support ensures you stay ahead.",
+       "details": {
+         "whatWeOffer": [
+          "Ongoing Salesforce maintenance and updates.",
+          "24/7 support for troubleshooting and issues resolution.",
+          "Regular health checks and performance optimization"
+         ],
+         "benefits": [
+          "Ensure maximum system uptime and reliability.",
+          "Stay ahead with the latest Salesforce updates and features.",
+          "Dedicated support team to resolve issues quickly." 
+         ]
+       },
+       "cta": "Get Reliable Salesforce Support. ",
+        "linktext": "Contact to know more",
+       "link":  "/contact"
+     },
+    "metaData": {
+      "metaTitle": "Salesforce Support & Proactive Managed Services",
+      "metaDescription": "Get proactive managed services for Salesforce with AEKOT. Improve CRM uptime, resolve issues faster, and keep your business running efficiently."
+    }
+   },
+   {
+    "imageSrc": "/images/serviceImages/integrateImg.jpg",
+     "title": "Salesforce Training & Adoption",
+     "additionalInfo": {
+       "headline": "Empower Your Team with Expert Salesforce Training",
+       "subheading": "Ensure your team makes the most of Salesforce with personalized training and adoption programs.",
+       "details": {
+         "whatWeOffer": [
+          "Custom training sessions based on user roles.",
+          "Comprehensive adoption strategies to boost user engagement.",
+          "On-site or virtual training workshops tailored to your team’s needs."
+         ],
+         "benefits": [
+          "Maximize the ROI of your Salesforce investment.",
+          "Improve team productivity and CRM proficiency.",
+          "Ensure a smooth transition and increase system adoption rates."
+         ]
+       },
+       "cta": "Boost Salesforce Adoption Today. ",
+        "linktext": "Contact us to learn how",
+        "link":  "/contact"
+     },
+    "metaData": {
+      "metaTitle": "Salesforce Training & Cloud Workshops by AEKOT",
+      "metaDescription": "Improve user adoption with Salesforce and Marketing Cloud training by AEKOT. Interactive learning to maximize Salesforce usage and ROI."
+    }
+   },
+   {
+    "imageSrc": "/images/serviceImages/serviceprogImg.jpg",
+     "title": "Data Migration & Management",
+     "additionalInfo": {
+       "headline": "Secure and Efficient Data Migration Solutions",
+       "subheading": "Ensure safe, accurate, and seamless migration of your data into Salesforce.",
+       "details": {
+         "whatWeOffer": [
+          "Secure data migration from legacy systems.",
+         " Data cleaning, mapping, and validation services.",
+         " Salesforce data governance and management solutions."
+         ],
+         "benefits": [
+         " Migrate critical data securely and accurately.",
+          "Reduce the risk of data loss or corruption during migration.",
+          "Ensure your data is organized and easily accessible post-migration."
+         ]
+       },
+       "cta": "Start Your Data Migration with Confidence. ",
+       "linktext": "Contact us to learn more",
+        "link":  "/contact"
+     },
+    "metaData": {
+      "metaTitle": "Salesforce Data Migration & CRM Transfer Services",
+      "metaDescription": "AEKOT ensures smooth Salesforce data migration and complete CRM migration with accurate data mapping, minimal downtime, and secure transitions."
+    }
+   }
+]

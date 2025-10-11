@@ -1,0 +1,51 @@
+[
+  {
+    "img": "https://lh7-us.googleusercontent.com/K-CYfQNI6cavoakfthEssvPwf6VMv6T4cwY4kzUVJLfq8ialiKG1Il-pJ64qZDtj98tWCQq0YbwE4W9SuOUiHIF-OfCaoJ7jtZ9PUlS6rApeaHKga1PTOxy59J25x46jgVbDCauvQI-t-8Xjccd5x2Y",
+    "topic": "Organize & Automate: CRM vs. Spreadsheets - The Ultimate Question",
+    "releasedate" : "May 16, 2024",
+    "navurl": "https://blog.aekot.com/organize-automate-crm-vs-spreadsheets/",
+    "description": "Why switch from spreadsheets to a CRM? – The Ultimate Question Transitioning from Spreadsheets to a CRM system offers numerous business advantages. Unlike Spreadsheet which often results in scattered data across multiple spreadsheets, a CRM centralizes the customer information in one accessible database."
+  },
+  {
+    "img": "https://blog.aekot.com/wp-content/uploads/2024/05/Latest-blog-post-cover-image-14.4x-7.3-cm-1.png",
+    "topic": "5 Signs You Need An IT Consultant (And How to Choose The Right One)",
+    "releasedate" : "March 21, 2024",
+    "navurl": "https://blog.aekot.com/5-signs-you-need-an-it-consultant-and-how-to-choose-the-right-one/",
+    "description": "In today’s technology-driven world, your business’s IT infrastructure plays a critical role in achieving operational efficiency, security, and ultimately – success. However, managing IT complexity can be overwhelming, even for the most tech-savvy businesses.  This is why choosing the right IT consultant can be a game-changer. "
+  },
+  {
+    "img": "https://lh7-us.googleusercontent.com/F3ULAkg0M211bJhd4331fcvJB-0ijBSqsnFkPSNauX6SJc9kbbQGjnx9H8TbRxfQYDn4Umr95GSnhJhc54rPlqfv6DtyDXCtiqtp0ErPOc5nrJwU2mSoTMwz0cZRrnpzWLLMurI9M_rmkfzoY609gM2qH5w44gV0FTr-E-ALHpg-lDNot2jfeNqun-oRlg",
+    "topic": "Salesforce Hyperforce: A Quantum Leap In CRM Innovation",
+    "releasedate" : "January 11, 2024",
+    "navurl": "https://blog.aekot.com/salesforce-hyperforce-a-quantum-leap-in-crm-innovation/",
+    "description": "Salesforce Hyperforce is a cutting-edge cloud architecture that extends the capabilities of the Salesforce Customer 360 platform to new heights. This innovative solution enables organizations to deploy and manage Salesforce applications seamlessly in various public cloud environments."
+  },
+  {
+    "img": "https://lh7-us.googleusercontent.com/65egctaEwMWUUsM0KeqX952ZhQyD463UKfmZijQBOubrULhOGrAFg1nkbmOTJkN3buZNZ6TF6HINpNrMAQILV_AbWC5dtqjy-INpmyauv8cpaO5ymKQIcG4QcCl-R9XCRpGlwHlbN-PuVDur1oGUgLA",
+    "topic": "Creating Effective Email Campaigns with Salesforce Marketing Cloud",
+    "releasedate" : "December 5, 2023",
+    "navurl": "https://blog.aekot.com/creating-effective-email-campaigns-with-salesforce-marketing-cloud",
+    "description": "Salesforce Marketing Cloud is a platform developed by Salesforce that provides a suite of tools for digital marketing automation and analytics. It is designed to help businesses engage with their customers across various channels, such as email, social media, mobile, and advertising."
+  },
+  {
+    "img": "https://lh7-us.googleusercontent.com/9t_0ZOcbfKDkiD0I3x1CueWY_4GQEjscgmwqsMZ4zH3L8ZCGUosPkDM_KQLjYP93tE6jUhs0pVbgvpc1WhmEByMZfBmDkA1QYb18h4smAA5vO-nL-eBhDbFJyVRO14MzBtfxVy9ttkXtb8s58U2cqKI",
+    "topic": "Maximizing Customer Engagement With Salesforce",
+    "releasedate" : "November 22, 2023",
+    "navurl": "https://blog.aekot.com/maximizing-customer-engagement-with-salesforce-best-tips-and-tricks",
+    "description": "Customer engagement encompasses the various ways in which businesses interact with their customers and build relationships that extend beyond mere transactions. It involves fostering a deep connection with customers by understanding their needs, preferences, and pain points, and delivering tailored solutions and experiences that address their specific requirements. Customer engagement is not just about acquiring new customers but also about nurturing existing relationships to drive repeat business, encourage brand advocacy, and foster long-term loyalty."
+  },
+  {
+    "img": "https://lh3.googleusercontent.com/_xrOmF-N_r1NoBfbD0sfLl7Lf7fZmhAWXtkowLAoeN7RIW1-wja_a7xQ0YcVZahTydJBT8M6VCD6tf4dPC6bbNVcfxN_eBPrJcyfro88C8fLUEWmSUDBEivaZrIa4RBCJUEPYoCd8t4QX3tWHBk4Zjb2oSEhs5be_S9IYaT59yvn9nrmU3lrEg4UYAUHAQ",
+    "topic": "Why small businesses should opt for Salesforce",
+    "releasedate" : "November 11, 2022",
+    "navurl": "https://blog.aekot.com/why-small-businesses-should-opt-for-salesforce/",
+    "description": "Salesforce is the global CRM leader and has evolved as one of the best online software which can adapt to any industry type or size. Many large-scale enterprises use Salesforce CRM to automate their business processes, workflows and manage customer relations. The technological tools and solutions provided by Salesforce CRM have benefits not only for big enterprises but also for small and growing businesses."
+  },
+  {
+    "img": "https://lh7-us.googleusercontent.com/JK8qvMr3vL_Aw9lYrsHViOgAaFaWvbyezxFnuEF-XwnuYc6XIu5foNubShz6gNvKk83o3TsyQig7rzSFyjtqKFBqkrZ9mfVD3JgnJxcJ6y8CDHWCtwEkV7kY5jjcdMrENI8ghXKbESCaWOXd6knEQGg",
+    "topic": "Streamlining With Salesforce Automation",
+    "releasedate" : "November 3, 2023",
+    "navurl": "https://blog.aekot.com/streamlining-with-salesforce-automation",
+    "description": "Salesforce automation (SFA) is the process of using technology to automate and simplify repetitive tasks, making processes more efficient, consistent, and error-free. It allows your team to focus on high-value tasks while ensuring routine work is handled seamlessly by the system."
+  }
+]

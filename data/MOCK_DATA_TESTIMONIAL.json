@@ -1,0 +1,57 @@
+[
+    {
+        "img": "/testimonial_img/Melissa.jpeg",
+        "name": "Melissa Lim",
+        "review":"The Aekot team is excellent. We always feel like a high priority to them as they are extremely responsive. They keep our clinical and business goals in mind and ask great questions, which inspires confidence. All the engineers assigned to our project have been top-notch and very knowledgeable.",
+        "logo": "/logos/redwood.png",
+        "company": "Redwood",
+        "designation": "Managing Director",
+        "link": "https://www.aekot.com/CaseStudies/redwood-health-cloud "
+    },
+    {
+        "img": "/testimonial_img/Husain.jpeg",
+        "name": "Husain Ghadially",
+        "review": "Aekot has highly skilled and capable Salesforce consultants. In addition to technical skills, they come with a great attitude to lean in and solve problems. We have come to a position to be able to trust Aekot with our deliverables.",
+        "logo": "/logos/realfast.png",
+        "company": "Realfast",
+        "designation": "VP of Product",
+        "link": " "
+    },
+    {
+        "img": "/testimonial_img/sai.gif",
+        "name": "Sai Dattani",
+        "review": "Aekot provided great resources and always made appropriate suggestions. They excel at finding alternatives while maintaining a high quality of work.",
+        "logo": "/logos/universal.png",
+        "company": "Universal Relocations",
+        "designation": "President",
+        "link": "https://www.aekot.com/CaseStudies/universal-relocation-service-cloud"
+    },
+    { 
+        "img": "/testimonial_img/Mary.png",
+        "name": "Mary Farmer",
+        "review": "Aekot is super easy to work with. They are very knowledgeable and offer great suggestions. I would highly recommend them to everyone.",
+        "logo": "/logos/greenway.png",
+        "company": "Greenway Insurance",
+        "designation": "VP Operations",
+        "link": "https://www.aekot.com/CaseStudies/greenway-sales-cloud"
+    },
+    { 
+        "img": "/testimonial_img/Miller.png",
+        "name": "Mark Miller",
+        "review": "The Aekot team has been more than professional, engaging, creative and an absolute pleasure to work with. They are dedicated to making sure everything is done right and are great teammates to have on your SF journey.",
+        "logo": "/logos/barcode.png",
+        "company": "Barcode Properties",
+        "designation": "CEO",
+        "link": " "
+    },
+    { 
+        "img": "/testimonial_img/Mark.jpg",
+        "name": "Mark Attard",
+        "review": "Well done to Aekot Team in facilitating our workflow and immense support." ,
+        "logo": "/logos/mcit.png",
+        "company": "MCIT",
+        "designation": "General Manager",
+        "link": " "
+    }
+  ]
+  

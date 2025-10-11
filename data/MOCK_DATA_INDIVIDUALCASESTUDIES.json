@@ -1,0 +1,286 @@
+[
+  {
+    "id": "1",
+    "title_id": "redwood-health-cloud",
+    "logo": "/images/LogoColors/redwood.png",
+    "title": "Redwood Pulmonary Streamlines Operations, Enhances Patient Care",
+    "subtitle": "Tech Transformation Story",
+    "industry": [
+      "Healthcare",
+      "Lifesciences",
+      "Health Cloud",
+      "Experience Cloud"
+    ],
+    "meta_data": {
+      "metaTitle": "Salesforce Health Cloud Case Study | Redwood Success",
+      "metaDescription": "Learn how Redwood transformed healthcare services using Salesforce Health Cloud and expert consultant guidance from AEKOT.",
+      "metaImage": "/original Aekot logo.webp",
+      "metaURL": "https://www.aekot.com/CaseStudies/redwood-health-cloud"
+    },
+    "location":["USA"],
+    "about": {
+      "heading": "About Redwood",
+      "description": "Redwood Pulmonary Medical Associates is a well-established medical practice that combines expert care with detailed monitoring to give you and your doctor clear information that helps you get better. Your health is their top priority.Redwood Pulmonary goes beyond treating symptoms. They work together with patients to find the root cause of their health problems and use all available treatments to get them back on their feet as soon as possible. RPMA provides services on Pulmonary Diseases, Sleep Disorders, Procedures, Critical Care Medicine, Virtual Care Service and Innovation."
+    },
+    "problem_statement": {
+      "heading": "Problem Statement",
+      "description": "Redwood users utilized several systems, such as Salesforce Health Cloud, Kareo, Elation Health, QTC, Somnology, CleveMed, and ResMed, for their work. However, due to the distribution of data across these systems, outdated or stale information was frequently present in one system. Moreover, the external nature of the systems made it difficult to generate aggregate information from the raw data, causing delays and errors. A centralized system was necessary to integrate data from these disparate sources, ensuring data accuracy and providing real-time updates to streamline workflows and enable informed decision-making."
+    },
+    "solution": {
+      "heading": "How Aekot Streamlined Redwood Pulmonary's Operations",
+      "description": "Redwood tackled these challenges by integrating multiple systems with Salesforce Health Cloud. This integration enabled the consolidation of therapeutic, diagnostic, and monitoring data, giving a comprehensive view of the patient's history within the Salesforce platform. The integration with Elation brought in appointment, medication, and questionnaire data, while CleveMed contributed reports. Additionally, ResMed and Somnology provided raw data and reports, further enriching the patient's profile in the Health Cloud. Ultimately, the integration of these systems allowed for a seamless and holistic view of patient data, empowering healthcare providers to make informed decisions and provide better care."
+    },
+    "outcome": {
+      "heading": "Outcome",
+      "description": "Redwood reaped various benefits by incorporating these integrations, such as lower IT and subscription expenses, efficient access to patient information, and enhanced patient engagement. With the implemented system, patients could effortlessly book appointments on their own, and partner data processing became quicker, with turnaround time shortened from several days to only one. This not only saved time and resources but also allowed for faster decision-making and improved patient satisfaction. Overall, the integrations enabled Redwood to optimize its operations and provide better quality care to its patients, while simultaneously reducing costs and enhancing efficiency."
+    },
+    "testimonial": {
+      "img": "/testimonial_img/Melissa.jpeg",
+      "company": "Redwood",
+      "person": "Melissa Lim",
+      "designation": "Managing Director",
+      "words":"The Aekot team is excellent, from project planning to completion. They are as integral to our business as the local team and do not behave like an outsourced vendor. We always feel like a high priority to them as they are extremely responsive. They keep our clinical and business goals in mind and ask great questions, which inspires confidence. All the engineers assigned to our project have been top-notch, very knowledgeable and conscientious.",
+      "word": "The Aekot team is excellent. We always feel like a high priority to them as they are extremely responsive. They keep our clinical and business goals in mind and ask great questions, which inspires confidence. All the engineers assigned to our project have been top-notch and very knowledgeable."
+    },
+    "clientImage":{
+     "image":"/images/caseStudyImages/redwoodClient.jpg",
+     "caption":"The Aekot Team meeting the Redwood Team",
+     "location":"Redwood City, California, USA"
+    }
+  },
+
+  {
+    "id": "2",
+    "title_id": "diabetes-management-health-cloud",
+    "title": "Blood Sugar Control Meets Inventory Efficiency",
+    "subtitle": "A Healthcare Firms Inventory Revolution with Salesforce",
+    "industry": ["Healthcare", "Lifesciences", "Health Cloud"],
+    "meta_data": {
+      "metaTitle": "Salesforce Health Cloud Implementation | Diabetes Case",
+      "metaDescription": "Explore how AEKOT’s Health Cloud consultants helped optimize diabetes care with efficient Salesforce Health Cloud implementation services.",
+      "metaImage": "/original Aekot logo.webp",
+      "metaURL": "https://www.aekot.com/CaseStudies/diabetes-management-health-cloud"
+    },
+    "location": ["USA"],
+    "about": {
+      "heading": "About the Company",
+      "description": "The client is a provider of Diabetes Management products and services. It empowers you to take control of your health and live your best life. With a passion to truly enhance people’s life through their holistic diabetes management this leading Health care business delivers a platform which supplies high quality products at low cost and realistic health plans to an employer who wants to improve the life of the employees or to an individual looking to directly purchase a Health plan. Their program empowers you to manage your diabetes effectively. You gain easy access to a health portal where you can track and review your health data in real time. Through their app, you receive personalized guidance tailored to your needs. They also provide direct access to high-quality testing supplies, delivered at your preferred pace."
+    },
+    "problem_statement": {
+      "heading": "Problem Statement",
+      "description": "The provider needed a reliable system that could integrate smoothly with multiple platforms simultaneously. At the time, the company was using several systems, such as QuickBooks, Pardot, Salesforce Health Cloud, Salesforce Sales Cloud, a custom mobile app, October CMS, and ShipStation. To streamline their operations, the provider aimed to consolidate all these systems into a single platform. This would enable the company to manage various aspects of their business, including leads, accounts, employees, employers, order processing, and shipment, from one location. In summary, the goal was to have a unified system that would simplify the company's operations and eliminate the need for multiple platforms."
+    },
+    "solution": {
+      "heading": "Aekot Empowers Healthcare Service provider with a Unified Salesforce Platform",
+      "description": "Aekot was instrumental in helping The provider customize Salesforce and develop a solution that simplified the onboarding process for employees and employers. Our team integrated this solution with various systems, making it the primary source of accurate data for the company. We also helped configure the Health Cloud instance and set up Pardot, a marketing automation tool. Additionally, we created several APIs that the mobile application could consume, which enabled a seamless user experience. As a result of our efforts, the provider was able to manage all its operations from a single platform, boosting efficiency and productivity. Overall, Aekot provided valuable assistance to the provider by simplifying their complex system infrastructure."
+    },
+    "outcome": {
+      "heading": "Outcome",
+      "description": "We supported the provider’s procurement team and beneficiaries by implementing inventory management. This enabled the company to onboard employers and employees and manage them via a portal. Using the mobile application, they could view their vitals and request various supplies. Additionally, we set up a system that enabled them to manage their sales, billing, and invoicing within Salesforce, seamlessly integrating with Quickbooks and Salesforce. With this new solution, the provider can now easily manage all aspects of their operations from one platform, improving their efficiency and productivity. The portal provided a streamlined approach for managing employees, while the mobile application allowed for a convenient way to request supplies. Overall, Aekot helped the provider to optimize its inventory management system and simplify its operations."
+    }
+  },
+  {
+    "id": "4",
+    "title_id": "greenway-sales-cloud",
+    "logo": "/images/LogoColors/greenway.png",
+    "title": "From Data Chaos to Client Focus  ",
+    "subtitle": "Greenway Insurance Transforms with Salesforce",
+    "industry": ["Banking", "Financial Services", "Insurance", "Sales Cloud"],
+    "meta_data": {
+      "metaTitle": "Salesforce Service Cloud Implementation | Greenway Case",
+      "metaDescription": "See how AEKOT delivered Salesforce Service Cloud implementation for Greenway, driving customer success and improving CRM performance.",
+      "metaImage": "/original Aekot logo.webp",
+      "metaURL": "https://www.aekot.com/CaseStudies/greenway-sales-cloud"
+    },
+    "location": ["USA"],
+    "about": {
+      "heading": "About Greenway Insurance",
+      "description": "Greenway Insurance partners with over 40 top national and regional insurance carriers to bring you the modern insurance solutions you deserve for your family, home, or business. Dedicated to putting you first, They use technology to simplify the process, so you get the right plan at the right price. Experienced insurance professionals in greenway insurance organization work closely with you to understand your specific needs and craft personalized coverage solutions. They empower you with choice, making the insurance process smooth and stress-free."
+    },
+    "problem_statement": {
+      "heading": "Problem Statement",
+      "description": "Greenway Insurance faced challenges with managing customer data before Salesforce implementation. The company had been using spreadsheets and outdated legacy systems to store customer information, leading to issues of data duplication and inconsistencies. This inefficiency affected their sales and marketing efforts, resulting in missed opportunities for upselling and cross-selling services, which, in turn, decreased productivity. Due to the lack of a centralized system for customer data management, Greenway Insurance struggled to identify opportunities for growth and failed to meet customer expectations. As a result, the company sought assistance from our team to implement Salesforce, the world's leading CRM platform, to help them overcome these challenges and streamline their operations."
+    },
+    "solution": {
+      "heading": "Aekot's Salesforce Solutions Transform Insurance Sales ",
+      "description": "To address Greenway Insurance's challenges, our team implemented Salesforce Sales Cloud, a CRM platform that provides a centralized system to manage customer data. We also implemented Salesforce Platform License to support internal employee communications, and Salesforce Digital Experience Cloud to facilitate better communication between customers and the company. Salesforce Sales Cloud enabled Greenway Insurance to manage their customer data more efficiently, reducing the chance of data duplication and inconsistencies. The platform also provided insights into customer behavior, allowing Greenway Insurance to target their marketing efforts more effectively. Additionally, Salesforce Digital Experience Cloud provided customers with a more seamless experience, enabling them to submit claims and inquiries online, reducing wait times for support."
+    },
+    "outcome": {
+      "heading": "Outcome",
+      "description": "Greenway Insurance's implementation of Salesforce resulted in a more streamlined and efficient operation. With access to real-time insights into customer behavior, Greenway Insurance was able to improve their sales and marketing efforts, leading to a 25% increase in revenue in the first year of implementation. The platform also enabled Greenway Insurance to provide better customer support, resulting in a 30% decrease in customer wait times for support inquiries. Finally, the implementation of Salesforce Platform License improved internal communications and enabled Greenway Insurance to manage their workforce more efficiently, resulting in a 20% increase in employee productivity."
+    },
+    "testimonial": {
+      "img": "/testimonial_img/Mary.png",
+      "company": "Greenway Insurance",
+      "person": "Mary Farmer",
+      "designation": "VP Operations",
+      "words": "Aekot is super easy to work with. They are very knowledgeable and offer great suggestions. I would highly recommend them to everyone."
+    }
+  },
+  {
+    "id": "5",
+    "title_id": "coverdesk-sales-cloud",
+    "logo": "/images/LogoColors/CoverdeskLogo.png",
+    "title": "Coverdesk Supercharges Virtual assistant Management ",
+    "subtitle": "A New Approach to Virtual assistant Management Optimizes Client Service",
+    "industry": [
+      "Banking",
+      "Financial Services",
+      "Insurance",
+      "BPO",
+      "Experience Cloud",
+      "Sales Cloud",
+      "Service Cloud"
+    ],
+    "meta_data": {
+      "metaTitle": "Salesforce Partner Success | CoverDesk Integration",
+      "metaDescription": "See how AEKOT, a trusted Salesforce consulting partner, delivered seamless Sales Cloud integration services for CoverDesk’s business success.",
+      "metaImage": "/original Aekot logo.webp",
+      "metaURL": "https://www.aekot.com/CaseStudies/coverdesk-sales-cloud"
+    },
+    "location": ["USA"],
+    "about": {
+      "heading": "About Coverdesk",
+      "description": "Coverdesk focuses on empowering independent insurance agencies to flourish in today's world. They achieve this by providing access to a team of highly educated virtual assistants in the Philippines. Cover Desk offers the perfect blend of expert support and budget-friendly solutions to free you up and focus on growing your agency. Cover Desk offers a powerful solution for independent insurance agents in the US and Canada. A team of 1,000+ highly educated virtual assistants, based in the Philippines, combines personalized service with cutting-edge technology to free you up for what matters most - growing your business."
+    },
+    "problem_statement": {
+      "heading": "Problem Statement",
+      "description": "The management of VAs, specifically the billing and payroll aspects, posed difficulties for an Insurance VA and operations service provider. Most of their VAs were situated in the Philippines, while the business owners were based in the USA. This geographical distance made the translation of requirements into a Salesforce solution a cumbersome task. The service provider had to contend with the complexities of managing multiple third-party distributed systems and integrating them to establish a comprehensive system infrastructure. This added to the complexity of the project and required a significant amount of time and resources to overcome. Ultimately, the service provider had to find innovative ways to overcome these challenges and ensure that their VAs were effectively managed, resulting in a more streamlined and efficient business operation."
+    },
+    "solution": {
+      "heading": "How Aekot's Salesforce Solutions Optimized Virtual Assistant Management ",
+      "description": "In response to the difficulties faced by the service provider in managing their VAs, our team took on the task of configuring various Salesforce tools. We utilized the Salesforce sales cloud, Digital Experience Cloud, and the Salesforce Platform License to improve internal employee communications. To facilitate VA onboarding, time and payroll management, and enable VAs to track and report their daily action items, we configured the Salesforce Digital Experience. By utilizing analytics and custom screens, we provided managers with real-time insight into team availability, enabling them to plan more effectively. Through these efforts, we were able to address the challenges faced by the service provider, resulting in a more efficient and streamlined management system for their VAs."
+    },
+    "outcome": {
+      "heading": "Outcome",
+      "description": "Our efforts in configuring Salesforce tools to improve VA management resulted in a streamlined process and more efficient infrastructure for the service provider. With our solution in place, the communication and productivity of the service provider's team improved significantly, allowing them to devote more attention to delivering high-quality services to their clients. By utilizing the Salesforce Digital Experience, VA onboarding, time and payroll management, and action item tracking became more accessible for VAs, reducing the workload for managers. The real-time insight provided by the analytics and custom screens also helped managers to plan and delegate work more effectively. Overall, our solution enabled the service provider to overcome the challenges they faced and improve their operations, resulting in a more efficient and productive business operation."
+    },
+    "clientImage":{
+     "image":"/images/caseStudyImages/coverdeskClient.jpg",
+     "caption":"The Aekot Team meeting the Coverdesk Team",
+     "location":"Manila, Philippines"
+    }
+  },
+  {
+    "id": "6",
+    "title_id": "redibs-saleforce",
+    "logo": "/images/LogoColors/Redibs.png",
+    "title": "Closing More Deals, Faster",
+    "subtitle": "The Impact of Aekot and Salesforce on Redibs Sales",
+    "industry": ["Real Estate"],
+    "meta_data": {
+      "metaTitle": "Salesforce Case Studies | Redibs CRM Success Story",
+      "metaDescription": "Explore real Salesforce case studies like Redibs. See how AEKOT delivers CRM solutions that transform customer management and sales processes.",
+      "metaImage": "/original Aekot logo.webp",
+      "metaURL": "https://www.aekot.com/CaseStudies/redibs-saleforce"
+    },
+    "location": ["USA"],
+    "about": {
+      "heading": "About Redibs",
+      "description": "As a real estate agency, Redibs provides comprehensive suite of services, including brokerage, investment assistance, property management, and leasing. Redibs offers homeowners a new real estate model built on relationships rather than transactions. To facilitate the relationship between the homeowner and their real estate agent, they have built a new model and proprietary technology platform to ensure the symbiosis. Redibs is an accredited Better Business Bureau company with an A rating."
+    },
+    "problem_statement": {
+      "heading": "Problem Statement",
+      "description": "Redibs is a Real Estate Broker connect platform that aims to connect Real Estate Agents with potential sellers and assist them in retaining their clients. The platform is designed to establish a mechanism that can identify and maintain relationships between the parties involved. To ensure that accurate data is available for predicting property prices and reviewing past transactions, Redibs intends to collect data from various MLS sources. A large Real Estate brokerage firm approached Redibs with a challenge. The firm was struggling to retain clients and was losing business to competitors. They were looking for a solution that would help them identify and retain relationships with potential sellers."
+    },
+    "solution": {
+      "heading": "Solution",
+      "description": "Customization of Salesforce Instance was done and it helped Sales Reps to reach out to Sellers and bind the relationship with properties and sellers. Integration with MLS frameworks was performed and Aekot defined the custom data storage of information to provide required metrics. Aekot also configured Snowflake and AWS RDS and stored procedures to maintain the data. AWS Lambda was used to provide the necessary information to Salesforce. Through the power of Salesforce, Aekot transformed Redibs data into actionable insights. This newfound knowledge empowered them to tailor their approach to each seller, fostering stronger relationships and ultimately converting those leads into listings. With a customized Salesforce solution, Aekot helped Redibs refine their seller identification process, allowing them to target the right audience and build a pipeline overflowing with high-potential leads."
+    },
+    "outcome": {
+      "heading": "Outcome",
+      "description": "The platform provided a centralized location for managing client relationships and maintaining communication. Aekot's data capabilities were instrumental in Redibs' ability to achieve accurate property price predictions and insightful transaction reviews. Thanks to Aekot's technology, Redibs was empowered to make significant strides towards achieving their goals. To implement the solution, integration was done between their platform and with the brokerage firm's existing systems, allowing Real Estate Agents to access the platform and manage their client relationships from one location. Our solution also helped Redibs in assisting the brokerage firm collect and analyze data from various MLS sources, enabling them to predict property prices accurately and review past transactions. Aekot's intervention, with a strategic Salesforce solution, proved to be the game changer. Redibs’ struggle to retain seller interest was a thing of the past. Our customized Salesforce solution fostered strong relationships. Aekot didn't stop at customization. We ensured seamless data flow by configuring Snowflake and AWS RDS. This resulted in a significant increase in seller loyalty, solidifying Redibs position in the real estate industry."
+    }
+  },
+  {
+    "id": "7",
+    "title_id": "universal-relocation-service-cloud",
+    "logo": "/images/LogoColors/universal.png",
+    "title": "Universal Relocations Packs a Punch",
+    "subtitle": "Streamlined Request Tracking and Seamless Communication",
+    "industry": ["Relocations", "Logistics", "Service Cloud"],
+    "meta_data": {
+      "metaTitle": "Salesforce Technical Case | Universal Relocation Story",
+      "metaDescription": "Discover Universal Relocation’s journey with AEKOT’s Salesforce Service Cloud solutions, featuring real customer success and technical case results.",
+      "metaImage": "/original Aekot logo.webp",
+      "metaURL": "https://www.aekot.com/CaseStudies/universal-relocation-service-cloud"
+    },
+    "location": ["USA", "UAE", "India"],
+    "about": {
+      "heading": "About Universal Relocations",
+      "description": "Universal Relocations is your global relocation partner to make your international move stress-free and unforgettable. With precision, care, and a personalized touch, they turn your journey to a new life into a seamless experience. Established in 1998, universal Relocations understands moving isn't just about changing addresses, it's a life chapter. As your global relocation partner, they bring precision, care, and a personal touch to make your international journey seamless and unforgettable."
+    },
+    "problem_statement": {
+      "heading": "Problem Statement",
+      "description": "Universal Relocations encountered challenges in tracking relocation requests received from various sources, including difficulties in monitoring container information and shipments. Additionally, they needed an effective communication system to send recommendations, quotes, and frequent updates to their customers"
+    },
+    "solution": {
+      "heading": "How Aekot's Salesforce Expertise Revolutionizes Universal Relocations",
+      "description": "To address these challenges, our team implemented Web-to-Lead and custom REST APIs from Salesforce to bring leads from external systems into the platform. We also designed a custom lead assignment logic and a data model to track shipments, containers, and groupage-related information. Quotes were generated and sent from Salesforce to provide customers with reference information. Furthermore, we integrated RingCentral with Salesforce to track calls between the support team and customers. Multiple email triggers were created to enhance communication with clients, and Salesforce became the central hub for all incoming leads. The platform allowed for easy tracking of the progress of shipments, deliveries, and payments. With effective communication through emails and calls, our solution enabled Universal Relocations to provide timely updates and information to their customers."
+    },
+    "outcome": {
+      "heading": "Outcome",
+      "description": "As a result, Universal Relocations was able to streamline their relocation request tracking process and establish a robust communication system. Our solution enhanced the overall efficiency of their operations, allowing them to focus on providing high-quality services to their clients."
+    },
+    "testimonial": {
+      "img": "/testimonial_img/sai.gif",
+      "company": "Universal Relocations",
+      "person": "Sai Dattani",
+      "designation": "President",
+      "words": "Aekot provided great resources and always made appropriate suggestions. They excel at finding alternatives while maintaining a high quality of work."
+    }
+  },
+  {
+    "id": "8",
+    "title_id": "milaap-nonprofit-cloud",
+    "logo": "/images/LogoColors/milaap.png",
+    "title": "Milaap - Optimizing Processes for Better Impact",
+    "subtitle": "Automating Workflows and Financial Data Management",
+    "industry": ["Not-for-profit", "Nonprofit Cloud"],
+    "meta_data": {
+      "metaTitle": "Salesforce Non Profit Case Study | Milaap Success",
+      "metaDescription": "Discover how Milaap streamlined operations with AEKOT’s Salesforce Non Profit Cloud solutions, boosting fundraising and donor engagement.",
+      "metaImage": "/original Aekot logo.webp",
+      "metaURL": "https://www.aekot.com/CaseStudies/milaap-nonprofit-cloud"
+    },
+    "location": ["India", "Singapore"],
+    "about": {
+      "heading": "About Milaap",
+      "description": "Milaap is an online crowdfunding platform that enables anyone across India to raise funds for healthcare, education, sports, disaster relief and other personal causes, with great ease. Founded in 2010 by a team of young and passionate entrepreneurs, Milaap has pioneered the development of person to person giving in India. What started as a platform to fund rural projects and micro entrepreneurs, is today widely utilised by Indians to raise funds from friends, family and a wider social network for medical needs, loved ones and charity. Milaap is soon becoming the go-to platform for funding cancer treatment, transplants and other critical emergencies. As of August 2019, the platform has raised nearly INR 700 Cr to support 100,000 causes, impacting millions of lives across the country."
+    },
+    "problem_statement": {
+      "heading": "Problem Statement",
+      "description": "Milaap is an online crowdfunding platform that enables anyone across India to raise funds for healthcare, education, sports, disaster relief and other personal causes, with great ease. Founded in 2010 by a team of young and passionate entrepreneurs, Milaap has pioneered the development of person to person giving in India."
+    },
+    "solution": {
+      "heading": "Solution",
+      "description": "To address the challenges Milaap faced with the resignation and off-boarding process, we developed a comprehensive workflow in the Salesforce nonprofit Success Pack. This workflow manages the entire resignation process, starting with the resignation application and extending to email notifications to relevant parties. It also includes steps for the handover of assets, ensuring that all company property is returned in a systematic manner. Furthermore, the workflow facilitates the transfer of necessary documentation, which previously required multiple steps and manual intervention. By automating these tasks, we were able to significantly streamline the off-boarding process, reducing administrative burden and minimising the risk of errors or oversight. For the syncing issues related to fund deposits and transfers for their partners, we created a robust data model within the system. This data model is designed to handle the complexities of financial transactions and ensure accurate data synchronisation. Additionally, we added a feature that allows users to upload relevant files directly into the system. Once uploaded, these files are automatically processed and integrated into the system, eliminating the need for manual data entry and reducing the potential for errors. This enhancement not only improves the efficiency of the data synchronisation process but also ensures that partners receive timely and accurate updates regarding their funds and transfers. By implementing these solutions, Milaap was able to streamline their operations, enhance overall efficiency, and focus more on their core activities rather than being bogged down by administrative challenges."
+    },
+    "outcome": {
+      "heading": "Outcome",
+      "description": "Solution To address the challenges Milaap faced with the resignation and off-boarding process, we developed a comprehensive workflow in the Salesforce nonprofit Success Pack. This workflow manages the entire resignation process, starting with the resignation application and extending to email notifications to relevant parties. It also includes steps for the handover of assets, ensuring that all company property is returned in a systematic manner. Furthermore, the workflow facilitates the transfer of necessary documentation, which previously required multiple steps and manual intervention. By automating these tasks, we were able to significantly streamline the off-boarding process, reducing administrative burden and minimising the risk of errors or oversight. For the syncing issues related to fund deposits and transfers for their partners, we created a robust data model within the system. This data model is designed to handle the complexities of financial transactions and ensure accurate data synchronisation. Additionally, we added a feature that allows users to upload relevant files directly into the system. Once uploaded, these files are automatically processed and integrated into the system, eliminating the need for manual data entry and reducing the potential for errors. This enhancement not only improves the efficiency of the data synchronisation process but also ensures that partners receive timely and accurate updates regarding their funds and transfers. By implementing these solutions, Milaap was able to streamline their operations, enhance overall efficiency, and focus more on their core activities rather than being bogged down by administrative challenges."
+    },
+    "metrics": {
+      "heading": "Key Metrics",
+      "description": [
+        {
+          "title": "Resignation and Off-boarding Process:",
+          "bullets": [
+            "The off-boarding process time was reduced by 50%.",
+            "The error rate in the off-boarding process decreased by 80%.",
+            "Administrative tasks for off-boarding were reduced by 60%."
+          ]
+        },
+        {
+          "title": "Fund Deposits and Transfers Syncing:",
+          "bullets": [
+            "Data accuracy improved by 95%.",
+            "Manual data entry time decreased by 70%",
+            "Timeliness of partner updates improved by 40%",
+            "Operational efficiency improved by 30%, allowing the team to focus more on strategic activities."
+          ]
+        }
+      ]
+    }
+  }
+]

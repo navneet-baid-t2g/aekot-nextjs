@@ -1,26 +1,431 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins);
+}
+
+:root {
+  --primary: #e52b50;
+  --secondary: #f4c430;
+  --dark: #4d4d4d;
+  --light: #ffffff;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 48;
+}
+
+/* ============= CSS RESET ============= */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  outline-color: var(--secondary);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+section {
+  font: inherit;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  position: relative;
+}
+
+
+::selection {
+  color: var(--secondary);
+}
+
+/* ============= NAVBAR STYLES ============= */
+#navbar {
+  background-color: var(--light);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.dropdown-content {
+  min-width: 200px;
+  box-shadow: 0px 12px 58px 0px rgba(77, 77, 77, 15%);
+  transition: animation ease-in-out;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: fade-in-dropdown 100ms ease-in;
+}
+
+.fa-chevron-down {
+  transition: 0.2s ease-in-out;
+}
+
+.dropdown:hover .fa-chevron-down {
+  transform: rotate(-180deg);
+}
+
+@keyframes fade-in-dropdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* Button Hover */
+.fa-arrow-right-long {
+  transform: translateX(-10px);
+  opacity: 0;
+  transition: transform 150ms ease-in, opacity 150ms ease;
+}
+
+.ghost-button:hover .fa-arrow-right-long {
+  transform: translateX(5px);
+  opacity: 1;
+}
+
+/* ============= ABOUT SECTION STYLES ============= */
+.full_bleed {
+  box-shadow: 20px 20px 20px 100vmax var(--primary);
+  clip-path: inset(0 -100vmax);
+}
+
+.animate-in {
+  opacity: 0;
+  transform: translateY(30px);
+  /* Initial position above viewport */
+  animation: drop-in 0.5s ease-in-out forwards;
+}
+
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+/* Add delays for staggered animation (adjust timing as needed) */
+.delay-0 {
+  animation-delay: 3s;
+}
+
+
+
+
+
+
+
+
+
+/* ============= CTA SECTION STYLES ============= */
+.cta:hover .salesforce_logo {
+  transform: scale(1.2);
+}
+
+/* ============= CAREERS SECTION STYLES ============= */
+.team_hover {
+  animation: fade-in-card 250ms ease-in;
+}
+
+.team_face:hover .team_hover {
+  display: block;
+}
+
+.team_face:hover .member_name {
+  color: var(--primary);
+}
+
+
+
+
+
+
+
+.intro-container {
+  position: relative;
+  display: inline-block;
+}
+
+.intro-text {
+  visibility: hidden;
+  width: 300px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: left;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+
+  /* bottom: 125%;  */
+  /* top: 100%; */
+  /* left: 10%; */
+  /* right: 2%; */
+  margin-left: -130px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.intro-container:hover .intro-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+@keyframes fade-in-card {
+  0% {
+    opacity: 0;
+    transform: translateY(18rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(16rem);
+  }
+}
+
+.jobs {
+  position: relative;
+  list-style: none;
+  border-bottom: 1px;
+}
+
+.jobs {
+  text-decoration: none;
+  transition: 0.2s ease-in;
+}
+
+#underline {
+  position: relative;
+}
+
+#underline:after {
+  content: "";
+  background-color: var(--primary);
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom top;
+  transition: transform 0.8s ease;
+}
+
+#underline:hover:after {
+  transform: scaleX(1);
+}
+
+/* ============= BLOGS SECTION STYLES ============= */
+
+.blog_container:hover .blog_img {
+  --tw-scale-x: 1.06;
+  --tw-scale-y: 1.06;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.blog_container:hover .blog_heading {
+  color: var(--primary);
+}
+
+/* ============= ANIMATIONS ============= */
+
+/* Hero */
+
+.fade-in-subhead {
+  opacity: 1;
+  animation: fadeInHeading 0.4s ease-in-out;
+}
+
+.fade-in-head {
+  opacity: 1;
+  animation: fadeInHeading 0.8s ease-in-out;
+}
+
+.fade-in-heroproff {
+  opacity: 1;
+  animation: fadeInHeading 1.2s ease-in-out;
+}
+
+.fade-in-heroButton {
+  opacity: 1;
+  animation: fadeInHeading 1.6s ease-in-out;
+}
+
+@keyframes fadeInHeading {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+.fade-in-stars1 {
+  animation: fadeInStars 1s ease-in-out;
+}
+
+.fade-in-stars2 {
+  animation: fadeInStars 1.2s ease-in-out;
+}
+
+.fade-in-stars3 {
+  animation: fadeInStars 1.4s ease-in-out;
+}
+
+.fade-in-stars4 {
+  animation: fadeInStars 1.6s ease-in-out;
+}
+
+.fade-in-stars5 {
+  animation: fadeInStars 1.8s ease-in-out;
+}
+
+@keyframes fadeInStars {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+.fade-in-hero-underline {
+  animation: fadeInHeroUnderline 1.6s ease-in-out;
+}
+
+@keyframes fadeInHeroUnderline {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Scroll Revel Animation Styles */
+.fade-in {
+  opacity: 0;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  30% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+.fade-in.fade {
+  opacity: 1;
+  animation: justFadeIn 2s ease;
+}
+
+@keyframes justFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* ============= Testimonial ============= */
+
+.slick-slide>div {
+  margin: 0 10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--primary);
+}
+
+.ghost-button:hover {
+  transform: scale(1.05);
 }
