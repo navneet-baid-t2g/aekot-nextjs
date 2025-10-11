@@ -10,6 +10,8 @@ import { RiBloggerLine, RiCloseLine, RiMenu2Line, RiMenuFill } from "react-icons
 import { MdOutlineContactPage } from "react-icons/md";
 import GitexBanner from "./GitexBanner";
 import Link from "next/link";
+import { FaChevronDown, FaLongArrowAltRight } from "react-icons/fa";
+import Button from "./Button";
 
 
 const Navbar = ({ onParentModalClose }) => {
@@ -81,7 +83,7 @@ const Navbar = ({ onParentModalClose }) => {
                                     <div className="dropdown relative inline-block">
                                         <Link href="/Services" className="dropbtn hover:text-primary transition-colors">
                                             Services{" "}
-                                            <i className="fa-solid fa-chevron-down text-xs translate-x-1"></i>
+                                            <FaChevronDown className="inline-block fa-chevron-down text-xs translate-x-1" />
                                         </Link>
                                         <div className="bg-light dropdown-content p-4 hidden absolute rounded-lg z-10" style={{ minWidth: "300px" }}>
                                             <Link
@@ -135,7 +137,7 @@ const Navbar = ({ onParentModalClose }) => {
                                     <div className="dropdown relative inline-block">
                                         <button className="dropbtn hover:text-primary transition-colors">
                                             Company{" "}
-                                            <i className="fa-solid fa-chevron-down text-xs translate-x-1"></i>
+                                            <FaChevronDown className="inline-block fa-chevron-down text-xs translate-x-1" />
                                         </button>
                                         <div className="bg-light dropdown-content p-4 hidden absolute rounded-lg z-10">
                                             <Link
@@ -306,38 +308,15 @@ const Navbar = ({ onParentModalClose }) => {
                         <button className="link-container text-left">
                             <div className="dropdown relative inline-block">
                                 <a href="https://talent.aekot.com"><div className="dropbtn ghost-button inline-block w-5/6 sm:w-32 md:w-32 lg:w-32 xl:w-44 py-2 pl-2 font-semibold text-center text-primary border-2 border-primary rounded-md hover:bg-primary/5">
-                                    Login <i className="fa-solid fa-arrow-right-long text-xs"></i>
+                                    Login <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
                                 </div></a>
-                                {/* <div className="bg-light dropdown-content p-4 hidden absolute rounded-lg z-10">
-              <a
-                href="https://aekot.my.salesforce.com/"
-                className="ghost-button py-2 block hover:text-primary hover:translate-x-1 transition-all"
-              >
-                Employee{" "}
-                <i className="fa-solid fa-arrow-right-long text-xs"></i>
-              </a>
-              <a
-                href="https://aekot.my.salesforce.com/"
-                className="ghost-button py-2 block hover:text-primary hover:translate-x-1 transition-all"
-              >
-                Customer{" "}
-                <i className="fa-solid fa-arrow-right-long text-xs"></i>
-              </a>
-              <a
-                href="https://aekot.my.site.com/partners"
-                className="ghost-button py-2 block hover:text-primary hover:translate-x-1 transition-all"
-              >
-                Partner <i className="fa-solid fa-arrow-right-long text-xs"></i>
-              </a>
-            </div> */}
                             </div>
                         </button>
-
                         <Link
                             href="/contact"
                             className="ghost-button inline-block w-5/6 sm:w-32 md:w-32 lg:w-32 xl:w-44 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors"
                         >
-                            Contact Us <i className="fa-solid fa-arrow-right-long text-xs"></i>
+                            Contact Us <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
                         </Link>
                     </section>
                 </nav>

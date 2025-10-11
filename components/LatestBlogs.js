@@ -93,3 +93,4 @@ const LatestBlogs = async () => {
 };
 
 export default LatestBlogs;
+    
