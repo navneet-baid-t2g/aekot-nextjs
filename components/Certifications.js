@@ -1,0 +1,53 @@
+'use client';
+
+import React from 'react';
+import './Certifications.css';
+
+const CertificateCarousel = () => {
+  const cardData = [
+    { "id": 1, "image": "/images/Certifications/C1.png" },
+    { "id": 2, "image": "/images/Certifications/C2.png" },
+    { "id": 3, "image": "/images/Certifications/C3.png" },
+    { "id": 4, "image": "/images/Certifications/C4.png" },
+    { "id": 5, "image": "/images/Certifications/C5.png" },
+    { "id": 6, "image": "/images/Certifications/C6.png" },
+    { "id": 7, "image": "/images/Certifications/C7.png" },
+    { "id": 8, "image": "/images/Certifications/C8.png" },
+    { "id": 9, "image": "/images/Certifications/C9.png" },
+    { "id": 10, "image": "/images/Certifications/C10.png" },
+    { "id": 11, "image": "/images/Certifications/C11.png" },
+    { "id": 12, "image": "/images/Certifications/C12.png" },
+    { "id": 13, "image": "/images/Certifications/C13.png" },
+    { "id": 14, "image": "/images/Certifications/C14.png" },
+    { "id": 15, "image": "/images/Certifications/C15.png" },
+    { "id": 16, "image": "/images/Certifications/C16.png" },
+    { "id": 17, "image": "/images/Certifications/C17.png" },
+    { "id": 18, "image": "/images/Certifications/C18.png" },
+    { "id": 19, "image": "/images/Certifications/C19.png" },
+    { "id": 20, "image": "/images/Certifications/C20.png" },
+    { "id": 21, "image": "/images/Certifications/C21.png" },
+    { "id": 22, "image": "/images/Certifications/C22.png" },
+    { "id": 23, "image": "/images/Certifications/C23.png" }
+  ];
+
+  // Optional: Repeat data for smooth infinite scrolling
+  const repeatedData = Array(4).fill(cardData).flat();
+
+  return (
+    <div className="icon-carousel-container">
+      <div className="icon-carousel">
+        {repeatedData.map(({ id, image }, index) => (
+          <div key={`${id}-${index}`} className="icon-item">
+            <img
+              src={image}
+              alt={`Certificate ${index + 1}`}
+              className="icon dark:text-white text-black"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default CertificateCarousel;
