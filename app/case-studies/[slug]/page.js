@@ -345,7 +345,9 @@ export default async function CaseStudyDetails({ params }) {
                     <p className="font-semibold my-8">
                         Let's transform your business together.
                     </p>
-                    <Button text="Contact Us" path="/contact" />
+                    <div className="flex justify-center">
+                        <Button text="Contact Us" path="/contact" />
+                    </div>
                 </div>
             </div>
         </section>
