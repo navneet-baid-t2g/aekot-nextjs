@@ -1,8 +1,10 @@
+import ClientsCarousel from "@/components/ClientsCarousel";
 import CTA from "@/components/CTA";
 import LatestBlogs from "@/components/LatestBlogs";
 import LatestNews from "@/components/LatestNews";
 import RewardsRecognition from "@/components/RewardsRecognition";
 import Service from "@/components/ServiceCard";
+import TestimonialSlider from "@/components/TestimonialSlider";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -140,14 +142,14 @@ export default function Home() {
               Our Clients
             </h2>
             <div>
-              {/* <Carousel /> */}
+              <ClientsCarousel />
             </div>
           </div>
           <div className="max-w-[100%] text-center pt-8">
             <h2 className="text-primary font-bold xs:text-3xl md:text-3xl lg:text-4xl">
               What our clients say about us
             </h2>
-            {/* <Testimonial /> */}
+            <TestimonialSlider />
           </div>
         </article>
         <div className="py-14">

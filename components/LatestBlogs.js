@@ -86,10 +86,11 @@ const LatestBlogs = async () => {
             </article>
 
             <div className="flex justify-center">
-                <Button text="View All Blogs" path="/blogs" />
+                <Button text="View All Blogs" path="https://blog.aekot.com/" />
             </div>
         </article>
     );
 };
 
 export default LatestBlogs;
+    
