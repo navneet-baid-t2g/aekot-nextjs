@@ -38,7 +38,7 @@ export default function () {
     return (
 
         <section
-            className="py-16 bg-white text-gray-900 flex flex-col md:flex-row gap-12 items-center md:items-start mt-12 md:mt-32 px-8 md:px-20 "
+            className="py-16 bg-white text-gray-900 flex flex-col md:flex-row gap-12 items-center md:items-start mt-12 md:mt-32 px-8 md:px-20 max-w-7xl"
         >
             <div
                 className="md:w-1/2 flex flex-col justify-center self-start min-h-[300px]"
