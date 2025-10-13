@@ -21,7 +21,7 @@ const servicecarddata = [
     },
     {
         title: "Data Migration",
-        desc: "We will transfer data safely and accurately into Salesforce from previous systems. We make sure that the data is clean so it doesn't give errors and is reliable for stability.",
+        desc: "We will transfer data safely and accurately into Salesforce from previous systems. We make sure that the data is clean so it doesn&apos;t give errors and is reliable for stability.",
         img: "/images/serviceImages/strategy-and-advisory.webp",
     },
     {
@@ -54,7 +54,7 @@ const servicecardintdata = [
     },
     {
         title: "Integrating accounts tools",
-        desc: "We connect accounting tools like QuickBooks, Xero, Sage, NetSuite, etc. with payment systems to make invoicing, accounts reconciliation and generate reports automatically. Integrating tools will make sure that the data is accurate as they take exact data from other platforms and you don't have to manually type it in.",
+        desc: "We connect accounting tools like QuickBooks, Xero, Sage, NetSuite, etc. with payment systems to make invoicing, accounts reconciliation and generate reports automatically. Integrating tools will make sure that the data is accurate as they take exact data from other platforms and you don&apos;t have to manually type it in.",
         img: "/images/serviceImages/strategy-and-advisory.webp",
     },
     {
