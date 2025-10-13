@@ -11,8 +11,8 @@ const poppins = Poppins({
 
 
 export const metadata = {
-  title: "Aekot",
-  description: "",
+  title: "Aekot - Salesforce Implementation Partners",
+  description: "Maximize sales and efficiency with expert Salesforce CRM consulting from AEKOT. Tailored strategies to streamline your CRM processes.",
 };
 
 export default function RootLayout({ children }) {
