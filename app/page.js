@@ -79,7 +79,7 @@ export default function Home() {
               globe, with majority of our clientele based out of North America.
               With an A-team of highly qualified Salesforce professionals
               collectively holding decades of SFDC experience, we excel at
-              transforming businesses with the help of World's #1 CRM.
+              transforming businesses with the help of World&apos;s #1 CRM.
             </p>
           </div>
           <section className="py-12 bg-gradient-to-br from-[#ffffff] to-[#fffafa] relative overflow-hidden w-full mt-12">
@@ -210,8 +210,8 @@ export default function Home() {
         <div className="fade-in-head pt-2 mx-4">
           <CTA
             head="Why choose us as a Salesforce Implementation Partner?"
-            text="Whether you're looking to optimize your Salesforce implementation, integrate new technologies, or expand your global reach, Aekot has the expertise and passion to help you succeed. 
-                   Let's transform your business together."
+            text="Whether you&apos;re looking to optimize your Salesforce implementation, integrate new technologies, or expand your global reach, Aekot has the expertise and passion to help you succeed. 
+                   Let&apos;s transform your business together."
             image={"/assets/salesforce.svg"}
           />
         </div>

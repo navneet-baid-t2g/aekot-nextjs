@@ -1,14 +1,7 @@
-"use client";
-
-import { useState } from "react";
-
-import { CgChevronDown, CgChevronUp } from "react-icons/cg";
 import { FaArrowRight } from "react-icons/fa";
-import { MdSupportAgent, MdShoppingBasket, MdCalendarMonth, MdCampaign } from "react-icons/md";
-import { FaChalkboardTeacher, FaUserTie } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaUsers, FaDatabase, FaChartLine, FaUserCheck, FaHeadset } from "react-icons/fa";
 import Button from "@/components/Button";
+import Faq from "@/components/Faq";
 
 const certificationImages = [
     { src: "/images/Certifications/C22.png" },
@@ -29,7 +22,7 @@ const servicecarddata = [
     },
     {
         title: "Salesforce Implementation",
-        desc: "In this, we configure and customise the Salesforce platform according to our client's needs. We do organizing objects, work processes, user roles and permission with testing and launching. Our approach is to do launching in a phased manner throughout the departments so it doesn't cause any errors and there is minimum downtime.",
+        desc: "In this, we configure and customise the Salesforce platform according to our client&apos;s needs. We do organizing objects, work processes, user roles and permission with testing and launching. Our approach is to do launching in a phased manner throughout the departments so it doesn&apos;t cause any errors and there is minimum downtime.",
         img: "/images/serviceImages/strategy-and-advisory.webp",
     },
     {
@@ -39,7 +32,7 @@ const servicecarddata = [
     },
     {
         title: "Salesforce Customisation",
-        desc: "We modify the platform according to your business needs. It involves creating custom fields, workflows, reports, dashboards and custom code to improve your operations. Our expert salesforce cloud consultants' approach is to customise in such a manner that it supports future scaling of platforms.",
+        desc: "We modify the platform according to your business needs. It involves creating custom fields, workflows, reports, dashboards and custom code to improve your operations. Our expert salesforce cloud consultants&apos; approach is to customise in such a manner that it supports future scaling of platforms.",
         img: "/images/serviceImages/strategy-and-advisory.webp",
     },
     {
@@ -53,8 +46,6 @@ const servicecarddata = [
         img: "/images/serviceImages/strategy-and-advisory.webp",
     },
 ];
-
-
 
 const otherservices = [
     "Salesforce Consulting Services",
@@ -79,7 +70,6 @@ const otherservices = [
     "Expert Salesforce Consulting Services",
 ];
 
-
 const faqs = [
     {
         question: "What are the Salesforce features that we specialise in?",
@@ -87,22 +77,22 @@ const faqs = [
     },
     {
         question: "What should you consider while hiring a Salesforce Consulting Agency?",
-        answer: "When hiring a salesforce consulting services agency, look at the company's experience, certification and the services they provide. Choose the companies that can connect salesforce with other systems, keep data safe and build your systems for growth. See if they are offering regular support and maintenance along with the cost for services. Credible companies also focus on clear communication and transparency with clients and give actionable insights that can be easily understood and implemented.",
+        answer: "When hiring a salesforce consulting services agency, look at the company&apos;s experience, certification and the services they provide. Choose the companies that can connect salesforce with other systems, keep data safe and build your systems for growth. See if they are offering regular support and maintenance along with the cost for services. Credible companies also focus on clear communication and transparency with clients and give actionable insights that can be easily understood and implemented.",
     },
     {
         question: "What is Salesforce CRM consulting and its significance?",
         answer: "The Salesforce CRM consulting assists businesses to establish, modify and enhance Salesforce to enable them to sell more efficiently, retain customers and conduct business more effectively. It ensures that the platform aligns itself with the business objectives and provides measurable ROI.",
     },
     {
-        question: "What are the ways Aekot's Salesforce CRM consulting will enhance my current system?",
+        question: "What are the ways Aekot&apos;s Salesforce CRM consulting will enhance my current system?",
         answer: "Our consultants examine your existing CRM, streamline operations, introduce automation, integrate other solutions and enhance reporting. This simplifies the work of the users and accelerates the work and provides clear data.",
     },
     {
-        question: "Who will benefit from Aekot's Salesforce CRM consulting services?",
+        question: "Who will benefit from Aekot&apos;s Salesforce CRM consulting services?",
         answer: "Our services can benefit any business that is interested in starting to use Salesforce, changing to other CRM, enhancing performance, integrating tools, automating sales or service processes, or training teams.",
     },
     {
-        question: "Why would I select Aekot's certified Salesforce CRM consultants and not general consultants?",
+        question: "Why would I select Aekot&apos;s certified Salesforce CRM consultants and not general consultants?",
         answer: " Aekot has highly skilled and trained certified consultants thus they adhere to the best practices, familiarize themselves with the latest features and provide secure, scalable and compliant solutions.",
     },
     {
@@ -124,14 +114,51 @@ const faqs = [
 
 ];
 
-
-
+export const metadata = {
+    title: "Salesforce Consulting Services | Aekot",
+    description: "Maximize your business potential with Aekot&apos;s Salesforce Consulting Services. We provide strategy, implementation, customization, integration, AI-driven automation, and ongoing support to help businesses scale efficiently.",
+    keywords: [
+        "Salesforce consulting services",
+        "Salesforce implementation",
+        "Salesforce customization",
+        "Salesforce integration",
+        "Salesforce CRM",
+        "Salesforce App Development",
+        "Agentforce consulting",
+        "CRM migration",
+        "Salesforce support and maintenance",
+        "Salesforce consulting for enterprises"
+    ],
+    canonical: "https://www.aekot.com/services/salesforce-consulting-services",
+    openGraph: {
+        title: "Salesforce Consulting Services | Aekot",
+        description: "Partner with Aekot for expert Salesforce consulting. Our services include strategy, app development, implementation, data migration, integration, customization, and ongoing support to maximize ROI.",
+        url: "https://www.aekot.com/services/salesforce-consulting-services",
+        siteName: "Aekot",
+        locale: "en_IN",
+        type: "website"
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Salesforce Consulting Services | Aekot",
+        description: "Unlock your business potential with Aekot&apos;s Salesforce Consulting Services. From implementation to AI automation and ongoing support, we help businesses scale efficiently.",
+    },
+    other: {
+        faqSchema: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map(faq => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: { "@type": "Answer", text: faq.answer },
+            })),
+        }),
+    },
+};
 
 export default function ServiceSingle() {
-    const [openFAQ, setOpenFAQ] = useState(null);
     return (
         <>
-
             <section className="flex flex-col md:flex-row items-center justify-between pt-16 py-16 bg-white max-w-7xl mx-auto pt-32 md:pt-32">
                 {/* Left Content */}
                 <div className="max-w-xl text-center md:text-left">
@@ -140,7 +167,7 @@ export default function ServiceSingle() {
                     </h1>
 
                     <p className="text-gray-600 mt-4 leading-relaxed">
-                        Have a business that will thrive in future by using Aekot's Salesforce consulting services.
+                        Have a business that will thrive in future by using Aekot&apos;s Salesforce consulting services.
                     </p>
 
                     <p className="text-gray-600 mt-4 leading-relaxed">
@@ -167,7 +194,7 @@ export default function ServiceSingle() {
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="text-4xl font-extrabold text-gray-900">
-                            Here's a list of <span className="text-[#e52b50]">Services</span> that we provide:
+                            Here&apos;s a list of <span className="text-[#e52b50]">Services</span> that we provide:
                         </h2>
                     </div>
 
@@ -268,7 +295,7 @@ export default function ServiceSingle() {
                             <FaDatabase className="text-4xl text-yellow-500 mx-auto" />
                             <h3 className="text-xl font-semibold mt-4">Streamlined Data Access</h3>
                             <p className="text-gray-500 mt-2 text-sm">
-                                The biggest barrier to growth in today's digital economy is the fragmented information. When the data is trapped in sections in silos, it limits the visibility, creates disqualification and weakens the decision. We remove these obstacles to allow businesses to integrate their data and create a single source of information. This improves collaboration, allows for more accurate forecasting, streamline operations and better customer experience.
+                                The biggest barrier to growth in today&apos;s digital economy is the fragmented information. When the data is trapped in sections in silos, it limits the visibility, creates disqualification and weakens the decision. We remove these obstacles to allow businesses to integrate their data and create a single source of information. This improves collaboration, allows for more accurate forecasting, streamline operations and better customer experience.
                             </p>
                         </div>
 
@@ -284,7 +311,7 @@ export default function ServiceSingle() {
                             <FaUserCheck className="text-4xl text-pink-500 mx-auto" />
                             <h3 className="text-xl font-semibold mt-4">Use Customer Insights</h3>
                             <p className="text-gray-500 mt-2 text-sm">
-                                Our customers are the center of digital improvements and by using customer insights we connect the system and integrate data for higher performance and better customer experience. This data help us discover what our customers prefer and what they might be interested in. This data helps us to make customer's experience more personal and relevant.
+                                Our customers are the center of digital improvements and by using customer insights we connect the system and integrate data for higher performance and better customer experience. This data help us discover what our customers prefer and what they might be interested in. This data helps us to make customer&apos;s experience more personal and relevant.
                             </p>
                         </div>
 
@@ -341,56 +368,14 @@ export default function ServiceSingle() {
                                 {/* Left column */}
                                 <div className="flex-1 space-y-4">
                                     {firstHalf.map((faq, index) => (
-                                        <div
-                                            key={index}
-                                            className="bg-gray-100 p-4 rounded-lg shadow-md"
-                                        >
-                                            <button
-                                                className="flex justify-between items-center w-full text-left"
-                                                onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
-                                            >
-                                                <span className="text-md font-semibold">{faq.question}</span>
-                                                {openFAQ === index ? (
-                                                    <CgChevronUp size={24} />
-                                                ) : (
-                                                    <CgChevronDown size={24} />
-                                                )}
-                                            </button>
-                                            {openFAQ === index && (
-                                                <p className="mt-2 text-gray-700 text-sm">{faq.answer}</p>
-                                            )}
-                                        </div>
+                                        <Faq key={index} question={faq.question} answer={faq.answer} />
                                     ))}
                                 </div>
 
                                 {/* Right column */}
                                 <div className="flex-1 space-y-4">
                                     {secondHalf.map((faq, index) => (
-                                        <div
-                                            key={index + firstHalf.length} // unique key
-                                            className="bg-gray-100 p-4 rounded-lg shadow-md"
-                                        >
-                                            <button
-                                                className="flex justify-between items-center w-full text-left"
-                                                onClick={() =>
-                                                    setOpenFAQ(
-                                                        openFAQ === index + firstHalf.length
-                                                            ? null
-                                                            : index + firstHalf.length
-                                                    )
-                                                }
-                                            >
-                                                <span className="text-md font-semibold">{faq.question}</span>
-                                                {openFAQ === index + firstHalf.length ? (
-                                                    <CgChevronUp size={24} />
-                                                ) : (
-                                                    <CgChevronDown size={24} />
-                                                )}
-                                            </button>
-                                            {openFAQ === index + firstHalf.length && (
-                                                <p className="mt-2 text-gray-700 text-sm">{faq.answer}</p>
-                                            )}
-                                        </div>
+                                        <Faq key={index} question={faq.question} answer={faq.answer} />
                                     ))}
                                 </div>
                             </div>

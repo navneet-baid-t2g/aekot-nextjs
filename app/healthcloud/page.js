@@ -154,7 +154,7 @@ const HealthCloudPage = () => {
                 <div className="text-left md:w-1/2">
                     <h1 className="text-2xl md:text-3xl font-extrabold text-gray-700 leading-tight">
                         Elevate Your Business with
-                        <br /> Aekot's <span className="text-primary">
+                        <br /> Aekot&apos;s <span className="text-primary">
                             Health Cloud
                         </span>{" "}
                         Expertise
@@ -235,7 +235,7 @@ const HealthCloudPage = () => {
             <section
             >
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
-                    Aekot's Health Cloud Services
+                    Aekot&apos;s Health Cloud Services
                 </h2>
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">

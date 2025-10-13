@@ -63,7 +63,7 @@ const TestimonialSlider = () => {
             </div>
 
             <div className="mt-4 flex flex-col gap-2">
-              <p className="text-sm md:text-md text-left select-text">"{testimonial.review}"</p>
+              <p className="text-sm md:text-md text-left select-text">{testimonial.review}</p>
               <div className="flex gap-1 items-center">
                 {[...Array(5)].map((_, index) => (
                   <FaStar key={index} className="text-yellow-500" />

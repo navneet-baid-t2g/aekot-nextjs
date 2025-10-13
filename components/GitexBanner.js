@@ -69,7 +69,7 @@ export default function GitexBanner({ onParentModalClose }) {
                 }}
             >
                 <p className="max-w-4xl mx-auto">
-                    We're excited to announce that <strong>Aekot</strong> will be attending Dreamforce in{" "}
+                    We&apos;re excited to announce that <strong>Aekot</strong> will be attending Dreamforce in{" "}
                     <strong>
                         San Francisco on Oct 14th-16th 2025 <br />
                     </strong>{" "}

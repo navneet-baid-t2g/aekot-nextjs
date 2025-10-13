@@ -38,7 +38,7 @@ const ServicePage = () => {
                             Transforming Businesses with Salesforce Expertise
                         </h2>
                         <p className="text-gray-700 mb-8">
-                            Unlock the Full Potential of Your Business with Aekot's Tailored
+                            Unlock the Full Potential of Your Business with Aekot&apos;s Tailored
                             Salesforce Solutions. From seamless CRM implementations to custom
                             solutions, we’re here to drive your digital transformation.
                         </p>
@@ -74,13 +74,13 @@ const ServicePage = () => {
                             <span style={{ color: "#e52b50" }}> Aekot.</span>
                         </h2>
                         <p className="text-md text-gray-700 max-w-6xl text-center mx-auto">
-                            At Aekot, we don't just implement Salesforce — we unlock its full
+                            At Aekot, we don&apos;t just implement Salesforce — we unlock its full
                             potential for your business. With our deep expertise and innovative
-                            approach, we'll help you optimize your systems, seamlessly integrate
+                            approach, we&apos;ll help you optimize your systems, seamlessly integrate
                             new technologies, and scale your operations globally.
                         </p>
                         <p className="font-semibold my-8">
-                            Let's transform your business and achieve success together.
+                            Let&apos;s transform your business and achieve success together.
                         </p>
                         <div className="flex justify-center"><Button text="Schedule a Call" path="/contact" /></div>
                     </div>

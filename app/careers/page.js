@@ -49,7 +49,7 @@ export default async function Career() {
             Careers at Aekot
           </h1>
           <p className="text-md sm:text-base mb-2">
-            At Aekot, we're not just building solutions; we're transforming
+            At Aekot, we&apos;re not just building solutions; we&apos;re transforming
             businesses through cutting-edge Salesforce consulting and CRM
             strategies. Join us in shaping the future of technology and business.
           </p>
@@ -87,7 +87,7 @@ export default async function Career() {
             {
               img: "https://images.unsplash.com/photo-1560250056-07ba64664864",
               name: "Collaborative Environment",
-              para: "Aekot is more than a workplace; it's a community of like-minded professionals who value collaboration, creativity, and mutual support.",
+              para: "Aekot is more than a workplace; it&apos;s a community of like-minded professionals who value collaboration, creativity, and mutual support.",
             },
             {
               img: "https://images.unsplash.com/photo-1552581234-26160f608093",
@@ -97,7 +97,7 @@ export default async function Career() {
             {
               img: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf",
               name: "Career Growth and Development",
-              para: "You'll have access to mentorship, training programs, and career advancement.",
+              para: "You&apos;ll have access to mentorship, training programs, and career advancement.",
             },
             {
               img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
@@ -163,7 +163,7 @@ export default async function Career() {
       {/* 📩 Resume CTA */}
       <div className="mt-6 text-center mb-6">
         <h3 className="text-xl font-bold mb-4">
-          Don't see a relevant job opening? Send us your resume at
+          Don&apos;t see a relevant job opening? Send us your resume at
         </h3>
         <a
           href="mailto:hr@aekot.com"
