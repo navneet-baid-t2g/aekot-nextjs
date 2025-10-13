@@ -1,13 +1,8 @@
-"use client";
-
-import { useState } from "react";
-
-import { CgChevronDown, CgChevronUp } from "react-icons/cg";
 import { FaArrowRight } from "react-icons/fa";
 import { MdSupportAgent, MdShoppingBasket, MdCalendarMonth, MdCampaign } from "react-icons/md";
 import { FaChalkboardTeacher, FaUserTie } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import Button from "@/components/Button";
+import Faq from "@/components/Faq";
 
 const certificationImages = [
     { src: "/images/Certifications/C22.png" },
@@ -63,8 +58,6 @@ const servicecarddata = [
     },
 ];
 
-
-
 const otherservices = [
     "Salesforce Consulting Services",
     "Certified Salesforce CRM Consulting",
@@ -87,7 +80,6 @@ const otherservices = [
     "Agentforce Consulting Services",
     "Expert Salesforce Consulting Services",
 ];
-
 
 const faqs = [
     {
@@ -132,12 +124,47 @@ const faqs = [
     },
 
 ];
-
-
-
+export const metadata = {
+    title: "Salesforce Agentforce Consulting Services | Aekot",
+    description: "Unlock the full potential of Salesforce Agentforce with Aekot. We provide strategy, deployment, AI integration, customization, automation, and 24/7 support to help your business grow.",
+    keywords: [
+        "Salesforce Agentforce consulting",
+        "Salesforce consulting services",
+        "Agentforce AI integration",
+        "Salesforce implementation",
+        "CRM automation",
+        "AI service agents",
+        "Salesforce training",
+        "Managed Salesforce services"
+    ],
+    canonical: "https://www.aekot.com/services/agentforce-consulting-services",
+    openGraph: {
+        title: "Salesforce Agentforce Consulting Services | Aekot",
+        description: "Partner with Aekot for expert Salesforce Agentforce consulting. We design, deploy, integrate, and manage AI-powered service agents to boost your business efficiency.",
+        url: "https://www.aekot.com/services/agentforce-consulting-services",
+        siteName: "Aekot",
+        locale: "en_IN",
+        type: "website"
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Salesforce Agentforce Consulting Services | Aekot",
+        description: "Leverage AI-powered Salesforce Agentforce with Aekot. Expert consulting, strategy, automation, training, and 24/7 support for businesses."
+    },
+    other: {
+        faqSchema: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map(faq => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: { "@type": "Answer", text: faq.answer },
+            })),
+        }),
+    },
+};
 
 export default function ServiceSingle() {
-    const [openFAQ, setOpenFAQ] = useState(null);
     return (
         <>
 
@@ -377,56 +404,14 @@ export default function ServiceSingle() {
                                 {/* Left column */}
                                 <div className="flex-1 space-y-4">
                                     {firstHalf.map((faq, index) => (
-                                        <div
-                                            key={index}
-                                            className="bg-gray-100 p-4 rounded-lg shadow-md"
-                                        >
-                                            <button
-                                                className="flex justify-between items-center w-full text-left"
-                                                onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
-                                            >
-                                                <span className="text-md font-semibold">{faq.question}</span>
-                                                {openFAQ === index ? (
-                                                    <CgChevronUp size={24} />
-                                                ) : (
-                                                    <CgChevronDown size={24} />
-                                                )}
-                                            </button>
-                                            {openFAQ === index && (
-                                                <p className="mt-2 text-gray-700 text-sm">{faq.answer}</p>
-                                            )}
-                                        </div>
+                                        <Faq key={index} question={faq.question} answer={faq.answer} />
                                     ))}
                                 </div>
 
                                 {/* Right column */}
                                 <div className="flex-1 space-y-4">
                                     {secondHalf.map((faq, index) => (
-                                        <div
-                                            key={index + firstHalf.length} // unique key
-                                            className="bg-gray-100 p-4 rounded-lg shadow-md"
-                                        >
-                                            <button
-                                                className="flex justify-between items-center w-full text-left"
-                                                onClick={() =>
-                                                    setOpenFAQ(
-                                                        openFAQ === index + firstHalf.length
-                                                            ? null
-                                                            : index + firstHalf.length
-                                                    )
-                                                }
-                                            >
-                                                <span className="text-md font-semibold">{faq.question}</span>
-                                                {openFAQ === index + firstHalf.length ? (
-                                                    <CgChevronUp size={24} />
-                                                ) : (
-                                                    <CgChevronDown size={24} />
-                                                )}
-                                            </button>
-                                            {openFAQ === index + firstHalf.length && (
-                                                <p className="mt-2 text-gray-700 text-sm">{faq.answer}</p>
-                                            )}
-                                        </div>
+                                        <Faq key={index} question={faq.question} answer={faq.answer} />
                                     ))}
                                 </div>
                             </div>
@@ -438,22 +423,22 @@ export default function ServiceSingle() {
 
             {/* Call to Action */}
             <section className="px-6">
-            <div className=" max-w-screen-xl mx-auto shadow-[0_0_5px_rgba(0,0,0,0.25)] rounded-2xl px-8 md:px-12 py-8  text-center space-y-6 mt-12 md:mt-32">
-                <p className="font-semibold text-xl">
-                    Get Started with Aekot Today!
-                    <span style={{ color: "#e52b50" }}> #AekotAdvantage.</span>
-                </p>
-                <p className="text-md text-gray-700 leading-relaxed">
-                    Take the next step toward AI-powered transformation. Partner with
-                    Aekot to implement Agentforce and stay ahead of the competition.
-                    <br />
-                    <span className="font-semibold">Schedule a Free Consultation !</span>
-                </p>
-                <div className="flex justify-center">
-                    <Button text={"Contact Us"} path={"/contact"} />
-                </div>
+                <div className=" max-w-screen-xl mx-auto shadow-[0_0_5px_rgba(0,0,0,0.25)] rounded-2xl px-8 md:px-12 py-8  text-center space-y-6 mt-12 md:mt-32">
+                    <p className="font-semibold text-xl">
+                        Get Started with Aekot Today!
+                        <span style={{ color: "#e52b50" }}> #AekotAdvantage.</span>
+                    </p>
+                    <p className="text-md text-gray-700 leading-relaxed">
+                        Take the next step toward AI-powered transformation. Partner with
+                        Aekot to implement Agentforce and stay ahead of the competition.
+                        <br />
+                        <span className="font-semibold">Schedule a Free Consultation !</span>
+                    </p>
+                    <div className="flex justify-center">
+                        <Button text={"Contact Us"} path={"/contact"} />
+                    </div>
 
-            </div>
+                </div>
             </section>
             {/* Call to Action */}
 

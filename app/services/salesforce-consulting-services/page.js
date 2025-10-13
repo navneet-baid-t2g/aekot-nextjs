@@ -1,14 +1,7 @@
-"use client";
-
-import { useState } from "react";
-
-import { CgChevronDown, CgChevronUp } from "react-icons/cg";
 import { FaArrowRight } from "react-icons/fa";
-import { MdSupportAgent, MdShoppingBasket, MdCalendarMonth, MdCampaign } from "react-icons/md";
-import { FaChalkboardTeacher, FaUserTie } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaUsers, FaDatabase, FaChartLine, FaUserCheck, FaHeadset } from "react-icons/fa";
 import Button from "@/components/Button";
+import Faq from "@/components/Faq";
 
 const certificationImages = [
     { src: "/images/Certifications/C22.png" },
@@ -54,8 +47,6 @@ const servicecarddata = [
     },
 ];
 
-
-
 const otherservices = [
     "Salesforce Consulting Services",
     "Certified Salesforce CRM Consulting",
@@ -78,7 +69,6 @@ const otherservices = [
     "Agentforce Consulting Services",
     "Expert Salesforce Consulting Services",
 ];
-
 
 const faqs = [
     {
@@ -124,14 +114,51 @@ const faqs = [
 
 ];
 
-
-
+export const metadata = {
+    title: "Salesforce Consulting Services | Aekot",
+    description: "Maximize your business potential with Aekot's Salesforce Consulting Services. We provide strategy, implementation, customization, integration, AI-driven automation, and ongoing support to help businesses scale efficiently.",
+    keywords: [
+        "Salesforce consulting services",
+        "Salesforce implementation",
+        "Salesforce customization",
+        "Salesforce integration",
+        "Salesforce CRM",
+        "Salesforce App Development",
+        "Agentforce consulting",
+        "CRM migration",
+        "Salesforce support and maintenance",
+        "Salesforce consulting for enterprises"
+    ],
+    canonical: "https://www.aekot.com/services/salesforce-consulting-services",
+    openGraph: {
+        title: "Salesforce Consulting Services | Aekot",
+        description: "Partner with Aekot for expert Salesforce consulting. Our services include strategy, app development, implementation, data migration, integration, customization, and ongoing support to maximize ROI.",
+        url: "https://www.aekot.com/services/salesforce-consulting-services",
+        siteName: "Aekot",
+        locale: "en_IN",
+        type: "website"
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Salesforce Consulting Services | Aekot",
+        description: "Unlock your business potential with Aekot's Salesforce Consulting Services. From implementation to AI automation and ongoing support, we help businesses scale efficiently.",
+    },
+    other: {
+        faqSchema: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map(faq => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: { "@type": "Answer", text: faq.answer },
+            })),
+        }),
+    },
+};
 
 export default function ServiceSingle() {
-    const [openFAQ, setOpenFAQ] = useState(null);
     return (
         <>
-
             <section className="flex flex-col md:flex-row items-center justify-between pt-16 py-16 bg-white max-w-7xl mx-auto pt-32 md:pt-32">
                 {/* Left Content */}
                 <div className="max-w-xl text-center md:text-left">
@@ -342,56 +369,14 @@ export default function ServiceSingle() {
                                 {/* Left column */}
                                 <div className="flex-1 space-y-4">
                                     {firstHalf.map((faq, index) => (
-                                        <div
-                                            key={index}
-                                            className="bg-gray-100 p-4 rounded-lg shadow-md"
-                                        >
-                                            <button
-                                                className="flex justify-between items-center w-full text-left"
-                                                onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
-                                            >
-                                                <span className="text-md font-semibold">{faq.question}</span>
-                                                {openFAQ === index ? (
-                                                    <CgChevronUp size={24} />
-                                                ) : (
-                                                    <CgChevronDown size={24} />
-                                                )}
-                                            </button>
-                                            {openFAQ === index && (
-                                                <p className="mt-2 text-gray-700 text-sm">{faq.answer}</p>
-                                            )}
-                                        </div>
+                                        <Faq key={index} question={faq.question} answer={faq.answer} />
                                     ))}
                                 </div>
 
                                 {/* Right column */}
                                 <div className="flex-1 space-y-4">
                                     {secondHalf.map((faq, index) => (
-                                        <div
-                                            key={index + firstHalf.length} // unique key
-                                            className="bg-gray-100 p-4 rounded-lg shadow-md"
-                                        >
-                                            <button
-                                                className="flex justify-between items-center w-full text-left"
-                                                onClick={() =>
-                                                    setOpenFAQ(
-                                                        openFAQ === index + firstHalf.length
-                                                            ? null
-                                                            : index + firstHalf.length
-                                                    )
-                                                }
-                                            >
-                                                <span className="text-md font-semibold">{faq.question}</span>
-                                                {openFAQ === index + firstHalf.length ? (
-                                                    <CgChevronUp size={24} />
-                                                ) : (
-                                                    <CgChevronDown size={24} />
-                                                )}
-                                            </button>
-                                            {openFAQ === index + firstHalf.length && (
-                                                <p className="mt-2 text-gray-700 text-sm">{faq.answer}</p>
-                                            )}
-                                        </div>
+                                        <Faq key={index} question={faq.question} answer={faq.answer} />
                                     ))}
                                 </div>
                             </div>
