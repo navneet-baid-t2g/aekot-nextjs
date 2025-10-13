@@ -10,6 +10,17 @@ import Link from "next/link";
 import Faq from "@/components/Faq";
 import { FaArrowRight } from "react-icons/fa";
 import { LuRedo, LuShieldHalf, LuBrain, LuCalendarCheck, LuHospital, LuHandshake, LuMonitorCheck, LuCircleCheck, LuExternalLink, LuChevronUp, LuChevronDown } from "react-icons/lu";
+import ActionSection from "@/components/ActionSection";
+import { FaHospital, FaUniversity, FaBuilding, FaLaptopCode, FaHandsHelping } from "react-icons/fa";
+import {
+  FaUserCog,
+  FaPlug,
+  FaChartPie,
+  FaAppStore,
+  FaUsers,
+  FaRobot,
+} from "react-icons/fa";
+
 
 
 const faqs = [
@@ -92,6 +103,103 @@ const expertise = [
     title: "Non-Profit Cloud",
     desc: "We support non-profits with donor and program management.",
     icon: LuMonitorCheck,
+  },
+];
+
+const industries = [
+  {
+    name: "Healthcare",
+    icon: <FaHospital className="text-5xl text-blue-500 group-hover:text-white transition-all duration-300" />,
+    color: "hover:bg-blue-500",
+  },
+  {
+    name: "BFSI",
+    icon: <FaUniversity className="text-5xl text-green-500 group-hover:text-white transition-all duration-300" />,
+    color: "hover:bg-green-500",
+  },
+  {
+    name: "Real Estate",
+    icon: <FaBuilding className="text-5xl text-yellow-500 group-hover:text-white transition-all duration-300" />,
+    color: "hover:bg-yellow-500",
+  },
+  {
+    name: "Technology",
+    icon: <FaLaptopCode className="text-5xl text-purple-500 group-hover:text-white transition-all duration-300" />,
+    color: "hover:bg-purple-500",
+  },
+  {
+    name: "Not-for-Profit",
+    icon: <FaHandsHelping className="text-5xl text-pink-500 group-hover:text-white transition-all duration-300" />,
+    color: "hover:bg-pink-500",
+  },
+];
+
+const features = [
+  {
+    title: "Tailored Portal",
+    icon: <FaUserCog className="text-5xl text-blue-500 group-hover:text-white transition-all duration-300" />,
+    points: [
+      "We create branded portals for customers, partners and employees to monitor distributors, resellers’, suppliers’ or investors’ actions and results.",
+      "Portals are designed using Salesforce Lightning Web Components, which are flexible and easy to customise.",
+      "Each user sees content based on their role, and the data is always up-to-date and real-time.",
+      "Single Sign-On (SSO) makes logging in simple and secure so users can access them from any device.",
+    ],
+    color: "hover:bg-blue-500",
+  },
+  {
+    title: "Plugins",
+    icon: <FaPlug className="text-5xl text-green-500 group-hover:text-white transition-all duration-300" />,
+    points: [
+      "We create extensions and integrations to enhance Salesforce features.",
+      "AppExchange offers ready-made plugins, such as the Zoom plugin, to schedule or launch meetings directly from Salesforce.",
+      "Our developers can build custom plugins using Salesforce APIs and integration tools like MuleSoft.",
+      "Instead of manually updating customer records, plugins save time by automating repetitive tasks.",
+    ],
+    color: "hover:bg-green-500",
+  },
+  {
+    title: "Dashboard",
+    icon: <FaChartPie className="text-5xl text-yellow-500 group-hover:text-white transition-all duration-300" />,
+    points: [
+      "The Salesforce dashboard allows tracking revenues and opportunities.",
+      "Dashboards are built using Salesforce reports and display data in ways such as charts, graphs, gauges and tables.",
+      "Each team sees dashboards tailored to their needs for sales, service and marketing.",
+      "Dashboards go beyond reporting and provide AI-driven predictions and recommendations with Einstein Analytics.",
+    ],
+    color: "hover:bg-yellow-500",
+  },
+  {
+    title: "AppExchange Apps",
+    icon: <FaAppStore className="text-5xl text-purple-500 group-hover:text-white transition-all duration-300" />,
+    points: [
+      "AppExchange offers more than 5,400+ apps for sales, marketing, IT, HR and finance.",
+      "Most apps are fully customizable to fit your business processes.",
+      "Salesforce ensures apps on AppExchange are easy to install and secure.",
+      "Businesses can choose from both free tools and premium apps.",
+    ],
+    color: "hover:bg-purple-500",
+  },
+  {
+    title: "CRM",
+    icon: <FaUsers className="text-5xl text-pink-500 group-hover:text-white transition-all duration-300" />,
+    points: [
+      "Salesforce CRM is a centralized platform for managing customer relationships.",
+      "All customer data, such as interactions, purchases, support cases and customer engagements, can be stored in one place.",
+      "Salesforce automates repetitive tasks, such as assigning leads, following up with prospects, resolving support cases, and running marketing campaigns.",
+      "Businesses can create reports and dashboards that display real-time data.",
+    ],
+    color: "hover:bg-pink-500",
+  },
+  {
+    title: "AI Agent",
+    icon: <FaRobot className="text-5xl text-indigo-500 group-hover:text-white transition-all duration-300" />,
+    points: [
+      "Businesses can create their own custom AI agents using Salesforce’s Agent builders.",
+      "AI agents can handle repetitive tasks such as responding to customer questions, booking appointments and sending reminders.",
+      "AI agents use the Einstein Trust Layer to ensure data security and compliance.",
+      "With NLP, they understand and respond to human language naturally, making interactions smoother and more natural.",
+    ],
+    color: "hover:bg-indigo-500",
   },
 ];
 
@@ -189,11 +297,7 @@ export default function Home() {
               Driving business success through Salesforce
             </h2>
             <p className="p-6 max-w-screen items-center text-center text-lg sm:text-justify xs:text-justify">
-              Aekot is a Salesforce consulting firm servicing clients across the
-              globe, with majority of our clientele based out of North America.
-              With an A-team of highly qualified Salesforce professionals
-              collectively holding decades of SFDC experience, we excel at
-              transforming businesses with the help of World&apos;s #1 CRM.
+              Aekot is an expert Salesforce consulting services partner specialised in implementing and integrating various Salesforce solutions. Our services include end-to-end Salesforce setup, optimization, system integration, support, market automation, AppExchange and custom development. Our team of certified professionals serves global clients, primarily in North America, offering Salesforce CRM consulting services to optimise business processes.
             </p>
           </div>
           <section className="py-12 bg-gradient-to-br from-[#ffffff] to-[#fffafa] relative overflow-hidden w-full mt-12">
@@ -251,27 +355,8 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <div className="pt-20">
-            <h2 className="fade-in-head text-primary font-bold xs:text-3xl  md:text-3xl lg:text-4xl">
-              Our Clients
-            </h2>
-            <div>
-              <ClientsCarousel />
-            </div>
-          </div>
-          <div className="max-w-[100%] text-center pt-8">
-            <h2 className="text-primary font-bold xs:text-3xl md:text-3xl lg:text-4xl">
-              What our clients say about us
-            </h2>
-            <TestimonialSlider />
-          </div>
         </article>
-        <div className="py-14">
-          <h2 className="fade-in-head text-primary pb-8 text-center font-bold xs:text-3xl text-2xl md:text-3xl lg:text-4xl">
-            Partnerships and Accomplishments
-          </h2>
-          <RewardsRecognition />
-        </div>
+
         <article className="max-w-screen-xl mx-auto space-y-6">
           <div className="space-y-6 text-center">
             <h2 className="text-primary pt-12 font-bold xs:text-3xl text-2xl  md:text-3xl lg:text-4xl">
@@ -329,10 +414,33 @@ export default function Home() {
             image={"/assets/salesforce.svg"}
           />
         </div>
-        <div className="py-14">
-          <LatestNews />
+
+      </section>
+
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-12">
+            Features Provided
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className={`group p-8 rounded-2xl shadow-md bg-white border border-gray-100 text-left transition-all duration-300 transform hover:-translate-y-2 ${feature.color}`}
+              >
+                <div className="flex justify-center">{feature.icon}</div>
+                <h3 className="mt-4 text-xl font-semibold text-center text-gray-800 group-hover:text-white transition-all duration-300">
+                  {feature.title}
+                </h3>
+                <ul className="mt-4 text-gray-600 text-sm space-y-2 group-hover:text-white transition-all duration-300">
+                  {feature.points.map((point, i) => (
+                    <li key={i}>• {point}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
-        <LatestBlogs />
       </section>
 
       <section className="py-12 px-6 bg-white">
@@ -357,6 +465,29 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto text-center px-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-10 text-gray-800">
+            <span className="text-[#e52b50]">Industries Served by Us</span>
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {industries.map((industry, index) => (
+              <div
+                key={index}
+                className={`group p-6 rounded-2xl shadow-md bg-white border border-gray-100 flex flex-col items-center justify-center text-center transition-all duration-300 transform hover:-translate-y-2 ${industry.color}`}
+              >
+                {industry.icon}
+                <h3 className="mt-4 text-lg font-semibold text-gray-700 group-hover:text-white transition-all duration-300">
+                  {industry.name}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <ActionSection />
 
       <section id="other-services" className="py-12 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
@@ -411,6 +542,7 @@ export default function Home() {
         </div>
       </section>
 
+
       <section className="py-6 px-6">
         <div className="w-full max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8">
@@ -444,6 +576,10 @@ export default function Home() {
         </div>
 
       </section>
+
+      <LatestNews />
+
+      <LatestBlogs />
 
 
 

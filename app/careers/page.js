@@ -1,5 +1,3 @@
-import { FaLocationDot } from "react-icons/fa6";
-import { HiLightBulb } from "react-icons/hi2";
 import OurCulture from "@/components/OurCulture";
 import WhyUsCard from "@/components/WhyUsCard";
 import JobSearch from "@/components/JobSearch";
