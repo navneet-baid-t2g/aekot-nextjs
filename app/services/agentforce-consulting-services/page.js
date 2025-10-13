@@ -3,6 +3,7 @@ import { MdSupportAgent, MdShoppingBasket, MdCalendarMonth, MdCampaign } from "r
 import { FaChalkboardTeacher, FaUserTie } from "react-icons/fa";
 import Button from "@/components/Button";
 import Faq from "@/components/Faq";
+import ContactCTA from "@/components/ContactCTA";
 
 const certificationImages = [
     { src: "/images/Certifications/C22.png" },
@@ -288,6 +289,8 @@ export default function ServiceSingle() {
                 </div>
             </section>
 
+            <ContactCTA heading="Looking for Expert Salesforce Developers?" />
+
             <section id="whycompany" className="py-12 px-6 bg-white">
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-3xl font-bold text-gray-800 mb-4">
@@ -386,6 +389,8 @@ export default function ServiceSingle() {
                     </ul>
                 </div>
             </section>
+
+            <ContactCTA heading="Looking for Expert Salesforce Developers?" />
 
             <section className="py-12 px-6">
                 <div className="w-full max-w-7xl mx-auto">

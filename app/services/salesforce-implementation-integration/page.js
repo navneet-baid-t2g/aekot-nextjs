@@ -1,6 +1,7 @@
 import { FaArrowRight } from "react-icons/fa";
 import Button from "@/components/Button";
 import Faq from "@/components/Faq";
+import ContactCTA from "@/components/ContactCTA";
 
 const certificationImages = [
     { src: "/images/Certifications/C22.png" },
@@ -259,7 +260,13 @@ export default function ServiceSingle() {
                             </div>
                         ))}
                     </div>
+                </div>
+            </section>
 
+            <ContactCTA heading="Looking for Expert Salesforce Developers?" />
+
+            <section className="pt-16 px-6 md:px-20 py-16 bg-gray-100">
+                <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
                             <span className="text-[#e52b50]">Salesforce Integration Services </span>
@@ -359,6 +366,8 @@ export default function ServiceSingle() {
                     </ul>
                 </div>
             </section>
+
+            <ContactCTA heading="Looking for Expert Salesforce Developers?" />
 
             <section className="py-12 px-6">
                 <div className="w-full max-w-7xl mx-auto">
