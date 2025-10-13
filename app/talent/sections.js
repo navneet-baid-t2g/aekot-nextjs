@@ -25,8 +25,8 @@ const WorkExperience = () => {
                             </div>
                             <p className="text-gray-900">Aekot Consulting</p>
                             <ul className="list-disc list-inside mt-2 text-gray-700 text-sm space-y-2">
-                                <li>Managed the Salesforce project implementation, customer relationships, Salesforce implementation, and the firm's growth as a whole.</li>
-                                <li>Designed the architecture and solution and then developed solutions that created an impact on customers' productivity.</li>
+                                <li>Managed the Salesforce project implementation, customer relationships, Salesforce implementation, and the firm&apos;s growth as a whole.</li>
+                                <li>Designed the architecture and solution and then developed solutions that created an impact on customers&apos; productivity.</li>
                                 <li>Oversaw the project deliveries, which were channeled through teams.</li>
                                 <li>Built custom and reusable Lightning web components which could be bundled and made available for public usage.</li>
                                 <li>Worked on packaged development to make Salesforce applications ready for AppExchange.</li>
@@ -76,8 +76,8 @@ const Experience = () => {
                             </div>
                             <p className="text-gray-600">Aekot Consulting</p>
                             <ul className="list-disc list-inside mt-2 text-gray-700">
-                                <li>Managed the Salesforce project implementation, customer relationships, Salesforce implementation, and the firm's growth as a whole.</li>
-                                <li>Designed the architecture and solution and then developed solutions that created an impact on customers' productivity.</li>
+                                <li>Managed the Salesforce project implementation, customer relationships, Salesforce implementation, and the firm&apos;s growth as a whole.</li>
+                                <li>Designed the architecture and solution and then developed solutions that created an impact on customers&apos; productivity.</li>
                                 <li>Oversaw the project deliveries, which were channeled through teams.</li>
                                 <li>Built custom and reusable Lightning web components which could be bundled and made available for public usage.</li>
                                 <li>Worked on packaged development to make Salesforce applications ready for AppExchange.</li>

@@ -313,7 +313,7 @@ export default async function CaseStudyDetails({ params }) {
                 <div className="mt-16 px-6 lg:px-40">
                     <div className="bg-white shadow-lg rounded-2xl p-6 lg:p-8 text-center">
                         <h2 className="text-xl font-semibold text-gray-600 mb-4">
-                            Discover Zota's Full Success Story
+                            Discover Zota&apos;s Full Success Story
                         </h2>
                         <p className="text-gray-600 text-md leading-relaxed mb-8 text-justify">
                             {data.readmore.description}
@@ -338,12 +338,12 @@ export default async function CaseStudyDetails({ params }) {
                         <span style={{ color: "#e52b50" }}> #AekotAdvantage.</span>
                     </h2>
                     <p className="text-md text-gray-700 max-w-6xl text-center mx-auto md:px-6">
-                        Whether you're looking to optimize your Salesforce implementation,
+                        Whether you&apos;re looking to optimize your Salesforce implementation,
                         integrate new technologies, or expand your global reach, Aekot has
                         the expertise and passion to help you succeed.
                     </p>
                     <p className="font-semibold my-8">
-                        Let's transform your business together.
+                        Let&apos;s transform your business together.
                     </p>
                     <div className="flex justify-center">
                         <Button text="Contact Us" path="/contact" />

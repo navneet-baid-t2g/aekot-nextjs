@@ -98,7 +98,7 @@ const Availability = () => (
         <div className='bg-gray-200 m-1 lg:h-60 md:h-80 flex flex-col pl-4 pt-4'>
             <MdTipsAndUpdates size={60} />
             <h2 className='font-semibold mt-3'>The most amazing...</h2>
-            <p className='text-xs mt-3 pr-4 pb-2'>...thing I've implemented was a project for the best search engine company to set up their partner advantage portal.</p>
+            <p className='text-xs mt-3 pr-4 pb-2'>...thing I&apos;ve implemented was a project for the best search engine company to set up their partner advantage portal.</p>
         </div>
         {/*... */}
     </div>

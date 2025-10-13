@@ -176,9 +176,9 @@ export default function ServiceSingle() {
                     </h1>
 
                     <p className="text-gray-600 mt-4 leading-relaxed">
-                        Aekot's Salesforce Agentforce consulting services have the right expertise you need to unlock Agentforce's
+                        Aekot&apos;s Salesforce Agentforce consulting services have the right expertise you need to unlock Agentforce&apos;s
                         full potential. We have the experience and skills to create strategies that will help you integrate
-                        Agentforce's AI tools into your business.
+                        Agentforce&apos;s AI tools into your business.
                     </p>
 
                     <button className="mt-8 px-6 py-3 bg-[#e52b50] text-white rounded-md font-medium hover:bg-[#d81b60] transition duration-300">
@@ -250,7 +250,7 @@ export default function ServiceSingle() {
                     {/* Left Content */}
                     <div className="flex flex-col space-y-6 md:w-2/3">
                         <h2 className="text-3xl md:text-4xl font-bold text-left">
-                            Why should you go for <span className="text-primary">Aekot's Salesforce Agentforce</span>  consulting services?
+                            Why should you go for <span className="text-primary">Aekot&apos;s Salesforce Agentforce</span>  consulting services?
                         </h2>
 
                         <p className="text-md text-gray-800 text-left">
@@ -258,12 +258,12 @@ export default function ServiceSingle() {
                         </p>
 
                         <p className="text-md text-gray-800 text-left">
-                            Our skills and dedication to your projects makes us the right partner for Salesforce Agentforce consulting services. We don't just solve current issues but we also prepare for tomorrow's opportunities.
+                            Our skills and dedication to your projects makes us the right partner for Salesforce Agentforce consulting services. We don&apos;t just solve current issues but we also prepare for tomorrow&apos;s opportunities.
 
                         </p>
 
                         <p className="text-md text-gray-800 text-left">
-                            With Aekot's expert Agentforce consulting services, businesses can get reliable AI solutions which will maximise your teams' efficiency, improve customer experience and bring our clients growth.
+                            With Aekot&apos;s expert Agentforce consulting services, businesses can get reliable AI solutions which will maximise your teams&apos; efficiency, improve customer experience and bring our clients growth.
                         </p>
 
                         <p>Join us today and get your free consultation and proposal.</p>
@@ -294,7 +294,7 @@ export default function ServiceSingle() {
                         Why companies need salesforce <span className="text-[#e52b50]">Agentforce consulting services</span>?
                     </h2>
                     <p className="text-gray-600 mb-4">
-                        Aekot's Salesforce Agentforce consulting services can help businesses use AI to improve operations and customer experience. So even if you lack technical skills, Aekot can help you to adopt AI by guiding you through steps. We create AI agents and tools that can do what you want and fit easily into your systems. We make sure that Agentforce connects smoothly with Salesforce tools and other systems like ERP to improve data use and work processes.
+                        Aekot&apos;s Salesforce Agentforce consulting services can help businesses use AI to improve operations and customer experience. So even if you lack technical skills, Aekot can help you to adopt AI by guiding you through steps. We create AI agents and tools that can do what you want and fit easily into your systems. We make sure that Agentforce connects smoothly with Salesforce tools and other systems like ERP to improve data use and work processes.
                     </p>
                     <p className="text-gray-600 mb-8">
                         Our expert Agentforce consulting services will make Agentforce easy to expand so it can grow with your business and stay up-to-date with AI features. We can automate tasks to save time and increase productivity. Your customers will get 24/7 support from chatbots or SMS. We will make sure the security features protect the data and meet all the rules. We will also train your teams to use Agentforce quickly and provide regular support to make sure it keeps on improving. These services will boost your returns by increasing efficiency and customer satisfaction and help your business succeed and grow.

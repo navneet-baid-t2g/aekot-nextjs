@@ -150,7 +150,7 @@ const About = () => {
                                     Disney, State of Delaware, etc. I initiated the company just
                                     before the onset of the COVID pandemic. Having worked at
                                     Deloitte for three years, I recognized my capabilities. I
-                                    decided it wasn't the path and chose to forgo a promotion in
+                                    decided it wasn&apos;t the path and chose to forgo a promotion in
                                     order to establish Aekot. Setting up my operations in a
                                     physical office, I firmly believe in the benefits of working
                                     from an office environment, offering fewer distractions and
@@ -444,7 +444,7 @@ const About = () => {
                     <section className=" bg-dots bg-center bg-no-repeat xs:bg-none sm:bg-none w-full flex flex-wrap items-center justify-center p-8">
                         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 ">
                             {services.map((service, index) => (
-                                <a href={service.link}>
+                                <a href={service.link} key={index}>
                                     <div
                                         key={index}
                                         className={`flex flex-col items-center justify-center p-4 hover:scale-110 transition-transform duration-300 ease-in-out`}
@@ -529,7 +529,7 @@ const About = () => {
                             </Link>
                         </div>
                         <div className="pt-4 flex justify-end">
-                            <a
+                            <Link
                                 href="/case-studies"
                                 className="text-primary font-semibold flex items-center hover:underline"
                             >
@@ -537,7 +537,7 @@ const About = () => {
                                 <span className="ml-2 text-primary text-2xl">
                                     <MdArrowOutward />
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                     </section>
                 </article>
@@ -612,9 +612,9 @@ const About = () => {
                             <span style={{ color: "#e52b50" }}> #AekotAdvantage </span> today
                         </p>
                         <p className="text-md text-gray-700 text-center">
-                            At Aekot, we don't just implement Salesforce—we unlock its full
+                            At Aekot, we don&apos;t just implement Salesforce—we unlock its full
                             potential for your business. With our deep expertise and
-                            innovative approach, we'll help you optimize your systems,
+                            innovative approach, we&apos;ll help you optimize your systems,
                             seamlessly integrate new technologies, and scale your operations
                             globally.
                         </p>
