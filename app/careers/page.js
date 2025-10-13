@@ -24,7 +24,6 @@ async function getJobs() {
         headers: {
           Authorization: `Bearer ${process.env.CAREERS_API_KEY}`,
         },
-        // Enable ISR (revalidate after 1 hour)
         next: { revalidate: 3600 },
       }
     );
