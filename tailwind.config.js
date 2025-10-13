@@ -37,6 +37,15 @@ module.exports = {
         bg_hello: "url('https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')",
         dots: "url('/assets/dots_bg.svg')",
       },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateY(0%)' },
+          '100%': { transform: 'translateY(-100%)' },
+        },
+      },
+      animation: {
+        scroll: 'scroll 15s linear infinite',
+      },
     },
   },
   plugins: [],
