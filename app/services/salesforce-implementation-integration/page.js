@@ -1,14 +1,6 @@
-"use client";
-
-import { useState } from "react";
-
-import { CgChevronDown, CgChevronUp } from "react-icons/cg";
 import { FaArrowRight } from "react-icons/fa";
-import { MdSupportAgent, MdShoppingBasket, MdCalendarMonth, MdCampaign } from "react-icons/md";
-import { FaChalkboardTeacher, FaUserTie } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaUsers, FaDatabase, FaChartLine, FaUserCheck, FaHeadset } from "react-icons/fa";
 import Button from "@/components/Button";
+import Faq from "@/components/Faq";
 
 const certificationImages = [
     { src: "/images/Certifications/C22.png" },
@@ -162,10 +154,49 @@ const faqs = [
 ];
 
 
-
+export const metadata = {
+    title: "Salesforce Implementation Integration | Aekot",
+    description: "Unlock your business potential with Aekot’s Salesforce Integration and Implementation services. We provide expert setup, customization, and seamless system integration to streamline operations, enhance customer relationships, and deliver secure, scalable solutions that grow with your business.",
+    keywords: [
+        "Salesforce consulting services",
+        "Salesforce implementation",
+        "Salesforce customization",
+        "Salesforce integration",
+        "Salesforce CRM",
+        "Salesforce App Development",
+        "Agentforce consulting",
+        "CRM migration",
+        "Salesforce support and maintenance",
+        "Salesforce consulting for enterprises"
+    ],
+    canonical: "https://www.aekot.com/services/salesforce-implementation-integration",
+    openGraph: {
+        title: "Salesforce Consulting Services | Aekot",
+        description: "Unlock your business potential with Aekot’s Salesforce Integration and Implementation services. We provide expert setup, customization, and seamless system integration to streamline operations, enhance customer relationships, and deliver secure, scalable solutions that grow with your business.",
+        url: "https://www.aekot.com/services/salesforce-implementation-integration",
+        siteName: "Aekot",
+        locale: "en_IN",
+        type: "website"
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Salesforce Implementation Integration | Aekot",
+        description: "Unlock your business potential with Aekot’s Salesforce Integration and Implementation services. We provide expert setup, customization, and seamless system integration to streamline operations, enhance customer relationships, and deliver secure, scalable solutions that grow with your business.",
+    },
+    other: {
+        faqSchema: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map(faq => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: { "@type": "Answer", text: faq.answer },
+            })),
+        }),
+    },
+};
 
 export default function ServiceSingle() {
-    const [openFAQ, setOpenFAQ] = useState(null);
     return (
         <>
 
@@ -173,7 +204,7 @@ export default function ServiceSingle() {
                 {/* Left Content */}
                 <div className="max-w-xl text-center md:text-left">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-                        Salesforce <span className="text-[#e52b50]">Integration and Implementation</span> Services for Unified Solutions. 
+                        Salesforce <span className="text-[#e52b50]">Integration and Implementation</span> Services for Unified Solutions.
                     </h1>
 
                     <p className="text-gray-600 mt-4 leading-relaxed">
@@ -267,7 +298,7 @@ export default function ServiceSingle() {
                     {/* Left Content */}
                     <div className="flex flex-col space-y-6 md:w-2/3">
                         <h2 className="text-3xl md:text-4xl font-bold text-left">
-                           <span className="text-primary">Why choose us?</span> What you will get:
+                            <span className="text-primary">Why choose us?</span> What you will get:
                         </h2>
 
                         <p className="text-md text-gray-800 text-left">
@@ -346,56 +377,14 @@ export default function ServiceSingle() {
                                 {/* Left column */}
                                 <div className="flex-1 space-y-4">
                                     {firstHalf.map((faq, index) => (
-                                        <div
-                                            key={index}
-                                            className="bg-gray-100 p-4 rounded-lg shadow-md"
-                                        >
-                                            <button
-                                                className="flex justify-between items-center w-full text-left"
-                                                onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
-                                            >
-                                                <span className="text-md font-semibold">{faq.question}</span>
-                                                {openFAQ === index ? (
-                                                    <CgChevronUp size={24} />
-                                                ) : (
-                                                    <CgChevronDown size={24} />
-                                                )}
-                                            </button>
-                                            {openFAQ === index && (
-                                                <p className="mt-2 text-gray-700 text-sm">{faq.answer}</p>
-                                            )}
-                                        </div>
+                                        <Faq key={index} question={faq.question} answer={faq.answer} />
                                     ))}
                                 </div>
 
                                 {/* Right column */}
                                 <div className="flex-1 space-y-4">
                                     {secondHalf.map((faq, index) => (
-                                        <div
-                                            key={index + firstHalf.length} // unique key
-                                            className="bg-gray-100 p-4 rounded-lg shadow-md"
-                                        >
-                                            <button
-                                                className="flex justify-between items-center w-full text-left"
-                                                onClick={() =>
-                                                    setOpenFAQ(
-                                                        openFAQ === index + firstHalf.length
-                                                            ? null
-                                                            : index + firstHalf.length
-                                                    )
-                                                }
-                                            >
-                                                <span className="text-md font-semibold">{faq.question}</span>
-                                                {openFAQ === index + firstHalf.length ? (
-                                                    <CgChevronUp size={24} />
-                                                ) : (
-                                                    <CgChevronDown size={24} />
-                                                )}
-                                            </button>
-                                            {openFAQ === index + firstHalf.length && (
-                                                <p className="mt-2 text-gray-700 text-sm">{faq.answer}</p>
-                                            )}
-                                        </div>
+                                        <Faq key={index} question={faq.question} answer={faq.answer} />
                                     ))}
                                 </div>
                             </div>
