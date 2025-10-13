@@ -295,7 +295,6 @@ export default function ServiceSingle() {
                                 We give continuous support to ensure that the systems are reliable and ready to change with the advances in technology. With active monitoring, timely updates and responsive technical support, we can reduce downtime and maintain business operations. This gives our customer assurance that their digital investments will continue to deliver value long after initial implementation.
                             </p>
                         </div>
-
                     </div>
 
 
