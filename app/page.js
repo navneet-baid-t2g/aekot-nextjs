@@ -1,3 +1,4 @@
+
 import ClientsCarousel from "@/components/ClientsCarousel";
 import CTA from "@/components/CTA";
 import LatestBlogs from "@/components/LatestBlogs";
@@ -6,7 +7,118 @@ import RewardsRecognition from "@/components/RewardsRecognition";
 import Service from "@/components/ServiceCard";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import Link from "next/link";
+import Faq from "@/components/Faq";
 import { FaArrowRight } from "react-icons/fa";
+import { LuRedo, LuShieldHalf, LuBrain, LuCalendarCheck, LuHospital, LuHandshake, LuMonitorCheck, LuCircleCheck, LuExternalLink, LuChevronUp, LuChevronDown } from "react-icons/lu";
+
+
+const faqs = [
+  {
+    question: "What types of Salesforce services does Aekot provide?",
+    answer: "We offer expert Salesforce consulting services that cover every aspect of your business needs. Our services include customization of apps, workflows, automations, approvals, and dashboards to match your unique requirements. We provide seamless integration with legacy systems and popular tools such as HubSpot, QuickBooks, and ERP systems. From end-to-end implementation across Sales, Service, Experience, Marketing, Health, Data, and Nonprofit Clouds to AI-driven solutions for automation and analytics, we ensure your Salesforce environment is optimized for performance. Additionally, we support user adoption through training programs and provide ongoing maintenance to keep your system running smoothly.",
+  },
+  {
+    question: "How does Aekot ensure successful Salesforce implementations?",
+    answer: "We follow a proven methodology: understanding your business, planning customised solutions, executing with precision, and supporting user adoption. Our Salesforce certified consultants provide clear timelines, weekly updates, and a free trial to ensure alignment, resulting in successful outcomes like 20-30% increase in Sales productivity, 15-20% improvement in conversion rate and 90% lead leakage reduction for clients.",
+  },
+  {
+    question: "Which industries does Aekot serve with Salesforce solutions?",
+    answer: "Aekot supports diverse industries, including finance, healthcare, real estate, technology, and nonprofits. We specialise in industry-specific solutions, such as Health Cloud for healthcare or Nonprofit Cloud for charities, ensuring compliance and scalability.",
+  },
+  {
+    question: "How does Aekot ensure data security in Salesforce solutions?",
+    answer: "Our expert Salesforce consulting services prioritise security by implementing role-based access, multi-factor authentication, and compliance with regulations like GDPR and HIPAA. Our expertise ensures secure configurations, as seen in solutions for finance and healthcare clients.",
+  },
+  {
+    question: "What is Salesforce CRM consulting and its significance?",
+    answer: "The Salesforce CRM consulting assists businesses to establish, modify and enhance Salesforce to enable them to sell more efficiently, retain customers and conduct business more effectively. It ensures that the platform aligns itself with the business objectives and provides measurable ROI.",
+  },
+  {
+    question: "What are the ways Aekot's Salesforce CRM consulting will enhance my current system?",
+    answer: "Our consultants examine your existing CRM, streamline operations, introduce automation, integrate other solutions and enhance reporting. This simplifies the work of the users and accelerates the work and provides clear data.",
+  },
+  {
+    question: "Who will benefit from Aekot's Salesforce CRM consulting services?",
+    answer: "Our services can benefit any business that is interested in starting to use Salesforce, changing to other CRM, enhancing performance, integrating tools, automating sales or service processes, or training teams.",
+  },
+  {
+    question: "Why would I select Aekot's certified Salesforce CRM consultants and not general consultants?",
+    answer: "Aekot has highly skilled and trained certified consultants thus they adhere to the best practices, familiarize themselves with the latest features and provide secure, scalable and compliant solutions.",
+  },
+  {
+    question: "What are the qualifications of a certified Salesforce CRM consultant?",
+    answer: "The most important ones are Salesforce Administrator, Sales Cloud Consultant, Service Cloud Consultant, Platform Developer, Marketing Cloud Consultant and Integration Architect depending on the project requirements.",
+  },
+  {
+    question: "What is the effect of engagement of certified Salesforce CRM consultants on project success?",
+    answer: "Certified consultants reduce risk, achieve a seamless deployment, enhance user adoption and offer high-quality customizations resulting in shorter timelines and increased ROI.",
+  },
+
+];
+
+
+const expertise = [
+  {
+    title: "Health cloud",
+    desc: "We help in improving patient care, operational efficiency and provide patient data readily.",
+    icon: LuShieldHalf,
+  },
+  {
+    title: "Agent Force",
+    desc: "We deploy AI-driven agents for automation and engagement.",
+    icon: LuBrain,
+  },
+  {
+    title: "Services Cloud",
+    desc: "We optimise customer support and case management.",
+    icon: LuCalendarCheck,
+  },
+  {
+    title: "Experience Cloud",
+    desc: "We build branded and interactive portals for stakeholders.",
+    icon: LuHospital,
+  },
+  {
+    title: "Sales Cloud",
+    desc: "We streamline sales processes and enhance CRM efficiency with our Salesforce consulting services.",
+    icon: LuHandshake,
+  },
+  {
+    title: "Marketing Cloud",
+    desc: "We create customised multi-channel marketing campaigns through our Salesforce CRM consulting.",
+    icon: LuMonitorCheck,
+  },
+  {
+    title: "Non-Profit Cloud",
+    desc: "We support non-profits with donor and program management.",
+    icon: LuMonitorCheck,
+  },
+];
+
+const otherservices = [
+  "Salesforce Consulting Services",
+  "Certified Salesforce CRM Consulting",
+  "Salesforce Implementation Service",
+  "Salesforce Training",
+  "Salesforce Marketing Cloud Training",
+  "Salesforce Integration Services",
+  "CRM Migration",
+  "Salesforce Agentforce Consulting",
+  "Agentforce Integration Expert",
+  "Salesforce Managed Services",
+  "Salesforce Data Migration",
+  "Expert Salesforce Marketing Cloud Consultant",
+  "Salesforce Marketing Cloud Consultant",
+  "Managed Services for Salesforce",
+  "Salesforce Consulting Services for Enterprises",
+  "Best Salesforce Implementation Service Provider",
+  "Certified Salesforce Implementation Service Experts",
+  "Salesforce CRM Consulting Services",
+  "Agentforce Consulting Services",
+  "Expert Salesforce Consulting Services",
+];
+
+
 
 export const metadata = {
   title: "Salesforce Consulting Services to Grow Your Business | AEKOT",
@@ -33,6 +145,8 @@ export default function Home() {
   const generateServicePath = (name) => {
     return `/services/${name.toLowerCase().replace(/ & | /g, "-").replace(/--+/g, "-")}`;
   };
+
+
   return (
     <>
       <section className="w-full p-2.5">
@@ -219,6 +333,120 @@ export default function Home() {
           <LatestNews />
         </div>
         <LatestBlogs />
-      </section></>
+      </section>
+
+      <section className="py-12 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
+            <span className="text-[#e52b50]"> Our expertise in Salesforce clouds</span>
+          </h2>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
+            {expertise.map((expertise, index) => {
+              const Icon = expertise.icon;
+              return (
+                <div key={index} className="flex flex-col items-center text-center space-y-4 mb-6"
+                >
+                  <Icon className="w-12 h-12 text-primary" />
+                  <h3 className="text-xl font-semibold text-gray-700">
+                    {expertise.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm max-w-xs">{expertise.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section id="other-services" className="py-12 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            <span className="text-[#e52b50]"> Other Services</span>
+          </h2>
+          <p className="text-gray-600 mb-8">
+            We not only provide Salesforce Consulting Services but also have a wide range of specialized services that enable companies to get the most out of Salesforce. We assist in strategy, implementation, automation, AI and continuous support. We work on consulting, integration, training, data movement and managed services. We assist businesses in implementing Salesforce clouds, enhancing performance, integrating intelligent agents, executing good marketing, maintaining data safety and updating the system. Should a company require a complete implementation, CRM migration, AI functionality, AppExchange support or platform training, our extensive portfolio of services will fulfill the requirement precisely and at scale.
+          </p>
+
+          <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+            {otherservices.map((service, index) => (
+              <li
+                key={index}
+                className="flex items-center text-gray-700 hover:text-primary transition"
+              >
+                <FaArrowRight className="mr-2 text-primary" />
+                {service}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+
+
+      <section className="py-6 px-6">
+        <div className="w-full max-w-7xl mx-auto">
+          <h2 className="fade-in-head text-primary text-center font-bold xs:text-3xl  md:text-3xl lg:text-4xl">
+            Our Clients
+          </h2>
+          <ClientsCarousel />
+        </div>
+      </section>
+
+      <section className="py-6 px-6">
+        <div className="w-full max-w-7xl mx-auto">
+          <h2 className="text-primary text-center font-bold xs:text-3xl md:text-3xl lg:text-4xl">
+            What our clients say about us
+          </h2>
+          <TestimonialSlider />
+        </div>
+      </section>
+
+
+      <section className="py-6 px-6">
+        <div className="w-full max-w-7xl mx-auto">
+          <h2 className="fade-in-head text-primary pb-8 text-center font-bold xs:text-3xl text-2xl md:text-3xl lg:text-4xl">
+            Partnerships and Accomplishments
+          </h2>
+          <RewardsRecognition />
+        </div>
+      </section>
+
+      <section className="py-6 px-6">
+        <div className="w-full max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-8">
+            <span className="text-[#e52b50]">Frequently Asked Questions</span>
+          </h2>
+
+          {/* Split FAQs into two halves */}
+          {(() => {
+            const mid = Math.ceil(faqs.length / 2);
+            const firstHalf = faqs.slice(0, mid);
+            const secondHalf = faqs.slice(mid);
+
+            return (
+              <div className="flex flex-col md:flex-row gap-6">
+                {/* Left column */}
+                <div className="flex-1 space-y-4">
+                  {firstHalf.map((faq, index) => (
+                    <Faq key={index} question={faq.question} answer={faq.answer} />
+                  ))}
+                </div>
+
+                {/* Right column */}
+                <div className="flex-1 space-y-4">
+                  {secondHalf.map((faq, index) => (
+                    <Faq key={index} question={faq.question} answer={faq.answer} />
+                  ))}
+                </div>
+              </div>
+            );
+          })()}
+        </div>
+
+      </section>
+
+
+
+    </>
   );
 }
