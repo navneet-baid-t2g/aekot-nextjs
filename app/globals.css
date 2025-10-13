@@ -429,3 +429,7 @@ body {
 .ghost-button:hover {
   transform: scale(1.05);
 }
+
+.setbuttoncenter .ghost-button {
+  margin: 24px auto 0 auto;
+}

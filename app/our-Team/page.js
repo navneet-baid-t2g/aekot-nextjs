@@ -3,8 +3,6 @@ import TeamCard from "@/components/TeamCard";
 import Button from "@/components/Button";
 import OurCulture from "@/components/OurCulture";
 import CertificateCarousel from "@/components/Certifications";
-import Style from "./OurTeam.module.css";
-
 
 export const metadata = {
   title: "Salesforce Consulting Service Team | Hire Experts at AEKOT",
@@ -15,7 +13,7 @@ export const metadata = {
     title: "Salesforce Consulting Service Team | Hire Experts at AEKOT",
     description:
       "Meet AEKOT's team of certified Salesforce consultants. Get tailored consulting services to optimize CRM systems and improve business outcomes.",
-    url: "https://www.aekot.com/",
+    url: "https://www.aekot.com/our-team/",
     images: [
       {
         url: "https://www.aekot.com/original Aekot logo.webp",
@@ -73,7 +71,7 @@ const OurTeam = () => {
         {/* SECOND SECTION ENDS HERE */}
 
         {/* TEAMS SECTION */}
-          <TeamCard />
+        <TeamCard />
         {/* TEAMS SECTION ENDS */}
 
         {/* Certification Section */}

@@ -1,7 +1,0 @@
-:global(.svgicon) {
-    font-size: 14px;
-}
-
-:global(.setbuttoncenter .ghost-button) {
-    margin: 24px auto 0 auto;
-}
