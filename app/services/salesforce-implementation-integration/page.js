@@ -212,7 +212,7 @@ export default function ServiceSingle() {
                         At Aekot, we guide you for integrating solutions with the Salesforce platform and implementation by setting up and customising Salesforce for your use. We give a full set of services for businesses to help them improve efficiency, effectively manage customer relationships and connect their systems with the Salesforce platform. Our main focus is to deliver reliable, secure and scalable Salesforce solutions that will adjust with your performance and long-term goals.
                     </p>
 
-                    <div className="mt-3">
+                    <div className="mt-3 flex justify-center md:justify-start">
                         <Button text="Get Started" path="/contact" />
                     </div>
                 </div>
@@ -357,9 +357,9 @@ export default function ServiceSingle() {
                         {otherservices.map((service, index) => (
                             <li
                                 key={index}
-                                className="flex items-center text-gray-700 hover:text-primary transition"
+                                className="flex text-gray-700 hover:text-primary transition"
                             >
-                                <FaArrowRight className="mr-2 text-primary" />
+                                <FaArrowRight className="mr-2 mt-1 text-primary flex-shrink-0" />
                                 {service}
                             </li>
                         ))}

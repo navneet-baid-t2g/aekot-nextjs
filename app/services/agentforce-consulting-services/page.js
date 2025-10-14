@@ -182,7 +182,7 @@ export default function ServiceSingle() {
                         Agentforce&apos;s AI tools into your business.
                     </p>
 
-                    <div className="mt-3">
+                    <div className="mt-3 flex justify-center md:justify-start">
                         <Button text="Get Started" path="/contact" />
                     </div>
                 </div>
@@ -221,7 +221,7 @@ export default function ServiceSingle() {
                     </div>
 
                     {/* Grid Layout */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {servicecarddata.map((service, index) => (
                             <div
                                 key={index}
@@ -380,9 +380,9 @@ export default function ServiceSingle() {
                         {otherservices.map((service, index) => (
                             <li
                                 key={index}
-                                className="flex items-center text-gray-700 hover:text-primary transition"
+                                className="flex items-start text-gray-700 hover:text-primary transition"
                             >
-                                <FaArrowRight className="mr-2 text-primary" />
+                                <FaArrowRight className="mr-2 mt-1 text-primary flex-shrink-0" />
                                 {service}
                             </li>
                         ))}
