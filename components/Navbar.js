@@ -86,7 +86,7 @@ const Navbar = ({ onParentModalClose }) => {
                                         </Link>
                                         <div className="bg-light dropdown-content p-4 hidden absolute rounded-lg z-10" style={{ minWidth: "300px" }}>
                                             <Link
-                                                href="/Services/agentforce-consulting-services"
+                                                href="/services/agentforce-consulting-services"
                                                 className="py-2 block hover:text-primary hover:translate-x-1 transition-all"
                                                 onClick={handleClick}
                                             >
