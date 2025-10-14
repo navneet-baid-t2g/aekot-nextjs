@@ -1,0 +1,126 @@
+import Button from "@/components/Button";
+
+const service = {
+    "imageSrc": "/images/serviceImages/serviceprogImg.jpg",
+    "title": "Data Migration & Management",
+    "additionalInfo": {
+        "headline": "Secure and Efficient Data Migration Solutions",
+        "subheading": "Ensure safe, accurate, and seamless migration of your data into Salesforce.",
+        "details": {
+            "whatWeOffer": [
+                "Secure data migration from legacy systems.",
+                " Data cleaning, mapping, and validation services.",
+                " Salesforce data governance and management solutions."
+            ],
+            "benefits": [
+                " Migrate critical data securely and accurately.",
+                "Reduce the risk of data loss or corruption during migration.",
+                "Ensure your data is organized and easily accessible post-migration."
+            ]
+        },
+        "cta": "Start Your Data Migration with Confidence. ",
+        "linktext": "Contact us to learn more",
+        "link": "/contact"
+    },
+    "metaData": {
+        "metaTitle": "Salesforce Data Migration & CRM Transfer Services",
+        "metaDescription": "AEKOT ensures smooth Salesforce data migration and complete CRM migration with accurate data mapping, minimal downtime, and secure transitions."
+    }
+};
+
+export const metadata = {
+    title: service.metaData.metaTitle,
+    description: service.metaData.metaDescription,
+    keywords: [
+        "Salesforce support",
+        "Managed Salesforce services",
+        "Salesforce maintenance",
+        "Salesforce optimization",
+        "CRM uptime",
+        "Salesforce troubleshooting",
+        "Salesforce performance",
+        "24/7 Salesforce support"
+    ],
+    canonical: "https://www.aekot.com/services/data-migration-management",
+    openGraph: {
+        title: service.metaData.metaTitle,
+        description: service.metaData.metaDescription,
+        url: "https://www.aekot.com/services/data-migration-management",
+        siteName: "Aekot",
+        locale: "en_IN",
+        type: "website"
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: service.metaData.metaTitle,
+        description: service.metaData.metaDescription,
+    },
+};
+
+const ServicesIndividualPage = () => {
+
+    return (
+        <>
+            <section className={`pt-32 md:pt-32 px-4 max-w-7xl mx-auto`}>
+                {/* Hero Section */}
+                <section className="bg-cta-bg relative min-h-[70vh] flex flex-col lg:flex-row items-center text-center lg:text-left px-4">
+                    <div className="lg:w-1/2 flex flex-col justify-center items-start space-y-6">
+                        <h1 className="text-3xl md:text-4xl font-bold text-primary">
+                            {service.title}
+                        </h1>
+                        <h2 className="text-lg md:text-xl font-medium text-gray-600 max-w-4xl">
+                            {service.additionalInfo.subheading}
+                        </h2>
+                        <Button text={"Know More"} path={service.additionalInfo.link} />
+                    </div>
+                    <div className="lg:w-1/2 flex justify-center mt-8 md:mt-0">
+                        <img
+                            src={service.imageSrc}
+                            alt={service.title}
+                            className="w-full max-w-lg h-auto rounded shadow-lg"
+                        />
+                    </div>
+                </section>
+
+                {/* Content Section */}
+                <section className="py-16 px-6 text-center bg-gray-50">
+                    <div className="max-w-4xl mx-auto">
+                        <h2 className="text-primary font-bold text-2xl md:text-3xl lg:text-4xl mb-8">
+                            {service.title}
+                        </h2>
+                        <h3 className="text-md md:text-lg font-semibold text-gray-800 mb-6">
+                            {service.additionalInfo.headline}
+                        </h3>
+
+                        <div className="bg-white shadow-lg rounded-xl p-6 md:p-8">
+                            <h4 className="text-lg font-semibold text-gray-800 md:text-justify mb-3">
+                                What We Offer:
+                            </h4>
+                            <ul className="list-disc pl-6 text-gray-600 text-justify space-y-2">
+                                {service.additionalInfo.details.whatWeOffer.map((offer, idx) => (
+                                    <li key={idx}>{offer}</li>
+                                ))}
+                            </ul>
+                            <h4 className="text-lg font-semibold text-gray-800 md:text-justify mb-3 mt-4">
+                                Benefits:
+                            </h4>
+                            <ul className="list-disc pl-6 text-gray-600 text-justify space-y-2">
+                                {service.additionalInfo.details.benefits.map((benefit, idx) => (
+                                    <li key={idx}>{benefit}</li>
+                                ))}
+                            </ul>
+                        </div>
+                        <p className="text-gray-800 font-medium text-lg mt-6">
+                            {service.additionalInfo.cta}
+                        </p>
+                        <div className="flex justify-center mt-3">
+                            <Button text={service.additionalInfo.linktext} path={service.additionalInfo.link} />
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </>
+    );
+};
+
+export default ServicesIndividualPage;
