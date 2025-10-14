@@ -70,7 +70,7 @@ const Footer = () => {
                             Home
                         </Link>
                         <Link
-                            href="/OurCaseStudies"
+                            href="/case-studies"
                             className="block hover:text-primary hover:translate-x-1 transition-all"
 
                         >
@@ -91,7 +91,7 @@ const Footer = () => {
                             Careers
                         </Link>
                         <Link
-                            href="/Services"
+                            href="/services"
                             className="block hover:text-primary hover:translate-x-1 transition-all"
 
                         >
@@ -99,7 +99,7 @@ const Footer = () => {
                         </Link>
 
                         <Link
-                            href="/ourTeam"
+                            href="/our-team"
                             className="block hover:text-primary hover:translate-x-1 transition-all"
 
                         >
