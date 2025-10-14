@@ -12,7 +12,7 @@ const ServiceGridCard = ({ imageSrc, title, additionalInfo, alignRight }) => {
 
   return (
     <a
-      href={title === "Agentforce Implementation" ? "/Services/agentforce" : generateServicePath(title)}
+      href={title === "Agentforce Implementation" ? "/services/agentforce-consulting-services" : generateServicePath(title)}
       className="block"
     >
       <div

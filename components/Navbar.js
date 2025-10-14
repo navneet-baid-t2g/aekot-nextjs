@@ -11,7 +11,6 @@ import { MdOutlineContactPage } from "react-icons/md";
 import GitexBanner from "./GitexBanner";
 import Link from "next/link";
 import { FaChevronDown, FaLongArrowAltRight } from "react-icons/fa";
-import Button from "./Button";
 
 
 const Navbar = ({ onParentModalClose }) => {
@@ -87,7 +86,7 @@ const Navbar = ({ onParentModalClose }) => {
                                         </Link>
                                         <div className="bg-light dropdown-content p-4 hidden absolute rounded-lg z-10" style={{ minWidth: "300px" }}>
                                             <Link
-                                                href="/Services/agentforce"
+                                                href="/Services/agentforce-consulting-services"
                                                 className="py-2 block hover:text-primary hover:translate-x-1 transition-all"
                                                 onClick={handleClick}
                                             >
@@ -95,7 +94,7 @@ const Navbar = ({ onParentModalClose }) => {
                                             </Link>
 
                                             <Link
-                                                href="/services/salesforce-consulting-strategy"
+                                                href="/services/salesforce-consulting-services"
                                                 className="py-2 block hover:text-primary hover:translate-x-1 transition-all"
                                                 onClick={handleClick}
                                             >
