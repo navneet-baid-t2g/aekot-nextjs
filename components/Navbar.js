@@ -81,7 +81,7 @@ const Navbar = ({ onParentModalClose }) => {
                                 </Link>
                                 <aside className="link-container">
                                     <div className="dropdown relative inline-block">
-                                        <Link href="/Services" className="dropbtn hover:text-primary transition-colors">
+                                        <Link href="/services" className="dropbtn hover:text-primary transition-colors">
                                             Services{" "}
                                             <FaChevronDown className="inline-block fa-chevron-down text-xs translate-x-1" />
                                         </Link>
@@ -95,7 +95,7 @@ const Navbar = ({ onParentModalClose }) => {
                                             </Link>
 
                                             <Link
-                                                href="/Services/salesforce-consulting-strategy"
+                                                href="/services/salesforce-consulting-strategy"
                                                 className="py-2 block hover:text-primary hover:translate-x-1 transition-all"
                                                 onClick={handleClick}
                                             >
@@ -103,28 +103,28 @@ const Navbar = ({ onParentModalClose }) => {
                                             </Link>
 
                                             <Link
-                                                href="/Services/salesforce-implementation-integration"
+                                                href="/services/salesforce-implementation-integration"
                                                 className="py-2 block hover:text-primary hover:translate-x-1 transition-all"
                                                 onClick={handleClick}
                                             >
                                                 Salesforce Implementation & Integration
                                             </Link>
                                             <Link
-                                                href="/Services/salesforce-support-managed-services"
+                                                href="/services/salesforce-support-managed-services"
                                                 className="py-2 block hover:text-primary hover:translate-x-1 transition-all"
                                                 onClick={handleClick}
                                             >
                                                 Salesforce Support & Managed Services
                                             </Link>
                                             <Link
-                                                href="/Services/salesforce-training-adoption"
+                                                href="/services/salesforce-training-adoption"
                                                 className="py-2 block hover:text-primary hover:translate-x-1 transition-all"
                                                 onClick={handleClick}
                                             >
                                                 Salesforce Training & Adoption
                                             </Link>
                                             <Link
-                                                href="/Services/data-migration-management"
+                                                href="/services/data-migration-management"
                                                 className="py-2 block hover:text-primary hover:translate-x-1 transition-all"
                                                 onClick={handleClick}
                                             >
@@ -157,14 +157,14 @@ const Navbar = ({ onParentModalClose }) => {
                                             </Link>
 
                                             <Link
-                                                href="/ourTeam"
+                                                href="/our-team"
                                                 className="py-2 block hover:text-primary hover:translate-x-1 transition-all"
                                                 onClick={handleClick}
                                             >
                                                 Our Team
                                             </Link>
                                             <Link
-                                                href="/OurCaseStudies"
+                                                href="/case-studies"
                                                 className="py-2 block hover:text-primary hover:translate-x-1 transition-all"
                                                 onClick={handleClick}
                                             >
@@ -218,7 +218,7 @@ const Navbar = ({ onParentModalClose }) => {
                             </Link>
                             <hr className="" />
                             <Link
-                                href="/Services"
+                                href="/services"
                                 className="flex items-center gap-2 hover:text-primary transition-colors"
                                 onClick={() => {
                                     handleClick();
@@ -251,7 +251,7 @@ const Navbar = ({ onParentModalClose }) => {
                             </Link>
                             <hr className="" />
                             <Link
-                                href="/ourTeam"
+                                href="/our-team"
                                 className="flex items-center gap-2 hover:text-primary transition-colors"
                                 onClick={() => {
                                     handleClick();
@@ -262,7 +262,7 @@ const Navbar = ({ onParentModalClose }) => {
                             </Link>
                             <hr className="" />
                             <Link
-                                href="/OurCaseStudies"
+                                href="/case-studies"
                                 className="flex items-center gap-2 hover:text-primary transition-colors"
                                 onClick={() => {
                                     handleClick();
