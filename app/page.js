@@ -255,12 +255,6 @@ const services = [
       "We are experts in integrating Salesforce with third-party systems such as ERPs, marketing tools and other custom apps. Using APIs, middleware and tools like MuleSoft, our Salesforce consulting services ensure smooth data flow and functioning across various platforms.",
   },
   {
-    title: "Market Automation",
-    icon: <FaBullhorn className="text-4xl text-primary group-hover:scale-110 transition-transform duration-300" />,
-    description:
-      "We utilize Salesforce Marketing Cloud and Pardot to deliver marketing automation solutions. Our Salesforce consulting services clients design interaction with customers to their individual needs, preferences and behaviours, automatic email campaigns and utilize data-driven insights for targeted marketing. ",
-  },
-  {
     title: "AppExchange",
     icon: <FaAppStore className="text-4xl text-primary group-hover:scale-110 transition-transform duration-300" />,
     description:
@@ -403,7 +397,7 @@ export default function Home() {
         </article>
         <section className="bg-gradient-to-b from-gray-50 to-gray-100 py-20 px-6 md:px-12 lg:px-20">
           <div className="max-w-7xl mx-auto text-center mb-14">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 text-primary">Offered Services</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 text-primary">How We Deliver Salesforce Excellence</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               We focus on the client’s success through a collaborative approach and provide a free trial and comprehensive training to ensure effective Salesforce adoption.
             </p>
@@ -423,9 +417,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <article className="max-w-screen-xl mx-auto space-y-6">
+        <article className="max-w-screen-xl mx-auto space-y-6 py-12 lg:py-20">
           <div className="space-y-6 text-center">
-            <h2 className="text-primary pt-12 font-bold xs:text-3xl text-2xl  md:text-3xl lg:text-4xl">
+            <h2 className="text-primary font-bold xs:text-3xl text-2xl  md:text-3xl lg:text-4xl">
               Services We Provide
             </h2>
             <p className="text-sm xs:text-xl sm:text-xl  md:text-base">
