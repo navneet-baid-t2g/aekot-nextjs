@@ -8,7 +8,7 @@ import Service from "@/components/ServiceCard";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import Link from "next/link";
 import Faq from "@/components/Faq";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaLongArrowAltRight } from "react-icons/fa";
 import { LuRedo, LuShieldHalf, LuBrain, LuCalendarCheck, LuHospital, LuHandshake, LuMonitorCheck, LuCircleCheck, LuExternalLink, LuChevronUp, LuChevronDown } from "react-icons/lu";
 import ActionSection from "@/components/ActionSection";
 import { FaHospital, FaUniversity, FaBuilding, FaLaptopCode, FaHandsHelping } from "react-icons/fa";
@@ -21,6 +21,7 @@ import {
   FaRobot,
 } from "react-icons/fa";
 import ContactCTA from "@/components/ContactCTA";
+import { FaCogs, FaHeadset, FaRocket, FaLink, FaBullhorn, FaCode } from "react-icons/fa";
 
 
 
@@ -228,7 +229,50 @@ const otherservices = [
 ];
 
 
-
+const services = [
+  {
+    title: "Setup",
+    icon: <FaCogs className="text-4xl text-primary group-hover:scale-110 transition-transform duration-300" />,
+    description:
+      "Aekot provides end-to-end certified Salesforce CRM consulting services for implementation, which include initial configuration and deployment of Salesforce platforms like Sales Cloud, Service Cloud and Marketing Cloud. We analyse your company’s business and set up a customised CRM system to ensure a smooth transition without any disruption. This includes configuring user roles, workflows and data migration to match the client’s objectives",
+  },
+  {
+    title: "Support",
+    icon: <FaHeadset className="text-4xl text-primary group-hover:scale-110 transition-transform duration-300" />,
+    description:
+      "We offer ongoing support to ensure Salesforce systems run smoothly after implementation. Our expert Salesforce CRM consulting includes troubleshooting, regular maintenance and user support with our 24/7 assistance and dedicated account manager.",
+  },
+  {
+    title: "Optimization",
+    icon: <FaRocket className="text-4xl text-primary group-hover:scale-110 transition-transform duration-300" />,
+    description:
+      "Our team optimises your CRM system for better performance and increased ROI. Through our consulting services, we analyse current setups, refine processes and implement advanced features like AI-driven analytics such as Einstein AI. Our team will improve workflows, enhance reporting capabilities and ensure that the platform adapts to your needs.",
+  },
+  {
+    title: "System Integration",
+    icon: <FaLink className="text-4xl text-primary group-hover:scale-110 transition-transform duration-300" />,
+    description:
+      "We are experts in integrating Salesforce with third-party systems such as ERPs, marketing tools and other custom apps. Using APIs, middleware and tools like MuleSoft, our Salesforce consulting services ensure smooth data flow and functioning across various platforms.",
+  },
+  {
+    title: "Market Automation",
+    icon: <FaBullhorn className="text-4xl text-primary group-hover:scale-110 transition-transform duration-300" />,
+    description:
+      "We utilize Salesforce Marketing Cloud and Pardot to deliver marketing automation solutions. Our Salesforce consulting services clients design interaction with customers to their individual needs, preferences and behaviours, automatic email campaigns and utilize data-driven insights for targeted marketing. ",
+  },
+  {
+    title: "AppExchange",
+    icon: <FaAppStore className="text-4xl text-primary group-hover:scale-110 transition-transform duration-300" />,
+    description:
+      "Our Salesforce consulting services include AppExchange app development, including business analysis, app architecture, app development, security review assistance, listing support and app maintenance & support. This provides extended functions across various platforms and ensures compatibility and optimal performance with the Salesforce ecosystem.",
+  },
+  {
+    title: "Custom Development",
+    icon: <FaCode className="text-4xl text-primary group-hover:scale-110 transition-transform duration-300" />,
+    description:
+      "We offer flexible customisation through our Salesforce CRM consulting platform according to the company’s needs. We use tools like Apex, Visualforce, Lightning Components and Salesforce APIs to create custom apps, automate processes, integrate with external systems and deliver custom-built features.",
+  },
+];
 export const metadata = {
   title: "Salesforce Consulting Services to Grow Your Business | AEKOT",
   description:
@@ -357,7 +401,28 @@ export default function Home() {
             </div>
           </section>
         </article>
-
+        <section className="bg-gradient-to-b from-gray-50 to-gray-100 py-20 px-6 md:px-12 lg:px-20 bg-cta-bg bg-contains">
+          <div className="max-w-7xl mx-auto text-center mb-14">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 text-primary">Offered Services</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              We focus on the client’s success through a collaborative approach and provide a free trial and comprehensive training to ensure effective Salesforce adoption.
+            </p>
+          </div>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 p-8 flex flex-col items-center text-center border border-transparent hover:border-blue-100"
+                >
+                  <div className="mb-4">{service.icon}</div>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">{service.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
         <article className="max-w-screen-xl mx-auto space-y-6">
           <div className="space-y-6 text-center">
             <h2 className="text-primary pt-12 font-bold xs:text-3xl text-2xl  md:text-3xl lg:text-4xl">
@@ -368,7 +433,7 @@ export default function Home() {
               <br className="hidden md:block" /> Salesforce solutions.
             </p>
           </div>
-          <div className="max-w-screen grid md:grid-cols-2 lg:md:grid-cols-3 gap-4 xl:gap-24 md:px-12">
+          <div className="max-w-screen grid md:grid-cols-2 lg:md:grid-cols-3 gap-4 xl:gap-10">
             <Service
               icon={"/assets/customization.svg"}
               name="Agentforce Implementation & Services"
@@ -435,7 +500,7 @@ export default function Home() {
                 </h3>
                 <ul className="mt-4 text-gray-600 text-sm space-y-2 group-hover:text-white transition-all duration-300">
                   {feature.points.map((point, i) => (
-                    <li key={i}>• {point}</li>
+                    <li key={i} className="flex align-center justify-center"><FaLongArrowAltRight className="mr-2 flex-shrink-0 mt-1" /> {point}</li>
                   ))}
                 </ul>
               </div>

@@ -42,7 +42,7 @@ const actionSections = [
     },
 ];
 
-export default function () {
+export default function ActionSection () {
     const [openIndex, setOpenIndex] = useState(0);
 
     const toggleSection = (index) => {
@@ -51,7 +51,7 @@ export default function () {
 
     return (
         <section
-            className="py-16 bg-white text-gray-900 flex flex-col md:flex-row gap-12 md:items-start mt-12 md:mt-32 max-w-7xl mx-auto"
+            className="py-16 bg-white text-gray-900 flex flex-col md:flex-row gap-12 md:items-start max-w-7xl mx-auto"
         >
             <div className="md:w-1/2 flex flex-col self-start min-h-[300px]">
                 <h2 className="text-3xl md:text-4xl font-bold text-primary">

@@ -34,7 +34,7 @@ export default function ContactCTA({ heading = "Need Professional Salesforce Int
             href="#"
             className="underline hover:text-white transition"
           >
-            Aekot's Privacy Policy
+            Aekot&apos;s Privacy Policy
           </a>
         </p>
       </div>

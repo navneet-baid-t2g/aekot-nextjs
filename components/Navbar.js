@@ -300,8 +300,8 @@ const Navbar = ({ onParentModalClose }) => {
                     <section
                         className={
                             scroll
-                                ? "max-w-screen-2xl mx-auto hidden lg:block py-0 space-y-4 sm:space-x-2 2xl:space-x-6 transition-all duration-400 ease-in"
-                                : "max-w-screen-2xl mx-auto hidden lg:block py-6 space-y-4 sm:space-x-2 2xl:space-x-6 transition-all duration-400 ease-in"
+                                ? "max-w-screen-2xl mx-auto hidden lg:block py-0 space-y-0 sm:space-x-2 2xl:space-x-6 transition-all duration-400 ease-in"
+                                : "max-w-screen-2xl mx-auto hidden lg:block py-6 space-y-0 sm:space-x-2 2xl:space-x-6 transition-all duration-400 ease-in"
                         }
                     >
                         {/* LOGIN BUTTON MODAL IS INSIDE THE CHILDREN PROPERTY */}

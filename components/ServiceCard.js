@@ -3,8 +3,8 @@ import Link from "next/link";
 const Service = ({ icon, name, text, path }) => {
   return (
     <Link href={path} className="block">
-      <article className="mx-auto w-fit p-12 lg:p-6 cursor-pointer">
-        <div className="relative w-full h-[23rem] group shadow-xl py-4">
+      <article className="mx-auto w-fit cursor-pointer">
+        <div className="relative w-full h-[22rem] group shadow-xl py-4">
           <div className="flex flex-col justify-center items-center text-center gap-4 w-5/6 mx-auto relative overflow-hidden">
             <div className="flex justify-center items-center rounded-full bg-white shadow w-14 h-14 p-4">
               <img src={icon} alt="Icon" className="object-center" />
