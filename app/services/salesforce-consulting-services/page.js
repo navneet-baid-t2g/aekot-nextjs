@@ -4,6 +4,7 @@ import Button from "@/components/Button";
 import Faq from "@/components/Faq";
 import ContactCTA from "@/components/ContactCTA";
 import { FaHandHoldingDollar } from "react-icons/fa6";
+import ScrollingLogos from "@/components/ScrollingLogos";
 
 const certificationImages = [
     { src: "/images/Certifications/C22.png" },
@@ -254,17 +255,8 @@ export default function ServiceSingle() {
                     </div>
 
                     {/* Right Scrolling Logos */}
-                    <div className="relative h-[400px] w-1/3 overflow-hidden flex justify-end mt-12">
-                        <div className="flex flex-col gap-8 animate-scroll">
-                            {certificationImages.concat(certificationImages).map((src, i) => (
-                                <img
-                                    key={i}
-                                    src={src.src}
-                                    alt={`Certification ${i + 1}`}
-                                    className="h-[102px] w-[102px] object-contain"
-                                />
-                            ))}
-                        </div>
+                    <div className="relative h-[400px] sm:h-[102px] w-1/3 sm:w-full overflow-hidden flex justify-end mt-12 md:mt-0">
+                        <ScrollingLogos />
                     </div>
                 </div>
             </section>

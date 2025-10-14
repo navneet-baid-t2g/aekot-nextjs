@@ -38,14 +38,22 @@ module.exports = {
         dots: "url('/assets/dots_bg.svg')",
       },
       keyframes: {
-        scroll: {
+        // vertical: moves up by half (because content is duplicated)
+        scrollY: {
           '0%': { transform: 'translateY(0%)' },
-          '100%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(-50%)' },
+        },
+        // horizontal: moves left by half (because content is duplicated)
+        scrollX: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
       },
       animation: {
-        scroll: 'scroll 15s linear infinite',
+        scrollY: 'scrollY 15s linear infinite',
+        scrollX: 'scrollX 15s linear infinite',
       },
+
     },
   },
   plugins: [],
