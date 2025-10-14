@@ -42,7 +42,7 @@ const actionSections = [
     },
 ];
 
-export default function ActionSection () {
+export default function ActionSection() {
     const [openIndex, setOpenIndex] = useState(0);
 
     const toggleSection = (index) => {
@@ -60,6 +60,13 @@ export default function ActionSection () {
                 <p className="text-gray-800 mt-4 max-w-3xl text-md md:text-md">
                     Aekot is a Salesforce Consulting Services provider known for our experience, global service delivery, adaptable engagement models, commitments and service expertise in Salesforce CRM consulting.
                 </p>
+                <div className="mt-16 w-40 md:w-60 transition-transform duration-300 hover:scale-105 hover:drop-shadow-lg">
+                    <img
+                        src="/assets/salesforce.svg"
+                        alt="Salesforce"
+                        className="w-full h-auto object-contain"
+                    />
+                </div>
             </div>
 
             <div className="md:w-1/2 space-y-6">

@@ -212,9 +212,9 @@ export default function ServiceSingle() {
                         At Aekot, we guide you for integrating solutions with the Salesforce platform and implementation by setting up and customising Salesforce for your use. We give a full set of services for businesses to help them improve efficiency, effectively manage customer relationships and connect their systems with the Salesforce platform. Our main focus is to deliver reliable, secure and scalable Salesforce solutions that will adjust with your performance and long-term goals.
                     </p>
 
-                    <button className="mt-8 px-6 py-3 bg-[#e52b50] text-white rounded-md font-medium hover:bg-[#d81b60] transition duration-300">
-                        Contact Us
-                    </button>
+                    <div className="mt-3">
+                        <Button text="Get Started" path="/contact" />
+                    </div>
                 </div>
 
                 {/* Right Image */}
@@ -405,7 +405,7 @@ export default function ServiceSingle() {
 
             {/* Call to Action */}
             <section className="px-6">
-                <div className=" max-w-screen-xl mx-auto shadow-[0_0_5px_rgba(0,0,0,0.25)] rounded-2xl px-8 md:px-12 py-8  text-center space-y-6 mt-12 md:mt-32">
+                <div className=" max-w-screen-xl mx-auto shadow-[0_0_5px_rgba(0,0,0,0.25)] rounded-2xl px-8 md:px-12 py-8  text-center space-y-6">
                     <p className="font-semibold text-xl">
                         Get Started with Aekot Today!
                         <span style={{ color: "#e52b50" }}> #AekotAdvantage.</span>

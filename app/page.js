@@ -401,7 +401,7 @@ export default function Home() {
             </div>
           </section>
         </article>
-        <section className="bg-gradient-to-b from-gray-50 to-gray-100 py-20 px-6 md:px-12 lg:px-20 bg-cta-bg bg-contains">
+        <section className="bg-gradient-to-b from-gray-50 to-gray-100 py-20 px-6 md:px-12 lg:px-20">
           <div className="max-w-7xl mx-auto text-center mb-14">
             <h2 className="text-4xl font-bold text-gray-900 mb-4 text-primary">Offered Services</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -472,14 +472,7 @@ export default function Home() {
             ></Service>
           </div>
         </article>
-        <div className="fade-in-head pt-2 mx-4">
-          <CTA
-            head="Why choose us as a Salesforce Implementation Partner?"
-            text="Whether you&apos;re looking to optimize your Salesforce implementation, integrate new technologies, or expand your global reach, Aekot has the expertise and passion to help you succeed. 
-                   Let&apos;s transform your business together."
-            image={"/assets/salesforce.svg"}
-          />
-        </div>
+
 
       </section>
 

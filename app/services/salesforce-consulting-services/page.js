@@ -3,6 +3,7 @@ import { FaUsers, FaDatabase, FaChartLine, FaUserCheck, FaHeadset } from "react-
 import Button from "@/components/Button";
 import Faq from "@/components/Faq";
 import ContactCTA from "@/components/ContactCTA";
+import { FaHandHoldingDollar } from "react-icons/fa6";
 
 const certificationImages = [
     { src: "/images/Certifications/C22.png" },
@@ -175,9 +176,9 @@ export default function ServiceSingle() {
                         Aekot is one of the best providers of Salesforce consulting services for both startups and larger organisations.
                     </p>
 
-                    <button className="mt-8 px-6 py-3 bg-[#e52b50] text-white rounded-md font-medium hover:bg-[#d81b60] transition duration-300">
-                        Contact Us
-                    </button>
+                    <div className="mt-3">
+                        <Button text="Get Started" path="/contact" />
+                    </div>
                 </div>
 
                 {/* Right Image */}
@@ -279,7 +280,7 @@ export default function ServiceSingle() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
 
                         <div className="p-6 rounded-2xl shadow-lg text-center border border-gray-100">
-                            <FaUsers className="text-4xl text-red-500 mx-auto" />
+                            <FaHandHoldingDollar className="text-4xl text-red-500 mx-auto" />
                             <h3 className="text-xl font-semibold mt-4">Maximum ROI</h3>
                             <p className="text-gray-500 mt-2 text-sm">
                                 Our Salesforce consulting services for enterprises can improve your investment by simplifying processes, streamlining repeated tasks and using smart data insights. We align solutions with your business goals to bring you visible results such as higher sales performance and lower running costs to give maximum return on investment.
@@ -392,7 +393,7 @@ export default function ServiceSingle() {
 
             {/* Call to Action */}
             <section className="px-6">
-                <div className=" max-w-screen-xl mx-auto shadow-[0_0_5px_rgba(0,0,0,0.25)] rounded-2xl px-8 md:px-12 py-8  text-center space-y-6 mt-12 md:mt-32">
+                <div className=" max-w-screen-xl mx-auto shadow-[0_0_5px_rgba(0,0,0,0.25)] rounded-2xl px-8 md:px-12 py-8  text-center space-y-6">
                     <p className="font-semibold text-xl">
                         Get Started with Aekot Today!
                         <span style={{ color: "#e52b50" }}> #AekotAdvantage.</span>

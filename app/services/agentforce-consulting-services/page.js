@@ -15,47 +15,47 @@ const servicecarddata = [
     {
         title: "Strategy and Advisory",
         desc: "We will do a full assessment of what your business needs, find out new opportunities and create steps to adjust Agentforce according to your business goals.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/services/strategy-and-advisory.webp",
     },
     {
         title: "Design and Deployment",
         desc: "We will design and deploy Agentforce service agents as per your business needs. We can build them based on already existing agents like sales agents or build entirely new ones with the help of Agent builder.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/services/design-deployment.webp",
     },
     {
         title: "Advanced AI Capabilities",
         desc: "We use Agentforce’s Atlas Reasoning Engine and multimodal AI to build Agentforce service agents that can process texts, voice, images and documents to give better services.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/services/advanced-ai-capabilities.webp",
     },
     {
         title: "Integration",
         desc: "Our teams are Agentforce integration experts and can make the integration process with Salesforce CRM Data Cloud and third-party systems very smooth.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/services/integration.webp",
     },
     {
         title: "Customisation",
         desc: "Our team will make sure that every agent is created according to your business goals. Every agent that we will create is tuned with low-code tools to make customisation easy.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/services/customization.webp",
     },
     {
         title: "Automation",
         desc: "We create AI tools that perform daily tasks such as campaigning, generating leads, etc. to relieve teams so they can focus on more important and productive activities.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/services/automation.webp",
     },
     {
         title: "Security & Compliance",
         desc: "We use the Einstein Trust layer to make sure that Agentforce holds up data privacy regulations and saves sensitive data with a governance framework.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/services/security-compliance.webp",
     },
     {
         title: "Training & Enablement",
         desc: "We will provide complete training programs that allow your teams to manage and optimise Agentforce AI tools easily and confidently.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/services/training-and-enablement.webp",
     },
     {
         title: "Support & Managed Services",
         desc: "Our expert Agentforce consulting services provide full support 24/7, monitor performance, and help scale Agentforce as per your business needs.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/services/support.webp",
     },
 ];
 
@@ -173,7 +173,7 @@ export default function ServiceSingle() {
                 {/* Left Content */}
                 <div className="max-w-xl text-center md:text-left">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-                        <span className="text-[#e52b50]">Salesforce Agentforce</span> consulting service{" "}
+                        <span className="text-[#e52b50]">Salesforce Agentforce</span> Consulting Service{" "}
                     </h1>
 
                     <p className="text-gray-600 mt-4 leading-relaxed">
@@ -182,9 +182,9 @@ export default function ServiceSingle() {
                         Agentforce&apos;s AI tools into your business.
                     </p>
 
-                    <button className="mt-8 px-6 py-3 bg-[#e52b50] text-white rounded-md font-medium hover:bg-[#d81b60] transition duration-300">
-                        Contact Us
-                    </button>
+                    <div className="mt-3">
+                        <Button text="Get Started" path="/contact" />
+                    </div>
                 </div>
 
                 {/* Right Image */}
@@ -230,7 +230,7 @@ export default function ServiceSingle() {
                                 <img
                                     src={service.img}
                                     alt={service.title}
-                                    className="w-full h-48 object-cover"
+                                    className="w-full h-60 object-cover"
                                 />
                                 <div className="p-6">
                                     <h3 className="text-xl font-semibold text-gray-800 mb-3">
@@ -251,7 +251,7 @@ export default function ServiceSingle() {
                     {/* Left Content */}
                     <div className="flex flex-col space-y-6 md:w-2/3">
                         <h2 className="text-3xl md:text-4xl font-bold text-left">
-                            Why should you go for <span className="text-primary">Aekot&apos;s Salesforce Agentforce</span>  consulting services?
+                            Why should you go for <span className="text-primary">Aekot&apos;s Salesforce Agentforce</span>  Consulting Services?
                         </h2>
 
                         <p className="text-md text-gray-800 text-left">
@@ -423,12 +423,11 @@ export default function ServiceSingle() {
                         );
                     })()}
                 </div>
-
             </section>
 
             {/* Call to Action */}
             <section className="px-6">
-                <div className=" max-w-screen-xl mx-auto shadow-[0_0_5px_rgba(0,0,0,0.25)] rounded-2xl px-8 md:px-12 py-8  text-center space-y-6 mt-12 md:mt-32">
+                <div className=" max-w-screen-xl mx-auto shadow-[0_0_5px_rgba(0,0,0,0.25)] rounded-2xl px-8 md:px-12 py-8  text-center space-y-6">
                     <p className="font-semibold text-xl">
                         Get Started with Aekot Today!
                         <span style={{ color: "#e52b50" }}> #AekotAdvantage.</span>
