@@ -31,37 +31,37 @@ const services = [
         image: "/assets/strategy.svg",
         alt: "Strategy",
         title: "Strategy",
-        link: "/Services",
+        link: "/services",
     },
     {
         image: "/assets/implementation.svg",
         alt: "Implementation",
         title: "Implementation",
-        link: "/Services",
+        link: "/services",
     },
     {
         image: "/assets/customization.svg",
         alt: "Customization",
         title: "Customization",
-        link: "/Services",
+        link: "/services",
     },
     {
         image: "/assets/integration.svg",
         alt: "Integration",
         title: "Integration",
-        link: "/Services",
+        link: "/services",
     },
     {
         image: "/assets/dataAnalytics.svg",
         alt: "Data Analytics",
         title: "Data Analytics",
-        link: "/Services",
+        link: "/services",
     },
     {
         image: "/assets/programServices.svg",
         alt: "Program Services",
         title: "Program Services",
-        link: "/Services",
+        link: "/services",
     },
 ];
 

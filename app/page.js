@@ -388,7 +388,7 @@ export default function Home() {
                   </p>
                   <div className="flex justify-center pt-4">
                     <Link
-                      href="/Services/agentforce"
+                      href="/services/agentforce-consulting-services"
                       className="ghost-button text-sm inline-block hover:scale-110 sm:w-44 md:w-48 lg:w-48 py-2 pl-2 font-semibold text-center text-light border-2 border-primary bg-primary rounded-md transition-colors flex items-center justify-center gap-2"
                       style={{ transition: "transform 0.2s ease-in-out" }}
                     >
@@ -438,7 +438,7 @@ export default function Home() {
               icon={"/assets/customization.svg"}
               name="Agentforce Implementation & Services"
               text="Empower your teams with intelligent automation, seamless integration, and unmatched scalability — Agentforce is redefining how businesses operate in the age of AI."
-              path='/Services/agentforce'
+              path='/services/agentforce-consulting-services'
             ></Service>
             <Service
               icon={"/assets/strategy.svg"}
