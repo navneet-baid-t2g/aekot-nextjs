@@ -19,7 +19,7 @@ const service = {
             ]
         },
         "cta": "Start Your Data Migration with Confidence. ",
-        "linktext": "Contact us to learn more",
+        "linktext": "Contact Us",
         "link": "/contact"
     },
     "metaData": {

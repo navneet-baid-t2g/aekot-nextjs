@@ -14,27 +14,27 @@ const servicecarddata = [
     {
         title: "Provide Consultation and Services",
         desc: "We analyse what are the requirements for the implementation of a Salesforce solution that will support your business processes and objectives.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Provide-Consultation-and-Services.webp",
     },
     {
         title: "Do Configuration and Customisation",
         desc: "We will install Sales, Services, Marketing and Commerce clouds according to your needs. Our team will create Custom objects, work processes, dashboards and reports to match your business model.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Configuration-and-Customisation.webp",
     },
     {
         title: "Data Migration",
         desc: "We will transfer data safely and accurately into Salesforce from previous systems. We make sure that the data is clean so it doesn&apos;t give errors and is reliable for stability.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Data-Migration.webp",
     },
     {
         title: "Train Users and help in Adoption",
         desc: "We would provide Salesforce implementation services training to your teams and users with full training sessions and guides to help them understand and use Salesforce easily and stay efficient as the business grows.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Train-Users-and-help-in-Adoption.webp",
     },
     {
         title: "Support & Maintenance",
         desc: "Once the solutions are implemented, we will continue to monitor and give support after that as well. Our team of certified salesforce implementation service experts will regularly update and improve the efficiency of your business.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Support-Maintenance.webp",
     },
 ];
 
@@ -42,42 +42,42 @@ const servicecardintdata = [
     {
         title: "Integration ERP systems",
         desc: "In this, we connect Enterprise Resource Planning (ERP) systems with CRM, eCommerce, etc. to unify data and make processes like inventory, finance and supply chain management automatic. It reduces data silos and enters data manually which helps to decrease errors.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Integration-ERP-systems.webp",
     },
     {
         title: "Integrating automated marketing platforms",
         desc: "We link marketing platforms like Marketing Cloud, HubSpot, Marketo, etc. with CRM, ERP and social media. This helps in tracking revenue and performance of campaigns. It also syncs lead data and automates tasks like sending follow up emails.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Integrating-automated-marketing-platforms.webp",
     },
     {
         title: "Integrating tools for Customer Support",
         desc: "By connecting customer support tools like Service Cloud, Zendesk, ServiceNow, Freshdesk, etc. with communication platforms to bring all customer data together. With this you can create tickets automatically, respond to your customer quickly and find out any issues that you can solve to improve your performance.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Integrating-tools-for-Customer-Support.webp",
     },
     {
         title: "Integrating accounts tools",
         desc: "We connect accounting tools like QuickBooks, Xero, Sage, NetSuite, etc. with payment systems to make invoicing, accounts reconciliation and generate reports automatically. Integrating tools will make sure that the data is accurate as they take exact data from other platforms and you don&apos;t have to manually type it in.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Integrating-accounts-tools.webp",
     },
     {
         title: "Integrating Project management tools",
         desc: "We link tools like Asana, Jira, Monday.com, Basecamp, etc. with time-tracking systems to simplify tracking, allocating resources and teams working together. Assigning tasks and tracking progress updates becomes automatic.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Integrating-Project-management-tools.webp",
     },
     {
         title: "Integrating Amazon Web Services",
         desc: "We connect amazon web services like API Gateway, AppSync, MuleSoft, Zapier, etc. with ERP, CRM and other systems. This allows these systems to share data and work together in the cloud. This will save you money as you only pay for what you use.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Integrating-Amazon-Web-Services.webp",
     },
     {
         title: "Integrating Payment Gateways",
         desc: "We connect payment gateways like Stripe, PayPal, Transfer, Square, ArtsylPay, etc. with accounting systems so they can share data automatically. It connects directly with how your customers pay and how you record those payments. These payments are supported all over the world and it will be easier for you to pay anywhere you want.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Integrating-Payment-Gateways.webp",
     },
     {
         title: "Integrating Document management systems",
         desc: "We merge document management systems like DocuSign, SharePoint, etc. with accounting platforms so they can share and manage documents easily. You use less paper and it saves money and helps the environment. You can save documents on the cloud safely and easier to find and share.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Integrating-Document-management-systems.webp",
     },
 ];
 
@@ -221,8 +221,8 @@ export default function ServiceSingle() {
                 {/* Right Image */}
                 <div className="mt-10 md:mt-0 md:ml-10 flex justify-center">
                     <img
-                        src="/images/agentforceNews/benefits1.webp"
-                        alt="AI Robot"
+                        src="/images/serviceImages/Integration-and-Implementation.webp"
+                        alt="Salesforce Integration and Implementation"
                         className="w-82 md:w-106 object-contain rounded-lg"
                     />
                 </div>

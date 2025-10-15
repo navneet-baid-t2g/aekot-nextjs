@@ -19,7 +19,7 @@ const service = {
             ]
         },
         "cta": "Boost Salesforce Adoption Today. ",
-        "linktext": "Contact us to learn how",
+        "linktext": "Contact Us",
         "link": "/contact"
     },
     "metaData": {
