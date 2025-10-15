@@ -12,17 +12,17 @@ const servicecarddata = [
     {
         title: "Strategy and Advisory",
         desc: "We will do a full assessment of what your business needs, find out new opportunities and create steps to adjust Agentforce according to your business goals.",
-        img: "/images/services/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Strategy-and-Advisory1.webp",
     },
     {
         title: "Design and Deployment",
         desc: "We will design and deploy Agentforce service agents as per your business needs. We can build them based on already existing agents like sales agents or build entirely new ones with the help of Agent builder.",
-        img: "/images/services/design-deployment.webp",
+        img: "/images/serviceImages/Design-and-Deployment.webp",
     },
     {
         title: "Advanced AI Capabilities",
         desc: "We use Agentforce’s Atlas Reasoning Engine and multimodal AI to build Agentforce service agents that can process texts, voice, images and documents to give better services.",
-        img: "/images/services/advanced-ai-capabilities.webp",
+        img: "/images/serviceImages/Advanced-AI-Capabilities.webp",
     },
     {
         title: "Integration",
@@ -187,8 +187,8 @@ export default function ServiceSingle() {
                 {/* Right Image */}
                 <div className="mt-10 md:mt-0 md:ml-10 flex justify-center">
                     <img
-                        src="/images/agentforceNews/benefits1.webp"
-                        alt="AI Robot"
+                        src="/images/serviceImages/Salesforce-Agentforce.webp"
+                        alt="Salesforce Agentforce consulting services"
                         className="w-82 md:w-106 object-contain rounded-lg"
                     />
                 </div>
