@@ -12,12 +12,12 @@ const servicecarddata = [
     {
         title: "Strategy and Advisory",
         desc: "We will do a full assessment of what your business needs, find out new opportunities and create steps to adjust Agentforce according to your business goals.",
-        img: "/images/serviceImages/Strategy-and-Advisory1.webp",
+        img: "/images/serviceImages/Strategy-and-Advisory.webp",
     },
     {
         title: "Design and Deployment",
         desc: "We will design and deploy Agentforce service agents as per your business needs. We can build them based on already existing agents like sales agents or build entirely new ones with the help of Agent builder.",
-        img: "/images/serviceImages/Design-and-Deployment.webp",
+        img: "/images/serviceImages/Design-and-Development.webp",
     },
     {
         title: "Advanced AI Capabilities",
@@ -27,32 +27,32 @@ const servicecarddata = [
     {
         title: "Integration",
         desc: "Our teams are Agentforce integration experts and can make the integration process with Salesforce CRM Data Cloud and third-party systems very smooth.",
-        img: "/images/services/integration.webp",
+        img: "/images/serviceImages/Integration.webp",
     },
     {
         title: "Customisation",
         desc: "Our team will make sure that every agent is created according to your business goals. Every agent that we will create is tuned with low-code tools to make customisation easy.",
-        img: "/images/services/customization.webp",
+        img: "/images/serviceImages/Customization.webp",
     },
     {
         title: "Automation",
         desc: "We create AI tools that perform daily tasks such as campaigning, generating leads, etc. to relieve teams so they can focus on more important and productive activities.",
-        img: "/images/services/automation.webp",
+        img: "/images/serviceImages/Automation.webp",
     },
     {
         title: "Security & Compliance",
         desc: "We use the Einstein Trust layer to make sure that Agentforce holds up data privacy regulations and saves sensitive data with a governance framework.",
-        img: "/images/services/security-compliance.webp",
+        img: "/images/serviceImages/Security-and-Compliance.webp",
     },
     {
         title: "Training & Enablement",
         desc: "We will provide complete training programs that allow your teams to manage and optimise Agentforce AI tools easily and confidently.",
-        img: "/images/services/training-and-enablement.webp",
+        img: "/images/serviceImages/Training-and-Enablement.webp",
     },
     {
         title: "Support & Managed Services",
         desc: "Our expert Agentforce consulting services provide full support 24/7, monitor performance, and help scale Agentforce as per your business needs.",
-        img: "/images/services/support.webp",
+        img: "/images/serviceImages/Support-and-Managed-Services.webp",
     },
 ];
 
