@@ -12,7 +12,7 @@ const servicecarddata = [
     {
         title: "Strategy and Advisory",
         desc: "We will do a full assessment of what your business needs, find out new opportunities and create steps to adjust Agentforce according to your business goals.",
-        img: "/images/serviceImages/Strategy-and-Advisory.webp",
+        img: "/images/serviceImages/strategy-and-advisory.webp",
     },
     {
         title: "Design and Deployment",
