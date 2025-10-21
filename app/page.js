@@ -24,15 +24,23 @@ import ContactCTA from "@/components/ContactCTA";
 import { FaCogs, FaHeadset, FaRocket, FaLink, FaBullhorn, FaCode } from "react-icons/fa";
 
 import {
-  FaCloud,
-  FaUsersCog,
+  FaChalkboardTeacher,
   FaGraduationCap,
+  FaCloud,
   FaDatabase,
   FaHandshake,
   FaTools,
+  FaUserShield,
+  FaLayerGroup,
   FaChartLine,
+  FaServer,
+  FaRegLightbulb,
+  FaClipboardList,
+  FaNetworkWired,
+  FaBriefcase,
+  FaTasks,
+  FaChartBar,
 } from "react-icons/fa";
-import { SiSalesforce, SiGooglemarketingplatform } from "react-icons/si";
 
 
 const faqs = [
@@ -218,12 +226,12 @@ const features = [
 const otherservices = [
   {
     title: "Salesforce Consulting Services",
-    icon: <SiSalesforce />,
+    icon: <FaUsers />,
     desc: "Expert guidance to maximize your Salesforce ecosystem.",
   },
   {
     title: "Certified Salesforce CRM Consulting",
-    icon: <FaUsersCog />,
+    icon: <FaUserShield />,
     desc: "Certified experts helping you optimize CRM workflows.",
   },
   {
@@ -238,12 +246,12 @@ const otherservices = [
   },
   {
     title: "Salesforce Marketing Cloud Training",
-    icon: <SiGooglemarketingplatform />,
+    icon: <FaChalkboardTeacher />,
     desc: "Comprehensive training to master Marketing Cloud tools.",
   },
   {
     title: "Salesforce Integration Services",
-    icon: <FaCloud />,
+    icon: <FaNetworkWired />,
     desc: "Connect Salesforce with your business applications easily.",
   },
   {
@@ -258,7 +266,7 @@ const otherservices = [
   },
   {
     title: "Agentforce Integration Expert",
-    icon: <FaCogs />,
+    icon: <FaLayerGroup />,
     desc: "Integrate Agentforce with your existing Salesforce setup.",
   },
   {
@@ -268,47 +276,47 @@ const otherservices = [
   },
   {
     title: "Salesforce Data Migration",
-    icon: <FaDatabase />,
+    icon: <FaServer />,
     desc: "Accurate, secure migration of Salesforce data assets.",
   },
   {
     title: "Expert Salesforce Marketing Cloud Consultant",
-    icon: <SiGooglemarketingplatform />,
+    icon: <FaRocket />,
     desc: "Get expert advice to boost Marketing Cloud performance.",
   },
   {
     title: "Salesforce Marketing Cloud Consultant",
-    icon: <SiGooglemarketingplatform />,
+    icon: <FaBriefcase />,
     desc: "Consulting for targeted and data-driven marketing success.",
   },
   {
     title: "Managed Services for Salesforce",
-    icon: <FaTools />,
+    icon: <FaTasks />,
     desc: "Proactive monitoring and maintenance for Salesforce apps.",
   },
   {
     title: "Salesforce Consulting Services for Enterprises",
-    icon: <FaUsersCog />,
+    icon: <FaClipboardList />,
     desc: "Enterprise-level Salesforce solutions to scale operations.",
   },
   {
     title: "Best Salesforce Implementation Service Provider",
-    icon: <FaCogs />,
+    icon: <FaLaptopCode />,
     desc: "Trusted partner for efficient Salesforce implementations.",
   },
   {
     title: "Certified Salesforce Implementation Service Experts",
-    icon: <FaUsersCog />,
+    icon: <FaUserShield />,
     desc: "Certified specialists delivering top-tier Salesforce builds.",
   },
   {
     title: "Salesforce CRM Consulting Services",
-    icon: <SiSalesforce />,
+    icon: <FaChartBar />,
     desc: "Tailored CRM consulting to align Salesforce with goals.",
   },
   {
     title: "Agentforce Consulting Services",
-    icon: <FaHandshake />,
+    icon: <FaRegLightbulb />,
     desc: "Strategic Agentforce solutions for smarter operations.",
   },
   {
