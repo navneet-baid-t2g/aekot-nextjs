@@ -5,9 +5,8 @@ import ContactCTA from "@/components/ContactCTA";
 import ScrollingLogos from "@/components/ScrollingLogos";
 
 import {
-    FaGraduationCap,
+
     FaCloud,
-    FaDatabase,
     FaHandshake,
     FaTools,
     FaUserShield,
@@ -123,11 +122,6 @@ const otherservices = [
         desc: "Seamless setup and deployment of Salesforce solutions.",
     },
     {
-        title: "Salesforce Training",
-        icon: <FaGraduationCap />,
-        desc: "Hands-on learning to empower your Salesforce users.",
-    },
-    {
         title: "Salesforce Marketing Cloud Training",
         icon: <FaChalkboardTeacher />,
         desc: "Comprehensive training to master Marketing Cloud tools.",
@@ -136,11 +130,6 @@ const otherservices = [
         title: "Salesforce Integration Services",
         icon: <FaNetworkWired />,
         desc: "Connect Salesforce with your business applications easily.",
-    },
-    {
-        title: "CRM Migration",
-        icon: <FaDatabase />,
-        desc: "Smooth transition of your CRM data with zero disruption.",
     },
     {
         title: "Salesforce Agentforce Consulting",
