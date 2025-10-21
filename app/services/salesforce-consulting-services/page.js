@@ -7,7 +7,7 @@ import { FaHandHoldingDollar } from "react-icons/fa6";
 import ScrollingLogos from "@/components/ScrollingLogos";
 
 import {
-    FaDatabase
+    FaDatabase,
     FaCloud,
     FaHandshake,
     FaTools,
