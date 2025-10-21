@@ -5,7 +5,27 @@ import Button from "@/components/Button";
 import Faq from "@/components/Faq";
 import ContactCTA from "@/components/ContactCTA";
 import ScrollingLogos from "@/components/ScrollingLogos";
-
+import {
+  FaGraduationCap,
+  FaCloud,
+  FaDatabase,
+  FaHandshake,
+  FaTools,
+  FaUserShield,
+  FaLayerGroup,
+  FaChartLine,
+  FaServer,
+  FaRegLightbulb,
+  FaClipboardList,
+  FaNetworkWired,
+  FaBriefcase,
+  FaTasks,
+  FaChartBar,
+  FaUsers,
+  FaCogs,
+  FaRocket,
+  FaLaptopCode,
+} from "react-icons/fa";
 
 
 const servicecarddata = [
@@ -56,28 +76,110 @@ const servicecarddata = [
     },
 ];
 
+
 const otherservices = [
-    "Salesforce Consulting Services",
-    "Certified Salesforce CRM Consulting",
-    "Salesforce Implementation Service",
-    "Salesforce Training",
-    "Salesforce Marketing Cloud Training",
-    "Salesforce Integration Services",
-    "CRM Migration",
-    "Salesforce Agentforce Consulting",
-    "Agentforce Integration Expert",
-    "Salesforce Managed Services",
-    "Salesforce Data Migration",
-    "Expert Salesforce Marketing Cloud Consultant",
-    "Salesforce Marketing Cloud Consultant",
-    "Managed Services for Salesforce",
-    "Salesforce Consulting Services for Enterprises",
-    "Best Salesforce Implementation Service Provider",
-    "Certified Salesforce Implementation Service Experts",
-    "Salesforce CRM Consulting Services",
-    "Agentforce Consulting Services",
-    "Expert Salesforce Consulting Services",
+  {
+    title: "Salesforce Consulting Services",
+    icon: <FaUsers />,
+    desc: "Expert guidance to maximize your Salesforce ecosystem.",
+  },
+  {
+    title: "Certified Salesforce CRM Consulting",
+    icon: <FaUserShield />,
+    desc: "Certified experts helping you optimize CRM workflows.",
+  },
+  {
+    title: "Salesforce Implementation Service",
+    icon: <FaCogs />,
+    desc: "Seamless setup and deployment of Salesforce solutions.",
+  },
+  {
+    title: "Salesforce Training",
+    icon: <FaGraduationCap />,
+    desc: "Hands-on learning to empower your Salesforce users.",
+  },
+  {
+    title: "Salesforce Marketing Cloud Training",
+    icon: <FaChalkboardTeacher />,
+    desc: "Comprehensive training to master Marketing Cloud tools.",
+  },
+  {
+    title: "Salesforce Integration Services",
+    icon: <FaNetworkWired />,
+    desc: "Connect Salesforce with your business applications easily.",
+  },
+  {
+    title: "CRM Migration",
+    icon: <FaDatabase />,
+    desc: "Smooth transition of your CRM data with zero disruption.",
+  },
+  {
+    title: "Salesforce Agentforce Consulting",
+    icon: <FaHandshake />,
+    desc: "Custom Agentforce solutions to enhance agent performance.",
+  },
+  {
+    title: "Agentforce Integration Expert",
+    icon: <FaLayerGroup />,
+    desc: "Integrate Agentforce with your existing Salesforce setup.",
+  },
+  {
+    title: "Salesforce Managed Services",
+    icon: <FaTools />,
+    desc: "Ongoing support to ensure Salesforce runs seamlessly.",
+  },
+  {
+    title: "Salesforce Data Migration",
+    icon: <FaServer />,
+    desc: "Accurate, secure migration of Salesforce data assets.",
+  },
+  {
+    title: "Expert Salesforce Marketing Cloud Consultant",
+    icon: <FaRocket />,
+    desc: "Get expert advice to boost Marketing Cloud performance.",
+  },
+  {
+    title: "Salesforce Marketing Cloud Consultant",
+    icon: <FaBriefcase />,
+    desc: "Consulting for targeted and data-driven marketing success.",
+  },
+  {
+    title: "Managed Services for Salesforce",
+    icon: <FaTasks />,
+    desc: "Proactive monitoring and maintenance for Salesforce apps.",
+  },
+  {
+    title: "Salesforce Consulting Services for Enterprises",
+    icon: <FaClipboardList />,
+    desc: "Enterprise-level Salesforce solutions to scale operations.",
+  },
+  {
+    title: "Best Salesforce Implementation Service Provider",
+    icon: <FaLaptopCode />,
+    desc: "Trusted partner for efficient Salesforce implementations.",
+  },
+  {
+    title: "Certified Salesforce Implementation Service Experts",
+    icon: <FaUserShield />,
+    desc: "Certified specialists delivering top-tier Salesforce builds.",
+  },
+  {
+    title: "Salesforce CRM Consulting Services",
+    icon: <FaChartBar />,
+    desc: "Tailored CRM consulting to align Salesforce with goals.",
+  },
+  {
+    title: "Agentforce Consulting Services",
+    icon: <FaRegLightbulb />,
+    desc: "Strategic Agentforce solutions for smarter operations.",
+  },
+  {
+    title: "Expert Salesforce Consulting Services",
+    icon: <FaChartLine />,
+    desc: "High-impact consulting to accelerate Salesforce success.",
+  },
 ];
+
 
 const faqs = [
     {
@@ -346,37 +448,55 @@ export default function ServiceSingle() {
                 </div>
             </section>
 
-            <section id="other-services" className="py-12 px-6 bg-white">
-                <div className="max-w-7xl mx-auto">
-                    <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                        <span className="text-[#e52b50]"> Other Services</span>
+            <section id="other-services" className="relative py-20 bg-white">
+                <div className="max-w-7xl mx-auto px-6 text-center">
+                    {/* Section Heading */}
+                    <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+                        Our <span className="text-[#e52b50]">Other Services</span>
                     </h2>
-                    <p className="text-gray-600 mb-4">
-                        We not only provide <strong>Salesforce Consulting Services</strong> but
-                        also offer a wide range of specialized services that help companies
-                        maximize their Salesforce potential. Our expertise spans strategy,
-                        implementation, automation, AI, and continuous support. We assist
-                        businesses with consulting, integration, training, data movement, and
-                        managed services.
-                    </p>
-                    <p className="text-gray-600 mb-8">
-                        Whether your organization requires a complete implementation, CRM
-                        migration, AI functionality, AppExchange support, or platform
-                        training, our extensive portfolio of Salesforce services ensures
-                        precise and scalable solutions.
+                    <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed mb-14">
+                        Beyond <span className="font-semibold text-gray-800">Salesforce Consulting</span>,
+                        we provide end-to-end business solutions that help companies grow faster,
+                        automate smarter, and innovate with AI, integrations, and expert-managed services.
                     </p>
 
-                    <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+                    {/* Services Grid */}
+                    <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {otherservices.map((service, index) => (
                             <li
                                 key={index}
-                                className="flex items-start text-gray-700 hover:text-primary transition"
+                                className="group relative p-8 rounded-3xl bg-white shadow-sm border border-gray-100 
+      hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
                             >
-                                <FaArrowRight className="mr-2 mt-1 text-primary flex-shrink-0" />
-                                {service}
+                                {/* Gradient Border on Hover */}
+                                <div
+                                    className="absolute inset-0 rounded-3xl bg-gradient-to-r from-gray-100 to-gray-300 
+        opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"
+                                ></div>
+
+                                <div className="relative z-10 flex flex-col items-center">
+                                    {/* Icon */}
+                                    <div className="p-3 bg-[#e52b50]/10 rounded-full mb-4">
+                                        <div className="text-[#e52b50] text-2xl group-hover:scale-110 transition-transform duration-200">
+                                            {service.icon}
+                                        </div>
+                                    </div>
+
+                                    {/* Title */}
+                                    <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-[#e52b50] transition-colors">
+                                        {service.title}
+                                    </h3>
+
+                                    {/* Description */}
+                                    <p className="text-sm text-gray-600 text-center">
+                                        {service.desc}
+                                    </p>
+                                </div>
                             </li>
                         ))}
                     </ul>
+
+
                 </div>
             </section>
 
