@@ -9,7 +9,7 @@ import TestimonialSlider from "@/components/TestimonialSlider";
 import Link from "next/link";
 import Faq from "@/components/Faq";
 import { FaArrowRight, FaLongArrowAltRight } from "react-icons/fa";
-import { LuRedo, LuShieldHalf, LuBrain, LuCalendarCheck, LuHospital, LuHandshake, LuMonitorCheck, LuCircleCheck, LuExternalLink, LuChevronUp, LuChevronDown } from "react-icons/lu";
+import { LuRedo, LuShieldHalf, LuBrain, LuCalendarCheck, LuHospital, LuHandshake, LuMonitorCheck, LuCircleCheck, LuExternalLink, LuChevronUp, LuChevronDown, LuHeartHandshake, LuMegaphone } from "react-icons/lu";
 import ActionSection from "@/components/ActionSection";
 import { FaHospital, FaUniversity, FaBuilding, FaLaptopCode, FaHandsHelping } from "react-icons/fa";
 import {
@@ -88,136 +88,126 @@ const faqs = [
 
 const expertise = [
   {
-    title: "Health cloud",
-    desc: "We help in improving patient care, operational efficiency and provide patient data readily.",
-    icon: LuShieldHalf,
+    title: "Health Cloud",
+    desc: "Enhance patient care and coordination with Salesforce Health Cloud for better outcomes and connected experiences.",
+    icon: LuHospital,
   },
   {
     title: "Agent Force",
-    desc: "We deploy AI-driven agents for automation and engagement.",
+    desc: "Leverage AI-driven AgentForce to automate workflows and deliver smarter, faster customer interactions.",
     icon: LuBrain,
   },
   {
-    title: "Services Cloud",
-    desc: "We optimise customer support and case management.",
+    title: "Service Cloud",
+    desc: "Streamline support operations with Salesforce Service Cloud to boost agent productivity and customer satisfaction.",
     icon: LuCalendarCheck,
   },
   {
     title: "Experience Cloud",
-    desc: "We build branded and interactive portals for stakeholders.",
-    icon: LuHospital,
+    desc: "Build secure, branded Salesforce portals that connect customers, partners, and employees seamlessly.",
+    icon: LuShieldHalf,
   },
   {
     title: "Sales Cloud",
-    desc: "We streamline sales processes and enhance CRM efficiency with our Salesforce consulting services.",
+    desc: "Accelerate revenue with Salesforce Sales Cloud—optimize leads, forecast sales, and close deals faster.",
     icon: LuHandshake,
   },
   {
     title: "Marketing Cloud",
-    desc: "We create customised multi-channel marketing campaigns through our Salesforce CRM consulting.",
-    icon: LuMonitorCheck,
+    desc: "Create personalized, data-driven marketing campaigns with Salesforce Marketing Cloud for higher engagement.",
+    icon: LuMegaphone,
   },
   {
     title: "Non-Profit Cloud",
-    desc: "We support non-profits with donor and program management.",
-    icon: LuMonitorCheck,
+    desc: "Empower your mission with Salesforce Nonprofit Cloud to manage donors, programs, and fundraising easily.",
+    icon: LuHeartHandshake,
   },
 ];
+
 
 const industries = [
   {
     name: "Healthcare",
-    icon: <FaHospital className="text-5xl text-blue-500 group-hover:text-white transition-all duration-300" />,
-    color: "hover:bg-blue-500",
+    icon: <FaHospital className="text-5xl text-blue-500 transition-all duration-300" />
   },
   {
     name: "BFSI",
-    icon: <FaUniversity className="text-5xl text-green-500 group-hover:text-white transition-all duration-300" />,
-    color: "hover:bg-green-500",
+    icon: <FaUniversity className="text-5xl text-green-500 transition-all duration-300" />
   },
   {
     name: "Real Estate",
-    icon: <FaBuilding className="text-5xl text-yellow-500 group-hover:text-white transition-all duration-300" />,
-    color: "hover:bg-yellow-500",
+    icon: <FaBuilding className="text-5xl text-yellow-500 transition-all duration-300" />
   },
   {
     name: "Technology",
-    icon: <FaLaptopCode className="text-5xl text-purple-500 group-hover:text-white transition-all duration-300" />,
-    color: "hover:bg-purple-500",
+    icon: <FaLaptopCode className="text-5xl text-purple-500 transition-all duration-300" />
   },
   {
     name: "Not-for-Profit",
-    icon: <FaHandsHelping className="text-5xl text-pink-500 group-hover:text-white transition-all duration-300" />,
-    color: "hover:bg-pink-500",
+    icon: <FaHandsHelping className="text-5xl text-pink-500 transition-all duration-300" />
   },
 ];
 
 const features = [
   {
     title: "Tailored Portal",
-    icon: <FaUserCog className="text-5xl text-blue-500 group-hover:text-white transition-all duration-300" />,
+    icon: <FaUserCog className="text-5xl text-blue-500 transition-all duration-300" />,
     points: [
       "We create branded portals for customers, partners and employees to monitor distributors, resellers’, suppliers’ or investors’ actions and results.",
       "Portals are designed using Salesforce Lightning Web Components, which are flexible and easy to customise.",
       "Each user sees content based on their role, and the data is always up-to-date and real-time.",
       "Single Sign-On (SSO) makes logging in simple and secure so users can access them from any device.",
-    ],
-    color: "hover:bg-blue-500",
+    ]
   },
   {
     title: "Plugins",
-    icon: <FaPlug className="text-5xl text-green-500 group-hover:text-white transition-all duration-300" />,
+    icon: <FaPlug className="text-5xl text-green-500 transition-all duration-300" />,
     points: [
       "We create extensions and integrations to enhance Salesforce features.",
       "AppExchange offers ready-made plugins, such as the Zoom plugin, to schedule or launch meetings directly from Salesforce.",
       "Our developers can build custom plugins using Salesforce APIs and integration tools like MuleSoft.",
       "Instead of manually updating customer records, plugins save time by automating repetitive tasks.",
-    ],
-    color: "hover:bg-green-500",
+    ]
   },
   {
     title: "Dashboard",
-    icon: <FaChartPie className="text-5xl text-yellow-500 group-hover:text-white transition-all duration-300" />,
+    icon: <FaChartPie className="text-5xl text-yellow-500 transition-all duration-300" />,
     points: [
       "The Salesforce dashboard allows tracking revenues and opportunities.",
       "Dashboards are built using Salesforce reports and display data in ways such as charts, graphs, gauges and tables.",
       "Each team sees dashboards tailored to their needs for sales, service and marketing.",
       "Dashboards go beyond reporting and provide AI-driven predictions and recommendations with Einstein Analytics.",
-    ],
-    color: "hover:bg-yellow-500",
+    ]
   },
   {
     title: "AppExchange Apps",
-    icon: <FaAppStore className="text-5xl text-purple-500 group-hover:text-white transition-all duration-300" />,
+    icon: <FaAppStore className="text-5xl text-purple-500 transition-all duration-300" />,
     points: [
       "AppExchange offers more than 5,400+ apps for sales, marketing, IT, HR and finance.",
       "Most apps are fully customizable to fit your business processes.",
       "Salesforce ensures apps on AppExchange are easy to install and secure.",
       "Businesses can choose from both free tools and premium apps.",
-    ],
-    color: "hover:bg-purple-500",
+    ]
   },
   {
     title: "CRM",
-    icon: <FaUsers className="text-5xl text-pink-500 group-hover:text-white transition-all duration-300" />,
+    icon: <FaUsers className="text-5xl text-pink-500 transition-all duration-300" />,
     points: [
       "Salesforce CRM is a centralized platform for managing customer relationships.",
       "All customer data, such as interactions, purchases, support cases and customer engagements, can be stored in one place.",
       "Salesforce automates repetitive tasks, such as assigning leads, following up with prospects, resolving support cases, and running marketing campaigns.",
       "Businesses can create reports and dashboards that display real-time data.",
-    ],
-    color: "hover:bg-pink-500",
+    ]
   },
   {
     title: "AI Agent",
-    icon: <FaRobot className="text-5xl text-indigo-500 group-hover:text-white transition-all duration-300" />,
+    icon: <FaRobot className="text-5xl text-indigo-500 transition-all duration-300" />,
     points: [
       "Businesses can create their own custom AI agents using Salesforce’s Agent builders.",
       "AI agents can handle repetitive tasks such as responding to customer questions, booking appointments and sending reminders.",
       "AI agents use the Einstein Trust Layer to ensure data security and compliance.",
       "With NLP, they understand and respond to human language naturally, making interactions smoother and more natural.",
-    ],
-    color: "hover:bg-indigo-500",
+    ]
   },
 ];
 
@@ -566,13 +556,13 @@ export default function Home() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className={`group p-8 rounded-2xl shadow-md bg-white border border-gray-100 text-left transition-all duration-300 transform hover:-translate-y-2 ${feature.color}`}
+                className={`group p-8 rounded-2xl shadow-md bg-white border border-gray-100 text-left transition-all duration-300 transform hover:-translate-y-2`}
               >
                 <div className="flex justify-center">{feature.icon}</div>
-                <h3 className="mt-4 text-xl font-semibold text-center text-gray-800 group-hover:text-white transition-all duration-300">
+                <h3 className="mt-4 text-xl font-semibold text-center text-gray-800 transition-all duration-300">
                   {feature.title}
                 </h3>
-                <ul className="mt-4 text-gray-600 text-sm space-y-2 group-hover:text-white transition-all duration-300">
+                <ul className="mt-4 text-gray-600 text-sm space-y-2 transition-all duration-300">
                   {feature.points.map((point, i) => (
                     <li key={i} className="flex align-center justify-center"><FaLongArrowAltRight className="mr-2 flex-shrink-0 mt-1" /> {point}</li>
                   ))}
@@ -588,16 +578,18 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
             <span className="text-[#e52b50]"> Our expertise in Salesforce clouds</span>
           </h2>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
+
+          {/* Flex layout instead of grid */}
+          <div className="flex flex-wrap justify-center">
             {expertise.map((expertise, index) => {
               const Icon = expertise.icon;
               return (
-                <div key={index} className="flex flex-col items-center text-center space-y-4 mb-6"
+                <div
+                  key={index}
+                  className="flex flex-col items-center text-center space-y-4 mb-6 w-full sm:w-1/2 md:w-1/3 xl:w-1/4 px-4"
                 >
                   <Icon className="w-12 h-12 text-primary" />
-                  <h3 className="text-xl font-semibold text-gray-700">
-                    {expertise.title}
-                  </h3>
+                  <h3 className="text-xl font-semibold text-gray-700">{expertise.title}</h3>
                   <p className="text-gray-600 text-sm max-w-xs">{expertise.desc}</p>
                 </div>
               );
@@ -618,7 +610,7 @@ export default function Home() {
                 className={`group p-6 rounded-2xl shadow-md bg-white border border-gray-100 flex flex-col items-center justify-center text-center transition-all duration-300 transform hover:-translate-y-2 ${industry.color}`}
               >
                 {industry.icon}
-                <h3 className="mt-4 text-lg font-semibold text-gray-700 group-hover:text-white transition-all duration-300">
+                <h3 className="mt-4 text-lg font-semibold text-gray-700 transition-all duration-300">
                   {industry.name}
                 </h3>
               </div>
@@ -647,12 +639,12 @@ export default function Home() {
               <li
                 key={index}
                 className="group relative p-8 rounded-3xl bg-white shadow-sm border border-gray-100 
-      hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+      hover:shadow-2xl hover:translate-x-1 transition-all duration-300"
               >
                 {/* Gradient Border on Hover */}
                 <div
                   className="absolute inset-0 rounded-3xl bg-gradient-to-r from-gray-100 to-gray-300 
-        opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"
+        opacity-0 transition-opacity duration-300 -z-10"
                 ></div>
 
                 <div className="relative z-10 flex flex-col items-center">
@@ -710,41 +702,6 @@ export default function Home() {
           </h2>
           <RewardsRecognition />
         </div>
-      </section>
-
-
-      <section className="py-6 px-6">
-        <div className="w-full max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8">
-            <span className="text-[#e52b50]">Frequently Asked Questions</span>
-          </h2>
-
-          {/* Split FAQs into two halves */}
-          {(() => {
-            const mid = Math.ceil(faqs.length / 2);
-            const firstHalf = faqs.slice(0, mid);
-            const secondHalf = faqs.slice(mid);
-
-            return (
-              <div className="flex flex-col md:flex-row gap-6">
-                {/* Left column */}
-                <div className="flex-1 space-y-4">
-                  {firstHalf.map((faq, index) => (
-                    <Faq key={index} question={faq.question} answer={faq.answer} />
-                  ))}
-                </div>
-
-                {/* Right column */}
-                <div className="flex-1 space-y-4">
-                  {secondHalf.map((faq, index) => (
-                    <Faq key={index} question={faq.question} answer={faq.answer} />
-                  ))}
-                </div>
-              </div>
-            );
-          })()}
-        </div>
-
       </section>
 
       <LatestNews />
