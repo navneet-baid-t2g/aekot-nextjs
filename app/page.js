@@ -704,6 +704,39 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-6 px-6">
+        <div className="w-full max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-8">
+            <span className="text-[#e52b50]">Frequently Asked Questions</span>
+          </h2>
+
+          {/* Split FAQs into two halves */}
+          {(() => {
+            const mid = Math.ceil(faqs.length / 2);
+            const firstHalf = faqs.slice(0, mid);
+            const secondHalf = faqs.slice(mid);
+
+            return (
+              <div className="flex flex-col md:flex-row gap-6">
+                {/* Left column */}
+                <div className="flex-1 space-y-4">
+                  {firstHalf.map((faq, index) => (
+                    <Faq key={index} question={faq.question} answer={faq.answer} />
+                  ))}
+                </div>
+
+                {/* Right column */}
+                <div className="flex-1 space-y-4">
+                  {secondHalf.map((faq, index) => (
+                    <Faq key={index} question={faq.question} answer={faq.answer} />
+                  ))}
+                </div>
+              </div>
+            );
+          })()}
+        </div>
+
+      </section>
       <LatestNews />
 
       <LatestBlogs />
