@@ -36,37 +36,37 @@ const servicecarddata = [
     {
         title: "Salesforce Consulting",
         desc: "Our Salesforce consulting services start with assessing what you really need and then give you strategies based on them. We will design solutions that are as per your business’s goals with our expert Salesforce consultants.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Salesforce Consulting.png",
     },
     {
         title: "Salesforce App Development",
         desc: "We can create custom apps and add features that will make Salesforce more user friendly to improve productivity and user satisfaction. For example, we use Salesforce Mobile SDK to create mobile friendly apps. We also build apps for the Salesforce AppExchange marketplace.",
-        img: "/images/serviceImages/salesforce-app-development.webp",
+        img: "/images/serviceImages/Salesforce App Development.png",
     },
     {
         title: "Salesforce Implementation",
         desc: "In this, we configure and customise the Salesforce platform according to our client&apos;s needs. We do organizing objects, work processes, user roles and permission with testing and launching. Our approach is to do launching in a phased manner throughout the departments so it doesn&apos;t cause any errors and there is minimum downtime.",
-        img: "/images/serviceImages/Salesforce-Implementation.webp",
+        img: "/images/serviceImages/Salesforce Implementation.png",
     },
     {
         title: "Salesforce Data Migration",
         desc: "In Salesforce data migration, we do transferring of data, applications and processes from another CRM and database to Salesforce’s cloud platform. It is done by mapping the data fields, cleaning the data and by making sure the data is protected and is not corrupted. We also support you with migration from legacy system to Salesforce without any loss or corruption of data.",
-        img: "/images/serviceImages/Salesforce-Data-Migration.webp",
+        img: "/images/serviceImages/Salesforce Data Migration.png",
     },
     {
         title: "Salesforce Customisation",
         desc: "We modify the platform according to your business needs. It involves creating custom fields, workflows, reports, dashboards and custom code to improve your operations. Our expert salesforce cloud consultants&apos; approach is to customise in such a manner that it supports future scaling of platforms.",
-        img: "/images/serviceImages/Salesforce-Customisation.webp",
+        img: "/images/serviceImages/Salesforce Customisation.png",
     },
     {
         title: "Ongoing Support & Maintenance",
         desc: "We provide Support and maintenance along with regular technical support with latest updates for the Salesforce platform. We will keep monitoring your platform to make sure that your platform stays functional and safe as the business grows.",
-        img: "/images/serviceImages/Ongoing-Support-Maintenance.webp",
+        img: "/images/serviceImages/Ongoing Support & Maintenance.png",
     },
     {
         title: "Salesforce System Integration",
         desc: "This consists of connecting Salesforce with other systems like ERP, marketing tools and other custom apps to allow smooth data flow and automatic processes. Our Salesforce consultants do API based integration, middleware solutions like MuleSoft or pre-built connectors, AppExchange apps and custom integration.",
-        img: "/images/serviceImages/Salesforce-System-Integration.webp",
+        img: "/images/serviceImages/Salesforce System Integration.png",
     },
 ];
 
