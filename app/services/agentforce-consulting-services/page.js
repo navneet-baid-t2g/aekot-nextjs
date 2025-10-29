@@ -6,24 +6,26 @@ import Faq from "@/components/Faq";
 import ContactCTA from "@/components/ContactCTA";
 import ScrollingLogos from "@/components/ScrollingLogos";
 import {
-  FaCloud,
-  FaHandshake,
-  FaTools,
-  FaUserShield,
-  FaLayerGroup,
-  FaChartLine,
-  FaServer,
-  FaRegLightbulb,
-  FaClipboardList,
-  FaNetworkWired,
-  FaBriefcase,
-  FaTasks,
-  FaChartBar,
-  FaUsers,
-  FaCogs,
-  FaRocket,
-  FaLaptopCode,
+    FaCloud,
+    FaHandshake,
+    FaTools,
+    FaUserShield,
+    FaLayerGroup,
+    FaChartLine,
+    FaServer,
+    FaRegLightbulb,
+    FaClipboardList,
+    FaNetworkWired,
+    FaBriefcase,
+    FaTasks,
+    FaChartBar,
+    FaUsers,
+    FaCogs,
+    FaRocket,
+    FaLaptopCode,
 } from "react-icons/fa";
+import { MdBuild } from "react-icons/md";
+import {  FaStore, FaUserCheck } from "react-icons/fa";
 
 
 const servicecarddata = [
@@ -76,96 +78,96 @@ const servicecarddata = [
 
 
 const otherservices = [
-  {
-    title: "Salesforce Consulting Services",
-    icon: <FaUsers />,
-    desc: "Expert guidance to maximize your Salesforce ecosystem.",
-  },
-  {
-    title: "Certified Salesforce CRM Consulting",
-    icon: <FaUserShield />,
-    desc: "Certified experts helping you optimize CRM workflows.",
-  },
-  {
-    title: "Salesforce Implementation Service",
-    icon: <FaCogs />,
-    desc: "Seamless setup and deployment of Salesforce solutions.",
-  },
-  {
-    title: "Salesforce Marketing Cloud Training",
-    icon: <FaChalkboardTeacher />,
-    desc: "Comprehensive training to master Marketing Cloud tools.",
-  },
-  {
-    title: "Salesforce Integration Services",
-    icon: <FaNetworkWired />,
-    desc: "Connect Salesforce with your business applications easily.",
-  },
-  {
-    title: "Salesforce Agentforce Consulting",
-    icon: <FaHandshake />,
-    desc: "Custom Agentforce solutions to enhance agent performance.",
-  },
-  {
-    title: "Agentforce Integration Expert",
-    icon: <FaLayerGroup />,
-    desc: "Integrate Agentforce with your existing Salesforce setup.",
-  },
-  {
-    title: "Salesforce Managed Services",
-    icon: <FaTools />,
-    desc: "Ongoing support to ensure Salesforce runs seamlessly.",
-  },
-  {
-    title: "Salesforce Data Migration",
-    icon: <FaServer />,
-    desc: "Accurate, secure migration of Salesforce data assets.",
-  },
-  {
-    title: "Expert Salesforce Marketing Cloud Consultant",
-    icon: <FaRocket />,
-    desc: "Get expert advice to boost Marketing Cloud performance.",
-  },
-  {
-    title: "Salesforce Marketing Cloud Consultant",
-    icon: <FaBriefcase />,
-    desc: "Consulting for targeted and data-driven marketing success.",
-  },
-  {
-    title: "Managed Services for Salesforce",
-    icon: <FaTasks />,
-    desc: "Proactive monitoring and maintenance for Salesforce apps.",
-  },
-  {
-    title: "Salesforce Consulting Services for Enterprises",
-    icon: <FaClipboardList />,
-    desc: "Enterprise-level Salesforce solutions to scale operations.",
-  },
-  {
-    title: "Best Salesforce Implementation Service Provider",
-    icon: <FaLaptopCode />,
-    desc: "Trusted partner for efficient Salesforce implementations.",
-  },
-  {
-    title: "Certified Salesforce Implementation Service Experts",
-    icon: <FaUserShield />,
-    desc: "Certified specialists delivering top-tier Salesforce builds.",
-  },
-  {
-    title: "Salesforce CRM Consulting Services",
-    icon: <FaChartBar />,
-    desc: "Tailored CRM consulting to align Salesforce with goals.",
-  },
-  {
-    title: "Agentforce Consulting Services",
-    icon: <FaRegLightbulb />,
-    desc: "Strategic Agentforce solutions for smarter operations.",
-  },
-  {
-    title: "Expert Salesforce Consulting Services",
-    icon: <FaChartLine />,
-    desc: "High-impact consulting to accelerate Salesforce success.",
-  },
+    {
+        title: "Salesforce Consulting Services",
+        icon: <FaUsers />,
+        desc: "Expert guidance to maximize your Salesforce ecosystem.",
+    },
+    {
+        title: "Certified Salesforce CRM Consulting",
+        icon: <FaUserShield />,
+        desc: "Certified experts helping you optimize CRM workflows.",
+    },
+    {
+        title: "Salesforce Implementation Service",
+        icon: <FaCogs />,
+        desc: "Seamless setup and deployment of Salesforce solutions.",
+    },
+    {
+        title: "Salesforce Marketing Cloud Training",
+        icon: <FaChalkboardTeacher />,
+        desc: "Comprehensive training to master Marketing Cloud tools.",
+    },
+    {
+        title: "Salesforce Integration Services",
+        icon: <FaNetworkWired />,
+        desc: "Connect Salesforce with your business applications easily.",
+    },
+    {
+        title: "Salesforce Agentforce Consulting",
+        icon: <FaHandshake />,
+        desc: "Custom Agentforce solutions to enhance agent performance.",
+    },
+    {
+        title: "Agentforce Integration Expert",
+        icon: <FaLayerGroup />,
+        desc: "Integrate Agentforce with your existing Salesforce setup.",
+    },
+    {
+        title: "Salesforce Managed Services",
+        icon: <FaTools />,
+        desc: "Ongoing support to ensure Salesforce runs seamlessly.",
+    },
+    {
+        title: "Salesforce Data Migration",
+        icon: <FaServer />,
+        desc: "Accurate, secure migration of Salesforce data assets.",
+    },
+    {
+        title: "Expert Salesforce Marketing Cloud Consultant",
+        icon: <FaRocket />,
+        desc: "Get expert advice to boost Marketing Cloud performance.",
+    },
+    {
+        title: "Salesforce Marketing Cloud Consultant",
+        icon: <FaBriefcase />,
+        desc: "Consulting for targeted and data-driven marketing success.",
+    },
+    {
+        title: "Managed Services for Salesforce",
+        icon: <FaTasks />,
+        desc: "Proactive monitoring and maintenance for Salesforce apps.",
+    },
+    {
+        title: "Salesforce Consulting Services for Enterprises",
+        icon: <FaClipboardList />,
+        desc: "Enterprise-level Salesforce solutions to scale operations.",
+    },
+    {
+        title: "Best Salesforce Implementation Service Provider",
+        icon: <FaLaptopCode />,
+        desc: "Trusted partner for efficient Salesforce implementations.",
+    },
+    {
+        title: "Certified Salesforce Implementation Service Experts",
+        icon: <FaUserShield />,
+        desc: "Certified specialists delivering top-tier Salesforce builds.",
+    },
+    {
+        title: "Salesforce CRM Consulting Services",
+        icon: <FaChartBar />,
+        desc: "Tailored CRM consulting to align Salesforce with goals.",
+    },
+    {
+        title: "Agentforce Consulting Services",
+        icon: <FaRegLightbulb />,
+        desc: "Strategic Agentforce solutions for smarter operations.",
+    },
+    {
+        title: "Expert Salesforce Consulting Services",
+        icon: <FaChartLine />,
+        desc: "High-impact consulting to accelerate Salesforce success.",
+    },
 ];
 
 
@@ -383,55 +385,81 @@ export default function ServiceSingle() {
                         Our expert Agentforce consulting services will make Agentforce easy to expand so it can grow with your business and stay up-to-date with AI features. We can automate tasks to save time and increase productivity. Your customers will get 24/7 support from chatbots or SMS. We will make sure the security features protect the data and meet all the rules. We will also train your teams to use Agentforce quickly and provide regular support to make sure it keeps on improving. These services will boost your returns by increasing efficiency and customer satisfaction and help your business succeed and grow.
                     </p>
 
+
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-                        {/* Customer Service Agent */}
+                        {/* 1. Service Agent */}
                         <div className="p-6 rounded-2xl shadow-lg text-center border border-gray-100">
                             <MdSupportAgent className="text-4xl text-blue-600 mx-auto" />
-                            <h3 className="text-xl font-semibold mt-4">
-                                Customer Service Agent
-                            </h3>
+                            <h3 className="text-xl font-semibold mt-4">Service Agent</h3>
+                            <p className="text-gray-600 mt-2 text-sm">
+                                Handles routine service like billing, troubleshooting, and appointment scheduling.
+                            </p>
                         </div>
 
-                        {/* Sales Development Representative Agent */}
+                        {/* 2. SDR Agent */}
                         <div className="p-6 rounded-2xl shadow-lg text-center border border-gray-100">
                             <FaUserTie className="text-4xl text-green-600 mx-auto" />
-                            <h3 className="text-xl font-semibold mt-4">
-                                Sales Development Representative Agent
-                            </h3>
+                            <h3 className="text-xl font-semibold mt-4">SDR Agent</h3>
+                            <p className="text-gray-600 mt-2 text-sm">
+                                Qualifies leads, schedules meetings, and shares sales materials.
+                            </p>
                         </div>
 
-                        {/* Sales Coach Agent */}
+                        {/* 3. Sales Coach Agent */}
                         <div className="p-6 rounded-2xl shadow-lg text-center border border-gray-100">
                             <FaChalkboardTeacher className="text-4xl text-orange-600 mx-auto" />
-                            <h3 className="text-xl font-semibold mt-4">
-                                Sales Coach Agent
-                            </h3>
+                            <h3 className="text-xl font-semibold mt-4">Sales Coach Agent</h3>
+                            <p className="text-gray-600 mt-2 text-sm">
+                                Provides real-time guidance, response tips, upsell cues, and performance feedback.
+                            </p>
                         </div>
 
-                        {/* Personal Shopping Assistant Agent */}
+                        {/* 4. Merchant (Commerce) Agent */}
+                        <div className="p-6 rounded-2xl shadow-lg text-center border border-gray-100">
+                            <FaStore className="text-4xl text-amber-600 mx-auto" />
+                            <h3 className="text-xl font-semibold mt-4">Merchant (Commerce) Agent</h3>
+                            <p className="text-gray-600 mt-2 text-sm">
+                                Manages stock checks, order processing, catalog updates, and dynamic pricing.
+                            </p>
+                        </div>
+
+                        {/* 5. Buyer Agent */}
+                        <div className="p-6 rounded-2xl shadow-lg text-center border border-gray-100">
+                            <FaUserCheck className="text-4xl text-teal-600 mx-auto" />
+                            <h3 className="text-xl font-semibold mt-4">Buyer Agent</h3>
+                            <p className="text-gray-600 mt-2 text-sm">
+                                Handles supplier management, contract negotiation, and order/shipment tracking.
+                            </p>
+                        </div>
+
+                        {/* 6. Personal Shopper Agent */}
                         <div className="p-6 rounded-2xl shadow-lg text-center border border-gray-100">
                             <MdShoppingBasket className="text-4xl text-pink-600 mx-auto" />
-                            <h3 className="text-xl font-semibold mt-4">
-                                Personal Shopping Assistant Agent
-                            </h3>
+                            <h3 className="text-xl font-semibold mt-4">Personal Shopper Agent</h3>
+                            <p className="text-gray-600 mt-2 text-sm">
+                                Provides shopping assistance and guided product discovery.
+                            </p>
                         </div>
 
-                        {/* Campaign Management Agent */}
+                        {/* 7. Campaign Agent / Optimizer */}
                         <div className="p-6 rounded-2xl shadow-lg text-center border border-gray-100">
                             <MdCampaign className="text-4xl text-purple-600 mx-auto" />
-                            <h3 className="text-xl font-semibold mt-4">
-                                Campaign Management Agent
-                            </h3>
+                            <h3 className="text-xl font-semibold mt-4">Campaign Agent / Optimizer</h3>
+                            <p className="text-gray-600 mt-2 text-sm">
+                                Tunes and optimizes marketing campaigns for better performance.
+                            </p>
                         </div>
 
-                        {/* Appointment Scheduling Agent */}
+                        {/* 8. Custom Agent */}
                         <div className="p-6 rounded-2xl shadow-lg text-center border border-gray-100">
-                            <MdCalendarMonth className="text-4xl text-red-600 mx-auto" />
-                            <h3 className="text-xl font-semibold mt-4">
-                                Appointment Scheduling Agent
-                            </h3>
+                            <MdBuild className="text-4xl text-gray-700 mx-auto" />
+                            <h3 className="text-xl font-semibold mt-4">Custom Agent</h3>
+                            <p className="text-gray-600 mt-2 text-sm">
+                                Configured for your specific workflows and unique automation needs.
+                            </p>
                         </div>
                     </div>
+
 
                 </div>
             </section>
