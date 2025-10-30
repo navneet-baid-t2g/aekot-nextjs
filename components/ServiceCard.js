@@ -9,7 +9,7 @@ const Service = ({ icon, name, text, path }) => {
             <div className="flex justify-center items-center rounded-full bg-white shadow w-14 h-14 p-4">
               <img src={icon} alt="Icon" className="object-center" />
             </div>
-            <header className="font-bold text-md">{name}</header>
+            <h2 className="font-bold text-md"><Link href={path}>{name}</Link></h2>
             <hr className="w-full border-2 border-secondary rounded-xl" />
             <p className="select-text text-sm">{text}</p>
           </div>

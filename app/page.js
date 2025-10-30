@@ -59,8 +59,8 @@ const faqs = [
     answer: "Our expert Salesforce consulting services prioritise security by implementing role-based access, multi-factor authentication, and compliance with regulations like GDPR and HIPAA. Our expertise ensures secure configurations, as seen in solutions for finance and healthcare clients.",
   },
   {
-    question: "What is Salesforce CRM consulting and its significance?",
-    answer: "The Salesforce CRM consulting assists businesses to establish, modify and enhance Salesforce to enable them to sell more efficiently, retain customers and conduct business more effectively. It ensures that the platform aligns itself with the business objectives and provides measurable ROI.",
+    question: "What is the effect of engagement of certified Salesforce CRM consultants on project success?",
+    answer: "Certified consultants reduce risk, achieve a seamless deployment, enhance user adoption and offer high-quality customizations resulting in shorter timelines and increased ROI.",
   },
   {
     question: "What are the ways Aekot's Salesforce CRM consulting will enhance my current system?",
@@ -79,9 +79,10 @@ const faqs = [
     answer: "The most important ones are Salesforce Administrator, Sales Cloud Consultant, Service Cloud Consultant, Platform Developer, Marketing Cloud Consultant and Integration Architect depending on the project requirements.",
   },
   {
-    question: "What is the effect of engagement of certified Salesforce CRM consultants on project success?",
-    answer: "Certified consultants reduce risk, achieve a seamless deployment, enhance user adoption and offer high-quality customizations resulting in shorter timelines and increased ROI.",
+    question: "What is Salesforce CRM consulting and its significance?",
+    answer: "The Salesforce CRM consulting assists businesses to establish, modify and enhance Salesforce to enable them to sell more efficiently, retain customers and conduct business more effectively. It ensures that the platform aligns itself with the business objectives and provides measurable ROI.",
   },
+
 
 ];
 
@@ -508,38 +509,38 @@ export default function Home() {
             <Service
               icon={"/assets/customization.svg"}
               name="Agentforce Implementation & Services"
-              text="Empower your teams with intelligent automation, seamless integration, and unmatched scalability — Agentforce is redefining how businesses operate in the age of AI."
+              text="Empower your teams with intelligent automation, seamless integration, and unmatched scalability — our Agentforce consulting services are redefining how businesses operate in the age of AI."
               path='/services/agentforce-consulting-services'
             ></Service>
             <Service
               icon={"/assets/strategy.svg"}
               name="Salesforce Consulting & Strategy"
-              text="Our Salesforce consulting services are designed to understand your business goals and implement the most effective CRM strategy that maximizes ROI."
-              path={generateServicePath("Salesforce Consulting & Strategy")}
+              text="Drive growth with intelligent CRM strategies, seamless customization, and measurable ROI — our Salesforce consulting services are transforming how businesses succeed in the digital era."
+              path='/services/salesforce-consulting-services'
             ></Service>
             <Service
               icon={"/assets/implementation.svg"}
               name="Implementation & Integration"
-              text="Streamline your operations with expertly executed Salesforce integration and implementation services."
-              path={generateServicePath("Salesforce Implementation & Integration")}
+              text="Streamline operations with seamless integrations, optimized workflows, and expert support — our Salesforce implementation service empowers businesses to achieve lasting efficiency."
+              path='/services/salesforce-implementation-integration'
             ></Service>
             <Service
               icon={"/assets/integration.svg"}
               name="Salesforce Support & Managed services"
-              text="From troubleshooting to continuous improvements, our Salesforce support ensures you stay ahead."
-              path={generateServicePath("Salesforce Support & Managed Services")}
+              text="From proactive troubleshooting to continuous innovation, our Salesforce managed services empower businesses with reliability, scalability, and the agility to stay ahead in the digital era."
+              path='/services/salesforce-support-managed-services'
             ></Service>
             <Service
               icon={"/assets/training.svg"}
               name="Salesforce Training & Adoption"
-              text="Ensure your team makes the most of Salesforce with personalized training and adoption programs."
-              path={generateServicePath("Salesforce Training & Adoption")}
+              text="Empower your teams with personalized learning, hands-on guidance, and expert-led Salesforce Marketing Cloud training programs that drive adoption, productivity, and long-term success."
+              path='/services/salesforce-training-adoption'
             ></Service>
             <Service
               icon="/assets/data_migration.svg"
               name="Data Migration & Management"
-              text="Ensure safe, accurate, and seamless migration of your data into Salesforce."
-              path={generateServicePath("Data Migration & Management")}
+              text="Ensure safe, accurate, and seamless Salesforce data migration with expert planning, validation, and execution that empowers your business with reliable insights and smooth transformation."
+              path='/services/data-migration-management'
             ></Service>
           </div>
         </article>
@@ -620,10 +621,9 @@ export default function Home() {
       </section>
 
       <ActionSection />
-
+      {/* 
       <section id="other-services" className="relative py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          {/* Section Heading */}
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
             Our <span className="text-[#e52b50]">Other Services</span>
           </h2>
@@ -633,7 +633,6 @@ export default function Home() {
             automate smarter, and innovate with AI, integrations, and expert-managed services.
           </p>
 
-          {/* Services Grid */}
           <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {otherservices.map((service, index) => (
               <li
@@ -641,26 +640,23 @@ export default function Home() {
                 className="group relative p-8 rounded-3xl bg-white shadow-sm border border-gray-100 
       hover:shadow-2xl hover:translate-x-1 transition-all duration-300"
               >
-                {/* Gradient Border on Hover */}
                 <div
                   className="absolute inset-0 rounded-3xl bg-gradient-to-r from-gray-100 to-gray-300 
         opacity-0 transition-opacity duration-300 -z-10"
                 ></div>
 
                 <div className="relative z-10 flex flex-col items-center">
-                  {/* Icon */}
+            
                   <div className="p-3 bg-[#e52b50]/10 rounded-full mb-4">
                     <div className="text-[#e52b50] text-2xl group-hover:scale-110 transition-transform duration-200">
                       {service.icon}
                     </div>
                   </div>
 
-                  {/* Title */}
                   <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-[#e52b50] transition-colors">
                     {service.title}
                   </h3>
 
-                  {/* Description */}
                   <p className="text-sm text-gray-600 text-center">
                     {service.desc}
                   </p>
@@ -671,7 +667,7 @@ export default function Home() {
 
 
         </div>
-      </section>
+      </section> */}
 
 
 
