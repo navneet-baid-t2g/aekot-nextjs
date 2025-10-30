@@ -625,8 +625,7 @@ export default function Home() {
       </section>
 
       <ActionSection />
-      {/* 
-      <section id="other-services" className="relative py-20 bg-white">
+      {/*      <section id="other-services" className="relative py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
             Our <span className="text-[#e52b50]">Other Services</span>
