@@ -26,6 +26,7 @@ import {
     FaChalkboardTeacher,
 } from "react-icons/fa";
 
+import Service from "@/components/ServiceCard";
 const certificationImages = [
     { src: "/images/Certifications/C22.png" },
     { src: "/images/Certifications/C23.png" },
