@@ -44,7 +44,7 @@ import {
 const faqs = [
   {
     question: "What types of Salesforce services does Aekot provide?",
-    answer: "We offer expert Salesforce consulting services that cover every aspect of your business needs. Our services include customization of apps, workflows, automations, approvals, and dashboards to match your unique requirements. We provide seamless integration with legacy systems and popular tools such as HubSpot, QuickBooks, and ERP systems. From end-to-end implementation across Sales, Service, Experience, Marketing, Health, Data, and Nonprofit Clouds to AI-driven solutions for automation and analytics, we ensure your Salesforce environment is optimized for performance. Additionally, we support user adoption through training programs and provide ongoing maintenance to keep your system running smoothly.",
+    answer: "We offer <a href='/services/salesforce-consulting-services' class='text-primary'>expert Salesforce consulting services</a> that cover every aspect of your business needs. Our services include customization of apps, workflows, automations, approvals, and dashboards to match your unique requirements. We provide seamless integration with legacy systems and popular tools such as HubSpot, QuickBooks, and ERP systems. From end-to-end implementation across Sales, Service, Experience, Marketing, Health, Data, and Nonprofit Clouds to AI-driven solutions for automation and analytics, we ensure your Salesforce environment is optimized for performance. Additionally, we support user adoption through training programs and provide ongoing maintenance to keep your system running smoothly.",
   },
   {
     question: "How does Aekot ensure successful Salesforce implementations?",
@@ -166,7 +166,7 @@ const features = [
     points: [
       "We create extensions and integrations to enhance Salesforce features.",
       "AppExchange offers ready-made plugins, such as the Zoom plugin, to schedule or launch meetings directly from Salesforce.",
-      "Our developers can build custom plugins using Salesforce APIs and integration tools like MuleSoft.",
+      "Our developers can build custom plugins using Salesforce APIs and integration tools like MuleSoft, offering complete <a class='text-primary' href='https://www.aekot.com/services/salesforce-implementation-integration'>Salesforce integration services</a> to connect and automate your systems seamlessly.",
       "Instead of manually updating customer records, plugins save time by automating repetitive tasks.",
     ]
   },
@@ -312,7 +312,7 @@ const services = [
     title: "Setup",
     icon: <FaCogs className="text-4xl text-primary group-hover:scale-110 transition-transform duration-300" />,
     description:
-      "Aekot provides end-to-end certified Salesforce CRM consulting services for implementation, which include initial configuration and deployment of Salesforce platforms like Sales Cloud, Service Cloud and Marketing Cloud. We analyse your company’s business and set up a customised CRM system to ensure a smooth transition without any disruption. This includes configuring user roles, workflows and data migration to match the client’s objectives",
+      "Aekot provides end-to-end certified Salesforce CRM and <a href='https://www.aekot.com/services/agentforce' class='text-primary'>Salesforce Agentforce consulting</a> services for implementation, which include initial configuration and deployment of Salesforce platforms like Sales Cloud, Service Cloud and Marketing Cloud. We analyse your company’s business and set up a customised CRM system to ensure a smooth transition without any disruption. This includes configuring user roles, workflows and data migration to match the client’s objectives.",
   },
   {
     title: "Support",
@@ -489,7 +489,7 @@ export default function Home() {
                 >
                   <div className="mb-4">{service.icon}</div>
                   <h3 className="text-xl font-semibold text-gray-800 mb-3">{service.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: service.description }} />
                 </div>
               ))}
             </div>
@@ -565,7 +565,11 @@ export default function Home() {
                 </h3>
                 <ul className="mt-4 text-gray-600 text-sm space-y-2 transition-all duration-300">
                   {feature.points.map((point, i) => (
-                    <li key={i} className="flex align-center justify-center"><FaLongArrowAltRight className="mr-2 flex-shrink-0 mt-1" /> {point}</li>
+                    <li key={i} className="flex items-center justify-center">
+                      <FaLongArrowAltRight className="mr-2 flex-shrink-0 mt-1" />
+                      <span dangerouslySetInnerHTML={{ __html: point }}></span>
+                    </li>
+
                   ))}
                 </ul>
               </div>

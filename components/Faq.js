@@ -18,7 +18,11 @@ export default function Faq({ key, question, answer }) {
                 )}
             </button>
             {openFAQ === key && (
-                <p className="mt-2 text-gray-700 text-sm">{answer}</p>
+                <p
+                    className="mt-2 text-gray-700 text-sm"
+                    dangerouslySetInnerHTML={{ __html: answer }}
+                ></p>
+
             )}
         </div>
     );
