@@ -27,6 +27,7 @@ import {
 } from "react-icons/fa";
 
 import Service from "@/components/ServiceCard";
+import Link from "next/link";
 const certificationImages = [
     { src: "/images/Certifications/C22.png" },
     { src: "/images/Certifications/C23.png" },
@@ -530,7 +531,7 @@ export default function ServiceSingle() {
                         <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
                             <span className="text-[#e52b50]">Salesforce Integration Services </span>
                         </h2>
-                        <p>Salesforce becomes more effective when they are integrated with other systems in your business operations. Our Salesforce integration services will make sure that there is smooth data flow and better collaboration with other systems on the platform.  We also provide <a href='/services/agentforce-consulting-services' className="text-primary">Salesforce Agentforce consulting</a> to help businesses connect AI-driven agents seamlessly with their existing systems for smarter automation and customer engagement.</p>
+                        <p>Salesforce becomes more effective when they are integrated with other systems in your business operations. Our Salesforce integration services will make sure that there is smooth data flow and better collaboration with other systems on the platform.  We also provide <Link href='/services/agentforce-consulting-services' className="text-primary">Salesforce Agentforce consulting</Link> to help businesses connect AI-driven agents seamlessly with their existing systems for smarter automation and customer engagement.</p>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
