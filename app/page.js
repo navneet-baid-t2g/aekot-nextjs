@@ -1,6 +1,5 @@
 
 import ClientsCarousel from "@/components/ClientsCarousel";
-import CTA from "@/components/CTA";
 import LatestBlogs from "@/components/LatestBlogs";
 import LatestNews from "@/components/LatestNews";
 import RewardsRecognition from "@/components/RewardsRecognition";
@@ -527,7 +526,7 @@ export default function Home() {
             <Service
               icon={"/assets/integration.svg"}
               name="Salesforce Support & Managed services"
-              text="From proactive troubleshooting to continuous innovation, our <a class='text-primary' href='/services/salesforce-managed-services'>Salesforce managed services</a> empower businesses with reliability, scalability, and the agility to stay ahead in the digital era."
+              text="From proactive troubleshooting to continuous innovation, our <a class='text-primary' href=/services/salesforce-support-managed-services'>Salesforce managed services</a> empower businesses with reliability, scalability, and the agility to stay ahead in the digital era."
               path='/services/salesforce-support-managed-services'
             ></Service>
             <Service
@@ -539,7 +538,7 @@ export default function Home() {
             <Service
               icon="/assets/data_migration.svg"
               name="Data Migration & Management"
-              text="Ensure safe, accurate, and seamless <a class='text-primary' href='/services/salesforce-data-migration-management'>Salesforce data migration</a> with expert planning, validation, and execution that empowers your business with reliable insights and smooth transformation."
+              text="Ensure safe, accurate, and seamless <a class='text-primary' href='/services/data-migration-management'>Salesforce data migration</a> with expert planning, validation, and execution that empowers your business with reliable insights and smooth transformation."
               path='/services/data-migration-management'
             ></Service>
           </div>
