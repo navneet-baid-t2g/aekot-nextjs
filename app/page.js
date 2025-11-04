@@ -311,7 +311,7 @@ const services = [
     title: "Setup",
     icon: <FaCogs className="text-4xl text-primary group-hover:scale-110 transition-transform duration-300" />,
     description:
-      "Aekot provides end-to-end certified Salesforce CRM and <a href='https://www.aekot.com/services/agentforce' class='text-primary'>Salesforce Agentforce consulting</a> services for implementation, which include initial configuration and deployment of Salesforce platforms like Sales Cloud, Service Cloud and Marketing Cloud. We analyse your company’s business and set up a customised CRM system to ensure a smooth transition without any disruption. This includes configuring user roles, workflows and data migration to match the client’s objectives.",
+      "Aekot provides end-to-end certified Salesforce CRM and <a href='/services/agentforce-consulting-services' class='text-primary'>Salesforce Agentforce consulting</a> services for implementation, which include initial configuration and deployment of Salesforce platforms like Sales Cloud, Service Cloud and Marketing Cloud. We analyse your company’s business and set up a customised CRM system to ensure a smooth transition without any disruption. This includes configuring user roles, workflows and data migration to match the client’s objectives.",
   },
   {
     title: "Support",
