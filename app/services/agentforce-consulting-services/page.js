@@ -296,7 +296,7 @@ export default function ServiceSingle() {
                         Salesforce Agentforce is an AI-based platform that helps you create Agentforce service agents that can use CRM and Einstein to improve your business’s productivity. It can help you create, train and deploy smart AI agents to do everyday tasks, interact with customers and help in many ways to support your business.
                     </p>
                     <p className="text-gray-600">
-                        These AI agents can do several tasks automatically, give you live analysis, make customer interaction personal and adapt and grow your business operations. We combine the features of Salesforce CRM with Einstein to improve how these agents interact with customers and ease internal business processes.
+                        These AI agents can do several tasks automatically, give you live analysis, make customer interaction personal and adapt and grow your business operations. We combine the features of Salesforce CRM with Einstein to improve how these agents interact with customers and ease internal business processes. As part of our <a href="/" className="text-primary">Salesforce CRM consulting</a> expertise, we help businesses implement and optimize Agentforce solutions for maximum efficiency and customer satisfaction.
                     </p>
 
                 </div>
