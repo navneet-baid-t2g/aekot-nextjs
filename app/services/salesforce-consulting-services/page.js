@@ -269,7 +269,7 @@ export default function ServiceSingle() {
                         Aekot is one of the best providers of Salesforce consulting services for both startups and larger organisations.
                     </p>
 
-                    <div className="mt-3 flex justify-center md:justify-start">
+                    <div className="mt-6 flex justify-center md:justify-start">
                         <Button text="Get Started" path="/contact" />
                     </div>
                 </div>
@@ -281,41 +281,6 @@ export default function ServiceSingle() {
                         alt="Salesforce Consulting Services"
                         className="w-82 md:w-106 object-contain rounded-lg"
                     />
-                </div>
-            </section>
-
-
-            <section className="pt-16 px-6 md:px-20 py-16 bg-gray-100">
-                <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl font-extrabold text-gray-900">
-                            Here&apos;s a list of <span className="text-[#e52b50]">Services</span> that we provide:
-                        </h2>
-                    </div>
-
-                    {/* Grid Layout */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {servicecarddata.map((service, index) => (
-                            <div
-                                key={index}
-                                className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
-                            >
-                                <img
-                                    src={service.img}
-                                    alt={service.title}
-                                    className="w-full h-48 object-cover"
-                                />
-                                <div className="p-6">
-                                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                                        {service.title}
-                                    </h3>
-                                    <p className="text-gray-600 text-sm leading-relaxed">
-                                        {service.desc}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
                 </div>
             </section>
 
@@ -546,9 +511,42 @@ export default function ServiceSingle() {
                 </div>
 
             </section>
+            <section className="pt-16 px-6 md:px-20 py-16 bg-gray-100">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl font-extrabold text-gray-900">
+                            Here&apos;s a list of <span className="text-[#e52b50]">Services</span> that we provide:
+                        </h2>
+                    </div>
+
+                    {/* Grid Layout */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {servicecarddata.map((service, index) => (
+                            <div
+                                key={index}
+                                className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
+                            >
+                                <img
+                                    src={service.img}
+                                    alt={service.title}
+                                    className="w-full h-48 object-cover"
+                                />
+                                <div className="p-6">
+                                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                                        {service.title}
+                                    </h3>
+                                    <p className="text-gray-600 text-sm leading-relaxed">
+                                        {service.desc}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             {/* Call to Action */}
-            <section className="px-6">
+            <section className="px-6 pt-12">
                 <div className=" max-w-screen-xl mx-auto shadow-[0_0_5px_rgba(0,0,0,0.25)] rounded-2xl px-8 md:px-12 py-8  text-center space-y-6">
                     <p className="font-semibold text-xl">
                         Get Started with Aekot Today!

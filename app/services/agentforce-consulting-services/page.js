@@ -259,7 +259,7 @@ export default function ServiceSingle() {
     return (
         <>
 
-            <section className="flex flex-col md:flex-row items-center justify-between pt-16 py-16 bg-white max-w-7xl mx-auto pt-32 md:pt-32">
+            <section className="flex flex-col md:flex-row items-center justify-between pt-16 py-8 bg-white max-w-7xl mx-auto pt-32 md:pt-32">
                 {/* Left Content */}
                 <div className="max-w-xl text-center md:text-left">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
@@ -272,7 +272,7 @@ export default function ServiceSingle() {
                         Agentforce&apos;s AI tools into your business.
                     </p>
 
-                    <div className="mt-3 flex justify-center md:justify-start">
+                    <div className="mt-6 flex justify-center md:justify-start">
                         <Button text="Get Started" path="/contact" />
                     </div>
                 </div>
@@ -287,7 +287,7 @@ export default function ServiceSingle() {
                 </div>
             </section>
 
-            <section id="whyis" className="py-12 px-6 bg-white">
+            <section id="whyis" className="pt-12 pb-6 px-6 bg-white">
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-3xl font-bold text-gray-800 mb-4">
                         What is <span className="text-[#e52b50]">Agentforce</span>?
@@ -295,44 +295,10 @@ export default function ServiceSingle() {
                     <p className="text-gray-600 mb-4">
                         Salesforce Agentforce is an AI-based platform that helps you create Agentforce service agents that can use CRM and Einstein to improve your business’s productivity. It can help you create, train and deploy smart AI agents to do everyday tasks, interact with customers and help in many ways to support your business.
                     </p>
-                    <p className="text-gray-600 mb-8">
+                    <p className="text-gray-600">
                         These AI agents can do several tasks automatically, give you live analysis, make customer interaction personal and adapt and grow your business operations. We combine the features of Salesforce CRM with Einstein to improve how these agents interact with customers and ease internal business processes.
                     </p>
 
-                </div>
-            </section>
-
-            <section className="pt-16 px-6 md:px-20 py-16 bg-gray-100">
-                <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl font-extrabold text-gray-900">
-                            <span className="text-[#e52b50]">Our Services</span>
-                        </h2>
-                    </div>
-
-                    {/* Grid Layout */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {servicecarddata.map((service, index) => (
-                            <div
-                                key={index}
-                                className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
-                            >
-                                <img
-                                    src={service.img}
-                                    alt={service.title}
-                                    className="w-full h-60 object-cover"
-                                />
-                                <div className="p-6">
-                                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                                        {service.title}
-                                    </h3>
-                                    <p className="text-gray-600 text-sm leading-relaxed">
-                                        {service.desc}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
                 </div>
             </section>
 
@@ -594,9 +560,41 @@ export default function ServiceSingle() {
                     })()}
                 </div>
             </section>
+            <section className="pt-16 px-6 md:px-20 py-16 bg-gray-100">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl font-extrabold text-gray-900">
+                            <span className="text-[#e52b50]">Our Agentforce Services</span>
+                        </h2>
+                    </div>
 
+                    {/* Grid Layout */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {servicecarddata.map((service, index) => (
+                            <div
+                                key={index}
+                                className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
+                            >
+                                <img
+                                    src={service.img}
+                                    alt={service.title}
+                                    className="w-full h-60 object-cover"
+                                />
+                                <div className="p-6">
+                                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                                        {service.title}
+                                    </h3>
+                                    <p className="text-gray-600 text-sm leading-relaxed">
+                                        {service.desc}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
             {/* Call to Action */}
-            <section className="px-6">
+            <section className="px-6 pt-12">
                 <div className=" max-w-screen-xl mx-auto shadow-[0_0_5px_rgba(0,0,0,0.25)] rounded-2xl px-8 md:px-12 py-8  text-center space-y-6">
                     <p className="font-semibold text-xl">
                         Get Started with Aekot Today!

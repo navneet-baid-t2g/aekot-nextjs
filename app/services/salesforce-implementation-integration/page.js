@@ -300,14 +300,14 @@ export default function ServiceSingle() {
                 {/* Left Content */}
                 <div className="max-w-xl text-center md:text-left">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-                        Salesforce <span className="text-[#e52b50]">Integration and Implementation</span> Services for Unified Solutions.
+                        Salesforce <span className="text-[#e52b50]">Integration and Implementation</span> Services.
                     </h1>
 
                     <p className="text-gray-600 mt-4 leading-relaxed">
-                        At Aekot, we guide you for integrating solutions with the Salesforce platform and implementation by setting up and customising Salesforce for your use. We give a full set of services for businesses to help them improve efficiency, effectively manage customer relationships and connect their systems with the Salesforce platform. Our main focus is to deliver reliable, secure and scalable Salesforce solutions that will adjust with your performance and long-term goals.
+                        At Aekot, we help you integrate, set up, and customize Salesforce to fit your business needs. Our complete Salesforce services enhance efficiency, customer relationship management, and system connectivity. We focus on delivering reliable, secure, and scalable solutions aligned with your performance and long-term goals.
                     </p>
 
-                    <div className="mt-3 flex justify-center md:justify-start">
+                    <div className="mt-6 flex justify-center md:justify-start">
                         <Button text="Get Started" path="/contact" />
                     </div>
                 </div>
@@ -322,78 +322,6 @@ export default function ServiceSingle() {
                 </div>
             </section>
 
-
-            <section className="pt-16 px-6 md:px-20 py-16 bg-gray-100">
-                <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
-                            <span className="text-[#e52b50]">Salesforce Implementation Services </span>
-                        </h2>
-                        <p>You need the best Salesforce implementation service provider to apply for proper setup and regular management. Our services will cover all main fields that you need to do for your business.</p>
-                    </div>
-
-                    {/* Grid Layout */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                        {servicecarddata.map((service, index) => (
-                            <div
-                                key={index}
-                                className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
-                            >
-                                <img
-                                    src={service.img}
-                                    alt={service.title}
-                                    className="w-full h-48 object-cover"
-                                />
-                                <div className="p-6">
-                                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                                        {service.title}
-                                    </h3>
-                                    <p className="text-gray-600 text-sm leading-relaxed">
-                                        {service.desc}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            <ContactCTA heading="Looking for Expert Salesforce Developers?" />
-
-            <section className="pt-16 px-6 md:px-20 py-16 bg-gray-100">
-                <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
-                            <span className="text-[#e52b50]">Salesforce Integration Services </span>
-                        </h2>
-                        <p>Salesforce becomes more effective when they are integrated with other systems in your business operations. Our Salesforce integration services will make sure that there is smooth data flow and better collaboration with other systems on the platform.</p>
-                    </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                        {servicecardintdata.map((service, index) => (
-                            <div
-                                key={index}
-                                className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
-                            >
-                                <img
-                                    src={service.img}
-                                    alt={service.title}
-                                    className="w-full h-48 object-cover"
-                                />
-                                <div className="p-6">
-                                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                                        {service.title}
-                                    </h3>
-                                    <p className="text-gray-600 text-sm leading-relaxed">
-                                        {service.desc}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                </div>
-            </section>
 
             <section className="py-16 relative bg-gradient-to-b from-white via-red-100 to-white px-8 md:px-20 ">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
@@ -561,9 +489,79 @@ export default function ServiceSingle() {
                 </div>
 
             </section>
+            <section className="pt-16 px-6 md:px-20 py-16 bg-gray-100">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
+                            <span className="text-[#e52b50]">Salesforce Implementation Services </span>
+                        </h2>
+                        <p>You need the best Salesforce implementation service provider to apply for proper setup and regular management. Our services will cover all main fields that you need to do for your business.</p>
+                    </div>
 
+                    {/* Grid Layout */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                        {servicecarddata.map((service, index) => (
+                            <div
+                                key={index}
+                                className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
+                            >
+                                <img
+                                    src={service.img}
+                                    alt={service.title}
+                                    className="w-full h-48 object-cover"
+                                />
+                                <div className="p-6">
+                                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                                        {service.title}
+                                    </h3>
+                                    <p className="text-gray-600 text-sm leading-relaxed">
+                                        {service.desc}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <ContactCTA heading="Looking for Expert Salesforce Developers?" />
+
+            <section className="pt-16 px-6 md:px-20 py-16 bg-gray-100">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
+                            <span className="text-[#e52b50]">Salesforce Integration Services </span>
+                        </h2>
+                        <p>Salesforce becomes more effective when they are integrated with other systems in your business operations. Our Salesforce integration services will make sure that there is smooth data flow and better collaboration with other systems on the platform.</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                        {servicecardintdata.map((service, index) => (
+                            <div
+                                key={index}
+                                className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
+                            >
+                                <img
+                                    src={service.img}
+                                    alt={service.title}
+                                    className="w-full h-48 object-cover"
+                                />
+                                <div className="p-6">
+                                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                                        {service.title}
+                                    </h3>
+                                    <p className="text-gray-600 text-sm leading-relaxed">
+                                        {service.desc}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                </div>
+            </section>
             {/* Call to Action */}
-            <section className="px-6">
+            <section className="px-6 py-12">
                 <div className=" max-w-screen-xl mx-auto shadow-[0_0_5px_rgba(0,0,0,0.25)] rounded-2xl px-8 md:px-12 py-8  text-center space-y-6">
                     <p className="font-semibold text-xl">
                         Get Started with Aekot Today!
