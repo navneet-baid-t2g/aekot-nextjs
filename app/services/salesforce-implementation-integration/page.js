@@ -36,7 +36,7 @@ const certificationImages = [
 const servicecarddata = [
     {
         title: "Provide Consultation and Services",
-        desc: "We analyse what are the requirements for the implementation of a Salesforce solution that will support your business processes and objectives.",
+        desc: "We analyse what are the requirements for the implementation of a Salesforce solution that will support your business processes and objectives through expert <a href='/' class='text-primary'>Salesforce CRM consulting.</a>",
         img: "/images/serviceImages/Provide Consultation and Services.png",
     },
     {
@@ -514,9 +514,7 @@ export default function ServiceSingle() {
                                     <h3 className="text-xl font-semibold text-gray-800 mb-3">
                                         {service.title}
                                     </h3>
-                                    <p className="text-gray-600 text-sm leading-relaxed">
-                                        {service.desc}
-                                    </p>
+                                    <p className="text-gray-600 text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: service.desc }} />
                                 </div>
                             </div>
                         ))}
@@ -532,7 +530,7 @@ export default function ServiceSingle() {
                         <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
                             <span className="text-[#e52b50]">Salesforce Integration Services </span>
                         </h2>
-                        <p>Salesforce becomes more effective when they are integrated with other systems in your business operations. Our Salesforce integration services will make sure that there is smooth data flow and better collaboration with other systems on the platform.</p>
+                        <p>Salesforce becomes more effective when they are integrated with other systems in your business operations. Our Salesforce integration services will make sure that there is smooth data flow and better collaboration with other systems on the platform.  We also provide <a href='/services/agentforce-consulting-services' className="text-primary">Salesforce Agentforce consulting</a> to help businesses connect AI-driven agents seamlessly with their existing systems for smarter automation and customer engagement.</p>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
@@ -550,9 +548,8 @@ export default function ServiceSingle() {
                                     <h3 className="text-xl font-semibold text-gray-800 mb-3">
                                         {service.title}
                                     </h3>
-                                    <p className="text-gray-600 text-sm leading-relaxed">
-                                        {service.desc}
-                                    </p>
+                                    <p className="text-gray-600 text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: service.desc }} />
+
                                 </div>
                             </div>
                         ))}

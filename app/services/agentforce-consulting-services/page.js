@@ -191,7 +191,7 @@ const faqs = [
     },
     {
         question: "What is the job of the Salesforce Marketing Cloud consultant?",
-        answer: "Salesforce Marketing Cloud consultant assists organizations in establishing and enhancing email, SMS and journey based marketing. Automation, audience segmentation and measuring outcomes are used to increase engagement. Their efforts result in additional conversions and personal touches to customers.",
+        answer: "<a href='/services/salesforce-consulting-services' class='text-primary'>Salesforce Marketing Cloud consultant</a> assists organizations in establishing and enhancing email, SMS and journey based marketing. Automation, audience segmentation and measuring outcomes are used to increase engagement. Their efforts result in additional conversions and personal touches to customers.",
     },
     {
         question: "What will Salesforce consulting services entail?",
@@ -199,7 +199,7 @@ const faqs = [
     },
     {
         question: "What is contained in a Salesforce implementation service?",
-        answer: "This service installs the platform, configures it, trains users and workflow personalization. Experts ensure Salesforce suits the present processes and objectives of the business. It allows companies to be started quicker and without hiccups.",
+        answer: "<a href='/services/salesforce-implementation-integration' class='text-primary'>Salesforce implementation service</a> installs the platform, configures it, trains users and workflow personalization. Experts ensure Salesforce suits the present processes and objectives of the business. It allows companies to be started quicker and without hiccups.",
     },
     {
         question: "Why is Salesforce integration services significant?",

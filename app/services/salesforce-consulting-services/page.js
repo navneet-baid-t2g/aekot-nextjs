@@ -46,12 +46,12 @@ const servicecarddata = [
     },
     {
         title: "Salesforce Implementation",
-        desc: "In this, we configure and customise the Salesforce platform according to our client&apos;s needs. We do organizing objects, work processes, user roles and permission with testing and launching. Our approach is to do launching in a phased manner throughout the departments so it doesn&apos;t cause any errors and there is minimum downtime.",
+        desc: "In <a href='/services/salesforce-implementation-service' class='text-primary'>Salesforce implementation service</a>, we configure and customise the Salesforce platform according to our client&apos;s needs. We do organizing objects, work processes, user roles and permission with testing and launching. Our approach is to do launching in a phased manner throughout the departments so it doesn&apos;t cause any errors and there is minimum downtime.",
         img: "/images/serviceImages/Salesforce Implementation.png",
     },
     {
         title: "Salesforce Data Migration",
-        desc: "In Salesforce data migration, we do transferring of data, applications and processes from another CRM and database to Salesforce’s cloud platform. It is done by mapping the data fields, cleaning the data and by making sure the data is protected and is not corrupted. We also support you with migration from legacy system to Salesforce without any loss or corruption of data.",
+        desc: "In <a href='/services/data-migration-management' class='text-primary'>Salesforce data migration</a>, we do transferring of data, applications and processes from another CRM and database to Salesforce’s cloud platform. It is done by mapping the data fields, cleaning the data and by making sure the data is protected and is not corrupted. We also support you with migration from legacy system to Salesforce without any loss or corruption of data.",
         img: "/images/serviceImages/Salesforce Data Migration.png",
     },
     {
@@ -66,7 +66,7 @@ const servicecarddata = [
     },
     {
         title: "Salesforce System Integration",
-        desc: "This consists of connecting Salesforce with other systems like ERP, marketing tools and other custom apps to allow smooth data flow and automatic processes. Our Salesforce consultants do API based integration, middleware solutions like MuleSoft or pre-built connectors, AppExchange apps and custom integration.",
+        desc: "Our <a href='/services/salesforce-implementation-integration' class='text-primary'>Salesforce integration services</a> focus on connecting Salesforce with other systems like ERP, marketing tools and other custom apps to allow smooth data flow and automatic processes. Our Salesforce consultants do API based integration, middleware solutions like MuleSoft or pre-built connectors, AppExchange apps and custom integration.",
         img: "/images/serviceImages/Salesforce System Integration.png",
     },
 ];
@@ -176,7 +176,7 @@ const faqs = [
     },
     {
         question: "What is Salesforce CRM consulting and its significance?",
-        answer: "The Salesforce CRM consulting assists businesses to establish, modify and enhance Salesforce to enable them to sell more efficiently, retain customers and conduct business more effectively. It ensures that the platform aligns itself with the business objectives and provides measurable ROI.",
+        answer: "The <a href='/' class='text-primary'>Salesforce CRM consulting</a> assists businesses to establish, modify and enhance Salesforce to enable them to sell more efficiently, retain customers and conduct business more effectively. It ensures that the platform aligns itself with the business objectives and provides measurable ROI.",
     },
     {
         question: "What are the ways Aekot&apos;s Salesforce CRM consulting will enhance my current system?",
@@ -200,7 +200,7 @@ const faqs = [
     },
     {
         question: "What is Salesforce Agentforce and what is its benefit to businesses?",
-        answer: "Salesforce Agentforce allows businesses to employ AI virtual assistants to provide customer service, sales and support. Such assistants are able to respond to inquiries, plan and provide assistance in real time. They reduce human labor and enhance customer satisfaction.",
+        answer: "<a href='/services/agentforce-consulting-services' class='text-primary'>Salesforce Agentforce</a> allows businesses to employ AI virtual assistants to provide customer service, sales and support. Such assistants are able to respond to inquiries, plan and provide assistance in real time. They reduce human labor and enhance customer satisfaction.",
     },
     {
         question: "Why is Agentforce consulting services recommended for a business?",
@@ -535,9 +535,7 @@ export default function ServiceSingle() {
                                     <h3 className="text-xl font-semibold text-gray-800 mb-3">
                                         {service.title}
                                     </h3>
-                                    <p className="text-gray-600 text-sm leading-relaxed">
-                                        {service.desc}
-                                    </p>
+                                    <p className="text-gray-600 text-sm leading-relaxed" dangerouslySetInnerHTML={{__html:service.desc}}/>
                                 </div>
                             </div>
                         ))}
