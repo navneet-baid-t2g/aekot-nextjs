@@ -1,6 +1,7 @@
 import OurCulture from "@/components/OurCulture";
 import WhyUsCard from "@/components/WhyUsCard";
 import JobSearch from "@/components/JobSearch";
+import Button from "@/components/Button";
 
 export const metadata = {
   title: "Join Top Salesforce Consulting Company | Careers at AEKOT",
@@ -39,7 +40,7 @@ export default async function Career() {
   const jobs = await getJobs();
 
   return (
-    <section className="px-4 pt-16 md:pt-36 lg:mx-20">
+    <div className="px-4 pt-16 md:pt-36 lg:mx-20">
       {/* 🦸 Hero Section */}
       <section className="flex flex-col md:flex-row items-center justify-center py-12 px-6 md:px-12 space-y-16 md:space-x-16">
         <div className="w-full max-w-xl text-center md:text-left space-y-4">
@@ -170,6 +171,26 @@ export default async function Career() {
           hr@aekot.com
         </a>
       </div>
-    </section>
+      {/* Meet Team Section Starts */}
+      <div className="max-w-screen-xl mx-auto shadow-[0_0_5px_rgba(0,0,0,0.25)] rounded-2xl px-8 md:px-12 mt-12 py-8 text-center space-y-6">
+        <p className="font-semibold text-xl">
+          Discover Who Drives{" "}
+          <span style={{ color: "#e52b50" }}> #AekotAdvantage.</span>
+        </p>
+        <p className="text-md text-gray-700 leading-relaxed">
+          Our team is a group of passionate individuals who are dedicated to
+          helping businesses achieve their goals. We are committed to
+          providing exceptional service and support to our clients, and we
+          work tirelessly to ensure that they are successful. <br />
+          <span className="font-semibold">
+            Learn more about the people who make Aekot an inspiring workplace.
+          </span>
+        </p>
+        <div className="flex justify-center">
+          <Button text={"Meet the Team"} path={"/our-team"} />
+        </div>
+      </div>
+      {/* Meet Team Section Ends */}
+    </div>
   );
 }
