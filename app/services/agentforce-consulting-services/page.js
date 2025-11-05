@@ -431,10 +431,47 @@ export default function ServiceSingle() {
 
                 </div>
             </section>
+            <section className="pt-16 px-6 md:px-20 py-16 bg-gray-100">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl font-extrabold text-gray-900">
+                            <span className="text-[#e52b50]">Our Agentforce Services</span>
+                        </h2>
+                    </div>
+
+                    {/* Grid Layout */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {servicecarddata.map((service, index) => (
+                            <div
+                                key={index}
+                                className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
+                            >
+                                <img
+                                    src={service.img}
+                                    alt={service.title}
+                                    className="w-full h-60 object-cover"
+                                />
+                                <div className="p-6">
+                                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                                        {service.title}
+                                    </h3>
+                                    <p className="text-gray-600 text-sm leading-relaxed">
+                                        {service.desc}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+            <ContactCTA heading="Looking for Expert Salesforce Developers?" />
+
+
+
             <article className="max-w-screen-xl mx-auto space-y-6 py-12 lg:py-20">
                 <div className="space-y-6 text-center">
                     <h2 className="text-primary font-bold xs:text-3xl text-2xl  md:text-3xl lg:text-4xl">
-                        Services We Provide
+                        Other Services We Provide
                     </h2>
                     <p className="text-sm xs:text-xl sm:text-xl  md:text-base">
                         Compelled by a powerful aspiration to deliver top-tier{" "}
@@ -480,90 +517,7 @@ export default function ServiceSingle() {
                     ></Service>
                 </div>
             </article>
-            {/*      <section id="other-services" className="relative py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
-            Our <span className="text-[#e52b50]">Other Services</span>
-          </h2>
-          <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed mb-14">
-            Beyond <span className="font-semibold text-gray-800">Salesforce Consulting</span>,
-            we provide end-to-end business solutions that help companies grow faster,
-            automate smarter, and innovate with AI, integrations, and expert-managed services.
-          </p>
-
-          <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {otherservices.map((service, index) => (
-              <li
-                key={index}
-                className="group relative p-8 rounded-3xl bg-white shadow-sm border border-gray-100 
-      hover:shadow-2xl hover:translate-x-1 transition-all duration-300"
-              >
-                <div
-                  className="absolute inset-0 rounded-3xl bg-gradient-to-r from-gray-100 to-gray-300 
-        opacity-0 transition-opacity duration-300 -z-10"
-                ></div>
-
-                <div className="relative z-10 flex flex-col items-center">
-            
-                  <div className="p-3 bg-[#e52b50]/10 rounded-full mb-4">
-                    <div className="text-[#e52b50] text-2xl group-hover:scale-110 transition-transform duration-200">
-                      {service.icon}
-                    </div>
-                  </div>
-
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-[#e52b50] transition-colors">
-                    {service.title}
-                  </h3>
-
-                  <p className="text-sm text-gray-600 text-center">
-                    {service.desc}
-                  </p>
-                </div>
-              </li>
-            ))}
-          </ul>
-
-
-        </div>
-      </section> */}
-
-            <ContactCTA heading="Looking for Expert Salesforce Developers?" />
-
-
-            <section className="pt-16 px-6 md:px-20 py-16 bg-gray-100">
-                <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl font-extrabold text-gray-900">
-                            <span className="text-[#e52b50]">Our Agentforce Services</span>
-                        </h2>
-                    </div>
-
-                    {/* Grid Layout */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {servicecarddata.map((service, index) => (
-                            <div
-                                key={index}
-                                className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
-                            >
-                                <img
-                                    src={service.img}
-                                    alt={service.title}
-                                    className="w-full h-60 object-cover"
-                                />
-                                <div className="p-6">
-                                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                                        {service.title}
-                                    </h3>
-                                    <p className="text-gray-600 text-sm leading-relaxed">
-                                        {service.desc}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-                        <section className="py-12 px-6">
+            <section className="py-12 px-6">
                 <div className="w-full max-w-7xl mx-auto">
                     <h2 className="text-3xl font-bold text-center mb-8">
                         <span className="text-[#e52b50]">Frequently Asked Questions</span>

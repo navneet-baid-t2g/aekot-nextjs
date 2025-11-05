@@ -357,107 +357,6 @@ export default function ServiceSingle() {
                 </div>
             </section>
 
-
-
-            <article className="max-w-screen-xl mx-auto space-y-6 py-12 lg:py-20">
-                <div className="space-y-6 text-center">
-                    <h2 className="text-primary font-bold xs:text-3xl text-2xl  md:text-3xl lg:text-4xl">
-                        Services We Provide
-                    </h2>
-                    <p className="text-sm xs:text-xl sm:text-xl  md:text-base">
-                        Compelled by a powerful aspiration to deliver top-tier{" "}
-                        <br className="hidden md:block" /> Salesforce solutions.
-                    </p>
-                </div>
-                <div className="max-w-screen grid md:grid-cols-2 lg:md:grid-cols-3 gap-4 xl:gap-10">
-                    <Service
-                        icon={"/assets/customization.svg"}
-                        name="Agentforce Implementation & Services"
-                        text="Empower your teams with intelligent automation, seamless integration, and unmatched scalability — our <a class='text-primary' href='/services/agentforce-consulting-services'>Agentforce consulting services</a> are redefining how businesses operate in the age of AI."
-                        path='/services/agentforce-consulting-services'
-                    ></Service>
-                    <Service
-                        icon={"/assets/strategy.svg"}
-                        name="Salesforce Consulting & Strategy"
-                        text="Drive growth with intelligent CRM strategies, seamless customization, and measurable ROI — our <a class='text-primary' href='/services/salesforce-consulting-services'>Salesforce consulting services</a> are transforming how businesses succeed in the digital era."
-                        path='/services/salesforce-consulting-services'
-                    ></Service>
-                    <Service
-                        icon={"/assets/implementation.svg"}
-                        name="Implementation & Integration"
-                        text="Streamline operations with seamless integrations, optimized workflows, and expert support — our <a class='text-primary' href='/services/salesforce-implementation-integration-services'>Salesforce implementation service</a> empowers businesses to achieve lasting efficiency."
-                        path='/services/salesforce-implementation-integration'
-                    ></Service>
-                    <Service
-                        icon={"/assets/integration.svg"}
-                        name="Salesforce Support & Managed services"
-                        text="From proactive troubleshooting to continuous innovation, our <a class='text-primary' href='/services/salesforce-managed-services'>Salesforce managed services</a> empower businesses with reliability, scalability, and the agility to stay ahead in the digital era."
-                        path='/services/salesforce-support-managed-services'
-                    ></Service>
-                    <Service
-                        icon={"/assets/training.svg"}
-                        name="Salesforce Training & Adoption"
-                        text="Empower your teams with personalized learning, hands-on guidance, and expert-led <a class='text-primary' href='/services/salesforce-training-adoption'>Salesforce Marketing Cloud training</a> programs that drive adoption, productivity, and long-term success."
-                        path='/services/salesforce-training-adoption'
-                    ></Service>
-                    <Service
-                        icon="/assets/data_migration.svg"
-                        name="Data Migration & Management"
-                        text="Ensure safe, accurate, and seamless <a class='text-primary' href='/services/salesforce-data-migration-management'>Salesforce data migration</a> with expert planning, validation, and execution that empowers your business with reliable insights and smooth transformation."
-                        path='/services/data-migration-management'
-                    ></Service>
-                </div>
-            </article>
-            {/*      <section id="other-services" className="relative py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
-            Our <span className="text-[#e52b50]">Other Services</span>
-          </h2>
-          <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed mb-14">
-            Beyond <span className="font-semibold text-gray-800">Salesforce Consulting</span>,
-            we provide end-to-end business solutions that help companies grow faster,
-            automate smarter, and innovate with AI, integrations, and expert-managed services.
-          </p>
-
-          <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {otherservices.map((service, index) => (
-              <li
-                key={index}
-                className="group relative p-8 rounded-3xl bg-white shadow-sm border border-gray-100 
-      hover:shadow-2xl hover:translate-x-1 transition-all duration-300"
-              >
-                <div
-                  className="absolute inset-0 rounded-3xl bg-gradient-to-r from-gray-100 to-gray-300 
-        opacity-0 transition-opacity duration-300 -z-10"
-                ></div>
-
-                <div className="relative z-10 flex flex-col items-center">
-            
-                  <div className="p-3 bg-[#e52b50]/10 rounded-full mb-4">
-                    <div className="text-[#e52b50] text-2xl group-hover:scale-110 transition-transform duration-200">
-                      {service.icon}
-                    </div>
-                  </div>
-
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-[#e52b50] transition-colors">
-                    {service.title}
-                  </h3>
-
-                  <p className="text-sm text-gray-600 text-center">
-                    {service.desc}
-                  </p>
-                </div>
-              </li>
-            ))}
-          </ul>
-
-
-        </div>
-      </section> */}
-
-            <ContactCTA heading="Looking for Expert Salesforce Developers?" />
-
-
             <section className="pt-16 px-6 md:px-20 py-16 bg-gray-100">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12">
@@ -527,6 +426,61 @@ export default function ServiceSingle() {
                 </div>
             </section>
 
+
+
+            <ContactCTA heading="Looking for Expert Salesforce Developers?" />
+
+
+
+            <article className="max-w-screen-xl mx-auto space-y-6 py-12 lg:py-20">
+                <div className="space-y-6 text-center">
+                    <h2 className="text-primary font-bold xs:text-3xl text-2xl  md:text-3xl lg:text-4xl">
+                        Other Services We Provide
+                    </h2>
+                    <p className="text-sm xs:text-xl sm:text-xl  md:text-base">
+                        Compelled by a powerful aspiration to deliver top-tier{" "}
+                        <br className="hidden md:block" /> Salesforce solutions.
+                    </p>
+                </div>
+                <div className="max-w-screen grid md:grid-cols-2 lg:md:grid-cols-3 gap-4 xl:gap-10">
+                    <Service
+                        icon={"/assets/customization.svg"}
+                        name="Agentforce Implementation & Services"
+                        text="Empower your teams with intelligent automation, seamless integration, and unmatched scalability — our <a class='text-primary' href='/services/agentforce-consulting-services'>Agentforce consulting services</a> are redefining how businesses operate in the age of AI."
+                        path='/services/agentforce-consulting-services'
+                    ></Service>
+                    <Service
+                        icon={"/assets/strategy.svg"}
+                        name="Salesforce Consulting & Strategy"
+                        text="Drive growth with intelligent CRM strategies, seamless customization, and measurable ROI — our <a class='text-primary' href='/services/salesforce-consulting-services'>Salesforce consulting services</a> are transforming how businesses succeed in the digital era."
+                        path='/services/salesforce-consulting-services'
+                    ></Service>
+                    <Service
+                        icon={"/assets/implementation.svg"}
+                        name="Implementation & Integration"
+                        text="Streamline operations with seamless integrations, optimized workflows, and expert support — our <a class='text-primary' href='/services/salesforce-implementation-integration-services'>Salesforce implementation service</a> empowers businesses to achieve lasting efficiency."
+                        path='/services/salesforce-implementation-integration'
+                    ></Service>
+                    <Service
+                        icon={"/assets/integration.svg"}
+                        name="Salesforce Support & Managed services"
+                        text="From proactive troubleshooting to continuous innovation, our <a class='text-primary' href='/services/salesforce-managed-services'>Salesforce managed services</a> empower businesses with reliability, scalability, and the agility to stay ahead in the digital era."
+                        path='/services/salesforce-support-managed-services'
+                    ></Service>
+                    <Service
+                        icon={"/assets/training.svg"}
+                        name="Salesforce Training & Adoption"
+                        text="Empower your teams with personalized learning, hands-on guidance, and expert-led <a class='text-primary' href='/services/salesforce-training-adoption'>Salesforce Marketing Cloud training</a> programs that drive adoption, productivity, and long-term success."
+                        path='/services/salesforce-training-adoption'
+                    ></Service>
+                    <Service
+                        icon="/assets/data_migration.svg"
+                        name="Data Migration & Management"
+                        text="Ensure safe, accurate, and seamless <a class='text-primary' href='/services/salesforce-data-migration-management'>Salesforce data migration</a> with expert planning, validation, and execution that empowers your business with reliable insights and smooth transformation."
+                        path='/services/data-migration-management'
+                    ></Service>
+                </div>
+            </article>
             <section className="py-12 px-6">
                 <div className="w-full max-w-7xl mx-auto">
                     <h2 className="text-3xl font-bold text-center mb-8">
