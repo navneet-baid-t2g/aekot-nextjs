@@ -40,11 +40,6 @@ const servicecarddata = [
         img: "/images/serviceImages/Salesforce Consulting.png",
     },
     {
-        title: "Salesforce App Development",
-        desc: "We can create custom apps and add features that will make Salesforce more user friendly to improve productivity and user satisfaction. For example, we use Salesforce Mobile SDK to create mobile friendly apps. We also build apps for the Salesforce AppExchange marketplace.",
-        img: "/images/serviceImages/Salesforce App Development.png",
-    },
-    {
         title: "Salesforce Implementation",
         desc: "In <a href='/services/salesforce-implementation-service' class='text-primary'>Salesforce implementation service</a>, we configure and customise the Salesforce platform according to our client&apos;s needs. We do organizing objects, work processes, user roles and permission with testing and launching. Our approach is to do launching in a phased manner throughout the departments so it doesn&apos;t cause any errors and there is minimum downtime.",
         img: "/images/serviceImages/Salesforce Implementation.png",

@@ -60,6 +60,11 @@ const servicecarddata = [
         desc: "Once the solutions are implemented, we will continue to monitor and give support after that as well. Our team of certified salesforce implementation service experts will regularly update and improve the efficiency of your business.",
         img: "/images/serviceImages/Support & Maintenance.png",
     },
+    {
+        title: "Salesforce App Development",
+        desc: "We can create custom apps and add features that will make Salesforce more user friendly to improve productivity and user satisfaction. For example, we use Salesforce Mobile SDK to create mobile friendly apps. We also build apps for the Salesforce AppExchange marketplace.",
+        img: "/images/serviceImages/Salesforce App Development.png",
+    },
 ];
 
 const servicecardintdata = [
@@ -92,17 +97,7 @@ const servicecardintdata = [
         title: "Integrating Amazon Web Services",
         desc: "We connect amazon web services like API Gateway, AppSync, MuleSoft, Zapier, etc. with ERP, CRM and other systems. This allows these systems to share data and work together in the cloud. This will save you money as you only pay for what you use.",
         img: "/images/serviceImages/Integrating Amazon Web Services.png",
-    },
-    {
-        title: "Integrating Payment Gateways",
-        desc: "We connect payment gateways like Stripe, PayPal, Transfer, Square, ArtsylPay, etc. with accounting systems so they can share data automatically. It connects directly with how your customers pay and how you record those payments. These payments are supported all over the world and it will be easier for you to pay anywhere you want.",
-        img: "/images/serviceImages/Integrating Payment Gateways.png",
-    },
-    {
-        title: "Integrating Document management systems",
-        desc: "We merge document management systems like DocuSign, SharePoint, etc. with accounting platforms so they can share and manage documents easily. You use less paper and it saves money and helps the environment. You can save documents on the cloud safely and easier to find and share.",
-        img: "/images/serviceImages/Integrating Document management systems.png",
-    },
+    }
 ];
 
 
