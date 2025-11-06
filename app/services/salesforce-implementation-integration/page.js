@@ -28,6 +28,7 @@ import {
 
 import Service from "@/components/ServiceCard";
 import Link from "next/link";
+import Image from "next/image";
 const certificationImages = [
     { src: "/images/Certifications/C22.png" },
     { src: "/images/Certifications/C23.png" },
@@ -319,38 +320,51 @@ export default function ServiceSingle() {
             </section>
 
 
-            <section className="py-16 relative bg-gradient-to-b from-white via-red-100 to-white px-8 md:px-20 ">
-                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <section className="py-16 bg-gradient-to-b from-white via-red-100 to-white px-6 md:px-20">
+                <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
                     {/* Left Content */}
-                    <div className="flex flex-col space-y-6 md:w-2/3">
+                    <div className="md:w-2/3 space-y-6">
                         <h2 className="text-3xl md:text-4xl font-bold text-left">
                             <span className="text-primary">Why choose us?</span> What you will get:
                         </h2>
 
-                        <p className="text-md text-gray-800 text-left">
-                            As one of the best salesforce implementation service providers, we give our clients full services, from consultation to after implementation. With our certified salesforce implementation service experts, our goal is to give you the best services so you can have easier automation with fewer mistakes. With our proven implementation services, you will get easy growth within a short span of time. The solutions we give are easier to implement and integrate and are cost effective. We also provide full support and maintenance even after the implementation and integration are completed. Our solutions will give you adaptability as they will grow with your business.
+                        <p className="text-gray-800 text-left leading-relaxed">
+                            As one of the best Salesforce implementation service providers, we offer our clients complete
+                            services — from consultation to post-implementation. With our certified Salesforce experts,
+                            our goal is to help you achieve seamless automation with minimal errors. Our proven implementation
+                            services promote rapid growth, easy integration, and cost-effective solutions that scale with your business.
                         </p>
 
-                        <p className="text-md text-gray-800 text-left">
+                        <p className="text-gray-800 text-left leading-relaxed">
                             <strong>Why choose Aekot’s Salesforce?</strong><br />
-                            Salesforce is the right platform for sale, customer service and marketing activities and Aekot, best salesforce implementation service providers, is here to help you through it. With our skills, we will make it an easy to use, connected and customised solution for your business. The solutions we give are practical, direct and effective to make Salesforce a central part of your digital ecosystem.
+                            Salesforce is the ideal platform for sales, customer service, and marketing activities —
+                            and Aekot, one of the best Salesforce implementation providers, ensures it works for you.
+                            Our practical, direct, and effective solutions make Salesforce a central, easy-to-use part
+                            of your digital ecosystem.
                         </p>
 
-                        <p className="text-md text-gray-800 text-left">
+                        <p className="text-gray-800 text-left leading-relaxed">
                             <strong>Start your journey with us today.</strong><br />
-                            Contact us today to find out how Aekot’s Salesforce implementation and integration services can support your Salesforce projects.
+                            Contact us to discover how Aekot’s Salesforce implementation and integration services can
+                            empower your Salesforce projects.
                         </p>
 
-                        <Button text={"Contact Us"} path={"/contact"} />
-
+                        <Button text="Contact Us" path="/contact" />
                     </div>
 
-                    {/* Right Scrolling Logos */}
-                    <div className="relative h-[400px] sm:h-[102px] w-1/3 sm:w-full overflow-hidden flex justify-end mt-12 md:mt-0">
-                        <ScrollingLogos />
+                    {/* Right Image */}
+                    <div className="md:w-1/2 w-full flex justify-center md:justify-end">
+                        <Image
+                            src="/images/serviceImages/a-group-of-diverse-professionals-collaborating.png"
+                            alt="a group of diverse professionals collaborating"
+                            width={500}
+                            height={500}
+                            className="w-full max-w-md object-contain rounded-lg"
+                        />
                     </div>
                 </div>
             </section>
+
 
             <section className="pt-16 px-6 md:px-20 py-16 bg-gray-100">
                 <div className="max-w-7xl mx-auto">
