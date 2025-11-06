@@ -472,28 +472,6 @@ export default function Home() {
             </div>
           </section>
         </article>
-        <section className="bg-gradient-to-b from-gray-50 to-gray-100 py-20 px-6 md:px-12 lg:px-20">
-          <div className="max-w-7xl mx-auto text-center mb-14">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 text-primary">How We Deliver Salesforce Excellence</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We focus on the client’s success through a collaborative approach and provide a free trial and comprehensive training to ensure effective Salesforce adoption.
-            </p>
-          </div>
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {services.map((service, index) => (
-                <div
-                  key={index}
-                  className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transform transition-all duration-300 p-8 flex flex-col items-center text-center border border-transparent hover:border-blue-100"
-                >
-                  <div className="mb-4">{service.icon}</div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">{service.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: service.description }} />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
         <article className="max-w-screen-xl mx-auto space-y-6 py-12 lg:py-20">
           <div className="space-y-6 text-center">
             <h2 className="text-primary font-bold xs:text-3xl text-2xl  md:text-3xl lg:text-4xl">
@@ -504,42 +482,62 @@ export default function Home() {
               <br className="hidden md:block" /> Salesforce solutions.
             </p>
           </div>
-          <div className="max-w-screen grid md:grid-cols-2 lg:md:grid-cols-3 gap-4 xl:gap-10">
+          <div className="max-w-screen grid md:grid-cols-2 lg:md:grid-cols-4 gap-4 xl:gap-4">
             <Service
               icon={"/assets/customization.svg"}
               name="Agentforce Implementation & Services"
               text="Empower your teams with intelligent automation, seamless integration, and unmatched scalability — our <a class='text-primary' href='/services/agentforce-consulting-services'>Agentforce consulting services</a> are redefining how businesses operate in the age of AI."
               path='/services/agentforce-consulting-services'
+              isHome={true}
             ></Service>
             <Service
               icon={"/assets/strategy.svg"}
               name="Salesforce Consulting & Strategy"
               text="Drive growth with intelligent CRM strategies, seamless customization, and measurable ROI — our <a class='text-primary' href='/services/salesforce-consulting-services'>Salesforce consulting services</a> are transforming how businesses succeed in the digital era."
               path='/services/salesforce-consulting-services'
+              isHome={true}
             ></Service>
             <Service
               icon={"/assets/implementation.svg"}
               name="Implementation & Integration"
               text="Streamline operations with seamless integrations, optimized workflows, and expert support — our <a class='text-primary' href='/services/salesforce-implementation-integration-services'>Salesforce implementation service</a> empowers businesses to achieve lasting efficiency."
               path='/services/salesforce-implementation-integration'
+              isHome={true}
             ></Service>
             <Service
               icon={"/assets/integration.svg"}
               name="Salesforce Support & Managed services"
               text="From proactive troubleshooting to continuous innovation, our <a class='text-primary' href=/services/salesforce-support-managed-services'>Salesforce managed services</a> empower businesses with reliability, scalability, and the agility to stay ahead in the digital era."
               path='/services/salesforce-support-managed-services'
+              isHome={true}
             ></Service>
             <Service
               icon={"/assets/training.svg"}
               name="Salesforce Training & Adoption"
               text="Empower your teams with personalized learning, hands-on guidance, and expert-led <a class='text-primary' href='/services/salesforce-training-adoption'>Salesforce Marketing Cloud training</a> programs that drive adoption, productivity, and long-term success."
               path='/services/salesforce-training-adoption'
+              isHome={true}
             ></Service>
             <Service
               icon="/assets/data_migration.svg"
               name="Data Migration & Management"
               text="Ensure safe, accurate, and seamless <a class='text-primary' href='/services/data-migration-management'>Salesforce data migration</a> with expert planning, validation, and execution that empowers your business with reliable insights and smooth transformation."
               path='/services/data-migration-management'
+              isHome={true}
+            ></Service>
+            <Service
+              icon="/assets/optimization.png"
+              name="Optimization"
+              text="We optimise your CRM for improved efficiency and higher ROI by carefully analysing setups, refining workflows, enhancing reports, and seamlessly integrating intelligent tools like Einstein AI."
+              path='/services/salesforce-support-managed-services'
+              isHome={true}
+            ></Service>
+            <Service
+              icon="/assets/appexchange_solutions.svg"
+              name="AppExchange"
+              text="We provide AppExchange app development from planning and architecture to deployment and support, ensuring seamless functionality and performance within the Salesforce ecosystem."
+              path='/services/data-migration-management'
+              isHome={true}
             ></Service>
           </div>
         </article>
@@ -547,43 +545,12 @@ export default function Home() {
 
       </section>
 
-      {/* <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
-            Features Provided
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className={`group p-8 rounded-2xl shadow-md bg-white border border-gray-100 text-left transition-all duration-300 transform hover:-translate-y-2`}
-              >
-                <div className="flex justify-center">{feature.icon}</div>
-                <h3 className="mt-4 text-xl font-semibold text-center text-gray-800 transition-all duration-300">
-                  {feature.title}
-                </h3>
-                <ul className="mt-4 text-gray-600 text-sm space-y-2 transition-all duration-300">
-                  {feature.points.map((point, i) => (
-                    <li key={i} className="flex items-center justify-center">
-                      <FaLongArrowAltRight className="mr-2 flex-shrink-0 mt-1" />
-                      <span dangerouslySetInnerHTML={{ __html: point }}></span>
-                    </li>
-
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
       <section className="py-12 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
             <span className="text-[#e52b50]">Our Expertise in Salesforce Services</span>
           </h2>
 
-          {/* Flex layout instead of grid */}
           <div className="flex flex-wrap justify-center">
             {expertise.map((expertise, index) => {
               const Icon = expertise.icon;

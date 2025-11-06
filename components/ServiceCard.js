@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-const Service = ({ icon, name, text, path }) => {
+const Service = ({ icon, name, text, path, isHome = false }) => {
   return (
     <article className="mx-auto w-fit">
-      <div className="flex flex-col items-center text-center px-6 py-8 group shadow-xl py-4 h-full">
-        <div className="flex flex-col justify-center items-center text-center gap-4 w-5/6 mx-auto">
+      <div className={`flex flex-col items-center text-center px-6 py-8 group shadow-xl py-4 h-full`}>
+        <div className={`flex flex-col justify-center items-center text-center gap-4 mx-auto ${isHome ? "w-full" : "w-5/6"}`}>
           <div className="flex justify-center items-center rounded-full bg-white shadow w-14 h-14 p-4">
             <img src={icon} alt="Icon" className="object-center" />
           </div>
