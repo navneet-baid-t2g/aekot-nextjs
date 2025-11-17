@@ -47,39 +47,39 @@ const faqs = [
   },
   {
     question: "How does Aekot ensure successful Salesforce implementations?",
-    answer: "We follow a proven methodology: understanding your business, planning customised solutions, executing with precision, and supporting user adoption. Our Salesforce certified consultants provide clear timelines, weekly updates, and a free trial to ensure alignment, resulting in successful outcomes like 20-30% increase in Sales productivity, 15-20% improvement in conversion rate and 90% lead leakage reduction for clients.",
+    answer: "We follow a proven methodology: understanding the business, planning customised solutions, executing with precision, and supporting user adoption. Our Salesforce certified consultants provide clear timelines, weekly updates, and a free trial to ensure alignment, resulting in successful outcomes like 20-30% increase in Sales productivity, 15-20% improvement in conversion rate and 90% lead leakage reduction for clients.",
   },
   {
     question: "Which industries does Aekot serve with Salesforce solutions?",
-    answer: "Aekot supports diverse industries, including finance, healthcare, real estate, technology, and nonprofits. We specialise in industry-specific solutions, such as Health Cloud for healthcare or Nonprofit Cloud for charities, ensuring compliance and scalability.",
+    answer: "Aekot supports diverse industries, including finance, healthcare, real estate, technology, and nonprofits. We also specialise in industry-specific solutions, such as Health Cloud for healthcare or Nonprofit Cloud for charities, ensuring compliance and scalability.",
   },
   {
     question: "How does Aekot ensure data security in Salesforce solutions?",
     answer: "Our expert Salesforce consulting services prioritise security by implementing role-based access, multi-factor authentication, and compliance with regulations like GDPR and HIPAA. Our expertise ensures secure configurations, as seen in solutions for finance and healthcare clients.",
   },
   {
-    question: "What is the effect of engagement of certified Salesforce CRM consultants on project success?",
-    answer: "Certified consultants reduce risk, achieve a seamless deployment, enhance user adoption and offer high-quality customizations resulting in shorter timelines and increased ROI.",
+    question: "What is Salesforce CRM consulting and its significance?",
+    answer: "The Salesforce CRM consulting assists businesses to establish, modify and enhance Salesforce to enable them to sell more efficiently, retain customers and conduct business more effectively. It ensures that the platform aligns itself with the business objectives and provides measurable ROI.",
   },
   {
-    question: "What are the ways Aekot's Salesforce CRM consulting will enhance my current system?",
+    question: "What are the ways Aekot Salesforce CRM consulting will enhance my current system?",
     answer: "Our consultants examine your existing CRM, streamline operations, introduce automation, integrate other solutions and enhance reporting. This simplifies the work of the users and accelerates the work and provides clear data.",
   },
   {
-    question: "Who will benefit from Aekot's Salesforce CRM consulting services?",
+    question: "Who will benefit from Aekot Salesforce CRM consulting services?",
     answer: "Our services can benefit any business that is interested in starting to use Salesforce, changing to other CRM, enhancing performance, integrating tools, automating sales or service processes, or training teams.",
   },
   {
-    question: "Why would I select Aekot's certified Salesforce CRM consultants and not general consultants?",
-    answer: "Aekot has highly skilled and trained certified consultants thus they adhere to the best practices, familiarize themselves with the latest features and provide secure, scalable and compliant solutions.",
+    question: "Why should I select Aekot certified Salesforce CRM consultants and not general consultants?",
+    answer: "Certified Salesforce consultants at Aekot don’t just implement solutions, they elevate your entire CRM experience and suggest what is best for you. Backed by Salesforce certifications and real-world expertise, our team ensures your system is optimized for performance, security, and long-term growth.",
   },
   {
-    question: "What are the qualifications of a certified Salesforce CRM consultant?",
-    answer: "The most important ones are Salesforce Administrator, Sales Cloud Consultant, Service Cloud Consultant, Platform Developer, Marketing Cloud Consultant and Integration Architect depending on the project requirements.",
+    question: "How does Aekot ensure the success of Salesforce projects?",
+    answer: "Aekot follows a structured approach to every Salesforce project starting with understanding client goals, designing tailored solutions, and ensuring seamless implementation. Our certified consultants focus on clear communication, timely delivery, and continuous optimization to achieve measurable business results.",
   },
   {
-    question: "What is Salesforce CRM consulting and its significance?",
-    answer: "The Salesforce CRM consulting assists businesses to establish, modify and enhance Salesforce to enable them to sell more efficiently, retain customers and conduct business more effectively. It ensures that the platform aligns itself with the business objectives and provides measurable ROI.",
+    question: "What is the effect of engagement of certified Salesforce CRM consultants on project success?",
+    answer: "Certified consultants reduce risk, achieve a seamless deployment, enhance user adoption and offer high-quality customizations resulting in shorter timelines and increased ROI.",
   },
 
 
