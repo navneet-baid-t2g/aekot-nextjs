@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { HiLightBulb } from "react-icons/hi2";
@@ -69,7 +70,7 @@ export default function JobSearch({ jobs }) {
               </div>
             ))}
 
-            <a
+            <Link
               href="/careers/apply"
               className="shadow-xl rounded-lg p-6 flex flex-col justify-center items-center text-center gap-4 hover:scale-105 transition-transform duration-300 ease-in-out h-full min-h-[300px]"
             >
@@ -79,7 +80,7 @@ export default function JobSearch({ jobs }) {
               <p className="text-sm text-black/60">
                 Explore all available roles at Aekot and find your perfect fit.
               </p>
-            </a>
+            </Link>
           </>
         )}
       </section>
