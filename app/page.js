@@ -413,7 +413,12 @@ export default function Home() {
               Driving business success through Salesforce
             </h2>
             <p className="p-6 max-w-screen items-center text-center text-lg sm:text-justify xs:text-justify">
-              Aekot is an expert Salesforce consulting services partner specialised in implementing and integrating various Salesforce solutions. Our services include end-to-end Salesforce setup, optimization, system integration, support, market automation, AppExchange and custom development. Our team of certified professionals serves global clients, primarily in North America, offering Salesforce CRM consulting services to optimise business processes.
+              Aekot is an expert Salesforce consulting services partner specialised in implementing
+              and integrating various Salesforce solutions. Our services include end-to-end
+              Salesforce setup, optimization, system integration, support, marketing automation,
+              AppExchange and custom development. Our team of certified professionals serves
+              global clients, primarily in North America, offering Salesforce CRM consulting
+              services to optimise business processes.
             </p>
           </div>
           <section className="py-12 bg-gradient-to-br from-[#ffffff] to-[#fffafa] relative overflow-hidden w-full mt-12">
@@ -475,69 +480,61 @@ export default function Home() {
         <article className="max-w-screen-xl mx-auto space-y-6 py-12 lg:py-20">
           <div className="space-y-6 text-center">
             <h2 className="text-primary font-bold xs:text-3xl text-2xl  md:text-3xl lg:text-4xl">
-              Services We Provide
+              Expert Salesforce Services That Deliver Results
             </h2>
             <p className="text-sm xs:text-xl sm:text-xl  md:text-base">
-              Compelled by a powerful aspiration to deliver top-tier{" "}
-              <br className="hidden md:block" /> Salesforce solutions.
+              We help harness the full power of Salesforce through consulting, implementation, and
+              managed services tailored to your unique business goals compelled by a powerful
+              aspiration to deliver top-tier Salesforce solutions.
             </p>
           </div>
           <div className="max-w-screen grid md:grid-cols-2 lg:md:grid-cols-4 gap-4 xl:gap-4">
             <Service
               icon={"/assets/customization.svg"}
               name="Agentforce Implementation & Services"
-              text="Empower your teams with intelligent automation, seamless integration, and unmatched scalability — our <a class='text-primary' href='/services/agentforce-consulting-services'>Agentforce consulting services</a> are redefining how businesses operate in the age of AI."
+              text="Our <a class='text-primary' href='/services/agentforce-consulting-services'>Agentforce consulting services</a> help businesses automate processes, streamline
+                    operations, and improve overall team efficiency. We customize and integrate Agentforce
+                    solutions that fit your workflow, empowering sales, service, marketing, and other teams
+                    to work smarter and deliver better results every day."
               path='/services/agentforce-consulting-services'
-              isHome={true}
             ></Service>
             <Service
               icon={"/assets/strategy.svg"}
               name="Salesforce Consulting & Strategy"
-              text="Drive growth with intelligent CRM strategies, seamless customization, and measurable ROI — our <a class='text-primary' href='/services/salesforce-consulting-services'>Salesforce consulting services</a> are transforming how businesses succeed in the digital era."
+              text="With years of experience in <a href='/services/agentforce-consulting-services' class='text-primary'>Salesforce consulting services</a>, we guide you through every stage from planning and setup to complete implementation of the Salesforce platform. Our goal is to align Salesforce with your business process to drive stronger customer relationships and better ROI."
               path='/services/salesforce-consulting-services'
-              isHome={true}
             ></Service>
             <Service
               icon={"/assets/implementation.svg"}
               name="Implementation & Integration"
-              text="Streamline operations with seamless integrations, optimized workflows, and expert support — our <a class='text-primary' href='/services/salesforce-implementation-integration-services'>Salesforce implementation service</a> empowers businesses to achieve lasting efficiency."
+              text="Our <a href='/services/salesforce-implementation-integration' class='text-primary'>Salesforce implementation services</a> ensure smooth setup, customization, and integration
+              with your existing business tools. We focus on user-friendly solutions that boost productivity,
+              data accuracy, and team collaboration from day one."
               path='/services/salesforce-implementation-integration'
-              isHome={true}
             ></Service>
             <Service
               icon={"/assets/integration.svg"}
               name="Salesforce Support & Managed services"
-              text="From proactive troubleshooting to continuous innovation, our <a class='text-primary' href=/services/salesforce-support-managed-services'>Salesforce managed services</a> empower businesses with reliability, scalability, and the agility to stay ahead in the digital era."
+              text="We offer complete <a href='/services/salesforce-support-managed-services' class='text-primary'>Salesforce managed services</a> including system maintenance, regular
+              updates, issue resolution, and process optimization. Our team keeps your CRM secure, fast,
+              and aligned with your changing business needs."
               path='/services/salesforce-support-managed-services'
-              isHome={true}
             ></Service>
             <Service
               icon={"/assets/training.svg"}
               name="Salesforce Training & Adoption"
-              text="Empower your teams with personalized learning, hands-on guidance, and expert-led <a class='text-primary' href='/services/salesforce-training-adoption'>Salesforce Marketing Cloud training</a> programs that drive adoption, productivity, and long-term success."
+              text="Boost your team’s skills with our <a href='/services/salesforce-training-adoption' class='text-primary'>Salesforce training programs</a>. We provide hands-on learning
+              experiences and real-world use cases to help teams master Salesforce tools across all clouds,
+              increase adoption, and achieve better performance and results."
               path='/services/salesforce-training-adoption'
-              isHome={true}
             ></Service>
             <Service
               icon="/assets/data_migration.svg"
               name="Data Migration & Management"
-              text="Ensure safe, accurate, and seamless <a class='text-primary' href='/services/data-migration-management'>Salesforce data migration</a> with expert planning, validation, and execution that empowers your business with reliable insights and smooth transformation."
+              text="Our experts handle <a href='/services/data-migration-management' class='text-primary'>Salesforce data migration</a> with precision and care. We ensure data integrity,
+              security, and accuracy during transfer helping your business transition smoothly without losing
+              any valuable customer or sales information."
               path='/services/data-migration-management'
-              isHome={true}
-            ></Service>
-            <Service
-              icon="/assets/optimization.png"
-              name="Optimization"
-              text="We optimise your CRM for improved efficiency and higher ROI by carefully analysing setups, refining workflows, enhancing reports, and seamlessly integrating intelligent tools like Einstein AI."
-              path='/services/salesforce-support-managed-services'
-              isHome={true}
-            ></Service>
-            <Service
-              icon="/assets/appexchange_solutions.svg"
-              name="AppExchange"
-              text="We provide AppExchange app development from planning and architecture to deployment and support, ensuring seamless functionality and performance within the Salesforce ecosystem."
-              path='/services/data-migration-management'
-              isHome={true}
             ></Service>
           </div>
         </article>
