@@ -93,13 +93,18 @@ const expertise = [
     icon: LuHospital,
   },
   {
-    title: "Agent Force",
+    title: "Agentforce",
     desc: "Leverage AI-driven AgentForce to automate workflows and deliver smarter, faster customer interactions.",
     icon: LuBrain,
   },
   {
+    title: "Sales Cloud",
+    desc: "Accelerate revenue with Salesforce Sales Cloud; optimize leads, forecast sales, and close deals faster",
+    icon: LuHandshake,
+  },
+  {
     title: "Service Cloud",
-    desc: "Streamline support operations with Salesforce Service Cloud to boost agent productivity and customer satisfaction.",
+    desc: "Streamline support operations with Salesforce Service Cloud to boost agent productivity and customer satisfaction",
     icon: LuCalendarCheck,
   },
   {
@@ -107,18 +112,14 @@ const expertise = [
     desc: "Build secure, branded Salesforce portals that connect customers, partners, and employees seamlessly.",
     icon: LuShieldHalf,
   },
-  {
-    title: "Sales Cloud",
-    desc: "Accelerate revenue with Salesforce Sales Cloud—optimize leads, forecast sales, and close deals faster.",
-    icon: LuHandshake,
-  },
+
   {
     title: "Marketing Cloud",
     desc: "Create personalized, data-driven marketing campaigns with Salesforce Marketing Cloud for higher engagement.",
     icon: LuMegaphone,
   },
   {
-    title: "Non-Profit Cloud",
+    title: "Nonprofit Cloud",
     desc: "Empower your mission with Salesforce Nonprofit Cloud to manage donors, programs, and fundraising easily.",
     icon: LuHeartHandshake,
   },
@@ -135,12 +136,12 @@ const industries = [
     icon: <FaUniversity className="text-5xl text-green-500 transition-all duration-300" />
   },
   {
-    name: "Real Estate",
-    icon: <FaBuilding className="text-5xl text-yellow-500 transition-all duration-300" />
-  },
-  {
     name: "Technology",
     icon: <FaLaptopCode className="text-5xl text-purple-500 transition-all duration-300" />
+  },
+  {
+    name: "Real Estate",
+    icon: <FaBuilding className="text-5xl text-yellow-500 transition-all duration-300" />
   },
   {
     name: "Not-for-Profit",
@@ -436,7 +437,7 @@ export default function Home() {
 
                   <p className="text-gray-700 text-md sm:text-base max-w-3xl mx-auto leading-relaxed">
                     At Aekot, we help healthcare organizations redefine care delivery through Salesforce <strong className="text-primary">Health Cloud</strong>
-                    — a powerful CRM platform built specifically for the healthcare and life sciences sector.
+                    a powerful CRM platform built specifically for the healthcare and life sciences sector.
                   </p>
                   <div className="flex justify-center pt-4">
                     <Link
@@ -458,7 +459,7 @@ export default function Home() {
                   </div>
 
                   <p className="text-gray-700 text-md sm:text-base max-w-3xl mx-auto leading-relaxed">
-                    At Aekot, we’re not just embracing AI — we’re <span className="font-medium text-gray-900">leading the charge</span>.
+                    At Aekot, we’re not just embracing AI, we’re <span className="font-medium text-gray-900">leading the charge</span>.
                     As one of the first Salesforce partners to empower clients with <strong className="text-primary">Agentforce</strong>,
                     we’re redefining how businesses streamline operations and boost efficiency.
                   </p>
@@ -545,7 +546,7 @@ export default function Home() {
       <section className="py-12 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
-            <span className="text-[#e52b50]">Our Expertise in Salesforce Services</span>
+            <span className="text-[#e52b50]">Our Expertise in Salesforce clouds</span>
           </h2>
 
           <div className="flex flex-wrap justify-center">

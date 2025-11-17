@@ -9,14 +9,14 @@ const actionSections = [
         title: "Experience",
         icon: <CgBriefcase size={36} className="text-blue-600" />,
         description: [
-            "We have very deep expertise in Salesforce with over 10 years of experience in CRM systems, serving startups to Fortune 500 companies, with over 40 projects. Our expertise in Sales Cloud, Service Cloud, Marketing Cloud and more ensures customised solutions for various industries.",
+            "Aekot has over 100 years of collective experience in Salesforce CRM systems, with our leaders having served startups to Fortune 500 firms to public sector companies. Aekot’s expertise in Sales Cloud, Service Cloud, Marketing Cloud and other products and services across 40 projects with a CSAT of 4.9/5 ensures excellency in solutions across industries and Salesforce products.",
         ],
     },
     {
         title: "Global service delivery",
         icon: <FaGlobeAmericas size={36} className="text-green-600" />,
         description: [
-            "Aekot supports global clients with localised strategies to ensure cultural and operational alignment. We operate in multiple regions across North America and the UAE and provide smooth delivery across the regions.",
+            "Aekot supports global clients with localised strategies to ensure cultural and operational alignment. We operate in multiple regions across North America, Europe, the UAE and India and provide smooth delivery across the regions.",
         ],
     },
     {
@@ -30,7 +30,7 @@ const actionSections = [
         title: "Commitment",
         icon: <FaHandshake size={36} className="text-orange-600" />,
         description: [
-            "Aekot focuses on full customer satisfaction and acts as a strategic partner involved in client success. We build long-term partnerships and earn trust through our consistent results. Clients have appreciated our dedication and transparent communication with them.",
+            "Aekot focuses on full customer satisfaction and acts as a strategic partner involved in client success. We build long-term partnerships and earn trust through our consistent results. Clients have always appreciated our dedication and transparent communication with them.",
         ],
     },
     {
