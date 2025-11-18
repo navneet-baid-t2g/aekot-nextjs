@@ -43,11 +43,11 @@ import {
 const faqs = [
   {
     question: "What types of Salesforce services does Aekot provide?",
-    answer: "We offer <a href='/services/salesforce-consulting-services' class='text-primary'>expert Salesforce consulting services</a> that cover every aspect of your business needs. Our services include customization of apps, workflows, automations, approvals, and dashboards to match your unique requirements. We provide seamless integration with legacy systems and popular tools such as HubSpot, QuickBooks, and ERP systems. From end-to-end implementation across Sales, Service, Experience, Marketing, Health, Data, and Nonprofit Clouds to AI-driven solutions for automation and analytics, we ensure your Salesforce environment is optimized for performance. Additionally, we support user adoption through training programs and provide ongoing maintenance to keep your system running smoothly.",
+    answer: "We offer <a href='/services/salesforce-consulting-services' class='text-primary'>expert Salesforce consulting services</a>, including:     <ul>  <li>    <strong>Customisation:</strong> Tailored apps, workflows, automations, approvals and dashboards.  </li>  <li>    <strong>Integration:</strong> Seamless connections with egacy systems and tools like HubSpot, QuickBooks, and ERP systems.  </li>  <li>    <strong>Implementation:</strong> End-to-end setup for Sales, Service, Experience, Marketing, Health, Data and Nonprofit Clouds.  </li>  <li>    <strong>AI Solutions:</strong> Agentforce-driven automation and analytics.  </li>  <li>    <strong>Training & Support:</strong> User adoption programs and ongoing maintenance.  </li></ul>",
   },
   {
     question: "How does Aekot ensure successful Salesforce implementations?",
-    answer: "We follow a proven methodology: understanding the business, planning customised solutions, executing with precision, and supporting user adoption. Our Salesforce certified consultants provide clear timelines, weekly updates, and a free trial to ensure alignment, resulting in successful outcomes like 20-30% increase in Sales productivity, 15-20% improvement in conversion rate and 90% lead leakage reduction for clients.",
+    answer: "We follow a proven methodology: understanding the business, planning customised solutions, executing with precision, and supporting user adoption. Our <a href='/services/salesforce-consulting-services' class='text-primary'>Salesforce certified consultants</a> provide clear timelines, weekly updates, and a free trial to ensure alignment, resulting in successful outcomes like 20-30% increase in Sales productivity, 15-20% improvement in conversion rate and 90% lead leakage reduction for clients.",
   },
   {
     question: "Which industries does Aekot serve with Salesforce solutions?",
@@ -55,11 +55,11 @@ const faqs = [
   },
   {
     question: "How does Aekot ensure data security in Salesforce solutions?",
-    answer: "Our expert Salesforce consulting services prioritise security by implementing role-based access, multi-factor authentication, and compliance with regulations like GDPR and HIPAA. Our expertise ensures secure configurations, as seen in solutions for finance and healthcare clients.",
+    answer: "Our expert <a href='/services/salesforce-consulting-services' class='text-primary'>Salesforce consulting services</a> prioritise security by implementing role-based access, multi-factor authentication, and compliance with regulations like GDPR and HIPAA. Our expertise ensures secure configurations, as seen in solutions for finance and healthcare clients.",
   },
   {
     question: "What is Salesforce CRM consulting and its significance?",
-    answer: "The Salesforce CRM consulting assists businesses to establish, modify and enhance Salesforce to enable them to sell more efficiently, retain customers and conduct business more effectively. It ensures that the platform aligns itself with the business objectives and provides measurable ROI.",
+    answer: "The <a href='/services/salesforce-consulting-services' class='text-primary'>Salesforce CRM consulting</a> assists businesses to establish, modify and enhance Salesforce to enable them to sell more efficiently, retain customers and conduct business more effectively. It ensures that the platform aligns itself with the business objectives and provides measurable ROI.",
   },
   {
     question: "What are the ways Aekot Salesforce CRM consulting will enhance my current system?",
@@ -418,8 +418,8 @@ export default function Home() {
               and integrating various Salesforce solutions. Our services include end-to-end
               Salesforce setup, optimization, system integration, support, marketing automation,
               AppExchange and custom development. Our team of certified professionals serves
-              global clients, primarily in North America, offering Salesforce CRM consulting
-              services to optimise business processes.
+              global clients, primarily in North America, offering <a href='/services/salesforce-consulting-services' className='text-primary underline'>Salesforce CRM consulting
+              services</a> to optimise business processes.
             </p>
           </div>
           <section className="py-12 bg-gradient-to-br from-[#ffffff] to-[#fffafa] relative overflow-hidden w-full mt-12">
@@ -436,8 +436,7 @@ export default function Home() {
                   </div>
 
                   <p className="text-gray-700 text-md sm:text-base max-w-3xl mx-auto leading-relaxed">
-                    At Aekot, we help healthcare organizations redefine care delivery through Salesforce <strong className="text-primary">Health Cloud</strong>
-                    a powerful CRM platform built specifically for the healthcare and life sciences sector.
+                    At Aekot, we help healthcare organizations redefine care delivery through Salesforce <strong className="text-primary">Health Cloud</strong> a powerful CRM platform built specifically for the healthcare and life sciences sector.
                   </p>
                   <div className="flex justify-center pt-4">
                     <Link
