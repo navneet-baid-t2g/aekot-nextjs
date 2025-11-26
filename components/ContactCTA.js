@@ -57,7 +57,7 @@ export default function ContactCTA({ heading = "Need Professional Salesforce Int
         >
           <input type="hidden" name="oid" value="00D2w00000BbjNJ" />
           <input type="hidden" name="Campaign_ID" value="7012w000000ZEJxAAO" />
-          <input type="hidden" name="retURL" value="https://www.aekot.com" />
+          <input type="hidden" name="retURL" value="https://www.aekot.com/thank-you" />
           <input type="hidden" name="lead_source" value="AekotWeb" />
 
           <div className="w-full md:w-1/4 flex flex-col text-left">
