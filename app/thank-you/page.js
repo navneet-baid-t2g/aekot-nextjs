@@ -31,7 +31,7 @@ export default function ThankYou() {
 
                     <div className="flex justify-center items-center w-full text-right md:mt-0 md:ml-4 pb-8">
                         <Link
-                            href="/contact"
+                            href="/services"
                             className="ghost-button inline-block w-full sm:w-44 md:w-48 lg:w-48 py-2 pl-2 font-semibold text-center text-light border-2 border-primary bg-primary rounded-lg transition-colors flex items-center justify-center gap-2"
                             style={{ transition: "transform 0.2s ease-in-out" }}
                         >Find out more about our services
