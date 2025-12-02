@@ -1,16 +1,8 @@
-import { FaArrowRight } from "react-icons/fa";
-import { MdSupportAgent, MdShoppingBasket, MdCalendarMonth, MdCampaign } from "react-icons/md";
-import { FaChalkboardTeacher, FaUserTie } from "react-icons/fa";
 import Button from "@/components/Button";
 import Faq from "@/components/Faq";
 import ContactCTA from "@/components/ContactCTA";
-import ScrollingLogos from "@/components/ScrollingLogos";
 
 import { FaRobot, FaChartPie, FaBook, FaMagic, FaShareAlt, FaLightbulb } from 'react-icons/fa';
-import { MdBuild } from "react-icons/md";
-import { FaStore, FaUserCheck } from "react-icons/fa";
-import Service from "@/components/ServiceCard";
-import Link from "next/link";
 
 
 const servicecarddata = [
