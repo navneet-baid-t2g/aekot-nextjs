@@ -475,39 +475,25 @@ export default function ServiceSingle() {
                     </p><br /><br />
                 </div>
 
-                <div className="space-y-16">
-                    {WhyChoose.map((s, idx) => {
-                        const isReversed = idx % 2 === 1
-                        return (
-                            <article
-                                key={s.id}
-                                className={`flex flex-col md:flex-row ${isReversed ? 'md:flex-row-reverse' : ''} items-center gap-8`}
-                            >
-                                {/* Image column */}
-                                <div className="w-full md:w-1/2 flex-shrink-0">
-                                    {/* Use next/image for automatic optimization. Replace srcs or add images to /public/images */}
-                                    <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-lg">
-                                        <img
-                                            src={s.img}
-                                            alt={s.title}
-                                            className="object-cover"
-                                            priority={idx < 2}
-                                        />
-                                    </div>
-                                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+                    {WhyChoose.map((s) => (
+                        <article
+                            key={s.id}
+                            className="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm"
+                        >
+                            <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-pink-50 text-primary text-lg font-medium mb-4">
+                                {`0${s.id}`}
+                            </span>
 
+                            <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                                {s.title}
+                            </h3>
 
-                                {/* Content column */}
-                                <div className="w-full md:w-1/2">
-                                    <div className="bg-white rounded-2xl">
-                                        <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm font-medium mb-4">{`0${s.id}`}</span>
-                                        <h3 className="text-2xl font-semibold text-gray-900 mb-3">{s.title}</h3>
-                                        <p className="text-gray-600 leading-relaxed">{s.text}</p>
-                                    </div>
-                                </div>
-                            </article>
-                        )
-                    })}
+                            <p className="text-gray-600 leading-relaxed">
+                                {s.text}
+                            </p>
+                        </article>
+                    ))}
                 </div>
             </section>
 
