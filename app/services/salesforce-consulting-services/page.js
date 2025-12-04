@@ -347,11 +347,9 @@ export default function ServiceSingle() {
                     {/* Left Content */}
                     <div className="flex flex-col space-y-6">
                         <h2 className="text-3xl md:text-4xl font-bold text-left text-primary">
-                            Transforming Care with Healthcloud
+                            Key Salesforce Advantages for Modern Enterprises
                         </h2>
-                        <h3 className="font-bold xs:text-1xl text-1xl  md:text-1xl lg:text-2xl text-primary">Key Salesforce Advantages for Modern Enterprises</h3>
-
-
+  
                         <div className="space-y-16">
                             <div className="flex flex-col md:flex-row gap-5">
                                 <div className="w-full md:w-1/2 flex-shrink-0">
@@ -460,7 +458,6 @@ export default function ServiceSingle() {
                         Five Value Pillars
                     </h3>
                     <br />
-
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
