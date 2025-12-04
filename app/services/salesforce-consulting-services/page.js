@@ -2,7 +2,7 @@ import Button from "@/components/Button";
 import Faq from "@/components/Faq";
 import ContactCTA from "@/components/ContactCTA";
 
-import { FaRobot, FaSitemap, FaCogs, FaDatabase, FaUsersCog, FaCloud } from 'react-icons/fa';
+import { FaRobot, FaSitemap, FaCogs, FaDatabase, FaUsersCog, FaCloud, FaNetworkWired } from 'react-icons/fa';
 
 
 const servicecarddata = [
