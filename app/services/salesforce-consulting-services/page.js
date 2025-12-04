@@ -316,18 +316,16 @@ export default function ServiceSingle() {
                 {/* Left Content */}
                 <div className="max-w-xl text-center md:text-left">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-                        <span className="text-[#e52b50]">Crafting </span> Salesforce{" "}
+                        <span className="text-[#e52b50]">Salesforce Consulting</span> & Strategy Excellence
                     </h1>
-                    <h4 className="text-gray-900 mt-4 font-extrabold text-2xl  leading-relaxed"> Salesforce Consulting & Strategy Excellence
-                    </h4>
                     <p className="text-gray-600 mt-4 leading-relaxed">
                         <strong>Reimagining Enterprise Success with Salesforce Expertise</strong><br />
                         Turn your company around with smart Salesforce solutions, fully integrated offerings, and consulting services led by experts to drive rapid growth, productivity, and customer experience.
                     </p>
-                    <p className="text-gray-600 mt-4 leading-relaxed">
+                    {/* <p className="text-gray-600 mt-4 leading-relaxed">
                         <strong>Robust Solutions for Businesses</strong><br />
                         AEKOT provides robust, full-spectrum Salesforce transformation by means of a strategic combination of innovation, experience, and profound cloud knowledge.
-                    </p>
+                    </p> */}
 
                     <div className="mt-6 flex justify-center md:justify-start">
                         <Button text="Get Started" path="/contact" />
@@ -337,8 +335,8 @@ export default function ServiceSingle() {
                 {/* Right Image */}
                 <div className="mt-10 md:mt-0 md:ml-10 flex justify-center">
                     <img
-                        src="/images/serviceImages/Salesforce-Agentforce.webp"
-                        alt="Salesforce Agentforce consulting services"
+                        src="/images/serviceImages/strategyImg.jpg"
+                        alt="Salesforce Consulting & Strategy Excellence"
                         className="w-82 md:w-106 object-contain rounded-lg"
                     />
                 </div>

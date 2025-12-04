@@ -345,8 +345,8 @@ export default function ServiceSingle() {
                 {/* Right Image */}
                 <div className="mt-10 md:mt-0 md:ml-10 flex justify-center">
                     <img
-                        src="/images/serviceImages/Salesforce-Agentforce.webp"
-                        alt="Salesforce Agentforce consulting services"
+                        src="/images/serviceImages/implementImg.jpg"
+                        alt="alesforce Implementation & Integration for Modern Enterprises"
                         className="w-82 md:w-106 object-contain rounded-lg"
                     />
                 </div>

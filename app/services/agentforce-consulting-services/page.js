@@ -315,10 +315,8 @@ export default function ServiceSingle() {
                 {/* Left Content */}
                 <div className="max-w-xl text-center md:text-left">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-                        <span className="text-[#e52b50]">Crafting </span> Salesforce{" "}
+                         <span className="text-[#e52b50]">Accelerate Customer Service </span> Excellence with Salesforce Agentforce
                     </h1>
-                    <h4 className="text-gray-900 mt-4 font-extrabold text-2xl  leading-relaxed">Accelerate Customer Service Excellence with Salesforce Agentforce
-                    </h4>
                     <p className="text-gray-600 mt-4 leading-relaxed">
                         Transform your service operations with intelligent Salesforce Agentforce solutions designed to enhance productivity, automate support tasks, and deliver exceptional customer experiences.
                     </p>
