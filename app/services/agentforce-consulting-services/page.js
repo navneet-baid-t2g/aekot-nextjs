@@ -3,6 +3,7 @@ import Faq from "@/components/Faq";
 import ContactCTA from "@/components/ContactCTA";
 
 import { FaRobot, FaChartPie, FaBook, FaMagic, FaShareAlt, FaLightbulb } from 'react-icons/fa';
+import ScrollingLogos from "@/components/ScrollingLogos";
 
 
 const servicecarddata = [
@@ -142,42 +143,42 @@ const agentforceFeatures = [
         id: 1,
         title: 'AI-Powered Agent Assist',
         description:
-            'AEKOT helps businesses leverage the intelligence of Salesforce Agentforce to empower agents with real-time guidance, automated recommendations, and contextual insights. Through our Agentforce consulting services, we design AI-powered workflows that reduce manual work and enable faster resolutions. Agents gain instant access to knowledge, customer history, and next best actions, ensuring consistent, high-quality service delivery. With support from an Agentforce integration expert, we ensure AI assistance is fully synchronized with your CRM, communication tools, and case systems. The result is enhanced accuracy, reduced handling time, and improved customer satisfaction across every interaction.',
+            'AEKOT helps businesses leverage the intelligence of <strong>Salesforce Agentforce</strong> to empower agents with real-time guidance, automated recommendations, and contextual insights. Through our <strong>Agentforce consulting services</strong>, we design AI-powered workflows that reduce manual work and enable faster resolutions. Agents gain instant access to knowledge, customer history, and next best actions, ensuring consistent, high-quality service delivery. With support from an <strong>Agentforce integration expert</strong>, we ensure AI assistance is fully synchronized with your CRM, communication tools, and case systems. The result is enhanced accuracy, reduced handling time, and improved customer satisfaction across every interaction.',
         icon: '/icons/ai-assist.svg',
     },
     {
         id: 2,
         title: 'Data-Driven Customer Insights',
         description:
-            'Our solutions capture interaction data across all channels, giving agents and leaders a unified view of customer behavior, sentiment, and needs. With our Agentforce consulting services, we build dashboards and reporting models that support smarter decision-making. Integrations handled by an Agentforce integration expert ensure these insights are available in real time, improving forecasting, service planning, and operational efficiency. Businesses achieve stronger customer relationships through personalized, data-informed support strategies.',
+            'Our solutions capture interaction data across all channels, giving agents and leaders a unified view of customer behavior, sentiment, and needs. With our <strong>Agentforce consulting services</strong>, we build dashboards and reporting models that support smarter decision-making. Integrations handled by an <strong>Agentforce integration expert</strong> ensure these insights are available in real time, improving forecasting, service planning, and operational efficiency. Businesses achieve stronger customer relationships through personalized, data-informed support strategies.',
         icon: '/icons/data-insight.svg',
     },
     {
         id: 3,
         title: 'Unified Knowledge Engine',
         description:
-            'Through a centralized knowledge ecosystem powered by Salesforce Agentforce, AEKOT helps businesses deliver faster, more accurate answers to customers and agents. Our Agentforce consulting services include building dynamic knowledge repositories that surface relevant articles, troubleshooting steps, and product information instantly. This unified system ensures consistent customer responses across channels. With support from our  certified Agentforce integration expert, we connect knowledge data with chatbots, portals, and agent consoles to streamline search and update processes. Companies benefit from reduced escalations, improved agent onboarding, and stronger self-service adoption.',
+            'Through a centralized knowledge ecosystem powered by <strong>Salesforce Agentforce</strong>, AEKOT helps businesses deliver faster, more accurate answers to customers and agents. Our <strong>Agentforce consulting services</strong> include building dynamic knowledge repositories that surface relevant articles, troubleshooting steps, and product information instantly. This unified system ensures consistent customer responses across channels. With support from our  certified <strong>Agentforce integration expert</strong>, we connect knowledge data with chatbots, portals, and agent consoles to streamline search and update processes. Companies benefit from reduced escalations, improved agent onboarding, and stronger self-service adoption.',
         icon: '/icons/knowledge.svg',
     },
     {
         id: 4,
         title: 'Scalable Process Automation',
         description:
-            'AEKOT specializes in designing scalable automation frameworks using Salesforce Agentforce consulting to eliminate repetitive tasks and accelerate case management. Our automated workflows handle routing, classification, approvals, escalations, and notifications, dramatically reducing manual workload. With our Agentforce consulting services, businesses gain the flexibility to continuously optimize and expand automation as service demands evolve. Every process is built with precision and integrated by an Agentforce integration expert to ensure seamless performance across your existing tech stack. This scalable approach boosts efficiency, accuracy, and long-term operational resilience.',
+            'AEKOT specializes in designing scalable automation frameworks using <strong>Salesforce Agentforce consulting</strong> to eliminate repetitive tasks and accelerate case management. Our automated workflows handle routing, classification, approvals, escalations, and notifications, dramatically reducing manual workload. With our <strong>Agentforce consulting services</strong>, businesses gain the flexibility to continuously optimize and expand automation as service demands evolve. Every process is built with precision and integrated by an <strong>Agentforce integration expert</strong> to ensure seamless performance across your existing tech stack. This scalable approach boosts efficiency, accuracy, and long-term operational resilience.',
         icon: '/icons/automation.svg',
     },
     {
         id: 5,
         title: 'Multi-System Agentforce Integration',
         description:
-            'Our team ensures your technology ecosystem works in perfect harmony through robust integrations powered by Salesforce Agentforce. We connect CRMs, telephony platforms, knowledge systems, analytics tools, and third-party applications to create a unified service environment. With deep expertise in Salesforce Agentforce consulting, AEKOT builds secure data flows that improve visibility and reduce silos. Every integration is engineered by our  Agentforce integration expert to ensure reliability, scalability, and real-time synchronization. The result is seamless collaboration across systems, eliminating duplicate data, boosting agent productivity, and strengthening the quality of customer interactions.',
+            'Our team ensures your technology ecosystem works in perfect harmony through robust integrations powered by <strong>Salesforce Agentforce</strong>. We connect CRMs, telephony platforms, knowledge systems, analytics tools, and third-party applications to create a unified service environment. With deep expertise in <strong>Salesforce Agentforce consulting</strong>, AEKOT builds secure data flows that improve visibility and reduce silos. Every integration is engineered by our  <strong>Agentforce integration expert</strong> to ensure reliability, scalability, and real-time synchronization. The result is seamless collaboration across systems, eliminating duplicate data, boosting agent productivity, and strengthening the quality of customer interactions.',
         icon: '/icons/integration.svg',
     },
     {
         id: 6,
         title: 'Proactive Customer Resolution Framework',
         description:
-            'AEKOT helps organizations move from reactive to proactive service using Agentforce consulting services that predict customer needs before issues arise. Leveraging AI models and behavioral data from Salesforce Agentforce, we design early-warning systems, automated alerts, and proactive outreach workflows. Agents receive guidance on potential issues, enabling faster resolutions and improved customer loyalty. With integrations handled by our  Agentforce integration experts, these proactive systems operate seamlessly across email, chat, ticketing, and telephony. Businesses gain a competitive edge by resolving problems early and offering consistently better support experiences.',
+            'AEKOT helps organizations move from reactive to proactive service using <strong>Agentforce consulting services</strong> that predict customer needs before issues arise. Leveraging AI models and behavioral data from <strong>Salesforce Agentforce</strong>, we design early-warning systems, automated alerts, and proactive outreach workflows. Agents receive guidance on potential issues, enabling faster resolutions and improved customer loyalty. With integrations handled by our  <strong>Agentforce integration</strong> experts, these proactive systems operate seamlessly across email, chat, ticketing, and telephony. Businesses gain a competitive edge by resolving problems early and offering consistently better support experiences.',
         icon: '/icons/proactive.svg',
     },
 ]
@@ -186,19 +187,19 @@ const WhyChoose = [
     {
         id: 1,
         title: 'Extensive Industry Experience',
-        text: `AEKOT brings years of hands-on experience implementing and optimizing Salesforce Agentforce for organizations across multiple industries. Our background in Salesforce Agentforce consulting allows us to understand diverse service challenges and build solutions that fit real-world workflows. From enterprise-scale operations to fast-growing teams, we apply proven best practices that ensure smooth adoption, stronger performance, and long-term success. Every project benefits from our strategic insights and practical implementation expertise.`,
+        text: `AEKOT brings years of hands-on experience implementing and optimizing <strong>Salesforce Agentforce</strong> for organizations across multiple industries. Our background in <strong>Salesforce Agentforce consulting</strong> allows us to understand diverse service challenges and build solutions that fit real-world workflows. From enterprise-scale operations to fast-growing teams, we apply proven best practices that ensure smooth adoption, stronger performance, and long-term success. Every project benefits from our strategic insights and practical implementation expertise.`,
         img: '/images/placeholder-724.png',
     },
     {
         id: 2,
         title: 'Global Delivery Framework',
-        text: `With a globally distributed delivery model, AEKOT provides 24/7 support and implementation coverage for organizations operating across regions. Our Agentforce consulting services follow a disciplined framework that balances speed, quality, and scalability. By combining global talent with centralized oversight, we ensure consistent delivery standards and reliable project execution. Supported by an Agentforce integration expert team, businesses receive seamless deployments regardless of location or technical complexity.`,
+        text: `With a globally distributed delivery model, AEKOT provides 24/7 support and implementation coverage for organizations operating across regions. Our <strong>Agentforce consulting services</strong> follow a disciplined framework that balances speed, quality, and scalability. By combining global talent with centralized oversight, we ensure consistent delivery standards and reliable project execution. Supported by an <strong>Agentforce integration expert</strong> team, businesses receive seamless deployments regardless of location or technical complexity.`,
         img: '/images/placeholder-724.png',
     },
     {
         id: 3,
         title: 'Flexible Engagement Models',
-        text: `AEKOT offers adaptable engagement models that fit your unique operational needs—whether you require full-scale transformation, phased adoption, or dedicated consulting support. Our Salesforce Agentforce consulting team works closely with stakeholders to design the right approach for your timeline and budget. With flexibility at the center of our delivery philosophy, businesses can scale support, add capabilities, or modify priorities without disruption.`,
+        text: `AEKOT offers adaptable engagement models that fit your unique operational needs—whether you require full-scale transformation, phased adoption, or dedicated consulting support. Our <strong>Salesforce Agentforce consulting</strong> team works closely with stakeholders to design the right approach for your timeline and budget. With flexibility at the center of our delivery philosophy, businesses can scale support, add capabilities, or modify priorities without disruption.`,
         img: '/images/placeholder-724.png',
     },
     {
@@ -210,7 +211,7 @@ const WhyChoose = [
     {
         id: 5,
         title: 'Deep Service Expertise',
-        text: `AEKOT’s team excels in translating complex service requirements into powerful, automated solutions using Salesforce Agentforce. Our specialists blend technical mastery with real operational experience, delivering systems that enhance agent productivity and elevate customer experiences. Guided by certified Agentforce integration experts, we ensure every component—from workflows to data flows—works together flawlessly. This strong functional and technical expertise drives superior service performance for every client.`,
+        text: `AEKOT’s team excels in translating complex service requirements into powerful, automated solutions using <strong>Salesforce Agentforce</strong>. Our specialists blend technical mastery with real operational experience, delivering systems that enhance agent productivity and elevate customer experiences. Guided by certified <strong>Agentforce integration experts</strong>, we ensure every component—from workflows to data flows—works together flawlessly. This strong functional and technical expertise drives superior service performance for every client.`,
         img: '/images/placeholder-724.png',
     },
 ]
@@ -341,13 +342,13 @@ export default function ServiceSingle() {
             <section className="py-16 relative bg-gradient-to-b from-white via-red-100 to-white px-8 md:px-20 ">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
                     {/* Left Content */}
-                    <div className="flex flex-col space-y-6">
+                    <div className="flex flex-col space-y-6 md:w-2/3">
                         <h2 className="text-3xl md:text-4xl font-bold text-left text-primary">
                             Driving business success through Salesforce
                         </h2>
 
                         <p className="text-md text-gray-800 text-left">
-                            AEKOT equips organizations to transform service delivery workflow execution with modern Salesforce Agentforce features that transform the way support and customer-facing teams work. We provide intelligent automation, smarter workflows, and linked service experiences in our Agentforce consulting services to promote efficiency and customer satisfaction. We assist businesses in ensuring that Agentforce is integrated and scaled without inconvenience and all functions are relevant to actual business requirements and quantifiable results.
+                            AEKOT equips organizations to transform workflow execution with modern Salesforce Agentforce features that transform the way support and customer-facing teams work. We provide intelligent automation, smarter workflows, and linked service experiences in our Agentforce consulting services to promote efficiency and customer satisfaction. We assist businesses in ensuring that Agentforce is integrated and scaled without inconvenience and all functions are relevant to actual business requirements and quantifiable results.
                         </p>
 
                         <p className="text-md text-gray-800 text-left">
@@ -359,7 +360,12 @@ export default function ServiceSingle() {
                         </p>
 
                     </div>
+                    <div className="relative h-[400px] sm:h-[102px] w-1/3 sm:w-full overflow-hidden flex justify-end mt-12 md:mt-0">
+                        <ScrollingLogos />
+                    </div>
                 </div>
+
+
             </section>
 
             <section className="py-16 relative px-8 md:px-20 ">
@@ -375,11 +381,11 @@ export default function ServiceSingle() {
                             <div className="flex flex-col md:flex-row gap-5">
                                 <div className="w-full md:w-1/2 flex-shrink-0">
                                     <h3 className="font-bold xs:text-1xl text-1xl  md:text-1xl lg:text-2xl">AI Automation & Smart Agent Enablement</h3>
-                                    <p className="mt-4">AEKOT helps organizations streamline service operations using AI-driven automation powered by Salesforce Agentforce. Our Agentforce consulting services are designed to enhance agent performance through predictive recommendations, automated case handling, and structured workflows that eliminate inefficiencies. By integrating Agentforce across your support systems, we enable faster responses and more accurate resolutions. Supported by our  Agentforce  experts, our solutions ensure centralized data, connected processes, and smarter engagement—giving your agents the tools they need to deliver consistently exceptional service.</p>
+                                    <p className="mt-4">AEKOT helps organizations streamline service operations using AI-driven automation powered by <strong>Salesforce Agentforce</strong>. Our <strong>Agentforce consulting services</strong> are designed to enhance agent performance through predictive recommendations, automated case handling, and structured workflows that eliminate inefficiencies. By integrating Agentforce across your support systems, we enable faster responses and more accurate resolutions. Supported by our <strong>Agentforce experts</strong>, our solutions ensure centralized data, connected processes, and smarter engagement-giving your agents the tools they need to deliver consistently exceptional service.</p>
                                 </div>
                                 <div className="w-full md:w-1/2">
                                     <h3 className="font-bold xs:text-1xl text-1xl  md:text-1xl lg:text-2xl">Omnichannel Engagement & Connected Service Journeys</h3>
-                                    <p className="mt-4">Our specialized Salesforce Agentforce consulting services help businesses build seamless customer journeys across chat, email, social, voice, and self-service channels. AEKOT focuses on creating unified interaction experiences powered by Agentforce intelligence, enabling personalized engagement at every touchpoint. Using advanced AI insights, we help your teams provide proactive and consistent support. With guidance from our certified Salesforce and Agentforce integration experts, we ensure every channel is synchronized, every interaction is informed, and every service moment reflects your brand’s commitment to customer satisfaction.</p>
+                                    <p className="mt-4">Our specialized <strong>Salesforce Agentforce consulting</strong> services help businesses build seamless customer journeys across chat, email, social, voice, and self-service channels. AEKOT focuses on creating unified interaction experiences powered by Agentforce intelligence, enabling personalized engagement at every touchpoint. Using advanced AI insights, we help your teams provide proactive and consistent support. With guidance from our certified Salesforce and <strong>Agentforce integration experts</strong>, we ensure every channel is synchronized, every interaction is informed, and every service moment reflects your brand’s commitment to customer satisfaction.</p>
                                 </div>
                             </div></div>
 
@@ -416,7 +422,8 @@ export default function ServiceSingle() {
 
 
                                 <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                                <p className="text-gray-600 leading-relaxed text-sm">{item.description}</p>
+                                <p className="text-gray-600 leading-relaxed text-sm"
+                                    dangerouslySetInnerHTML={{ __html: item.description }} />
                             </div>
                         ))}
                     </div>
@@ -489,9 +496,10 @@ export default function ServiceSingle() {
                                 {s.title}
                             </h3>
 
-                            <p className="text-gray-600 leading-relaxed">
-                                {s.text}
-                            </p>
+                            <p
+                                className="text-gray-600 leading-relaxed"
+                                dangerouslySetInnerHTML={{ __html: s.text }}
+                            />
                         </article>
                     ))}
                 </div>
