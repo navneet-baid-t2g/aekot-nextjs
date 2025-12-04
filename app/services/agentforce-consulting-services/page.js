@@ -367,7 +367,7 @@ export default function ServiceSingle() {
                     {/* Left Content */}
                     <div className="flex flex-col space-y-6">
                         <h2 className="text-3xl md:text-4xl font-bold text-left text-primary">
-                            Transforming Care with Healthcloud
+                            Transforming Customer Experience with Agentforce Intelligence
                         </h2>
 
 
