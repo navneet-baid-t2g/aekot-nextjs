@@ -14,32 +14,32 @@ const servicecarddata = [
     {
         title: "Custom App Development Excellence",
         desc: "We build custom Salesforce applications that solve enterprise challenges and enhance productivity. Our solutions fit seamlessly into your ecosystem, improving efficiency, scalability, and workflow performance across departments.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Design-and-Development.webp",
     },
     {
         title: "Advanced Analytics & Insight Delivery",
         desc: "AEKOT delivers analytics solutions that enhance forecasting, intelligence, and real-time decision-making. We improve segmentation, campaign analytics, and data visibility, helping enterprises uncover opportunities and drive sustained growth.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Advanced-AI-Capabilities.webp",
     },
     {
         title: "CRM Optimization & Adoption Programs",
         desc: "We improve Salesforce adoption with training, workflow enhancements, and user-focused optimization. AEKOT streamlines processes, reduces friction, and empowers employees to fully leverage Salesforce for better productivity and collaboration.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Integration.webp",
     },
     {
         title: "Performance Measurement & Continuous Improvement",
         desc: "AEKOT monitors key metrics and implements continuous enhancements to keep Salesforce aligned with business goals. We ensure your ecosystem evolves with market needs while maintaining speed, reliability, and high performance.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Customization.webp",
     },
     {
         title: "Multi-Cloud Expansion Strategy",
         desc: "We support enterprises expanding into new Salesforce clouds through structured, scalable strategies. AEKOT aligns data, processes, and user experiences, improving visibility, collaboration, and governance across multi-cloud environments.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Automation.webp",
     },
     {
         title: "Innovation-Driven Technology Enablement",
         desc: "AEKOT helps enterprises adopt AI, automation, and advanced Salesforce technologies confidently. We enhance personalization, agility, and engagement, creating a future-ready environment that supports continuous innovation.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
+        img: "/images/serviceImages/Security-and-Compliance.webp",
     }
 ];
 
