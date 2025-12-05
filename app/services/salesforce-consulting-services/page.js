@@ -198,7 +198,7 @@ const WhyChoose = [
     {
         id: 3,
         title: 'Flexible & Adaptive Engagement Models',
-        text: `Every enterprise is unique, which is why AEKOT offers adaptive engagement models designed for evolving needs. Whether you require dedicated teams, outcome-based delivery, or agile support, we tailor our approach to your environment. With strong capabilities in <strong>Agentforce integration expert</strong> practices, we ensure efficient collaboration, transparent communication, and solution designs that adapt as your business scales.`,
+        text: `Every enterprise is unique, which is why AEKOT offers engagement models designed for evolving needs. Whether you require dedicated teams, outcome-based delivery, or agile support, we tailor our approach to fit your environment. We ensure efficient collaboration, transparent communication, and solution designs that grow with your business.`,
         img: '/images/placeholder-724.png',
     },
     {
