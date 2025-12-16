@@ -2,6 +2,7 @@
 import MOCKDATANEWS from "@/data/MOCK_DATA_NEWS.json";
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { useState, useEffect, useRef } from 'react';
+import { motion } from "framer-motion";
 
 const LatestNews = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -46,9 +47,14 @@ const LatestNews = () => {
         setIsTransitioning(false);
     };
 
-
     return (
-        <article className="md:max-w-screen-xl mx-auto pt-28 space-y-12 px-4">
+        <motion.article
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="md:max-w-screen-xl mx-auto pt-28 space-y-12 px-4"
+        >
             <div className="space-y-6 text-center">
                 <h2 className="text-primary font-bold xs:text-3xl text-2xl md:text-3xl lg:text-4xl">
                     Aekot in the News
@@ -85,8 +91,8 @@ const LatestNews = () => {
                                                     />
                                                 </div>
                                             </div>
-                                            <div className=' absolute bottom-0 w-full px-4 bg-white mb-2 transition-transform duration-200 space-y-4'>
-                                                <div className='flex flex-col justify-center  items-center py4'>
+                                            <div className='absolute bottom-0 w-full px-4 bg-white mb-2 transition-transform duration-200 space-y-4'>
+                                                <div className='flex flex-col justify-center items-center py4'>
                                                     <h2
                                                         style={{ lineHeight: "1.5" }}
                                                         className="py-2 font-semibold md:text-sm lg:text-[16px]"
@@ -124,7 +130,7 @@ const LatestNews = () => {
                     </div>
                 </div>
             </div>
-        </article>
+        </motion.article>
     );
 };
 

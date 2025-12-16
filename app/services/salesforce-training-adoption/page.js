@@ -63,7 +63,7 @@ const ServicesIndividualPage = () => {
         <>
             <section className={`pt-32 md:pt-32 px-4 max-w-7xl mx-auto`}>
                 {/* Hero Section */}
-                <section className="bg-cta-bg relative min-h-[70vh] flex flex-col lg:flex-row items-center text-center lg:text-left px-4">
+                <section className="bg-cta-bg relative min-h-[70vh] flex flex-col lg:flex-row items-center text-center lg:text-left px-4 fade-in-head">
                     <div className="lg:w-1/2 flex flex-col justify-center items-start space-y-6">
                         <h1 className="text-3xl md:text-4xl font-bold text-primary">
                             {service.title}

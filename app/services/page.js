@@ -29,7 +29,7 @@ const ServicePage = () => {
             <section
                 className={`px-4 pt-16 md:pt-36 lg:mx-20 `}
             >
-                <div className="flex flex-col md:flex-row items-center justify-between px-8 py-16 mb-16">
+                <div className="flex flex-col md:flex-row items-center justify-between px-8 py-16 mb-16 fade-in-head ">
                     <div className="w-full md:w-1/2 text-center md:text-left md:pr-12 space-y-4">
                         <h1 className="text-primary font-bold xs:text-3xl text-2xl md:text-3xl xl:text-4xl">
                             Our Services <br />

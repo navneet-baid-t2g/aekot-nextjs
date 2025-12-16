@@ -42,7 +42,7 @@ export default async function Career() {
   return (
     <div className="px-4 pt-16 md:pt-36 lg:mx-20">
       {/* 🦸 Hero Section */}
-      <section className="flex flex-col md:flex-row items-center justify-center py-12 px-6 md:px-12 space-y-16 md:space-x-16">
+      <section className="flex flex-col md:flex-row items-center justify-center py-12 px-6 md:px-12 space-y-16 md:space-x-16 fade-in-head">
         <div className="w-full max-w-xl text-center md:text-left space-y-4">
           <h1 className="text-primary font-bold xs:text-3xl text-2xl md:text-3xl xl:text-4xl">
             Careers at Aekot

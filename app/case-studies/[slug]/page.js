@@ -108,13 +108,13 @@ export default async function CaseStudyDetails({ params }) {
                 )}
 
                 {/* Title and Subtitle */}
-                <div className="text-center mb-6">
+                <div className="text-center mb-6 fade-in-head ">
                     <h1 className="text-3xl font-bold text-primary">{data.title}</h1>
                     <p className="text-md text-gray-600 mt-2">{data.subtitle}</p>
                 </div>
 
                 {/* Industry and Location */}
-                <div className="mb-6 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
+                <div className="mb-6 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 fade-in-head">
                     <div className="flex flex-wrap justify-center">
                         {data.location.map((loc, index) => (
                             <div key={index} className="flex items-center mr-4">
@@ -160,7 +160,7 @@ export default async function CaseStudyDetails({ params }) {
 
                 {/* Testimonial */}
                 {data.testimonial && (
-                    <div className="py-12 px-4 flex justify-center items-center">
+                    <div className="py-12 px-4 flex justify-center items-center fade-in-head">
                         <div className="bg-gray-100 max-w-7xl mx-auto flex items-start space-x-6 shadow-lg p-6 rounded-lg">
                             <div>
                                 <p className="text-gray-700 italic text-md">

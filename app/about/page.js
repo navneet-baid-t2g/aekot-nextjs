@@ -81,7 +81,7 @@ const About = () => {
                 className={`px-4 pt-16 md:pt-32`}
             >
                 {/* FIRST SECTION STARTS HERE */}
-                <article className="max-w-screen-xl mx-auto py-12 ">
+                <article className="max-w-screen-xl mx-auto py-12 fade-in-head ">
                     <div className="space-y-4 text-center">
                         <div className="space-y-4">
                             <h2

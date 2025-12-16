@@ -433,3 +433,15 @@ body {
 .setbuttoncenter .ghost-button {
   margin: 24px auto 0 auto;
 }
+
+
+.whychoose {
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+
+.whychoose .mt-16 {
+  order: -1;
+  margin: auto auto 20px auto;
+}

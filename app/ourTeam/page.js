@@ -29,7 +29,7 @@ const OurTeam = () => {
 
   return (
     <>
-      <section className="px-4 pt-16 md:pt-32">
+      <section className="px-4 pt-16 md:pt-32 fade-in-head">
         {/* FIRST SECTION STARTS HERE */}
         <article className="max-w-screen-xl mx-auto pt-12 text-center space-y-8">
           <div className="space-y-4">

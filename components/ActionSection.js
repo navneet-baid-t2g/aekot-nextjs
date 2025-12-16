@@ -53,7 +53,7 @@ export default function ActionSection() {
         <section
             className="py-16 bg-white text-gray-900 flex flex-col md:flex-row gap-12 md:items-start max-w-7xl mx-auto"
         >
-            <div className="md:w-1/2 flex flex-col self-start min-h-[300px]">
+            <div className="md:w-1/2 flex flex-col self-start min-h-[300px] whychoose">
                 <h2 className="text-3xl md:text-4xl font-bold text-primary">
                     Why choose Aekot for Salesforce consulting services?
                 </h2>

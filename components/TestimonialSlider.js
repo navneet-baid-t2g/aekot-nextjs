@@ -6,6 +6,7 @@ import { FaStar } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
 import JSONDATATESTIMONIALS from "@/data/MOCK_DATA_TESTIMONIAL.json";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const TestimonialSlider = () => {
   const settings = {
@@ -27,7 +28,13 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className={`p-4 md:p-16`}>
+    <motion.div
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
+      className="p-4 md:p-16"
+    >
       <Slider {...settings}>
         {JSONDATATESTIMONIALS.map((testimonial, key) => (
           <div
@@ -83,7 +90,7 @@ const TestimonialSlider = () => {
           </div>
         ))}
       </Slider>
-    </div>
+    </motion.div>
   );
 };
 
