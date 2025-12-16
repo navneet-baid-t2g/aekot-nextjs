@@ -16,7 +16,14 @@ export default function NotFound() {
             <div className="w-full flex flex-col justify-center items-center space-y-6">
                 <h1 className="mt-44 text-xl font-semibold">Page Not Found</h1>
                 <div>
-                    <Button text="Return Home" path="/" />
+                    <a
+                        href="/"
+                        className="mt-4 ghost-button inline-block w-full sm:w-44 md:w-48 py-2 font-semibold text-center text-light border-2 border-primary bg-primary rounded-lg transition-transform"
+                        style={{ transition: "transform 0.2s ease-in-out" }}
+                    >
+                        Return Home{" "}
+                        <i className="fa-solid fa-arrow-right-long text-xs"></i>
+                    </a>
                 </div>
             </div>
         </div>
