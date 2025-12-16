@@ -1,5 +1,7 @@
 import { decode } from "html-entities";
 import Button from "./Button";
+import Link from "next/link";
+import { FaLongArrowAltRight } from "react-icons/fa";
 const formatDate = (dateString) => {
     const date = new Date(dateString);
     const options = { year: "numeric", month: "long", day: "2-digit" };
@@ -86,11 +88,15 @@ const LatestBlogs = async () => {
             </article>
 
             <div className="flex justify-center">
-                <Button text="View All Blogs" path="https://blog.aekot.com/" />
+                <Link
+                    href="https://blog.aekot.com/"
+                    className="ghost-button inline-block w-5/6 sm:w-32 md:w-32 lg:w-32 xl:w-44 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors" target="_blank"
+                >
+                    View All Blogs <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
+                </Link>
             </div>
         </article>
     );
 };
 
 export default LatestBlogs;
-    

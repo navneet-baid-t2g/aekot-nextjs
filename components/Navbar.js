@@ -157,7 +157,7 @@ const Navbar = ({ onParentModalClose }) => {
                                                 </Link>
 
                                                 <Link
-                                                    href="/our-team"
+                                                    href="/ourTeam"
                                                     className="py-2 block hover:text-primary hover:translate-x-1 transition-all"
                                                     onClick={handleClick}
                                                 >
@@ -250,7 +250,7 @@ const Navbar = ({ onParentModalClose }) => {
                                 </Link>
                                 <hr className="" />
                                 <Link
-                                    href="/our-team"
+                                    href="/ourTeam"
                                     className="flex items-center gap-2 hover:text-primary transition-colors"
                                     onClick={() => {
                                         handleClick();
@@ -305,7 +305,7 @@ const Navbar = ({ onParentModalClose }) => {
                             {/* LOGIN BUTTON MODAL IS INSIDE THE CHILDREN PROPERTY */}
                             <button className="link-container text-left">
                                 <div className="dropdown relative inline-block">
-                                    <a href="https://talent.aekot.com"><div className="dropbtn ghost-button inline-block w-5/6 sm:w-32 md:w-32 lg:w-32 xl:w-44 py-2 pl-2 font-semibold text-center text-primary border-2 border-primary rounded-md hover:bg-primary/5">
+                                    <a href="https://talent.aekot.com" target="_blank"><div className="dropbtn ghost-button inline-block w-5/6 sm:w-32 md:w-32 lg:w-32 xl:w-44 py-2 pl-2 font-semibold text-center text-primary border-2 border-primary rounded-md hover:bg-primary/5">
                                         Login <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
                                     </div></a>
                                 </div>

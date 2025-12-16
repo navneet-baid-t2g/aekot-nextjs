@@ -103,7 +103,14 @@ const About = () => {
                                 You guessed it right. We’re <br className="hidden md:block" />{" "}
                                 changing the game.
                             </p>
-                            <div className="mt-2"><Button text="Book a Demo" path="/contact" /></div>
+                            <a
+                                href="/contact"
+                                className="mt-4 ghost-button inline-block w-full sm:w-44 md:w-48 py-2 font-semibold text-center text-light border-2 border-primary bg-primary rounded-lg transition-transform"
+                                style={{ transition: "transform 0.2s ease-in-out" }}
+                            >
+                                Book a Demo{" "}
+                                <i className="fa-solid fa-arrow-right-long text-xs"></i>
+                            </a>
                         </div>
 
                         <p className="lg:w-3/6 text-justify max-w-screen-lg mx-auto lg:font-semibold md:font-semibold text-md md:text-base">

@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
 import { decode } from "html-entities";
-import { FaCircle } from "react-icons/fa";
+import { FaCircle, FaLongArrowAltRight } from "react-icons/fa";
+import Link from "next/link";
 
 export const metadata = {
     title: "Salesforce Consulting Blogs | Insights & Tips by AEKOT",
@@ -160,7 +161,12 @@ export default async function Blogs() {
             </article>
 
             <div className="flex justify-center">
-                <Button text="View All Blogs" path="https://blog.aekot.com/" />
+                <Link
+                    href="https://blog.aekot.com/"
+                    className="ghost-button inline-block w-5/6 sm:w-32 md:w-32 lg:w-32 xl:w-44 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors" target="_blank"
+                >
+                    View All Blogs <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
+                </Link>
             </div>
         </section>
     );

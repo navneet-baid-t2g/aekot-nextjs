@@ -488,7 +488,7 @@ export default function Home() {
               aspiration to deliver top-tier Salesforce solutions.
             </p>
           </div>
-          <div className="max-w-screen grid md:grid-cols-2 lg:md:grid-cols-3 gap-4 xl:gap-10">
+          <div className="max-w-screen grid md:grid-cols-2 lg:md:grid-cols-3 gap-4 xl:gap-10 servicecss">
             <Service
               icon={"/assets/customization.svg"}
               name="Agentforce Implementation & Services"

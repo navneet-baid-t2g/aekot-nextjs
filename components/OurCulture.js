@@ -18,21 +18,40 @@ const OurCulture = () => {
   ];
 
   const settings = {
-    infinite: true,
-    speed: 400,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: '0px',
-    autoplay: true,
-    autoplaySpeed: 2000,
-    pauseOnHover: true,
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 640, settings: { slidesToShow: 1 } },
-      { breakpoint: 420, settings: { slidesToShow: 1 } },
-    ],
-  };
+  infinite: true,
+  speed: 400,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  centerMode: true,
+  centerPadding: "0px",
+  autoplay: true,
+  autoplaySpeed: 2000,
+  pauseOnHover: true,
+
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        centerMode: true,
+      },
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+        centerMode: false, // ✅ IMPORTANT
+      },
+    },
+    {
+      breakpoint: 420,
+      settings: {
+        slidesToShow: 1,
+        centerMode: false, // ✅ IMPORTANT
+      },
+    },
+  ],
+};
 
   return (
     <div className="max-w-full mx-auto md:mx-20 my-8 px-4">

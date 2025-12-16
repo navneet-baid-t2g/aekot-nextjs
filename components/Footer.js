@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { FaBuilding, FaEnvelope, FaFacebook, FaInstagram, FaLinkedinIn, FaPhone, FaPhoneAlt, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaBuilding, FaEnvelope, FaFacebook, FaFacebookSquare, FaInstagram, FaLinkedin, FaLinkedinIn, FaPhone, FaPhoneAlt, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaX, FaXTwitter } from "react-icons/fa6";
 
 
 const Footer = () => {
@@ -15,19 +16,19 @@ const Footer = () => {
                 {/* Company Location Info */}
                 <article className="space-y-4">
                     <header className="text-primary font-semibold xs:text-3xl text-xl">Locations</header>
-                    <p className="flex ">
+                    <p className="flex text-black">
                         <FaBuilding className="text-3xl pr-2" />
                         <span className="leading-4">
                             Delaware, USA
                         </span>
                     </p>
-                    <p className="flex">
+                    <p className="flex text-black">
                         <FaBuilding className="text-3xl pr-2" />
                         <span className="leading-4">
                             Bengaluru, IND
                         </span>
                     </p>
-                    <p className="flex">
+                    <p className="flex text-black">
                         <FaBuilding className="text-3xl pr-2" />
                         <span className="leading-4">
                             Dubai, UAE
@@ -39,19 +40,19 @@ const Footer = () => {
                 {/* Contact Info */}
                 <article className="space-y-4">
                     <header className="text-primary font-semibold xs:text-3xl text-xl">Contacts</header>
-                    <p className="flex ">
+                    <p className="flex text-black">
                         <FaPhoneAlt className="text-3xl pr-2" />
                         <a href="tel:+1 415 800 3212">+1 415 800 3212</a>
                     </p>
-                    <p className="flex ">
+                    <p className="flex text-black">
                         <FaPhoneAlt className="text-3xl pr-2" />
                         <a href="tel:+91 80 49669587">+91 8049669587</a>
                     </p>
-                    <p className="flex ">
+                    <p className="flex text-black">
                         <FaPhoneAlt className="text-3xl pr-2" />
                         <a href="tel:+971 569037989">+971 569037989</a>
                     </p>
-                    <p className="flex ">
+                    <p className="flex text-black">
                         <FaEnvelope className="text-3xl pr-2" />
                         <a href="mailto:contact@aekot.com">contact@aekot.com</a>
                     </p>
@@ -61,7 +62,7 @@ const Footer = () => {
                 {/* Quick Links */}
                 <article className="space-y-4">
                     <header className="text-primary font-semibold xs:text-3xl text-xl">Quick Links</header>
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 gap-4 text-black">
                         <Link
                             href="/"
                             className="block hover:text-primary hover:translate-x-1 transition-all"
@@ -99,7 +100,7 @@ const Footer = () => {
                         </Link>
 
                         <Link
-                            href="/our-team"
+                            href="/ourTeam"
                             className="block hover:text-primary hover:translate-x-1 transition-all"
 
                         >
@@ -119,14 +120,14 @@ const Footer = () => {
                     target="_blank"
                     className=" hover:text-primary transition-colors"
                 >
-                    <FaFacebook className="text-xl" />
+                    <FaFacebookSquare className="text-xl" />
                 </a>
                 <a
                     href="https://www.linkedin.com/company/aekot/"
                     target="_blank"
                     className=" hover:text-primary transition-colors"
                 >
-                    <FaLinkedinIn className="text-xl" />
+                    <FaLinkedin className="text-xl" />
                 </a>
 
                 <a
@@ -134,7 +135,7 @@ const Footer = () => {
                     target="_blank"
                     className=" hover:text-primary transition-colors"
                 >
-                    <FaTwitter className="text-xl" />
+                    <FaXTwitter className="text-xl" />
                 </a>
                 <a
                     href="https://www.instagram.com/aekotinc/"

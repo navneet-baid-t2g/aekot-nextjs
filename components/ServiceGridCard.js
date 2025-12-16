@@ -38,12 +38,10 @@ const ServiceGridCard = ({ imageSrc, title, additionalInfo, alignRight }) => {
                   <h3 className="text-md font-semibold mb-2">{additionalInfo.headline}</h3>
                   <p className="text-gray-600 mb-2 text-sm">{additionalInfo.subheading}</p>
                   <a href={additionalInfo.link}>
-                    <p className="text-sm ghost-button font-semibold text-primary mt-2 hover:underline flex items-center">
+                    <p className="text-sm ghost-button font-semibold text-primary mt-2 hover:underline items-center">
                       {additionalInfo.cta}{" "}
-                      <span className="mx-2">
-                        <MdArrowOutward />
-                      </span>
-                      {additionalInfo.linktext && <span className="ml-1">{additionalInfo.linktext}</span>}
+
+                      <div>{additionalInfo.linktext && <span className="flex gap-3 align-middle align-center">{additionalInfo.linktext} <MdArrowOutward /></span> }</div>
                     </p>
                   </a>
                 </div>

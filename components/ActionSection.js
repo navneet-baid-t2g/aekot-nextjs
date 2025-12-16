@@ -58,7 +58,7 @@ export default function ActionSection() {
                     Why choose Aekot for Salesforce consulting services?
                 </h2>
                 <p className="text-gray-800 mt-4 max-w-3xl text-md md:text-md">
-                    Aekot is a <a href='https://aekot-nextjs.vercel.app/services/salesforce-consulting-services' class='text-primary'>Salesforce Consulting Services</a> provider known for our experience, global service delivery, adaptable engagement models, commitments and service expertise in Salesforce CRM consulting.
+                    Aekot is a <a href='https://aekot-nextjs.vercel.app/services/salesforce-consulting-services' className='text-primary'>Salesforce Consulting Services</a> provider known for our experience, global service delivery, adaptable engagement models, commitments and service expertise in Salesforce CRM consulting.
                 </p>
                 <div className="mt-16 w-40 md:w-60 transition-transform duration-300 hover:scale-105 hover:drop-shadow-lg">
                     <img
