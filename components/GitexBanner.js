@@ -11,14 +11,7 @@ export default function GitexBanner({ onParentModalClose }) {
     const [modalOpen, setModalOpen] = useState(false);
 
     // Detect scroll position
-    useEffect(() => {
-        const handleScroll = () => {
-            setScroll(window.scrollY > 0);
-        };
 
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
 
     const handleClose = () => {
         setVisible(false);

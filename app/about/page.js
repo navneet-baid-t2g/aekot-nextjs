@@ -293,7 +293,7 @@ const About = () => {
                                         successful.{" "}
                                     </p>
 
-                                    <div className="flex justify-center"><Button text="Meet the Team" path="/our-team" /></div>
+                                    <div className="flex justify-center"><Button text="Meet the Team" path="/ourTeam" /></div>
 
                                 </div>
                             </div>
