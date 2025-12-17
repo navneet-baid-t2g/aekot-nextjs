@@ -3,45 +3,11 @@ import Faq from "@/components/Faq";
 import ContactCTA from "@/components/ContactCTA";
 
 import { FaRobot, FaSitemap, FaCogs, FaDatabase, FaUsersCog, FaCloud, FaNetworkWired } from 'react-icons/fa';
-
-
-const servicecarddata = [
-    {
-        title: "Cloud Advisory & Digital Roadmapping",
-        desc: "AEKOT guides enterprises through Salesforce transformation with tailored digital roadmaps. We define goals, reduce risks, and create a scalable modernization journey that accelerates cloud adoption and long-term innovation.",
-        img: "/images/serviceImages/strategy-and-advisory.webp",
-    },
-    {
-        title: "Custom App Development Excellence",
-        desc: "We build custom Salesforce applications that solve enterprise challenges and enhance productivity. Our solutions fit seamlessly into your ecosystem, improving efficiency, scalability, and workflow performance across departments.",
-        img: "/images/serviceImages/Design-and-Development.webp",
-    },
-    {
-        title: "Advanced Analytics & Insight Delivery",
-        desc: "AEKOT delivers analytics solutions that enhance forecasting, intelligence, and real-time decision-making. We improve segmentation, campaign analytics, and data visibility, helping enterprises uncover opportunities and drive sustained growth.",
-        img: "/images/serviceImages/Advanced-AI-Capabilities.webp",
-    },
-    {
-        title: "CRM Optimization & Adoption Programs",
-        desc: "We improve Salesforce adoption with training, workflow enhancements, and user-focused optimization. AEKOT streamlines processes, reduces friction, and empowers employees to fully leverage Salesforce for better productivity and collaboration.",
-        img: "/images/serviceImages/Integration.webp",
-    },
-    {
-        title: "Performance Measurement & Continuous Improvement",
-        desc: "AEKOT monitors key metrics and implements continuous enhancements to keep Salesforce aligned with business goals. We ensure your ecosystem evolves with market needs while maintaining speed, reliability, and high performance.",
-        img: "/images/serviceImages/Customization.webp",
-    },
-    {
-        title: "Multi-Cloud Expansion Strategy",
-        desc: "We support enterprises expanding into new Salesforce clouds through structured, scalable strategies. AEKOT aligns data, processes, and user experiences, improving visibility, collaboration, and governance across multi-cloud environments.",
-        img: "/images/serviceImages/Automation.webp",
-    },
-    {
-        title: "Innovation-Driven Technology Enablement",
-        desc: "AEKOT helps enterprises adopt AI, automation, and advanced Salesforce technologies confidently. We enhance personalization, agility, and engagement, creating a future-ready environment that supports continuous innovation.",
-        img: "/images/serviceImages/Security-and-Compliance.webp",
-    }
-];
+import ExpertServices from "@/components/agentforce-consulting-components/expert-services/ExpertServices";
+import WhyAekot from "@/components/salesforce-consulting-components/why-aekot/WhyAekot";
+import Service from "@/components/ServiceCard";
+import ServiceBanner from "@/components/salesforce-consulting-components/service-banner/ServiceBanner";
+import SpecializedServices from "@/components/salesforce-consulting-components/specialized-services/SpecializedServices";
 
 
 // const otherservices = [
@@ -182,38 +148,6 @@ const agentforceFeatures = [
     }
 ];
 
-const WhyChoose = [
-    {
-        id: 1,
-        title: 'Proven Enterprise Experience',
-        text: `With years of hands-on expertise across industries, AEKOT brings deep understanding to every Salesforce engagement. Our specialists leverage insights from <strong>Salesforce consulting services for enterprises</strong> to craft strategies that solve complex challenges. From large-scale transformations to focused optimization projects, our experience enables us to anticipate risks early, streamline execution, and ensure your Salesforce environment supports long-term growth and operational excellence.`,
-        img: '/images/placeholder-724.png',
-    },
-    {
-        id: 2,
-        title: 'Global Delivery Capability',
-        text: `AEKOT’s global service delivery model ensures consistent execution, flexible engagement options, and round-the-clock project continuity. Our experts deliver scalable solutions that meet enterprise standards across geographies. Our global presence enables rapid deployment, multi-region support, and seamless coordination — ensuring your Salesforce initiatives run smoothly no matter where your operations are located.`,
-        img: '/images/placeholder-724.png',
-    },
-    {
-        id: 3,
-        title: 'Flexible & Adaptive Engagement Models',
-        text: `Every enterprise is unique, which is why AEKOT offers engagement models designed for evolving needs. Whether you require dedicated teams, outcome-based delivery, or agile support, we tailor our approach to fit your environment. We ensure efficient collaboration, transparent communication, and solution designs that grow with your business.`,
-        img: '/images/placeholder-724.png',
-    },
-    {
-        id: 4,
-        title: 'Commitment to Long-Term Success',
-        text: `We view every project as a long-term partnership. AEKOT is committed to ongoing success through continuous optimization, proactive improvements, and knowledge-sharing initiatives. Our teams work closely with your stakeholders, ensuring sustained adoption and platform excellence. We help your enterprise maintain momentum and stay competitive.`,
-        img: '/images/placeholder-724.png',
-    },
-    {
-        id: 5,
-        title: 'Industry-Focused Service Expertise',
-        text: `AEKOT brings specialized domain knowledge across industries such as healthcare, finance, retail, manufacturing, and technology. Our cross-sector insights inform solution design, allowing us to build Salesforce environments tailored to regulatory, operational, and customer needs. With broad skills in <strong>Salesforce consulting services for enterprises</strong>, we deliver industry-ready configurations, integrations, and workflows that elevate performance and support digital advancement.`,
-        img: '/images/placeholder-724.png',
-    }
-];
 
 const faqs = [
     {
@@ -312,35 +246,7 @@ export default function ServiceSingle() {
     return (
         <>
 
-            <section className="flex flex-col md:flex-row items-center justify-between pt-16 py-8 bg-white max-w-7xl mx-auto pt-32 md:pt-32">
-                {/* Left Content */}
-                <div className="max-w-xl text-center md:text-left">
-                    <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-                        <span className="text-[#e52b50]">Salesforce Consulting</span> & Strategy Excellence
-                    </h1>
-                    <p className="text-gray-600 mt-4 leading-relaxed">
-                        <strong>Reimagining Enterprise Success with Salesforce Expertise</strong><br />
-                        Turn your company around with smart Salesforce solutions, fully integrated offerings, and consulting services led by experts to drive rapid growth, productivity, and customer experience.
-                    </p>
-                    {/* <p className="text-gray-600 mt-4 leading-relaxed">
-                        <strong>Robust Solutions for Businesses</strong><br />
-                        AEKOT provides robust, full-spectrum Salesforce transformation by means of a strategic combination of innovation, experience, and profound cloud knowledge.
-                    </p> */}
-
-                    <div className="mt-6 flex justify-center md:justify-start">
-                        <Button text="Get Started" path="/contact" />
-                    </div>
-                </div>
-
-                {/* Right Image */}
-                <div className="mt-10 md:mt-0 md:ml-10 flex justify-center">
-                    <img
-                        src="/images/serviceImages/strategyImg.jpg"
-                        alt="Salesforce Consulting & Strategy Excellence"
-                        className="w-82 md:w-106 object-contain rounded-lg"
-                    />
-                </div>
-            </section>
+            <ServiceBanner/>
 
             <section className="py-16 relative px-8 md:px-20 ">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
@@ -366,122 +272,15 @@ export default function ServiceSingle() {
                 </div>
             </section>
 
-            <section id="whycompany" className="py-12 px-6 bg-white">
-                <div className="max-w-7xl mx-auto">
-                    <div className="space-y-6">
-                        <h2 className="text-primary font-bold xs:text-3xl text-2xl  md:text-3xl lg:text-4xl">
-                            Expert Salesforce Services That Deliver Results
-                        </h2>
-                        <h3 className="font-bold xs:text-1xl text-1xl  md:text-1xl lg:text-2xl">
-                            Comprehensive Salesforce Capabilities for Enterprise Growth
-                        </h3>
-                        <p>Our Salesforce capabilities empower enterprises to streamline operations, enhance customer experiences, and scale efficiently through strategic guidance and advanced platform expertise.</p><br />
-                    </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-                        {agentforceFeatures.map((item) => (
-                            <div
-                                key={item.id}
-                                className="p-6 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition duration-300 bg-white"
-                            >
-                                <div className="w-16 h-16 mb-5 text-primary text-5xl">
-                                    {item.id === 1 && <FaRobot />}
-                                    {item.id === 2 && <FaSitemap />}
-                                    {item.id === 3 && <FaCogs />}
-                                    {item.id === 4 && <FaDatabase />}
-                                    {item.id === 5 && <FaUsersCog />}
-                                    {item.id === 6 && <FaCloud />}
-                                    {item.id === 7 && <FaNetworkWired />}
-                                </div>
-
-
-                                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                                <p className="text-gray-600 leading-relaxed text-sm"
-                                    dangerouslySetInnerHTML={{ __html: item.description }} />
-                            </div>
-                        ))}
-                    </div>
-
-
-                </div>
-            </section>
+            <ExpertServices agentforceFeatures={agentforceFeatures} />
 
             <ContactCTA heading="Looking for Expert Salesforce Developers?" />
 
-            <section className="pt-16 px-6 md:px-20 py-16 bg-gray-100">
-                <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl font-extrabold text-gray-900">
-                            <span className="text-[#e52b50]">Our Expertise in Salesforce clouds</span>
-                        </h2>
-                    </div>
+            <SpecializedServices/>
 
-                    {/* Grid Layout */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {servicecarddata.map((service, index) => (
-                            <div
-                                key={index}
-                                className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
-                            >
-                                <img
-                                    src={service.img}
-                                    alt={service.title}
-                                    className="w-full h-60 object-cover"
-                                />
-                                <div className="p-6">
-                                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                                        {service.title}
-                                    </h3>
-                                    <p className="text-gray-600 text-sm leading-relaxed">
-                                        {service.desc}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
             <ContactCTA heading="Looking for Expert Salesforce Developers?" />
 
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <div className="space-y-6">
-                    <h2 className="text-primary font-bold xs:text-3xl text-2xl  md:text-3xl lg:text-4xl">
-                        Why choose Aekot for Salesforce consulting services?
-                    </h2>
-                    <h3 className="font-bold xs:text-1xl text-1xl  md:text-1xl lg:text-2xl">
-                        Our Value-Driven Salesforce Delivery Framework
-                    </h3>
-                    <p className="text-sm xs:text-xl sm:text-xl  md:text-base">
-                        AEKOT’s value delivery framework empowers enterprises with predictable outcomes, scalability, and measurable impact. With expertise in Salesforce consulting services for enterprises, Salesforce consulting, and integration expert solutions, we optimize performance, unify experiences, modernize systems, and support multi-cloud growth, ensuring every Salesforce initiative aligns with your long-term digital vision and delivers sustained value.
-                    </p><br />
-                    <h3 className="font-bold xs:text-1xl text-1xl  md:text-1xl lg:text-2xl">
-                        Five Value Pillars
-                    </h3>
-                    <br />
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
-                    {WhyChoose.map((s) => (
-                        <article
-                            key={s.id}
-                            className="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm"
-                        >
-                            <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-pink-50 text-primary text-lg font-medium mb-4">
-                                {`0${s.id}`}
-                            </span>
-
-                            <h3 className="text-2xl font-semibold text-gray-900 mb-3">
-                                {s.title}
-                            </h3>
-
-                            <p
-                                className="text-gray-600 leading-relaxed"
-                                dangerouslySetInnerHTML={{ __html: s.text }}
-                            />
-                        </article>
-                    ))}
-                </div>
-            </section>
+            <WhyAekot/>
 
             <section className="py-12 px-6">
                 <div className="w-full max-w-7xl mx-auto">
