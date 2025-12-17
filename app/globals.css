@@ -445,3 +445,7 @@ body {
   order: -1;
   margin: auto auto 20px auto;
 }
+
+.cstmargin{
+  margin: 0px 15px;
+}

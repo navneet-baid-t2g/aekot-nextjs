@@ -7,13 +7,13 @@ import MockData from "@/data/MOCK_DATA_LOGOS.json";
 import { motion } from "framer-motion";
 
 const ClientsCarousel = () => {
-  const settings = {
+  const desktopSettings = {
     infinite: true,
     speed: 3000,
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1, // ✅ NOT 0
+    autoplaySpeed: 1,
     cssEase: "linear",
     arrows: false,
     dots: false,
@@ -21,8 +21,20 @@ const ClientsCarousel = () => {
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 4 } },
       { breakpoint: 768, settings: { slidesToShow: 3 } },
-      { breakpoint: 480, settings: { slidesToShow: 2 } },
     ],
+  };
+
+  const mobileSettings = {
+    infinite: true,
+    speed: 2500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1,
+    cssEase: "linear",
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
   };
 
   return (
@@ -34,19 +46,41 @@ const ClientsCarousel = () => {
       className="relative flex h-full"
     >
       <div className="container max-w-screen-xl mx-auto relative overflow-x-hidden">
-        <Slider {...settings}>
-          {MockData.map((image, index) => (
-            <div key={index} className="px-4">
-              <Image
-                src={image.logo}
-                alt={image.alt}
-                width={200}
-                height={200}
-                className="rounded-2xl border border-white/20 object-contain mx-auto"
-              />
-            </div>
-          ))}
-        </Slider>
+        
+        {/* Desktop / Tablet Carousel */}
+        <div className="hidden md:block">
+          <Slider {...desktopSettings}>
+            {MockData.map((image, index) => (
+              <div key={index} className="px-4">
+                <Image
+                  src={image.logo}
+                  alt={image.alt}
+                  width={200}
+                  height={200}
+                  className="rounded-2xl border border-white/20 object-contain mx-auto"
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
+
+        {/* Mobile-only Duplicate Carousel */}
+        <div className="block md:hidden">
+          <Slider {...mobileSettings}>
+            {MockData.map((image, index) => (
+              <div key={`mobile-${index}`} className="px-3">
+                <Image
+                  src={image.logo}
+                  alt={image.alt}
+                  width={160}
+                  height={160}
+                  className="rounded-xl border border-white/20 object-contain mx-auto"
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
+
       </div>
     </motion.div>
   );

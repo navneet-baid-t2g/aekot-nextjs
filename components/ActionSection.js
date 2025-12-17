@@ -69,7 +69,7 @@ export default function ActionSection() {
                 </div>
             </div>
 
-            <div className="md:w-1/2 space-y-6">
+            <div className="md:w-1/2 space-y-6 cstmargin">
                 {actionSections.map((section, index) => (
                     <div
                         key={index}
