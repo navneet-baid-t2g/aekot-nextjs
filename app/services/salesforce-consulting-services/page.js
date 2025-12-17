@@ -2,12 +2,13 @@ import Button from "@/components/Button";
 import Faq from "@/components/Faq";
 import ContactCTA from "@/components/ContactCTA";
 
-import { FaRobot, FaSitemap, FaCogs, FaDatabase, FaUsersCog, FaCloud, FaNetworkWired } from 'react-icons/fa';
+import { FaRobot, FaSitemap, FaCogs, FaDatabase, FaUsersCog, FaCloud, FaNetworkWired, FaLongArrowAltRight } from 'react-icons/fa';
 import ExpertServices from "@/components/agentforce-consulting-components/expert-services/ExpertServices";
 import WhyAekot from "@/components/salesforce-consulting-components/why-aekot/WhyAekot";
 import Service from "@/components/ServiceCard";
 import ServiceBanner from "@/components/salesforce-consulting-components/service-banner/ServiceBanner";
 import SpecializedServices from "@/components/salesforce-consulting-components/specialized-services/SpecializedServices";
+import Link from "next/link";
 
 
 // const otherservices = [
@@ -328,7 +329,12 @@ export default function ServiceSingle() {
                         <span className="font-semibold">Schedule a Free Consultation !</span>
                     </p>
                     <div className="flex justify-center">
-                        <Button text={"Contact Us"} path={"/contact"} />
+                        <Link
+                            href="/contact"
+                            className="ghost-button inline-block w-5/6 sm:w-32 md:w-32 lg:w-32 xl:w-44 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors"
+                        >
+                            Contact Us <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
+                        </Link>
                     </div>
 
                 </div>

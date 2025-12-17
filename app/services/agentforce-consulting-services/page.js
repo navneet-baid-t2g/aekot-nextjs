@@ -2,12 +2,13 @@ import Button from "@/components/Button";
 import Faq from "@/components/Faq";
 import ContactCTA from "@/components/ContactCTA";
 
-import { FaRobot, FaChartPie, FaBook, FaMagic, FaShareAlt, FaLightbulb } from 'react-icons/fa';
+import { FaRobot, FaChartPie, FaBook, FaMagic, FaShareAlt, FaLightbulb, FaLongArrowAltRight } from 'react-icons/fa';
 import ScrollingLogos from "@/components/ScrollingLogos";
 import WhyAekot from "@/components/agentforce-consulting-components/why-aekot/WhyAekot";
 import SpecializedServices from "@/components/agentforce-consulting-components/specialized-services/SpecializedServices";
 import ServiceBanner from "@/components/agentforce-consulting-components/service-banner/ServiceBanner";
 import ExpertServices from "@/components/agentforce-consulting-components/expert-services/ExpertServices";
+import Link from "next/link";
 
 
 // const otherservices = [
@@ -243,7 +244,7 @@ export default function ServiceSingle() {
     return (
         <>
 
-            <ServiceBanner/>
+            <ServiceBanner />
 
 
             <section className="py-16 relative bg-gradient-to-b from-white via-red-100 to-white px-8 md:px-20 ">
@@ -304,11 +305,11 @@ export default function ServiceSingle() {
 
             <ContactCTA heading="Looking for Expert Salesforce Developers?" />
 
-            <SpecializedServices/>
+            <SpecializedServices />
 
             <ContactCTA heading="Looking for Expert Salesforce Developers?" />
 
-            <WhyAekot/>
+            <WhyAekot />
 
             <section className="py-12 px-6">
                 <div className="w-full max-w-7xl mx-auto">
@@ -356,8 +357,14 @@ export default function ServiceSingle() {
                         <span className="font-semibold">Schedule a Free Consultation !</span>
                     </p>
                     <div className="flex justify-center">
-                        <Button text={"Contact Us"} path={"/contact"} />
+                        <Link
+                            href="/contact"
+                            className="ghost-button inline-block w-5/6 sm:w-32 md:w-32 lg:w-32 xl:w-44 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors"
+                        >
+                            Contact Us <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
+                        </Link>
                     </div>
+
 
                 </div>
             </section>

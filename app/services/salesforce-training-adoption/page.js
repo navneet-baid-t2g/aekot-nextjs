@@ -1,4 +1,6 @@
 import Button from "@/components/Button";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import Link from "next/link";
 
 const service = {
     "imageSrc": "/images/serviceImages/integrateImg.jpg",
@@ -114,7 +116,12 @@ const ServicesIndividualPage = () => {
                             {service.additionalInfo.cta}
                         </p>
                         <div className="flex justify-center mt-3">
-                            <Button text={service.additionalInfo.linktext} path={service.additionalInfo.link} />
+                            <Link
+                            href="/contact"
+                            className="ghost-button inline-block w-5/6 sm:w-32 md:w-32 lg:w-32 xl:w-44 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors"
+                        >
+                            Contact Us <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
+                        </Link>
                         </div>
                     </div>
                 </section>
