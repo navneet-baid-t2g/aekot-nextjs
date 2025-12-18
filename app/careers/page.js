@@ -15,6 +15,41 @@ export const metadata = {
   },
 };
 
+//   const [searchTerm, setSearchTerm] = useState("");
+
+// const [jobs, setJobs] = useState([]);
+// const [loadingJobs, setLoadingJobs] = useState(true);
+
+
+// useEffect(() => {
+//   const fetchJobs = async () => {
+//     try {
+//       const res = await fetch(
+//         `${import.meta.env.VITE_PUBLIC_API_BASE_URL}/jobs?limit=4&offset=0`,
+//         {
+//           headers: {
+//             Authorization: `Bearer ${import.meta.env.VITE_PUBLIC_API_KEY}`,
+//           },
+//         }
+//       );
+
+//       const data = await res.json();
+
+//       if (data.success) {
+//         setJobs(data.jobs);
+//       } else {
+//         console.error("Failed to fetch jobs:", data.error);
+//       }
+//     } catch (error) {
+//       console.error("Job fetch failed:", error);
+//     } finally {
+//       setLoadingJobs(false);
+//     }
+//   };
+
+//   fetchJobs();
+// }, []);
+
 async function getJobs() {
   try {
     const res = await fetch(
@@ -38,6 +73,7 @@ async function getJobs() {
 
 export default async function Career() {
   const jobs = await getJobs();
+  console.log(jobs, "jobs");
 
   return (
     <div className="px-4 pt-16 md:pt-36 lg:mx-20">

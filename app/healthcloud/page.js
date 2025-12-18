@@ -1,6 +1,15 @@
 import Button from "@/components/Button";
 import { LuRedo, LuShieldHalf, LuBrain, LuCalendarCheck, LuHospital, LuHandshake, LuMonitorCheck, LuCircleCheck, LuExternalLink, LuChevronUp, LuChevronDown } from "react-icons/lu";
 import Faq from "@/components/Faq";
+import Link from "next/link";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import HealthCloudHero from "@/components/healthcloud-components/HealthCloudHero/HealthCloudHero";
+import WhatisSalesforce from "@/components/healthcloud-components/WhatisSalesforce/WhatisSalesforce";
+import HealthCloudServices from "@/components/healthcloud-components/HealthCloudServices/HealthCloudServices";
+import ImplementationApproach from "@/components/healthcloud-components/ImplementationApproach/ImplementationApproach";
+import WhyAekot from "@/components/healthcloud-components/WhyAekot/WhyAekot";
+
+
 const blogs = [
     {
         title:
@@ -46,38 +55,7 @@ const faqs = [
             "Yes. Salesforce Health Cloud is HIPAA-compliant and supports HL7, FHIR.",
     },
 ];
-const services = [
-    {
-        title: "Unified Patient 360",
-        desc: "Get a real-time, comprehensive view of patient history and care goals, seamlessly integrated with EHR systems.",
-        icon: LuShieldHalf,
-    },
-    {
-        title: "Intelligent Care Coordination",
-        desc: "Coordinate care plans, assign tasks, and monitor patient progress across multidisciplinary teams.",
-        icon: LuBrain,
-    },
-    {
-        title: "Smart Scheduling & Outreach",
-        desc: "Enable AI-powered appointment scheduling, automated reminders, and personalized engagement.",
-        icon: LuCalendarCheck,
-    },
-    {
-        title: "Home Health & Virtual Care",
-        desc: "Support telehealth, remote monitoring, and post-discharge workflows for seamless care at home.",
-        icon: LuHospital,
-    },
-    {
-        title: "Behavioral & Crisis Care Support",
-        desc: "Manage behavioral health and crisis interventions with structured workflows and escalation paths.",
-        icon: LuHandshake,
-    },
-    {
-        title: "Mobile-Ready Portals & Apps",
-        desc: "Provide self-service options, mobile access, and real-time communication tools to patients and caregivers.",
-        icon: LuMonitorCheck,
-    },
-];
+
 
 const successStories = [
     {
@@ -148,229 +126,13 @@ const HealthCloudPage = () => {
 
     return (
         <div className="text-black px-6 md:px-12 py-10 max-w-7xl mx-auto space-y-20 pt-40">
-            <div
-                className="flex flex-col md:flex-row items-center justify-between gap-8 px-8 md:px-20 "
-            >
-                <div className="text-left md:w-1/2">
-                    <h1 className="text-2xl md:text-3xl font-extrabold text-gray-700 leading-tight">
-                        Elevate Your Business with
-                        <br /> Aekot&apos;s <span className="text-primary">
-                            Health Cloud
-                        </span>{" "}
-                        Expertise
-                    </h1>
-                    <p className="font-semibold text-lg md:text-xl text-gray-800 mt-6">
-                        Empowering Healthcare Innovation with Salesforce Health Cloud.
-                    </p>
-                    <p className="text-md text-gray-600 mt-4">
-                        At Aekot, we help healthcare organizations redefine care delivery
-                        through Salesforce Health Cloud — a powerful CRM platform built
-                        specifically for the healthcare and life sciences sector. Our
-                        tailored implementations ensure better outcomes, stronger
-                        engagement, and seamless operations.
-                    </p>
-                    <div className="mt-8">
-                        <Button text="Contact Us" path="/contact" />
-                    </div>
-                </div>
-                <div
-                    className="md:w-1/2 flex justify-center"
-                >
-                    <img
-                        src="/images/healthcloud/HealthHero.png"
-                        className="w-full max-w-xl"
-                        alt="Agentforce"
-                    />
-                </div>
-            </div>
-            <section
-                className="py-20 px-4 md:px-20 "
-            >
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1.3fr_1fr] gap-12 items-start">
-                    <div
-                        className="space-y-6"
-                    >
-                        <h2 className="text-3xl md:text-4xl font-bold text-primary">
-                            What is Salesforce Health Cloud?
-                        </h2>
-                        <p className="font-semibold text-gray-700 text-lg md:text-xl max-w-md">
-                            Salesforce Health Cloud is a HIPAA-compliant platform that unifies
-                            patient data from EHRs, wearables, and claims into a single,
-                            actionable view.
-                        </p>
-                    </div>
-
-                    <div
-                        className="space-y-6"
-                    >
-                        <div className="flex items-center gap-2">
-                            <h3 className="text-xl md:text-2xl font-semibold text-gray-700">
-                                It enables:
-                            </h3>
-                            <LuRedo className="w-8 h-8 rotate-90" />
-                        </div>
-
-                        <ul className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-1 font-semibold text-gray-600 text-base md:text-lg">
-                            {[
-                                "Personalized Patient Engagement",
-                                "Care Team Collaboration",
-                                "Clinical & Non-Clinical Data Integration",
-                                "Automation for Administrative Tasks",
-                                "Remote and Preventive Care Capabilities",
-                            ].map((item, index) => (
-                                <li
-                                    key={index}
-                                    className="flex items-start gap-3"
-                                >
-                                    <LuCircleCheck className="text-primary w-5 h-5 mt-1" />
-                                    <span>{item}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            {/* Services */}
-            <section
-            >
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
-                    Aekot&apos;s Health Cloud Services
-                </h2>
-
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
-                    {services.map((service, index) => {
-                        const Icon = service.icon;
-                        return (
-                            <div
-                                key={index}
-                                className="flex flex-col items-center text-center space-y-4"
-                            >
-                                <Icon className="w-12 h-12 text-primary" />
-                                <h3 className="text-xl font-semibold text-gray-700">
-                                    {service.title}
-                                </h3>
-                                <p className="text-gray-600 text-sm max-w-xs">{service.desc}</p>
-                            </div>
-                        );
-                    })}
-                </div>
-            </section>
-            <section
-                className="px-4 md:px-10 py-16"
-            >
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-primary">
-                    Our Implementation Approach
-                </h2>
-
-                <div className="relative flex flex-col items-center md:flex-row md:justify-between md:items-start gap-16 md:gap-6">
-                    {[
-                        "Discovery and Analysis",
-                        "Solution Architecture",
-                        "Customization and Integration",
-                        "Data Migration and Security",
-                        "User Training and Adoption",
-                        "Continuous Support and Optimization",
-                    ].map((step, index) => (
-                        <div
-                            key={index}
-                            className="relative flex flex-col items-center text-center w-44"
-                        >
-                            {/* Trail connector */}
-                            {index !== 0 && (
-                                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-1 h-8 bg-[#E52B50]/60 md:hidden" />
-                            )}
-                            {index !== 0 && (
-                                <div className="hidden md:block absolute -left-10 top-5 w-20 h-1 bg-[#E52B50]/60" />
-                            )}
-
-                            <div className="w-12 h-12 rounded-full bg-[#E52B50] text-white font-bold flex items-center justify-center shadow-lg z-10">
-                                {index + 1}
-                            </div>
-                            <div className="mt-4 px-2 py-3 bg-white dark:bg-gray-700 shadow-md rounded-xl border border-[#E52B50]/30">
-                                <p className="text-sm font-medium text-gray-800 dark:text-white">
-                                    {step}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
-            <div className="flex flex-col md:flex-row items-center justify-between px-4 md:px-12 py-12">
-                <div
-                    className="flex flex-col space-y-6 md:w-1/2"
-                >
-                    <h2
-                        className="text-2xl md:text-3xl font-bold text-left text-gray-700"
-                    >
-                        <span className="text-primary">Why Choose Aekot?</span> <br />
-                        Your Trusted Healthcloud Partner
-                    </h2>
-                    <p
-                        className="text-md text-gray-800 text-left"
-                    >
-                        At Aekot, we bring together deep domain expertise, technical
-                        excellence, and a client-first approach to help healthcare
-                        organizations thrive on Salesforce.
-                    </p>
-
-                    <div className="space-y-4">
-                        {[
-                            {
-                                icon: LuCircleCheck,
-                                title: "Salesforce-Certified Experts",
-                                desc: "Salesforce-Certified Experts you can trust.",
-                            },
-                            {
-                                icon: LuCircleCheck,
-                                title: "Experience Across Healthcare Segments",
-                                desc: "Proven impact through intelligent healthcare solutions with Salesforce.",
-                            },
-                            {
-                                icon: LuCircleCheck,
-                                title: "Compliance-Ready Implementation",
-                                desc: "Secure, compliant, and ready from day one.",
-                            },
-                            {
-                                icon: LuCircleCheck,
-                                title: "Rapid Time-to-Value",
-                                desc: "Accelerated outcomes with faster implementations.",
-                            },
-                            {
-                                icon: LuCircleCheck,
-                                title: "Scalable, Patient-Centric Solutions",
-                                desc: "Flexible solutions designed around patient needs.",
-                            },
-                        ].map((item, index) => (
-                            <div
-                                key={index}
-                                className="flex items-start space-x-3"
-                            >
-                                <div className="flex-shrink-0">
-                                    <item.icon className="text-primary" size={24} />
-                                </div>
-                                <div className="flex-1 min-w-0">
-                                    <h3 className="font-semibold text-sm md:text-base leading-snug break-words">
-                                        {item.title}
-                                    </h3>
-                                    <p className="text-gray-700 text-xs md:text-sm leading-snug break-words">
-                                        {item.desc}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                <div
-                    className="mt-10 md:mt-0 md:w-1/3 flex justify-center"
-                >
-                    <img
-                        src="/images/healthcloud/whychooseus.png"
-                        alt="Aekot Healthcloud Partner"
-                        className="max-w-full h-auto"
-                    />
-                </div>
-            </div>
+            <br/>
+            <HealthCloudHero/>
+            <WhatisSalesforce/>
+            <HealthCloudServices/>
+            <ImplementationApproach/>
+            <WhyAekot/>
+            
             {/* Case Study section */}
             <section
                 className="py-16 px-6 md:px-20 text-gray-900"
@@ -497,7 +259,12 @@ const HealthCloudPage = () => {
                 </p>
 
                 <div className="flex justify-center">
-                    <Button text="Contact Us" path="/contact" />
+                    <Link
+                        href="/contact"
+                        className="ghost-button inline-block w-5/6 sm:w-32 md:w-32 lg:w-32 xl:w-44 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors"
+                    >
+                        Contact Us <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
+                    </Link>
                 </div>
             </div>
         </div>
