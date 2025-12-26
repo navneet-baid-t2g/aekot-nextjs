@@ -8,25 +8,11 @@ import WhatisSalesforce from "@/components/healthcloud-components/WhatisSalesfor
 import HealthCloudServices from "@/components/healthcloud-components/HealthCloudServices/HealthCloudServices";
 import ImplementationApproach from "@/components/healthcloud-components/ImplementationApproach/ImplementationApproach";
 import WhyAekot from "@/components/healthcloud-components/WhyAekot/WhyAekot";
+import SuccessStories from "@/components/healthcloud-components/SuccessStories/SuccessStories";
+import HealthBlogs from "@/components/healthcloud-components/HealthBlogs/HealthBlogs";
 
 
-const blogs = [
-    {
-        title:
-            "How Health Cloud Is Powering the New Era of Personalized Healthcare",
-        description:
-            "Learn how AI is enhancing service efficiency and automation in Salesforce.",
-        link: "https://blog.aekot.com/how-health-cloud-is-powering-the-new-era-of-personalized-healthcare/",
-        img: "/images/healthcloud/healthBlog1.png",
-    },
-    {
-        title: "Salesforce for Life Sciences: Accelerating Trials & Compliance",
-        description:
-            "Discover how AI agents are transforming customer interactions and workflows.",
-        link: "https://blog.aekot.com/salesforce-for-life-sciences-accelerating-trials-compliance/",
-        img: "/images/healthcloud/healthBlog2.png",
-    },
-];
+
 
 const faqs = [
     {
@@ -56,23 +42,6 @@ const faqs = [
     },
 ];
 
-
-const successStories = [
-    {
-        title: "Redwood",
-        description:
-            "Seamless integration of clinical systems into Salesforce Health Cloud for a unified patient view.",
-        img: "/images/caseStudyImages/RedwoodCSImg.png",
-        readMore: "/case-studies/redwood-health-cloud",
-    },
-    {
-        title: "Diabetes Management Co.",
-        description:
-            "Streamlined onboarding and unified operations through tailored Salesforce Health Cloud integration.",
-        img: "/images/caseStudyImages/DiathriveCSImg.png",
-        readMore: "/case-studies/diabetes-management-health-cloud",
-    },
-];
 export const metadata = {
     title: "Salesforce Health Cloud Services | Aekot",
     description:
@@ -125,7 +94,7 @@ export const metadata = {
 const HealthCloudPage = () => {
 
     return (
-        <div className="text-black px-6 md:px-12 py-10 max-w-7xl mx-auto space-y-20 pt-40">
+        <div className="text-black px-6 md:px-12 py-10 max-w-7xl mx-auto pt-40">
             <br/>
             <HealthCloudHero/>
             <WhatisSalesforce/>
@@ -135,7 +104,7 @@ const HealthCloudPage = () => {
             
             {/* Case Study section */}
             <section
-                className="py-16 px-6 md:px-20 text-gray-900"
+                className="py-5 px-6 md:px-20 text-gray-900"
             >
                 <div className="text-center">
                     <h2
@@ -152,39 +121,13 @@ const HealthCloudPage = () => {
                     </p>
                 </div>
 
-                <div className="mt-12 cursor-pointer">
-                    <div className="grid md:grid-cols-2 gap-10 w-full max-w-2xl mx-auto">
-                        {successStories.map((story, index) => (
-                            <a
-                                key={index}
-                                href={story.readMore}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-white p-6 rounded-2xl shadow-md shadow-blue-200 hover:shadow-xl transition duration-300 flex flex-col text-center items-center"
-                            >
-                                <img
-                                    src={story.img}
-                                    alt={story.title}
-                                    className="h-60 w-72 object-contain rounded-lg"
-                                />
-                                <h3 className="text-lg font-semibold mt-4">{story.title}</h3>
-                                <p className="text-sm text-gray-600 mt-2 flex-grow">
-                                    {story.description}
-                                </p>
-                                <span className="mt-4 text-primary font-medium flex items-center cursor-pointer hover:underline">
-                                    Read More <LuExternalLink size={18} className="ml-2" />
-                                </span>
-                            </a>
-
-                        ))}
-                    </div>
-                </div>
+                <SuccessStories/>
             </section>
             {/* Case Study section */}
 
             {/* Blog Cards */}
             <section
-                className="py-16 text-gray-900 px-8 md:px-20 mt-12"
+                className="py-5 text-gray-900 px-8 md:px-20 mt-12"
             >
                 <div className="text-center">
                     <h2
@@ -198,36 +141,7 @@ const HealthCloudPage = () => {
                     </p>
                 </div>
 
-                <div
-                    className="flex justify-center mt-12"
-                >
-                    <div className="grid md:grid-cols-2 gap-8 max-w-2xl">
-                        {blogs.map((blog, index) => (
-                            <a
-                                key={index}
-                                href={blog.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition duration-300 flex flex-col items-center text-center"
-                            >
-                                <img
-                                    src={blog.img}
-                                    alt={blog.title}
-                                    width={300}
-                                    height={200}
-                                    className="w-72 h-52"
-                                />
-                                <h3 className="text-lg font-semibold mt-4">{blog.title}</h3>
-                                <p className="text-sm text-gray-500 mt-2 flex-grow">
-                                    {blog.description}
-                                </p>
-                                <div className="mt-4 text-primary flex items-center cursor-pointer">
-                                    Read More <LuExternalLink size={18} className="ml-2" />
-                                </div>
-                            </a>
-                        ))}
-                    </div>
-                </div>
+                <HealthBlogs/>
             </section>
 
             {/* FAQ Section */}

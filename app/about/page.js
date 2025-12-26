@@ -1,6 +1,6 @@
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { FaIndustry } from "react-icons/fa6";
-import { FaStar } from "react-icons/fa";
+import { FaLongArrowAltRight, FaStar } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
 import CertificateCarousel from "@/components/Certifications";
 import ClientsCarousel from "@/components/ClientsCarousel";
@@ -293,7 +293,14 @@ const About = () => {
                                         successful.{" "}
                                     </p>
 
-                                    <div className="flex justify-center"><Button text="Meet the Team" path="/ourTeam" /></div>
+                                    <div className="flex justify-center">
+                                        <Link
+                                            href="/ourTeam"
+                                            className="ghost-button inline-block w-5/6 sm:w-36 md:w-36 lg:w-36 xl:w-48 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors" target="_blank"
+                                        >
+                                            Meet the Team<FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
+                                        </Link>
+                                    </div>
 
                                 </div>
                             </div>

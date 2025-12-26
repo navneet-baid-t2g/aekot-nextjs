@@ -75,7 +75,7 @@ const OurTeam = () => {
         {/* TEAMS SECTION ENDS */}
 
         {/* Certification Section */}
-        <div className="space-y-6 text-center mb-24 px-16 pt-16">
+        <div className="space-y-6 text-center mb-24 px-4 pt-16">
           <h2 className="text-primary pt-12 font-bold xs:text-3xl text-2xl md:text-3xl lg:text-4xl">
             Certifications held by Our Team
           </h2>

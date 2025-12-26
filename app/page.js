@@ -382,7 +382,7 @@ export default function Home() {
                 Salesforce Implementation Partners
               </p>
 
-              <h1 className="fade-in-head text-center text-primary font-bold text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:leading-normal px-12">
+              <h1 className="fade-in-head text-center text-primary font-bold text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:leading-normal">
                 Crafting Salesforce <br className="hidden md:block" /> Solutions
                 that Matter
               </h1>
@@ -395,13 +395,12 @@ export default function Home() {
             />
 
             <div className="flex justify-center items-center w-[60%] text-right md:mt-0 md:ml-4 pb-8">
+
               <Link
                 href="/contact"
-                className="ghost-button inline-block w-full sm:w-44 md:w-48 lg:w-48 py-2 pl-2 font-semibold text-center text-light border-2 border-primary bg-primary rounded-lg transition-colors flex items-center justify-center gap-2"
-                style={{ transition: "transform 0.2s ease-in-out" }}
+                className="ghost-button inline-block w-5/6 sm:w-32 md:w-32 lg:w-32 xl:w-44 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors" target="_blank"
               >
-                Book a demo{" "}
-                <FaArrowRight className="fa-arrow-right-long text-xs" />
+                Book a demo <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
               </Link>
             </div>
           </article>
@@ -419,7 +418,7 @@ export default function Home() {
               Salesforce setup, optimization, system integration, support, marketing automation,
               AppExchange and custom development. Our team of certified professionals serves
               global clients, primarily in North America, offering <a href='/services/salesforce-consulting-services' className='text-primary underline'>Salesforce CRM consulting
-              services</a> to optimise business processes.
+                services</a> to optimise business processes.
             </p>
           </div>
           <section className="py-12 bg-gradient-to-br from-[#ffffff] to-[#fffafa] relative overflow-hidden w-full mt-12">
@@ -439,13 +438,12 @@ export default function Home() {
                     At Aekot, we help healthcare organizations redefine care delivery through Salesforce <strong className="text-primary">Health Cloud</strong> a powerful CRM platform built specifically for the healthcare and life sciences sector.
                   </p>
                   <div className="flex justify-center pt-4">
+   
                     <Link
                       href="/healthcloud"
-                      className="ghost-button text-sm inline-block hover:scale-110 sm:w-44 md:w-48 lg:w-48 py-2 pl-2 font-semibold text-center text-light border-2 border-primary bg-primary rounded-md transition-colors flex items-center justify-center gap-2"
-                      style={{ transition: "transform 0.2s ease-in-out" }}
+                      className="ghost-button inline-block w-5/6 sm:w-52 md:w-52 lg:w-56 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors" target="_blank"
                     >
-                      Explore Healthcloud{" "}
-                      <FaArrowRight className="fa-arrow-right-long text-xs" />
+                      Explore Healthcloud<FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
                     </Link>
                   </div>
                 </div>
@@ -463,13 +461,12 @@ export default function Home() {
                     we’re redefining how businesses streamline operations and boost efficiency.
                   </p>
                   <div className="flex justify-center pt-4">
+
                     <Link
                       href="/services/agentforce-consulting-services"
-                      className="ghost-button text-sm inline-block hover:scale-110 sm:w-44 md:w-48 lg:w-48 py-2 pl-2 font-semibold text-center text-light border-2 border-primary bg-primary rounded-md transition-colors flex items-center justify-center gap-2"
-                      style={{ transition: "transform 0.2s ease-in-out" }}
+                      className="ghost-button inline-block w-5/6 sm:w-52 md:w-52 lg:w-56 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors" target="_blank"
                     >
-                      Explore Agentforce{" "}
-                      <FaArrowRight className="fa-arrow-right-long text-xs" />
+                      Explore Agentforce<FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
                     </Link>
                   </div>
                 </div>

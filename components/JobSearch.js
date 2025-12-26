@@ -13,7 +13,7 @@ export default function JobSearch({ jobs }) {
   );
 
   return (
-    <article className="max-w-screen-xl mx-auto pt-12 text-center space-y-4">
+    <article className="max-w-screen-xl mx-auto pt-12 text-center space-y-4" id="jobs">
       <h2 className="text-primary font-bold xs:text-3xl text-2xl md:text-3xl xl:text-4xl">
         Open Positions
       </h2>
@@ -33,7 +33,6 @@ export default function JobSearch({ jobs }) {
       </div>
 
       <section
-        id="jobs"
         className="jobs max-w-screen-xl mx-auto py-12 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
       >
         {filteredJobs.length === 0 ? (

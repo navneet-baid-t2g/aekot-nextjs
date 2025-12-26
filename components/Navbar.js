@@ -40,7 +40,11 @@ const Navbar = ({ onParentModalClose }) => {
 
     return (
         <>
-           <section className="fixed top-0 left-0 right-0 z-[9999]">
+            {scroll && <div className="h-[96px]" />}
+            <section
+                className={`left-0 right-0 z-[9999] transition-all duration-300 ${scroll ? "fixed top-0" : "relative"
+                    }`}
+            >
                 <GitexBanner onParentModalClose={onParentModalClose} />
                 <nav
                     id="navbar"

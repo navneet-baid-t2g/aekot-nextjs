@@ -73,7 +73,13 @@ const ServicesIndividualPage = () => {
                         <h2 className="text-lg md:text-xl font-medium text-gray-600 max-w-4xl">
                             {service.additionalInfo.subheading}
                         </h2>
-                        <Button text={"Know More"} path={service.additionalInfo.link} />
+                        {/* <Button text={"Know More"} path={service.additionalInfo.link} /> */}
+                        <Link
+                            href={service.additionalInfo.link}
+                            className="ghost-button inline-block w-5/6 sm:w-32 md:w-32 lg:w-32 xl:w-44 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors"
+                        >
+                            Know More <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
+                        </Link>
                     </div>
                     <div className="lg:w-1/2 flex justify-center mt-8 md:mt-0">
                         <img

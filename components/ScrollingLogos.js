@@ -16,7 +16,7 @@ export default function ScrollingLogos() {
                 {/* The moving wrapper — this is what's animated.
             It contains TWO copies of the items, placed inline (row) on mobile and stacked (col) on desktop */}
                 <div
-                    className="flex flex-col sm:flex-row gap-8 w-max sm:w-[200%] animate-scrollY sm:animate-scrollX"
+                    className="flex flex-col sm:flex-row gap-8 w-max sm:w-[200%] animate-scrollY sm:animate-scrollY"
                     style={{ /* keep natural sizing; w-[200%] helps horizontal flow */ }}
                 >
                     {/* first copy */}

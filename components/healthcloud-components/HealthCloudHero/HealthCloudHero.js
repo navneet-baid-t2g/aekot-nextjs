@@ -1,6 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
+import Link from "next/link";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 export default function HealthCloudHero() {
   return (
@@ -32,7 +34,12 @@ export default function HealthCloudHero() {
         </p>
 
         <div className="mt-8">
-          <Button text="Contact Us" path="/contact" />
+          <Link
+            href="/contact"
+            className="ghost-button inline-block w-5/6 sm:w-32 md:w-32 lg:w-32 xl:w-44 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors" target="_blank"
+          >
+            Contact Us <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
+          </Link>
         </div>
       </motion.div>
 
@@ -42,8 +49,9 @@ export default function HealthCloudHero() {
         initial={{ opacity: 0, x: 80 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8, ease: "easeOut"  
-         }}
+        transition={{
+          duration: 0.8, ease: "easeOut"
+        }}
       >
         <img
           src="/images/healthcloud/HealthHero.png"

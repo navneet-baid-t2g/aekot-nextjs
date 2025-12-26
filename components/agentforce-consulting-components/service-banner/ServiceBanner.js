@@ -5,8 +5,8 @@ import Button from '@/components/Button';
 
 export default function AgentforceHero() {
     return (
-        <section className="flex flex-col md:flex-row items-center justify-between pt-16 py-8 bg-white max-w-7xl mx-auto pt-32 md:pt-32">
-            
+        <section className="flex flex-col md:flex-row items-center justify-between py-8 pt-32 bg-white max-w-7xl mx-auto px-8 md:px-0">
+
             {/* Left Content */}
             <motion.div
                 className="max-w-xl text-center md:text-left"

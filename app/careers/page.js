@@ -2,6 +2,8 @@ import OurCulture from "@/components/OurCulture";
 import WhyUsCard from "@/components/WhyUsCard";
 import JobSearch from "@/components/JobSearch";
 import Button from "@/components/Button";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import Link from "next/link";
 
 export const metadata = {
   title: "Join Top Salesforce Consulting Company | Careers at AEKOT",
@@ -89,15 +91,16 @@ export default async function Career() {
             strategies. Join us in shaping the future of technology and business.
           </p>
           <p className="font-semibold mb-8">Join us to help the World Work Better!</p>
+
           <a
             href="#jobs"
-            className="ghost-button inline-block w-full sm:w-44 md:w-48 py-2 font-semibold text-center text-light border-2 border-primary bg-primary rounded-lg transition-transform cursor-pointer"
+            className="ghost-button inline-block  w-full sm:w-52 md:w-56 xl:w-56 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors" target="_blank"
           >
-            See Open Positions <i className="fa-solid fa-arrow-right-long text-xs"></i>
+            See Open Positions <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
           </a>
         </div>
 
-        <div className="w-full md:w-1/2 mt-12 md:mt-0 flex items-center justify-center">
+        <div className="w-full md:w-1/2 mt-6 md:mt-0 flex items-center justify-center">
           <img
             src="/images/cultureImg/Img3.jpg"
             alt="Hero Image"
@@ -223,7 +226,12 @@ export default async function Career() {
           </span>
         </p>
         <div className="flex justify-center">
-          <Button text={"Meet the Team"} path={"/ourTeam"} />
+          <Link
+            href="/ourTeam"
+            className="ghost-button inline-block w-5/6 sm:w-40 md:w-40 lg:w-40 xl:w-52 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors" target="_blank"
+          >
+            Meet the Team <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
+          </Link>
         </div>
       </div>
       {/* Meet Team Section Ends */}

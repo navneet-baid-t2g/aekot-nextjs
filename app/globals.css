@@ -28,6 +28,7 @@ body {
   outline-color: var(--secondary);
 }
 
+
 *,
 *::before,
 *::after {
@@ -51,12 +52,20 @@ section {
 
 html {
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
 body {
   position: relative;
 }
 
+.content section{
+  overflow-x: hidden;
+}
+
+.content section::-webkit-scrollbar {
+  display: none;          
+}
 
 ::selection {
   color: var(--secondary);
@@ -214,7 +223,12 @@ body {
 
 
 
-
+.logoblock .icon-item{
+  background: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 8px;
+}
 
 
 

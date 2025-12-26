@@ -9,6 +9,7 @@ import SpecializedServices from "@/components/agentforce-consulting-components/s
 import ServiceBanner from "@/components/agentforce-consulting-components/service-banner/ServiceBanner";
 import ExpertServices from "@/components/agentforce-consulting-components/expert-services/ExpertServices";
 import Link from "next/link";
+import CertificateCarousel from "@/components/Certifications";
 
 
 // const otherservices = [
@@ -247,10 +248,10 @@ export default function ServiceSingle() {
             <ServiceBanner />
 
 
-            <section className="py-16 relative bg-gradient-to-b from-white via-red-100 to-white px-8 md:px-20 ">
-                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <section className="py-8 relative bg-gradient-to-b from-white via-red-100 to-white px-8 md:px-20">
+                <div className="max-w-7xl mx-auto">
                     {/* Left Content */}
-                    <div className="flex flex-col space-y-6 md:w-2/3">
+                    <div className="space-y-6">
                         <h2 className="text-3xl md:text-4xl font-bold text-left text-primary">
                             Driving business success through Salesforce
                         </h2>
@@ -266,17 +267,16 @@ export default function ServiceSingle() {
                         <p className="text-md text-gray-800 text-left">
                             <strong>Core Agentforce Capabilities That Power Your Service Transformation</strong>
                         </p>
+                    </div>
 
+                    <div className="mt-5 logoblock">
+                        <CertificateCarousel />
                     </div>
-                    <div className="relative h-[400px] sm:h-[102px] w-1/3 sm:w-full overflow-hidden flex justify-end mt-12 md:mt-0">
-                        <ScrollingLogos />
-                    </div>
+                    
                 </div>
-
-
             </section>
 
-            <section className="py-16 relative px-8 md:px-20 ">
+            <section className="py-8 relative px-8 md:px-20 ">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
                     {/* Left Content */}
                     <div className="flex flex-col space-y-6">
