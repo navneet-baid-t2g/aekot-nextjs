@@ -59,12 +59,12 @@ body {
   position: relative;
 }
 
-.content section{
+.content section {
   overflow-x: hidden;
 }
 
 .content section::-webkit-scrollbar {
-  display: none;          
+  display: none;
 }
 
 ::selection {
@@ -223,7 +223,7 @@ body {
 
 
 
-.logoblock .icon-item{
+.logoblock .icon-item {
   background: #fff;
   padding: 8px;
   border-radius: 8px;
@@ -460,6 +460,31 @@ body {
   margin: auto auto 20px auto;
 }
 
-.cstmargin{
+.cstmargin {
   margin: 0px 15px;
+}
+
+.content .mt-24 {
+  margin-top: 0 !important;
+}
+
+.content .pt-32 {
+  padding-top: 0 !important;
+}
+
+.content  .md\:pt-32 {
+  padding-top: 0 !important;
+}
+
+.content  .md\:pt-36{
+  padding-top: 0 !important;
+}
+
+.content  .pt-40{
+  padding-top: 0 !important;
+}
+
+.contactblock{
+  padding-top: 0!important;
+  margin-top: 0 !important;
 }

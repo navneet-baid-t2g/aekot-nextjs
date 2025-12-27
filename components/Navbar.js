@@ -6,52 +6,145 @@ import { CgMoreR } from "react-icons/cg";
 import { GrCatalogOption } from "react-icons/gr";
 import { AiOutlineTeam } from "react-icons/ai";
 import { GrChatOption } from "react-icons/gr";
-import { RiBloggerLine, RiCloseLine, RiMenu2Line, RiMenuFill } from "react-icons/ri";
+import { RiBloggerLine, RiCloseLine, RiMenuFill } from "react-icons/ri";
 import { MdOutlineContactPage } from "react-icons/md";
-import GitexBanner from "./GitexBanner";
 import Link from "next/link";
 import { FaChevronDown, FaLongArrowAltRight } from "react-icons/fa";
+import ReCAPTCHA from "react-google-recaptcha";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-
-const Navbar = ({ onParentModalClose }) => {
+const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scroll, setScroll] = useState(false);
 
+    // Banner state
+    const [bannerVisible, setBannerVisible] = useState(true);
+    const [modalOpen, setModalOpen] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => {
-            setScroll(window.scrollY > 0);
-        };
-
+        const handleScroll = () => setScroll(window.scrollY > 0);
         window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const handleClick = () => {
-        window.scrollTo(0, 0);
-    };
+    const handleClick = () => window.scrollTo(0, 0);
+    const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
+    const handleBannerClose = () => setBannerVisible(false);
+    const handleModalOpen = (e) => {
+        e.preventDefault();
+        setModalOpen(true);
     };
+    const handleModalClose = () => setModalOpen(false);
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        toast.success("Thank you for contacting us!", {
+            position: "top-right",
+            autoClose: 3000,
+            closeButton: false,
+        });
+        setTimeout(() => setModalOpen(false), 3100);
+    };
+    const onChange = () => { };
 
     return (
         <>
-            {scroll && <div className="h-[96px]" />}
-            <section
-                className={`left-0 right-0 z-[9999] transition-all duration-300 ${scroll ? "fixed top-0" : "relative"
-                    }`}
-            >
-                <GitexBanner onParentModalClose={onParentModalClose} />
+            <section className="sticky top-0 left-0 right-0 z-[9999]">
+                {/* =================== GITEX BANNER =================== */}
+                {bannerVisible && (
+                    <div
+                        className="w-full text-white px-4 py-6 text-center text-md font-medium shadow-md z-50"
+                        style={{
+                            backgroundImage: "-webkit-linear-gradient(0deg, #e52b50 0%, #000000 100%)",
+                        }}
+                    >
+                        <p className="max-w-4xl mx-auto">
+                            We&apos;re excited to announce that <strong>Aekot</strong> will be at Global AI Show in <strong>Abu Dhabi, UAE on December 8th 2025</strong>
+                        </p>
+                        <a
+                            href="#"
+                            onClick={handleModalOpen}
+                            className="underline ml-1 hover:text-gray-200"
+                        >
+                            Come see us there
+                        </a>
+                        <button
+                            onClick={handleBannerClose}
+                            className="absolute right-4 top-3 text-white hover:text-gray-300"
+                            aria-label="Close banner"
+                        >
+                            <RiCloseLine size={18} />
+                        </button>
+
+                        {/* Modal */}
+                        {modalOpen && (
+                            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+                                <div className="bg-white rounded-lg shadow-xl w-full max-w-lg max-h-screen overflow-y-auto">
+                                    <div className="flex justify-between items-center px-6 py-4 border-b">
+                                        <h2 className="text-lg md:text-xl font-semibold text-gray-600">
+                                            Contact Us
+                                        </h2>
+                                        <button
+                                            onClick={handleModalClose}
+                                            className="text-gray-500 hover:text-gray-700"
+                                        >
+                                            <RiCloseLine size={18} />
+                                        </button>
+                                    </div>
+                                    <div className="p-8">
+                                        <form
+                                            action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+                                            method="POST"
+                                            className="space-y-4"
+                                            onSubmit={handleSubmit}
+                                        >
+                                            <input type="hidden" name="oid" value="00D2w00000BbjNJ" />
+                                            <input type="hidden" name="Campaign_ID" value="7012w000000ZEJxAAO" />
+                                            <input type="hidden" name="retURL" value="https://www.aekot.com" />
+                                            <input type="hidden" name="lead_source" value="AekotWeb" />
+
+                                            <div className="p-2 border border-gray-300 rounded-lg text-sm">
+                                                <input type="text" name="last_name" placeholder="Name*" required className="h-6 outline-none w-full" />
+                                            </div>
+                                            <div className="p-2 border border-gray-300 rounded-lg text-sm">
+                                                <input type="email" name="email" placeholder="Email*" required className="h-9 outline-none w-full" />
+                                            </div>
+                                            <div className="p-2 border border-gray-300 rounded-lg text-sm">
+                                                <input type="tel" name="phone" placeholder="Phone" className="h-9 outline-none w-full" />
+                                            </div>
+                                            <div className="p-2 border border-gray-300 rounded-lg text-sm">
+                                                <textarea name="description" className="h-44 outline-none w-full" placeholder="Tell us about your query" />
+                                            </div>
+
+                                            <ReCAPTCHA
+                                                sitekey="6LdWrl4dAAAAAMvV8xsShqMP_mxBbfTMaYFFoG_P"
+                                                onChange={onChange}
+                                            />
+
+                                            <div className="flex space-x-4 justify-between">
+                                                <button type="submit" className="ghost-button w-44 py-2 font-semibold text-light border-2 border-primary bg-primary rounded-md">
+                                                    Send
+                                                </button>
+                                                <button type="button" onClick={handleModalClose} className="w-44 py-2 font-semibold border-2 border-gray-400 rounded-md">
+                                                    Cancel
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                        <ToastContainer />
+                    </div>
+                )}
+
+                {/* =================== NAVBAR =================== */}
                 <nav
-                    id="navbar"
                     className={
                         scroll
-                            ? "bg-light z-20 max-w-screen2xl mxauto transition-all duration-400 ease-in shadow-2xl"
-                            : "max-w-screen2xl mxauto fixed right-0 z-20 left-0 transition-all duration-400 ease-in"
+                            ? "bg-light z-20 max-w-screen2xl mxauto px-6 sm:px-2 lg:px-6 font-medium lg:flex justify-between items-center gap-6 md:gap-12 xl:gap-36 transition-all duration-400 ease-in shadow-2xl"
+                            : "max-w-screen2xl mxauto right-0 z-20 left-0 px-6 sm:px-2 lg:px-6 font-medium lg:flex justify-between items-center gap-6 md:gap-12 xl:gap-36 transition-all duration-400 ease-in"
                     }
                 >
                     <div className="max-w-7xl mx-auto lg:py-2 px-4 md:px-0 font-medium lg:flex justify-between items-center gap-6 md:gap-12 xl:gap-36">

@@ -23,7 +23,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="px-4 pt-16 md:pt-24">
+    <section className="px-4 pt-16 md:pt-24 contactblock">
       <article className="md:max-w-screen-xl mx-auto py-12 flex flex-col lg:flex-row gap-12 lg:gap-0">
         {/* Information Panel */}
         <div className="lg:w-2/6 md:mx-auto bg-primary rounded-lg p-4 md:p-8 text-light">

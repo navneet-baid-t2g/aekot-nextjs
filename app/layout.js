@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         className={`${poppins.variable} antialiased text-dark`}
       >
         <Navbar />
-        <div className={`content`}>
+        <div className="content">
           {children}
         </div>
         <Footer />

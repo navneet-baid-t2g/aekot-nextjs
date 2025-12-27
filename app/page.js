@@ -441,7 +441,7 @@ export default function Home() {
    
                     <Link
                       href="/healthcloud"
-                      className="ghost-button inline-block w-5/6 sm:w-52 md:w-52 lg:w-56 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors" target="_blank"
+                      className="ghost-button inline-block w-5/6 sm:w-52 md:w-52 lg:w-56 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors"
                     >
                       Explore Healthcloud<FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
                     </Link>
@@ -464,7 +464,7 @@ export default function Home() {
 
                     <Link
                       href="/services/agentforce-consulting-services"
-                      className="ghost-button inline-block w-5/6 sm:w-52 md:w-52 lg:w-56 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors" target="_blank"
+                      className="ghost-button inline-block w-5/6 sm:w-52 md:w-52 lg:w-56 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors"
                     >
                       Explore Agentforce<FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
                     </Link>
