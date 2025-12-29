@@ -50,7 +50,7 @@ const Navbar = () => {
 
     return (
         <>
-            <section className="sticky top-0 left-0 right-0 z-[9999]">
+            <section className="bg-light sticky top-0 left-0 right-0 z-[9999]">
                 {/* =================== GITEX BANNER =================== */}
                 {bannerVisible && (
                     <div

@@ -15,7 +15,7 @@ const Service = ({ icon, name, text, path, isHome = false }) => {
     >
       <div className="flex flex-col items-center text-center px-6 py-8 group shadow-xl h-full">
         <div
-          className={`flex flex-col justify-around items-center text-center gap-4 h-full mx-auto ${isHome ? "w-full" : "w-5/6"
+          className={`flex flex-col  justify-between items-center text-center gap-4 h-full mx-auto ${isHome ? "w-full" : "w-5/6"
             }`}
         >
           <div className="flex justify-center items-center rounded-full bg-white shadow w-14 h-14 p-4">
