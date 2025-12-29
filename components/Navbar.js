@@ -142,19 +142,13 @@ const Navbar = () => {
 
                 {/* =================== NAVBAR =================== */}
                 <nav
-                    className={
-                        scroll
-                            ? "bg-light z-20 max-w-screen2xl mxauto px-6 sm:px-2 lg:px-6 font-medium lg:flex justify-between items-center gap-6 md:gap-12 xl:gap-36 transition-all duration-400 ease-in shadow-2xl"
-                            : "max-w-screen2xl mxauto right-0 z-20 left-0 px-6 sm:px-2 lg:px-6 font-medium lg:flex justify-between items-center gap-6 md:gap-12 xl:gap-36 transition-all duration-400 ease-in"
-                    }
+                    className={`max-w-screen2xl mx-auto px-6 sm:px-2 lg:px-6 font-medium lg:flex justify-between items-center gap-6 md:gap-12 xl:gap-36 transition-all duration-400 ease-in
+    ${scroll ? "bg-light shadow-2xl" : "bg-light"}
+  `}
                 >
                     <div className="max-w-7xl mx-auto lg:py-2 px-4 md:px-0 font-medium lg:flex justify-between items-center gap-6 md:gap-12 xl:gap-36">
                         <section
-                            className={
-                                scroll
-                                    ? "max-w-screen-2xl mx-auto py-4 flex justify-between items-center gap-6 xl:gap-32 transition-all duration-400 ease-in"
-                                    : "max-w-screen-2xl mx-auto py-8 flex justify-between items-center gap-6 xl:gap-32 transition-all duration-400 ease-in"
-                            }
+                            className="max-w-screen-2xl mx-auto py-4 flex justify-between items-center gap-6 xl:gap-32 transition-all duration-400 ease-in"
                         >
                             <article id="logo" className="">
                                 <Link href="/">
