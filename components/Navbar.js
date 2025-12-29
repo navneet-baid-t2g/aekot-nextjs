@@ -22,9 +22,28 @@ const Navbar = () => {
     const [bannerVisible, setBannerVisible] = useState(true);
     const [modalOpen, setModalOpen] = useState(false);
 
+    /**
+     * ===========================
+     * FIXED SCROLL HANDLER
+     * ===========================
+     * - Uses requestAnimationFrame
+     * - Uses threshold (20px)
+     * - Prevents trackpad flicker
+     */
     useEffect(() => {
-        const handleScroll = () => setScroll(window.scrollY > 0);
-        window.addEventListener("scroll", handleScroll);
+        let ticking = false;
+
+        const handleScroll = () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    setScroll(window.scrollY > 20);
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
@@ -37,6 +56,7 @@ const Navbar = () => {
         setModalOpen(true);
     };
     const handleModalClose = () => setModalOpen(false);
+
     const handleSubmit = (e) => {
         e.preventDefault();
         toast.success("Thank you for contacting us!", {
@@ -46,23 +66,26 @@ const Navbar = () => {
         });
         setTimeout(() => setModalOpen(false), 3100);
     };
+
     const onChange = () => { };
 
     return (
         <>
-            <section className="bg-light sticky top-0 left-0 right-0 z-[9999]">
+            <section className="bg-white sticky top-0 left-0 right-0 z-[9999]">
                 {/* =================== GITEX BANNER =================== */}
                 {bannerVisible && (
                     <div
-                        className="sticky top-0 left-0 right-0 w-full text-white px-4 py-6 text-center text-md font-medium shadow-md z-[10000]"
+                        className="w-full text-white px-4 py-6 text-center text-md font-medium shadow-md relative"
                         style={{
-                            backgroundImage: "-webkit-linear-gradient(0deg, #e52b50 0%, #000000 100%)",
+                            backgroundImage:
+                                "linear-gradient(90deg, #e52b50 0%, #000000 100%)",
                         }}
                     >
-
                         <p className="max-w-4xl mx-auto">
-                            We&apos;re excited to announce that <strong>Aekot</strong> will be at Global AI Show in <strong>Abu Dhabi, UAE on December 8th 2025</strong>
+                            We&apos;re excited to announce that <strong>Aekot</strong> will be at Global AI Show in{" "}
+                            <strong>Abu Dhabi, UAE on December 8th 2025</strong>
                         </p>
+
                         <a
                             href="#"
                             onClick={handleModalOpen}
@@ -70,6 +93,7 @@ const Navbar = () => {
                         >
                             Come see us there
                         </a>
+
                         <button
                             onClick={handleBannerClose}
                             className="absolute right-4 top-3 text-white hover:text-gray-300"
@@ -78,7 +102,7 @@ const Navbar = () => {
                             <RiCloseLine size={18} />
                         </button>
 
-                        {/* Modal */}
+                        {/* =================== MODAL =================== */}
                         {modalOpen && (
                             <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
                                 <div className="bg-white rounded-lg shadow-xl w-full max-w-lg max-h-screen overflow-y-auto">
@@ -93,6 +117,7 @@ const Navbar = () => {
                                             <RiCloseLine size={18} />
                                         </button>
                                     </div>
+
                                     <div className="p-8">
                                         <form
                                             action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
@@ -106,16 +131,40 @@ const Navbar = () => {
                                             <input type="hidden" name="lead_source" value="AekotWeb" />
 
                                             <div className="p-2 border border-gray-300 rounded-lg text-sm">
-                                                <input type="text" name="last_name" placeholder="Name*" required className="h-6 outline-none w-full" />
+                                                <input
+                                                    type="text"
+                                                    name="last_name"
+                                                    placeholder="Name*"
+                                                    required
+                                                    className="h-6 outline-none w-full"
+                                                />
                                             </div>
+
                                             <div className="p-2 border border-gray-300 rounded-lg text-sm">
-                                                <input type="email" name="email" placeholder="Email*" required className="h-9 outline-none w-full" />
+                                                <input
+                                                    type="email"
+                                                    name="email"
+                                                    placeholder="Email*"
+                                                    required
+                                                    className="h-9 outline-none w-full"
+                                                />
                                             </div>
+
                                             <div className="p-2 border border-gray-300 rounded-lg text-sm">
-                                                <input type="tel" name="phone" placeholder="Phone" className="h-9 outline-none w-full" />
+                                                <input
+                                                    type="tel"
+                                                    name="phone"
+                                                    placeholder="Phone"
+                                                    className="h-9 outline-none w-full"
+                                                />
                                             </div>
+
                                             <div className="p-2 border border-gray-300 rounded-lg text-sm">
-                                                <textarea name="description" className="h-44 outline-none w-full" placeholder="Tell us about your query" />
+                                                <textarea
+                                                    name="description"
+                                                    className="h-44 outline-none w-full"
+                                                    placeholder="Tell us about your query"
+                                                />
                                             </div>
 
                                             <ReCAPTCHA
@@ -124,10 +173,17 @@ const Navbar = () => {
                                             />
 
                                             <div className="flex space-x-4 justify-between">
-                                                <button type="submit" className="ghost-button w-44 py-2 font-semibold text-light border-2 border-primary bg-primary rounded-md">
+                                                <button
+                                                    type="submit"
+                                                    className="ghost-button w-44 py-2 font-semibold text-light border-2 border-primary bg-primary rounded-md"
+                                                >
                                                     Send
                                                 </button>
-                                                <button type="button" onClick={handleModalClose} className="w-44 py-2 font-semibold border-2 border-gray-400 rounded-md">
+                                                <button
+                                                    type="button"
+                                                    onClick={handleModalClose}
+                                                    className="w-44 py-2 font-semibold border-2 border-gray-400 rounded-md"
+                                                >
                                                     Cancel
                                                 </button>
                                             </div>
@@ -142,13 +198,18 @@ const Navbar = () => {
 
                 {/* =================== NAVBAR =================== */}
                 <nav
-                    className={`max-w-screen2xl mx-auto px-6 sm:px-2 lg:px-6 font-medium lg:flex justify-between items-center gap-6 md:gap-12 xl:gap-36 transition-all duration-400 ease-in
-    ${scroll ? "bg-light shadow-2xl" : "bg-light"}
-  `}
+                    className={`transition-all duration-300 ease-in-out ${scroll
+                            ? "bg-light shadow-2xl"
+                            : ""
+                        }`}
                 >
                     <div className="max-w-7xl mx-auto lg:py-2 px-4 md:px-0 font-medium lg:flex justify-between items-center gap-6 md:gap-12 xl:gap-36">
                         <section
-                            className="max-w-screen-2xl mx-auto py-4 flex justify-between items-center gap-6 xl:gap-32 transition-all duration-400 ease-in"
+                            className={
+                                scroll
+                                    ? "max-w-screen-2xl mx-auto py-4 flex justify-between items-center gap-6 xl:gap-32 transition-all duration-400 ease-in"
+                                    : "max-w-screen-2xl mx-auto py-8 flex justify-between items-center gap-6 xl:gap-32 transition-all duration-400 ease-in"
+                            }
                         >
                             <article id="logo" className="">
                                 <Link href="/">
