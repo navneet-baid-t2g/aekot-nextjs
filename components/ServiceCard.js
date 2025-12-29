@@ -15,7 +15,7 @@ const Service = ({ icon, name, text, path, isHome = false }) => {
     >
       <div className="flex flex-col items-center text-center px-6 py-8 group shadow-xl h-full">
         <div
-          className={`flex flex-col justify-center items-center text-center gap-4 mx-auto ${isHome ? "w-full" : "w-5/6"
+          className={`flex flex-col justify-around items-center text-center gap-4 h-full mx-auto ${isHome ? "w-full" : "w-5/6"
             }`}
         >
           <div className="flex justify-center items-center rounded-full bg-white shadow w-14 h-14 p-4">
@@ -37,7 +37,7 @@ const Service = ({ icon, name, text, path, isHome = false }) => {
 
           <Link
             href={path}
-            className="ghost-button inline-block w-5/6 sm:w-32 md:w-32 lg:w-32 xl:w-44 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors" target="_blank"
+            className="ghost-button inline-block w-5/6 sm:w-32 md:w-32 lg:w-32 xl:w-44 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors"
           >
             Know More <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
           </Link>

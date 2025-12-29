@@ -94,7 +94,7 @@ export default async function Career() {
 
           <a
             href="#jobs"
-            className="ghost-button inline-block  w-full sm:w-52 md:w-56 xl:w-56 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors" target="_blank"
+            className="ghost-button inline-block  w-full sm:w-52 md:w-56 xl:w-56 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors"
           >
             See Open Positions <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
           </a>
@@ -228,7 +228,7 @@ export default async function Career() {
         <div className="flex justify-center">
           <Link
             href="/ourTeam"
-            className="ghost-button inline-block w-5/6 sm:w-40 md:w-40 lg:w-40 xl:w-52 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors" target="_blank"
+            className="ghost-button inline-block w-5/6 sm:w-40 md:w-40 lg:w-40 xl:w-52 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors"
           >
             Meet the Team <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
           </Link>

@@ -42,7 +42,7 @@ const LatestBlogs = async () => {
     const firstThree = blogData.slice(0, 4);
 
     return (
-        <article className="md:max-w-screen-xl mx-auto pt-28 space-y-12">
+        <article className="md:max-w-screen-xl mx-auto pt-28 space-y-12 px-4">
             <div className="space-y-6 text-center">
                 <h2 className="text-primary font-bold xs:text-3xl text-2xl md:text-3xl lg:text-4xl">
                     Our Latest Blogs

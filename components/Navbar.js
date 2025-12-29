@@ -54,11 +54,12 @@ const Navbar = () => {
                 {/* =================== GITEX BANNER =================== */}
                 {bannerVisible && (
                     <div
-                        className="w-full text-white px-4 py-6 text-center text-md font-medium shadow-md z-50"
+                        className="sticky top-0 left-0 right-0 w-full text-white px-4 py-6 text-center text-md font-medium shadow-md z-[10000]"
                         style={{
                             backgroundImage: "-webkit-linear-gradient(0deg, #e52b50 0%, #000000 100%)",
                         }}
                     >
+
                         <p className="max-w-4xl mx-auto">
                             We&apos;re excited to announce that <strong>Aekot</strong> will be at Global AI Show in <strong>Abu Dhabi, UAE on December 8th 2025</strong>
                         </p>
@@ -282,7 +283,7 @@ const Navbar = () => {
                             </article>
 
                             {/* Hamburger */}
-                            <article className="md:hidden text-2xl py-1">
+                            <article className="lg:hidden text-2xl py-1">
                                 {isMenuOpen ? (
                                     <RiCloseLine
                                         className="fa-solid fa-xmark flex justify-right items-right cursor-pointer"

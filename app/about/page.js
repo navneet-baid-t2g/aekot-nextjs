@@ -102,15 +102,13 @@ const About = () => {
                             <p className="font-semibold text-2xl md:text-4xl mb-2">
                                 You guessed it right. We’re <br className="hidden md:block" />{" "}
                                 changing the game.
-                            </p>
-                            <a
+                            </p><br/>
+                            <Link
                                 href="/contact"
-                                className="mt-4 ghost-button inline-block w-full sm:w-44 md:w-48 py-2 font-semibold text-center text-light border-2 border-primary bg-primary rounded-lg transition-transform"
-                                style={{ transition: "transform 0.2s ease-in-out" }}
+                                className="ghost-button inline-block w-5/6 sm:w-36 md:w-36 lg:w-36 xl:w-48 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors"
                             >
-                                Book a Demo{" "}
-                                <i className="fa-solid fa-arrow-right-long text-xs"></i>
-                            </a>
+                                Book a Demo<FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
+                            </Link>
                         </div>
 
                         <p className="lg:w-3/6 text-justify max-w-screen-lg mx-auto lg:font-semibold md:font-semibold text-md md:text-base">
@@ -296,7 +294,7 @@ const About = () => {
                                     <div className="flex justify-center">
                                         <Link
                                             href="/ourTeam"
-                                            className="ghost-button inline-block w-5/6 sm:w-36 md:w-36 lg:w-36 xl:w-48 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors" target="_blank"
+                                            className="ghost-button inline-block w-5/6 sm:w-36 md:w-36 lg:w-36 xl:w-48 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors"
                                         >
                                             Meet the Team<FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
                                         </Link>

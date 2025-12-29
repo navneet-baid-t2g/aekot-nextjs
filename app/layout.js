@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/scrollto";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.variable} antialiased text-dark`}
       >
+        <ScrollToTop />
         <Navbar />
         <div className="content">
           {children}

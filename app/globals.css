@@ -488,3 +488,9 @@ body {
   padding-top: 0!important;
   margin-top: 0 !important;
 }
+
+.ghost-button{
+  width: max-content!important;
+  padding: 8px 25px 8px 35px!important;
+  text-align: center!important;
+}

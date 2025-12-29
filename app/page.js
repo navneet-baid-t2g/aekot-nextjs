@@ -398,7 +398,7 @@ export default function Home() {
 
               <Link
                 href="/contact"
-                className="ghost-button inline-block w-5/6 sm:w-32 md:w-32 lg:w-32 xl:w-44 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors" target="_blank"
+                className="ghost-button inline-block w-5/6 sm:w-38 md:w-38 lg:w-38 xl:w-46 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors"
               >
                 Book a demo <FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
               </Link>
@@ -441,7 +441,7 @@ export default function Home() {
    
                     <Link
                       href="/healthcloud"
-                      className="ghost-button inline-block w-5/6 sm:w-52 md:w-52 lg:w-56 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors"
+                      className="ghost-button inline-block w-5/6 sm:w-52 md:w-52 lg:w-56 py-2 pl-2 ml-2 font-semibold text-center text-light border-2 border-primary bg-primary hover:bg-primary/90 rounded-md transition-colors" scroll={true}
                     >
                       Explore Healthcloud<FaLongArrowAltRight className="inline-block fa-arrow-right-long text-xs" />
                     </Link>
@@ -485,7 +485,7 @@ export default function Home() {
               aspiration to deliver top-tier Salesforce solutions.
             </p>
           </div>
-          <div className="max-w-screen grid md:grid-cols-2 lg:md:grid-cols-3 gap-4 xl:gap-10 servicecss">
+          <div className="max-w-screen grid md:grid-cols-2 lg:md:grid-cols-3 gap-4 xl:gap-10 servicecss ">
             <Service
               icon={"/assets/customization.svg"}
               name="Agentforce Implementation & Services"

@@ -116,7 +116,7 @@ export default async function Blogs() {
             )}
 
             {/* Other Blogs */}
-            <article className="max-w-screen-xl mx-auto py-12 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <article className="max-w-screen-xl mx-auto py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                 {blogData.slice(1, 7).map((val, key) => {
                     const content = extractContent(val.content.rendered);
                     const firstSentence = content?.match(/^(.*?)\./)?.[1];
@@ -139,7 +139,7 @@ export default async function Blogs() {
                                     )}
 
                                     <div className="h-1/2 p-6 space-y-6">
-                                        <div className="h-24 py-4">
+                                        <div className="lg:h-24">
                                             <h2 className="blog_heading font-semibold text-xl transition-colors">
                                                 {decode(val.title.rendered)}
                                             </h2>
