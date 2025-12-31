@@ -6,6 +6,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-poppins);
+  overscroll-behavior: contain;
 }
 
 :root {
@@ -472,25 +473,25 @@ body {
   padding-top: 0 !important;
 }
 
-.content  .md\:pt-32 {
+.content .md\:pt-32 {
   padding-top: 0 !important;
 }
 
-.content  .md\:pt-36{
+.content .md\:pt-36 {
   padding-top: 0 !important;
 }
 
-.content  .pt-40{
+.content .pt-40 {
   padding-top: 0 !important;
 }
 
-.contactblock{
-  padding-top: 0!important;
+.contactblock {
+  padding-top: 0 !important;
   margin-top: 0 !important;
 }
 
-.ghost-button{
-  width: max-content!important;
-  padding: 8px 25px 8px 35px!important;
-  text-align: center!important;
+.ghost-button {
+  width: max-content !important;
+  padding: 8px 25px 8px 35px !important;
+  text-align: center !important;
 }

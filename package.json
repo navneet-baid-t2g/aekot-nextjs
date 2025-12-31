@@ -14,6 +14,7 @@
     "html-entities": "^2.6.0",
     "motion": "^12.23.26",
     "next": "^16.0.10",
+    "nextjs-toploader": "^3.9.17",
     "owl.carousel": "^2.3.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",
